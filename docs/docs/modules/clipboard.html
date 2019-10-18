@@ -1,0 +1,315 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>剪贴板 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="历史" href="history.html" />
+    <link rel="prev" title="模块" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">快速开始</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../download.html">下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html">配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../formats.html">格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html">api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../delta.html">三角洲</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">模块</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">剪贴板</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api">API</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="history.html">历史</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard.html">键盘</a></li>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html">句法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="toolbar.html">工具栏</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../themes.html">主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standalone/index.html">独立</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+          <li><a href="index.html">模块</a> &raquo;</li>
+        
+      <li>剪贴板</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/docs/modules/clipboard.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="clipboard">
+<h1>剪贴板<a class="headerlink" href="#clipboard" title="永久链接至标题">¶</a></h1>
+<p>The Clipboard handles copy, cut and paste between Quill and external
+applications. A set of defaults exist to provide sane interpretation of
+pasted content, with the ability for further customization through
+matchers.</p>
+<p>The Clipboard interprets pasted HTML by traversing the corresponding DOM
+tree in
+<a class="reference external" href="https://en.wikipedia.org/wiki/Tree_traversal#Post-order">post-order</a>,
+building up a <a class="reference external" href="/docs/delta/">Delta</a> representation of all subtrees.
+At each descendant node, matcher functions are called with the DOM Node
+and Delta interpretation so far, allowing the matcher to return a
+modified Delta interpretation.</p>
+<p>Familiarity and comfort with <a class="reference external" href="/docs/delta/">Deltas</a> is necessary in
+order to effectively use matchers.</p>
+<div class="section" id="api">
+<h2>API<a class="headerlink" href="#api" title="永久链接至标题">¶</a></h2>
+<div class="section" id="addmatcher">
+<h3>addMatcher<a class="headerlink" href="#addmatcher" title="永久链接至标题">¶</a></h3>
+<p>Adds a custom matcher to the Clipboard. Matchers using <code class="docutils literal notranslate"><span class="pre">nodeType</span></code> are
+called first, in the order they were added, followed by matchers using a
+CSS <code class="docutils literal notranslate"><span class="pre">selector</span></code>, also in the order they were added.
+<code class="docutils literal notranslate"><span class="pre">`nodeType</span></code> &lt;<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType">https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType</a>&gt;`__
+may be <code class="docutils literal notranslate"><span class="pre">Node.ELEMENT_NODE</span></code> or <code class="docutils literal notranslate"><span class="pre">Node.TEXT_NODE</span></code>.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">addMatcher</span><span class="p">(</span><span class="nx">selector</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="p">(</span><span class="nx">node</span><span class="o">:</span> <span class="nx">Node</span><span class="p">,</span> <span class="nx">delta</span><span class="o">:</span> <span class="nx">Delta</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">Delta</span><span class="p">)</span>
+<span class="nx">addMatcher</span><span class="p">(</span><span class="nx">nodeType</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="p">(</span><span class="nx">node</span><span class="o">:</span> <span class="nx">Node</span><span class="p">,</span> <span class="nx">delta</span><span class="o">:</span> <span class="nx">Delta</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">Delta</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">clipboard</span><span class="p">.</span><span class="nx">addMatcher</span><span class="p">(</span><span class="nx">Node</span><span class="p">.</span><span class="nx">TEXT_NODE</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">delta</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="k">new</span> <span class="nx">Delta</span><span class="p">().</span><span class="nx">insert</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// Interpret a &lt;b&gt; tag as bold</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">clipboard</span><span class="p">.</span><span class="nx">addMatcher</span><span class="p">(</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">node</span><span class="p">,</span> <span class="nx">delta</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">delta</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="k">new</span> <span class="nx">Delta</span><span class="p">().</span><span class="nx">retain</span><span class="p">(</span><span class="nx">delta</span><span class="p">.</span><span class="nx">length</span><span class="p">(),</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}));</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<div class="section" id="dangerouslypastehtml">
+<h4>dangerouslyPasteHTML<a class="headerlink" href="#dangerouslypastehtml" title="永久链接至标题">¶</a></h4>
+<p>Inserts content represented by HTML snippet into editor at a given
+index. The snippet is interpreted by Clipboard
+<a class="reference external" href="#addMatcher">matchers</a>, which may not produce the exactly input
+HTML. If no insertion index is provided, the entire editor contents will
+be overwritten. The <a class="reference external" href="/docs/api/#events">source</a> may be <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&quot;api&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code>.</p>
+<p>Improper handling of HTML can lead to <a class="reference external" href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross site scripting
+(XSS)</a>
+and failure to sanitize properly is both notoriously error-prone and a
+leading cause of web vulnerabilities. This method follows React’s
+example and is aptly named to ensure the developer has taken the
+necessary precautions.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">dangerouslyPasteHTML</span><span class="p">(</span><span class="nx">html</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span>
+<span class="nx">dangerouslyPasteHTML</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">html</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">);</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">clipboard</span><span class="p">.</span><span class="nx">dangerouslyPasteHTML</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;&amp;nbsp;&lt;b&gt;World&lt;/b&gt;&#39;</span><span class="p">);</span>
+<span class="c1">// Editor is now &#39;&lt;p&gt;Hello&amp;nbsp;&lt;strong&gt;World&lt;/strong&gt;!&lt;/p&gt;&#39;;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="永久链接至标题">¶</a></h2>
+<p>An array of matchers can be passed into Clipboard’s configuration
+options. These will be appended after Quill’s own default matchers.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">clipboard</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">matchers</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">[</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="nx">customMatcherA</span><span class="p">],</span>
+        <span class="p">[</span><span class="nx">Node</span><span class="p">.</span><span class="nx">TEXT_NODE</span><span class="p">,</span> <span class="nx">customMatcherB</span><span class="p">]</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="history.html" class="btn btn-neutral float-right" title="历史" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="模块" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

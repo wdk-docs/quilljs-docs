@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2014年9月29日一个新的增量 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="2014年10月19日升级到富文本三角洲" href="2014-10-19-upgrading-to-rich-text-deltas.html" />
+    <link rel="prev" title="2014年8月14日建立一个自定义模块" href="2014-08-14-building-a-custom-module.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">博客</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="2014-08-12-an-official-cdn-for-quill.html">2014年8月12日的羽毛笔官方CDN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2014-08-14-building-a-custom-module.html">2014年8月14日建立一个自定义模块</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2014年9月29日一个新的增量</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#reduced-complexity">Reduced Complexity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#explicit-deletes">Explicit Deletes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#embed-support">Embed Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#going-forward">Going Forward</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2014-10-19-upgrading-to-rich-text-deltas.html">2014年10月19日升级到富文本三角洲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2014-11-06-quill-v0-19-no-more-iframes.html">2014年11月6日鹅毛笔v0.19没有更多的I帧</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2015-09-15-the-road-to-1-0.html">2015年9月15日道路1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2016-03-14-are-we-there-yet-to-1-0.html">2016年3月14日我们到了1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2016-05-03-quill-1-0-beta-release.html">2016年5月3日套筒1.0 beta版</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2016-08-18-quill-1-0-release-candidate-released.html">发布2016年8月18日鹅毛笔1.0发布候选</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2016-09-06-accouncing-quill-1-0.html">2016年9月6日accouncing鹅毛笔1.0</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">博客</a> &raquo;</li>
+        
+      <li>2014年9月29日一个新的增量</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/blog/2014-09-29-a-new-delta.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="a-new-delta">
+<h1>2014年9月29日一个新的增量<a class="headerlink" href="#a-new-delta" title="永久链接至标题">¶</a></h1>
+<p>Part of providing a complete API in Quill is providing events for when
+and what changes occur in the editor. Those changes are currently
+represented by a <a class="reference external" href="/guides/working-with-deltas/">Delta</a> object, which
+aims to be intuitive, human-readable, and expressive for any change or
+document that might need to represented. Over the past few weeks I’ve
+been working on a new format that better fulfills those goals and
+addresses the challenges in the current format.</p>
+<p>Documentation for the new Delta format can be found in its own <a class="reference external" href="https://github.com/ottypes/rich-text">Github
+repository</a> but I will go over
+some of the rationale behind some of the changes in this post.</p>
+<!-- more --><div class="section" id="reduced-complexity">
+<h2>Reduced Complexity<a class="headerlink" href="#reduced-complexity" title="永久链接至标题">¶</a></h2>
+<p>When the Delta format was originally designed, it had ambitious goals of
+being general purpose and being able to represent any kind of document.
+The new format reduces the scope to just rich text documents, allowing
+for a much tighter implementation <a class="footnote-reference brackets" href="#id3" id="id1">1</a>.</p>
+<p>Quill is not specifically built to be a collaborative editor but the
+ability to be used as one is a good benchmark of the API. The new Delta
+format maintains this capability and fulfills the specifications of an
+<a class="reference external" href="https://github.com/ottypes/docs">ottype</a>, making it compatible with
+<a class="reference external" href="https://github.com/share/ShareJS">ShareJS</a>.</p>
+</div>
+<div class="section" id="explicit-deletes">
+<h2>Explicit Deletes<a class="headerlink" href="#explicit-deletes" title="永久链接至标题">¶</a></h2>
+<p>In the current Delta format, a delete operation is implied by a lack of
+a retain operation. Basically everything is deleted unless you say it
+should be kept. This has some nice properties from an implementation
+perspective <a class="footnote-reference brackets" href="#id4" id="id2">2</a> but was probably the largest source of confusion for
+users trying to work with Deltas and challenged the human-readability
+goal. It is very difficult to keep track of indexes to figure out what
+was not accounted for, to figure out what should be deleted.</p>
+<p>The new format has an explicit delete operation and by default
+everything is kept. Here’s a comparison of the two formats both
+representing removing the ‘b’ in ‘abc’.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">oldFormat</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">startLength</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+  <span class="nx">endLength</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="nx">start</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">end</span><span class="o">:</span> <span class="mi">1</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="nx">start</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nx">end</span><span class="o">:</span> <span class="mi">3</span> <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">newFormat</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="mi">1</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="k">delete</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>A side effect of having explicit deletes and defaulting to keeping text
+is that in practice the representation for new Deltas will usually be
+smaller.</p>
+</div>
+<div class="section" id="embed-support">
+<h2>Embed Support<a class="headerlink" href="#embed-support" title="永久链接至标题">¶</a></h2>
+<p>The new Delta format provides native support for embeds, which can be
+used to represent images, video, etc. There is no support for this in
+the current format and implementation is hackily achieved by
+representing an ‘!’ with a image key in the attributes (which will break
+when video support is added).</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">oldFormat</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">startLength</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nx">endLength</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[{</span>
+    <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;!&#39;</span><span class="p">,</span>
+    <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">image</span><span class="o">:</span> <span class="s1">&#39;https://octodex.github.com/images/labtocat.png&#39;</span> <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">newFormat</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[{</span>
+    <span class="nx">insert</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">image</span><span class="o">:</span> <span class="s1">&#39;https://octodex.github.com/images/labtocat.png&#39;</span> <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="going-forward">
+<h2>Going Forward<a class="headerlink" href="#going-forward" title="永久链接至标题">¶</a></h2>
+<p>This new format will be the finalized representation for changes and
+state in Quill going forward and is one of the major steps toward a 1.0
+release (a topic for another post).</p>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Currently 28658 vs 9507 lines of code (though in practice is less
+relevant due to minification and gzip).</p>
+</dd>
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Minimizes number of operations to support, and easy to calculate the
+length of text of the resulting document which is useful for sanity
+checks.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="2014-10-19-upgrading-to-rich-text-deltas.html" class="btn btn-neutral float-right" title="2014年10月19日升级到富文本三角洲" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2014-08-14-building-a-custom-module.html" class="btn btn-neutral float-left" title="2014年8月14日建立一个自定义模块" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

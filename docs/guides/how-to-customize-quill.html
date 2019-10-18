@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>如何自定义鹅毛笔？ &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="与其他富文本编辑器相比" href="designing-the-delta-format.html" />
+    <link rel="prev" title="指南" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">指南</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">如何自定义鹅毛笔？</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configurations">Configurations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#themes">Themes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#content-and-formatting">Content and Formatting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#class-vs-inline">Class vs Inline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#customizing-attributors">Customizing Attributors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#customizing-blots">Customizing Blots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extending-blots">Extending Blots</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html">与其他富文本编辑器相比</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-2-0.html">升级到2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">指南</a> &raquo;</li>
+        
+      <li>如何自定义鹅毛笔？</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guides/how-to-customize-quill.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-customize-quill">
+<h1>如何自定义鹅毛笔？<a class="headerlink" href="#how-to-customize-quill" title="永久链接至标题">¶</a></h1>
+<p>Quill was designed with customization and extension in mind. This is
+achieved by implementing a small editor core exposed by a granular, well
+defined <a class="reference external" href="/docs/api/">API</a>. The core is augmented by
+<a class="reference external" href="/docs/modules">modules</a>, using the same <a class="reference external" href="/docs/api/">APIs</a> you
+have access to.</p>
+<p>In general, common customizations are handled in
+<a class="reference external" href="#configurations/">configurations</a>, user interfaces by
+<a class="reference external" href="#themes">Themes</a> and CSS, functionality by <a class="reference external" href="#modules">modules</a>,
+and editor contents by <a class="reference external" href="#content-and-formatting">Parchment</a>.</p>
+<div class="section" id="configurations">
+<h2>Configurations<a class="headerlink" href="#configurations" title="永久链接至标题">¶</a></h2>
+<p>Quill favors Code over Configuration™, but for very common needs,
+especially where the equivalent code would be lengthy or complex, Quill
+provides <a class="reference external" href="/docs/configuration/">configuration</a> options. This would be
+a good first place to look to determine if you even need to implement
+any custom functionality.</p>
+<p>Two of the most powerful options is <code class="docutils literal notranslate"><span class="pre">modules</span></code> and <code class="docutils literal notranslate"><span class="pre">theme</span></code>. You can
+drastically change or expand what Quill can and does do by simply adding
+or removing individual <a class="reference external" href="/docs/modules/">modules</a> or using a different
+<a class="reference external" href="/docs/themes/">theme</a>.</p>
+</div>
+<div class="section" id="themes">
+<h2>Themes<a class="headerlink" href="#themes" title="永久链接至标题">¶</a></h2>
+<p>Quill officially supports a standard toolbar theme
+<a class="reference external" href="/docs/themes/#snow">Snow</a> and a floating tooltip theme
+<a class="reference external" href="/docs/themes/#bubble">Bubble</a>. Since Quill is not confined within an
+iframe like many legacy editors, many visual modifications can be made
+with just CSS, using one of the existing themes.</p>
+<p>If you would like to drastically change UI interactions, you can omit
+the <code class="docutils literal notranslate"><span class="pre">theme</span></code> configuration option, which will give you an unstyled
+Quill editor. You do still need to include a minimal stylesheet that,
+for example, makes sure spaces render in all browsers and ordered lists
+are appropriately numbered.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.quilljs.com/{{site.version}}/quill.core.css&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>From there you can implement and attach your own UI elements like custom
+dropdowns or tooltips. The last section of <a class="reference external" href="/guides/cloning-medium-with-parchment/#final-polish">Cloning Medium with
+Parchment</a>
+provides an example of this in action.</p>
+</div>
+<div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="永久链接至标题">¶</a></h2>
+<p>Quill is designed with a modular architecture composed of a small
+editing core, surrounded by modules that augment its functionality. Some
+of this functionality is quite integral to editing, such as the
+<a class="reference external" href="/docs/modules/history/">History</a> module, which manages undo and
+redo. Because all modules use the same public <a class="reference external" href="/docs/api/">API</a>
+exposed to the developer, even interchanging core modules is possible,
+when necessary.</p>
+<p>Like Quill’s core itself, many <a class="reference external" href="/docs/modules/">modules</a> expose
+additional configuration options and APIs. Before deciding to replace a
+module, take a look at its documentation. Often your desired
+customization is already implemented as a configuration or API call.</p>
+<p>Otherwise, if you would like to drastically change functionality an
+existing module already covers, you can simply not include it—or
+explicitly exclude it when a theme includes it by default—and implement
+the functionality to your liking external to Quill, using the same
+<a class="reference external" href="/docs/api/">API</a> the default module uses.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="kc">false</span>    <span class="c1">// Snow includes toolbar by default</span>
+  <span class="p">},</span>
+  <span class="nx">theme</span><span class="o">:</span> <span class="s1">&#39;snow&#39;</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>A few modules—<a class="reference external" href="/docs/modules/clipboard/">Clipboard</a>,
+<a class="reference external" href="/docs/modules/keyboard/">Keyboard</a>, and
+<a class="reference external" href="/docs/modules/history/">History</a>—need to be included as core
+functionality depend on the APIs they provide. For example, even though
+undo and redo is basic, expected, editor functionality, the native
+browser behavior handling of this is inconsistent and unpredictable. The
+History module bridges the gap by implementing its own undo manager and
+exposing <code class="docutils literal notranslate"><span class="pre">undo()</span></code> and <code class="docutils literal notranslate"><span class="pre">redo()</span></code> as APIs.</p>
+<p>Nevertheless, staying true to Quill modular design, you can still
+drastically change the way undo and redo—or any other core
+functionality—works by implementing your own undo manager to replace the
+History module. As long as you implement the same API interface, Quill
+will happily use your replacement module. This is most easily done by
+inheriting from the existing module, and overwriting the methods you
+want to change. Take a look at the <a class="reference external" href="/docs/modules/">modules</a>
+documentation for a very simple example of overwriting the core
+<a class="reference external" href="/docs/modules/clipboard/">Clipboard</a> module.</p>
+<p>Finally, you may want to add functionality not provided by existing
+modules. In this case, it may be convenient to organize this as a Quill
+module, which the <a class="reference external" href="/guides/building-a-custom-module/">Building A Custom
+Module</a> guide covers. Of course,
+it is certainly valid to just keep this logic separate from Quill, in
+your application code instead.</p>
+</div>
+<div class="section" id="content-and-formatting">
+<h2>Content and Formatting<a class="headerlink" href="#content-and-formatting" title="永久链接至标题">¶</a></h2>
+<p>Quill allows modification and extension of the contents and formats that
+it understands through its document model
+<a class="reference external" href="https://github.com/quilljs/parchment/">Parchment</a>. Content and
+formats are represented in Parchment as either Blots or Attributors,
+which roughly correspond to Nodes or Attributes in the DOM.</p>
+<div class="section" id="class-vs-inline">
+<h3>Class vs Inline<a class="headerlink" href="#class-vs-inline" title="永久链接至标题">¶</a></h3>
+<p>Quill uses classes, instead of inline style attributes, when possible,
+but both are implemented for you to pick and choose. A live example of
+this is implemented as a <a class="reference external" href="/playground/#class-vs-inline-style">Playground
+snippet</a>.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ColorClass</span> <span class="o">=</span> <span class="nx">Quill</span><span class="p">.</span><span class="kr">import</span><span class="p">(</span><span class="s1">&#39;attributors/class/color&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">SizeStyle</span> <span class="o">=</span> <span class="nx">Quill</span><span class="p">.</span><span class="kr">import</span><span class="p">(</span><span class="s1">&#39;attributors/style/size&#39;</span><span class="p">);</span>
+<span class="nx">Quill</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">ColorClass</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">Quill</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">SizeStyle</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="c1">// Initialize as you would normally</span>
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">},</span>
+  <span class="nx">theme</span><span class="o">:</span> <span class="s1">&#39;snow&#39;</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="customizing-attributors">
+<h3>Customizing Attributors<a class="headerlink" href="#customizing-attributors" title="永久链接至标题">¶</a></h3>
+<p>In addition to choosing the particular Attributor, you can also
+customize existing ones. Here is an example of the font whitelist to add
+additional fonts.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">FontAttributor</span> <span class="o">=</span> <span class="nx">Quill</span><span class="p">.</span><span class="kr">import</span><span class="p">(</span><span class="s1">&#39;attributors/class/font&#39;</span><span class="p">);</span>
+<span class="nx">FontAttributor</span><span class="p">.</span><span class="nx">whitelist</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;sofia&#39;</span><span class="p">,</span> <span class="s1">&#39;slabo&#39;</span><span class="p">,</span> <span class="s1">&#39;roboto&#39;</span><span class="p">,</span> <span class="s1">&#39;inconsolata&#39;</span><span class="p">,</span> <span class="s1">&#39;ubuntu&#39;</span>
+<span class="p">];</span>
+<span class="nx">Quill</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">FontAttributor</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Note you still need to add styling for these classes into your CSS
+files.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://fonts.googleapis.com/css?family=Roboto&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="p">.</span><span class="nc">ql-font-roboto</span> <span class="p">{</span>
+  <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;Roboto&#39;</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="customizing-blots">
+<h3>Customizing Blots<a class="headerlink" href="#customizing-blots" title="永久链接至标题">¶</a></h3>
+<p>Formats represented by Blots can also be customized. Here is how you
+would change the DOM Node used to represent bold formatting.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">Bold</span> <span class="o">=</span> <span class="nx">Quill</span><span class="p">.</span><span class="kr">import</span><span class="p">(</span><span class="s1">&#39;formats/bold&#39;</span><span class="p">);</span>
+<span class="nx">Bold</span><span class="p">.</span><span class="nx">tagName</span> <span class="o">=</span> <span class="s1">&#39;B&#39;</span><span class="p">;</span>   <span class="c1">// Quill uses &lt;strong&gt; by default</span>
+<span class="nx">Quill</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">Bold</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="c1">// Initialize as you would normally</span>
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">},</span>
+  <span class="nx">theme</span><span class="o">:</span> <span class="s1">&#39;snow&#39;</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="extending-blots">
+<h3>Extending Blots<a class="headerlink" href="#extending-blots" title="永久链接至标题">¶</a></h3>
+<p>You can also extend existing formats. Here is a quick ES6 implementation
+of a list item that does not permit formatting its contents. Code blocks
+are implemented in exactly this way.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">ListItem</span> <span class="o">=</span> <span class="nx">Quill</span><span class="p">.</span><span class="kr">import</span><span class="p">(</span><span class="s1">&#39;formats/list/item&#39;</span><span class="p">);</span>
+
+<span class="kr">class</span> <span class="nx">PlainListItem</span> <span class="kr">extends</span> <span class="nx">ListItem</span> <span class="p">{</span>
+  <span class="nx">formatAt</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="nx">length</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">name</span> <span class="o">===</span> <span class="s1">&#39;list&#39;</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Allow changing or removing list format</span>
+      <span class="kr">super</span><span class="p">.</span><span class="nx">formatAt</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="c1">// Otherwise ignore</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">Quill</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">PlainListItem</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="c1">// Initialize as you would normally</span>
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">},</span>
+  <span class="nx">theme</span><span class="o">:</span> <span class="s1">&#39;snow&#39;</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>You can view a list of Blots and Attributors available by calling
+<code class="docutils literal notranslate"><span class="pre">console.log(Quill.imports);</span></code>. Direct modification of this object is
+not supported. Use <code class="docutils literal notranslate"><span class="pre">`Quill.register</span></code> &lt;/docs/api/#register&gt;`__ instead.</p>
+<p>A complete reference on Parchment, Blots and Attributors can be found on
+Parchment’s own <a class="reference external" href="https://github.com/quilljs/parchment/">README</a>. For
+an in-depth walkthrough, take a look at <a class="reference external" href="/guides/cloning-medium-with-parchment/">Cloning Medium with
+Parchment</a>, which starts with
+Quill understanding just plain text, to adding all of the formats
+<a class="reference external" href="https://medium.com/">Medium</a> supports. Most of the time, you will
+not have to build formats from scratch since most are already
+implemented in Quill, but it is still useful to understanding how Quill
+works at this deeper level.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="designing-the-delta-format.html" class="btn btn-neutral float-right" title="与其他富文本编辑器相比" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/guides/upgrading-to-1-0.rst:2
+msgid "upgrading to 1.0"
+msgstr "升级到1.0"
+
+#: ../../source/guides/upgrading-to-1-0.rst:4
+msgid ""
+"Quill 1.0 introduces major changes aimed at greater ability to customize "
+"Quill. Interfaces stayed the same where possible and this guide helps "
+"bridge the gap otherwise."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:8
+msgid ""
+"To realize the full benefits of 1.0, it is encouraged to take a fresh "
+"view of Quill 1.0 and revisit even basic topics on this documentation "
+"site. Often, you will find that even though you could do things the old "
+"way, there is a better new way."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:14
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../source/guides/upgrading-to-1-0.rst:16
+msgid ""
+"``styles`` *removed* - Previous versions of Quill allowed custom CSS to "
+"be injected through ``<style>`` additions. This option has been removed "
+"due to `Content Security Policy "
+"<https://developers.google.com/web/fundamentals/security/csp/>`__. "
+"Instead you should use external CSS directly."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:23
+msgid "API"
+msgstr "API"
+
+#: ../../source/guides/upgrading-to-1-0.rst:25
+msgid ""
+"``getHTML`` *removed* - Previous versions of Quill required the usage of "
+"class names to identify lines ``ql-line`` and an ``id`` attribute to "
+"identify particular lines. This is no longer a requirement and a custom "
+"API call no longer adds any value on top of the DOM’s existing innerHTML."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:31
+msgid ""
+"``setHTML`` *removed* - Quill, like many editors with a data layer on top"
+" of the DOM, does not allow arbitrary changes to the underlying HTML. "
+"Previously Quill would detect an illegal state and correct it, but this "
+"makes the naming setHTML disingenuous and the reasoning behind the "
+"correction is unintuitive. Most use cases of ``setHTML`` can be suitably "
+"met or improved (since cursor preservation is much better) with the new "
+"```pasteHTML`` </docs/api/#pastehtml>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:39
+msgid ""
+"``addModule`` *removed* - Modules are now initialized based off of the "
+"initial Quill `configuration </docs/configuration/>`__, instead of having"
+" a separate function."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:43
+msgid ""
+"``onModuleLoad`` *removed* - Module loading is handled by Themes and "
+"similar behavior should be achieved by extending the theme."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:46
+msgid ""
+"``destroy`` *removed* - No longer necessary as Quill no longer keeps "
+"references to editor instances, allowing Javascript garbage collectors to"
+" work as expected."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:50
+msgid ""
+"``prepareFormat`` *renamed* - A new API ```format`` "
+"</docs/api/#format>`__ now provides formatting functionality for all "
+"selection states, including those previously covered by "
+"``prepareFormat``."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:55
+msgid ""
+"For consistency, all positions are now index and length based versus the "
+"start and end representation sometimes used by ```deleteText`` "
+"</docs/api/#deletetext>`__, ```formatText`` </docs/api/#formattext>`__, "
+"```formatLine`` </docs/api/#formatline>`__, and the Range object used by "
+"selection APIs such as on ```getSelection`` </docs/api/#getselection>`__,"
+" ```setSelection`` </docs/api/#setselection>`__, and the ```selection-"
+"change`` </docs/api/#selection-change>`__ event."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:65
+msgid ""
+"``registerModule`` *renamed* - A new API ```register`` "
+"</docs/api/#register>`__ is now used to registers all modules, themes and"
+" formats."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:69
+msgid "``require`` *renamed* - Renamed to ``import`` for consistency with ES6."
+msgstr "``require`` *renamed* - Renamed to ``import`` for consistency with ES6."
+
+#: ../../source/guides/upgrading-to-1-0.rst:72
+msgid ""
+"``addContainer`` *modified* - The `second parameter "
+"</docs/api/#addcontainer>`__ is changed to allow insertion before any "
+"container, not just the editor. Thus instead of an optional boolean, it "
+"now an optional HTMLElement."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:78
+msgid "Modules"
+msgstr "Modules"
+
+#: ../../source/guides/upgrading-to-1-0.rst:80
+msgid ""
+"Toolbars, when initialized with a custom HTML element, requires buttons "
+"to be actual HTMLButtonElements. Previously it allowed any element with "
+"an appropriate class name."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:84
+msgid ""
+"The `Snow </docs/themes/#snow/>`__ toolbar no longer adds or uses ``ql-"
+"format-separator`` and renamed ``ql-format-group`` to ``ql-formats``."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:88
+msgid ""
+"The authorship and multi-cursor modules have been temporarily removed. "
+"Similar functionality will be re-added at a later time, either separately"
+" or in a bundled collaboration module."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:92
+msgid "UndoManager has been renamed to `History </docs/modules/history/>`__."
+msgstr "UndoManager has been renamed to `History </docs/modules/history/>`__."
+
+#: ../../source/guides/upgrading-to-1-0.rst:94
+msgid ""
+"PasteManager has been renamed to `Clipboard "
+"</docs/modules/clipboard/>`__, and will provide custom copy and paste "
+"behavior."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:98
+msgid ""
+"LinkTooltip has been moved to be theme specific. With the addition of "
+"`Bubble </docs/themes/#bubble>`__ and videos and `formulas "
+"</docs/modules/formula/>`__, it no longer made sense to open a separate "
+"tooltip for links as its own general UI element. The old tooltip behavior"
+" is still present in Snow, but is now specific to that theme."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:105
+msgid ""
+"ImageTooltip has been removed in favor of a simpler and more native flow."
+" The image button now opens the OS file picker and the selected image "
+"file is inserted into the editor as a base64 image."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:110
+msgid "Deltas"
+msgstr "Deltas"
+
+#: ../../source/guides/upgrading-to-1-0.rst:112
+msgid ""
+"The default `Delta </guides/working-with-deltas/>`__ representation of "
+"some content has changed. In all cases the old format is still supported "
+"in methods using Deltas as in input, such as ``setContents`` and "
+"``updateContents``. But outputted Deltas, such as the ones reported by "
+"``text-change`` and ``getContents`` will be in the new form. Since "
+"`Parchment <https://github.com/quilljs/parchment>`__ now allows custom "
+"content and formats, it is possible to customize these Delta "
+"representations entirely."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:160
+msgid "Defaults"
+msgstr "Defaults"
+
+#: ../../source/guides/upgrading-to-1-0.rst:162
+msgid ""
+"Quill previously used inline styles to implement font family and size. A "
+"class implementation is now default. To revert this, see `Content and "
+"Formatting </guides/how-to-customize-quill/#content-and-formatting>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:168
+msgid "Browsers"
+msgstr "Browsers"
+
+#: ../../source/guides/upgrading-to-1-0.rst:170
+msgid ""
+"Quill now follows other major open source libraries in supporting the "
+"last two versions of major browser releases. Support for IE9 and IE10 "
+"have been dropped, and MS Edge has been added."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:174
+msgid ""
+"Android browser support now applies to Chrome on Android, instead of the "
+"stock Android Browser, which Google has phased out support for."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:178
+msgid "Improvements"
+msgstr "Improvements"
+
+#: ../../source/guides/upgrading-to-1-0.rst:180
+msgid ""
+"Ability to add new formats and content, or modify existing ones with "
+"`Parchment <https://github.com/quilljs/parchment/>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:183
+msgid ""
+"Added support for nested list, superscript, subscript, inline code, code "
+"block, header, blockquote, text direction, video and forumla support."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:187
+msgid "Ability to format with classes instead of inline styles."
+msgstr "Ability to format with classes instead of inline styles."
+
+#: ../../source/guides/upgrading-to-1-0.rst:189
+msgid "New tooltip based theme called `Bubble </docs/themes/#bubble/>`__."
+msgstr "New tooltip based theme called `Bubble </docs/themes/#bubble/>`__."
+
+#: ../../source/guides/upgrading-to-1-0.rst:191
+msgid ""
+"Improved `Toolbar </docs/modules/toolbar/>`__ initialization with format "
+"arrays and customization with custom values."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:194
+msgid ""
+"Toolbar icons now use SVGs instead of inline PNGs allowing freedom to "
+"resize icons while retaining clarity. CSS can now also be used to easily "
+"change the active state color instead of the default #06c blue."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:199
+msgid ""
+"Improved ability to customize interpretation of pastes in `Clipboard "
+"</docs/modules/clipboard/>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:202
+msgid ""
+"Improved ability to customize `keyboard handlers "
+"</docs/modules/keyboard/>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:205
+msgid "A placeholder configuration option."
+msgstr "A placeholder configuration option."
+
+#: ../../source/guides/upgrading-to-1-0.rst:207
+msgid "Editable `syntax highlighted code </docs/modules/syntax/>`__ block."
+msgstr "Editable `syntax highlighted code </docs/modules/syntax/>`__ block."
+
+#: ../../source/guides/upgrading-to-1-0.rst:209
+msgid "Several new `APIs </docs/api/>`__."
+msgstr "Several new `APIs </docs/api/>`__."
+
+#: ../../source/guides/upgrading-to-1-0.rst:211
+msgid "Many, many bug fixes."
+msgstr "Many, many bug fixes."
+

@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:2
+msgid "2014-08-14 building a custom module"
+msgstr "2014年8月14日建立一个自定义模块"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:4
+msgid ""
+"*Note: An updated guide for 1.0 and ES6 is available*\\ `here "
+"</guides/building-a-custom-module/>`__\\ *.*"
+msgstr ""
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:7
+msgid ""
+"Quill’s core strength as an editor is its rich API and powerful "
+"customization capabilities. One of the best ways to customize Quill is "
+"with a module. A module is a simple way to augment Quill’s functionality."
+" For the purpose of this guide, we will walk through one way to build a "
+"word counter module, a commonly found feature in many word processors."
+msgstr ""
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:15
+msgid "Counting Words"
+msgstr "Counting Words"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:17
+msgid ""
+"At its core a word counter simply counts the number of words in the "
+"editor and displays this value in some UI. Thus we need to:"
+msgstr ""
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:20
+msgid "Listen on text changes in Quill."
+msgstr "Listen on text changes in Quill."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:21
+msgid "Count the number of words."
+msgstr "Count the number of words."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:22
+msgid "Display this value."
+msgstr "Display this value."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:24
+msgid "Let’s jump straight in with a complete example!"
+msgstr "Let’s jump straight in with a complete example!"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:54
+msgid ""
+"That’s all it takes to add a custom module to Quill! A function can be "
+"`registered </docs/api/#quillregistermodule/>`__ as a module and it will "
+"be passed the corresponding Quill editor object along with any options."
+msgstr ""
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:59
+msgid "Using Options"
+msgstr "Using Options"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:61
+msgid ""
+"Modules are passed an options object that can be used to fine tune the "
+"desired behavior. We can use this to accept a selector for the counter "
+"container instead of a hard-coded string. Let’s also customize the "
+"counter to either count words or characters:"
+msgstr ""
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:94
+msgid "Constructors"
+msgstr "Constructors"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:96
+msgid ""
+"Since any function can be registered as a Quill module, we could have "
+"implemented our counter as a constructor. This allows us to access and "
+"utilize the module directly."
+msgstr ""
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:138
+msgid "Wrapping It All Up"
+msgstr "Wrapping It All Up"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:140
+msgid "Now let’s polish off the module and fix a few pesky bugs."
+msgstr "Now let’s polish off the module and fix a few pesky bugs."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:184
+msgid ""
+"That’s all there is to it! Stay tuned for more guides on common types of "
+"modules you can build."
+msgstr ""
+

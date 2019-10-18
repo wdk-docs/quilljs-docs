@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:2
+msgid "2016-08-18 quill 1.0 release candidate released"
+msgstr "2016-08-18 quill 1.0 release candidate released"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:4
+msgid "Today Quill enters its highly anticipated 1.0 release candidacy. Through the 11 beta releases, over 300 reported bugs were fixed, and almost 1000 commits were made. **Thank you to all contributors who pitched in, in ways small and large, isolated and numerous, either reporting issues, committing code, or otherwise helping out the community!**"
+msgstr "Today Quill enters its highly anticipated 1.0 release candidacy. Through the 11 beta releases, over 300 reported bugs were fixed, and almost 1000 commits were made. **Thank you to all contributors who pitched in, in ways small and large, isolated and numerous, either reporting issues, committing code, or otherwise helping out the community!**"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:10
+msgid "The `API </docs/api/>`__ should now be considered stable, with only backwards compatible bug fixes to look forward to. No additional new features are planned until after the official 1.0 release."
+msgstr "The `API </docs/api/>`__ should now be considered stable, with only backwards compatible bug fixes to look forward to. No additional new features are planned until after the official 1.0 release."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:18
+msgid "You can now access the release candidate from npm:"
+msgstr "You can now access the release candidate from npm:"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:24
+msgid "As always our CDN is also available:"
+msgstr "As always our CDN is also available:"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:34
+msgid "If you are just joining from the 0.20.1 or older, take a look at the updated `Upgrading to 1.0 Guide </guides/upgrading-to-1-0/>`__. If you prefer to stay with 0.20, the `documentation </0.20/>`__ will remain available."
+msgstr "If you are just joining from the 0.20.1 or older, take a look at the updated `Upgrading to 1.0 Guide </guides/upgrading-to-1-0/>`__. If you prefer to stay with 0.20, the `documentation </0.20/>`__ will remain available."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:40
+msgid "Many New Formats"
+msgstr "Many New Formats"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:42
+msgid "Quill 1.0 adds several new formats and improves on existing ones. Superscript, subscript, inline code and blocks, headers, blockquotes, text direction, and video support have all been added. List can also now be nested and formats previously implemented with just inline styles can now use classes `instead </playground/#class-vs-inline-style>`__."
+msgstr "Quill 1.0 adds several new formats and improves on existing ones. Superscript, subscript, inline code and blocks, headers, blockquotes, text direction, and video support have all been added. List can also now be nested and formats previously implemented with just inline styles can now use classes `instead </playground/#class-vs-inline-style>`__."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:48
+msgid "Syntax highlighted `code </docs/modules/syntax/>`__ and LaTeX `formulas </docs/modules/formula/>`__ can also be added with an optional module."
+msgstr "Syntax highlighted `code </docs/modules/syntax/>`__ and LaTeX `formulas </docs/modules/formula/>`__ can also be added with an optional module."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:53
+msgid "Brand New Theme"
+msgstr "Brand New Theme"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:55
+msgid "An entirely new theme `Bubble </docs/themes/#bubble>`__ has also been added, based on a floating toolbar."
+msgstr "An entirely new theme `Bubble </docs/themes/#bubble>`__ has also been added, based on a floating toolbar."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:61
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:71
+msgid "Color Icon"
+msgstr "Color Icon"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:63
+msgid "Both Snow and Bubble now also use SVG icons to sharply scale to whatever size your application demands. The icons are implemented to be added to the DOM directly so you can customize the active color and enable less obvious UI enhancements."
+msgstr "Both Snow and Bubble now also use SVG icons to sharply scale to whatever size your application demands. The icons are implemented to be added to the DOM directly so you can customize the active color and enable less obvious UI enhancements."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:74
+msgid "More Configurable Modules"
+msgstr "More Configurable Modules"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:76
+msgid "Existing modules have much more customization capabilities in 1.0, with new configurations and APIs. Most notably:"
+msgstr "Existing modules have much more customization capabilities in 1.0, with new configurations and APIs. Most notably:"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:79
+msgid "`Clipboard </docs/modules/clipboard/>`__ introduces the ability to customize interpretation of pasted content before it reaches the editor."
+msgstr "`Clipboard </docs/modules/clipboard/>`__ introduces the ability to customize interpretation of pasted content before it reaches the editor."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:82
+msgid "`Keyboard </docs/modules/keyboard/>`__ adds a context option to give much more granular control over when bindings are triggered."
+msgstr "`Keyboard </docs/modules/keyboard/>`__ adds a context option to give much more granular control over when bindings are triggered."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:84
+msgid "`Toolbar </docs/modules/toolbar/>`__ can be much more easily configured with just an array, and now exposes options to overwrite its handler."
+msgstr "`Toolbar </docs/modules/toolbar/>`__ can be much more easily configured with just an array, and now exposes options to overwrite its handler."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:89
+msgid "Parchment"
+msgstr "Parchment"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:91
+msgid "`Parchment <https://github.com/quilljs/parchment/>`__ also enters its 1.0 release candidacy today. For Quill, not only did Parchment enable the addition the numerous formats, it enables a path to the new generation of content creation. Text today is written to be rendered on the web, offering a much richer canvas than a printed piece of paper. Content can now be live, interactive, or even collaborative."
+msgstr "`Parchment <https://github.com/quilljs/parchment/>`__ also enters its 1.0 release candidacy today. For Quill, not only did Parchment enable the addition the numerous formats, it enables a path to the new generation of content creation. Text today is written to be rendered on the web, offering a much richer canvas than a printed piece of paper. Content can now be live, interactive, or even collaborative."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:98
+msgid "Users have already been using Quill in beta to successfully support these editing experiences. This is possible in part due to the `API </docs/api/>`__ Quill was designed with at inception, but now Parchment takes that further by providing a powerful abstraction layer over the DOM. This enables the addition of new content and formats that cannot exist on paper or even anticipated by Quill’s developers."
+msgstr "Users have already been using Quill in beta to successfully support these editing experiences. This is possible in part due to the `API </docs/api/>`__ Quill was designed with at inception, but now Parchment takes that further by providing a powerful abstraction layer over the DOM. This enables the addition of new content and formats that cannot exist on paper or even anticipated by Quill’s developers."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:105
+msgid "Of course, Quill still ships with ready to go defaults, so you can integrate and use it with just a few lines of code—you never have to do more if your product needs never demands it."
+msgstr "Of course, Quill still ships with ready to go defaults, so you can integrate and use it with just a few lines of code—you never have to do more if your product needs never demands it."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:109
+msgid "Jump to the `demo </>`__ to see Quill’s new features or try out some code in the `Interactive Playground </playground/>`__!"
+msgstr "Jump to the `demo </>`__ to see Quill’s new features or try out some code in the `Interactive Playground </playground/>`__!"
+

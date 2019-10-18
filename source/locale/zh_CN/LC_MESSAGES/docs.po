@@ -1,0 +1,1768 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:01+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/api/contents.rst:2
+msgid "Content"
+msgstr "Content"
+
+#: ../../source/docs/api/contents.rst:5
+msgid "deleteText"
+msgstr "deleteText"
+
+#: ../../source/docs/api/contents.rst:7
+msgid ""
+"Deletes text from the editor, returning a `Delta </guides/working-with-"
+"deltas/>`__ representing the change. `Source </docs/api/#events>`__ may "
+"be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the "
+"``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are"
+" ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:13 ../../source/docs/api/contents.rst:31
+#: ../../source/docs/api/contents.rst:50 ../../source/docs/api/contents.rst:74
+#: ../../source/docs/api/contents.rst:95 ../../source/docs/api/contents.rst:117
+#: ../../source/docs/api/contents.rst:148
+#: ../../source/docs/api/contents.rst:174
+#: ../../source/docs/api/contents.rst:196 ../../source/docs/api/editor.rst:9
+#: ../../source/docs/api/editor.rst:33 ../../source/docs/api/editor.rst:51
+#: ../../source/docs/api/editor.rst:69 ../../source/docs/api/editor.rst:90
+#: ../../source/docs/api/events.rst:125 ../../source/docs/api/events.rst:147
+#: ../../source/docs/api/events.rst:166 ../../source/docs/api/extension.rst:11
+#: ../../source/docs/api/extension.rst:31
+#: ../../source/docs/api/extension.rst:59
+#: ../../source/docs/api/extension.rst:96
+#: ../../source/docs/api/extension.rst:114
+#: ../../source/docs/api/extension.rst:137
+#: ../../source/docs/api/formatting.rst:15
+#: ../../source/docs/api/formatting.rst:40
+#: ../../source/docs/api/formatting.rst:72
+#: ../../source/docs/api/formatting.rst:108
+#: ../../source/docs/api/formatting.rst:150 ../../source/docs/api/model.rst:13
+#: ../../source/docs/api/model.rst:37 ../../source/docs/api/model.rst:56
+#: ../../source/docs/api/model.rst:79 ../../source/docs/api/model.rst:100
+#: ../../source/docs/api/selection.rst:12
+#: ../../source/docs/api/selection.rst:32
+#: ../../source/docs/api/selection.rst:62
+#: ../../source/docs/modules/clipboard.rst:32
+#: ../../source/docs/modules/clipboard.rst:69
+#: ../../source/docs/modules/history.rst:65
+#: ../../source/docs/modules/history.rst:85
+#: ../../source/docs/modules/history.rst:102
+#: ../../source/docs/modules/history.rst:119
+msgid "**Methods**"
+msgstr "**Methods**"
+
+#: ../../source/docs/api/contents.rst:19 ../../source/docs/api/contents.rst:37
+#: ../../source/docs/api/contents.rst:56 ../../source/docs/api/contents.rst:80
+#: ../../source/docs/api/contents.rst:101
+#: ../../source/docs/api/contents.rst:127
+#: ../../source/docs/api/contents.rst:154
+#: ../../source/docs/api/contents.rst:180
+#: ../../source/docs/api/contents.rst:202 ../../source/docs/api/editor.rst:15
+#: ../../source/docs/api/editor.rst:39 ../../source/docs/api/editor.rst:57
+#: ../../source/docs/api/editor.rst:75 ../../source/docs/api/editor.rst:96
+#: ../../source/docs/api/events.rst:40 ../../source/docs/api/events.rst:75
+#: ../../source/docs/api/events.rst:106 ../../source/docs/api/events.rst:131
+#: ../../source/docs/api/events.rst:153 ../../source/docs/api/events.rst:172
+#: ../../source/docs/api/extension.rst:17
+#: ../../source/docs/api/extension.rst:37
+#: ../../source/docs/api/extension.rst:67
+#: ../../source/docs/api/extension.rst:103
+#: ../../source/docs/api/extension.rst:120
+#: ../../source/docs/api/extension.rst:143
+#: ../../source/docs/api/formatting.rst:21
+#: ../../source/docs/api/formatting.rst:50
+#: ../../source/docs/api/formatting.rst:82
+#: ../../source/docs/api/formatting.rst:115
+#: ../../source/docs/api/formatting.rst:156 ../../source/docs/api/model.rst:19
+#: ../../source/docs/api/model.rst:43 ../../source/docs/api/model.rst:62
+#: ../../source/docs/api/model.rst:85 ../../source/docs/api/model.rst:107
+#: ../../source/docs/api/selection.rst:19
+#: ../../source/docs/api/selection.rst:38
+#: ../../source/docs/api/selection.rst:70
+#: ../../source/docs/modules/clipboard.rst:39
+#: ../../source/docs/modules/clipboard.rst:76
+#: ../../source/docs/modules/history.rst:71
+#: ../../source/docs/modules/history.rst:91
+#: ../../source/docs/modules/history.rst:108
+#: ../../source/docs/modules/history.rst:125
+msgid "**Examples**"
+msgstr "**Examples**"
+
+#: ../../source/docs/api/contents.rst:26
+msgid "getContents"
+msgstr "getContents"
+
+#: ../../source/docs/api/contents.rst:28
+msgid ""
+"Retrieves contents of the editor, with formatting data, represented by a "
+"`Delta </docs/delta/>`__ object."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:44
+msgid "getLength"
+msgstr "getLength"
+
+#: ../../source/docs/api/contents.rst:46
+msgid ""
+"Retrieves the length of the editor contents. Note even when Quill is "
+"empty, there is still a blank line represented by ‘:raw-latex:`\\n`’, so "
+"``getLength`` will return 1."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:63
+msgid "getText"
+msgstr "getText"
+
+#: ../../source/docs/api/contents.rst:65
+msgid ""
+"Retrieves the string contents of the editor. Non-string content are "
+"omitted, so the returned string’s length may be shorter than the editor’s"
+" as returned by ```getLength`` <#getlength>`__. Note even when Quill is "
+"empty, there is still a blank line in the editor, so in these cases "
+"``getText`` will return ‘:raw-latex:`\\n`’."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:71
+msgid "The ``length`` parameter defaults to the length of the remaining document."
+msgstr "The ``length`` parameter defaults to the length of the remaining document."
+
+#: ../../source/docs/api/contents.rst:87
+msgid "insertEmbed"
+msgstr "insertEmbed"
+
+#: ../../source/docs/api/contents.rst:89
+msgid ""
+"Insert embedded content into the editor, returning a `Delta </guides"
+"/working-with-deltas/>`__ representing the change. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:108
+msgid "insertText"
+msgstr "insertText"
+
+#: ../../source/docs/api/contents.rst:110
+msgid ""
+"Inserts text into the editor, optionally with a specified format or "
+"multiple `formats </docs/formats/>`__. Returns a `Delta </guides/working-"
+"with-deltas/>`__ representing the change. `Source </docs/api/#events>`__ "
+"may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the "
+"``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are"
+" ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:139
+msgid "setContents"
+msgstr "setContents"
+
+#: ../../source/docs/api/contents.rst:141
+msgid ""
+"Overwrites editor with given contents. Contents should end with a "
+"`newline </docs/delta/#line-formatting>`__. Returns a Delta representing "
+"the change. This will be the same as the Delta passed in, if given Delta "
+"had no invalid operations. `Source </docs/api/#events>`__ may be "
+"``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` "
+"is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:165
+msgid "setText"
+msgstr "setText"
+
+#: ../../source/docs/api/contents.rst:167
+msgid ""
+"Sets contents of editor with given text, returing a `Delta </guides"
+"/working-with-deltas/>`__ representing the change. Note Quill documents "
+"must end with a newline so one will be added for you if omitted. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:187
+msgid "updateContents"
+msgstr "updateContents"
+
+#: ../../source/docs/api/contents.rst:189
+msgid ""
+"Applies Delta to editor contents, returing a `Delta </guides/working-"
+"with-deltas/>`__ representing the change. These Deltas will be the same "
+"if the Delta passed in had no invalid operations. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/editor.rst:2
+msgid "Editor"
+msgstr "Editor"
+
+#: ../../source/docs/api/editor.rst:5
+msgid "blur"
+msgstr "blur"
+
+#: ../../source/docs/api/editor.rst:7
+msgid "Removes focus from the editor."
+msgstr "Removes focus from the editor."
+
+#: ../../source/docs/api/editor.rst:22 ../../source/docs/api/extension.rst:127
+msgid "disable"
+msgstr "disable"
+
+#: ../../source/docs/api/editor.rst:24 ../../source/docs/api/extension.rst:129
+msgid "Shorthand for ```enable(false)`` <#enable>`__."
+msgstr "Shorthand for ```enable(false)`` <#enable>`__."
+
+#: ../../source/docs/api/editor.rst:27 ../../source/docs/api/extension.rst:132
+msgid "enable"
+msgstr "enable"
+
+#: ../../source/docs/api/editor.rst:29
+msgid ""
+"Set ability for user to edit, via input devices like the mouse or "
+"keyboard. Does not affect capabilities of API calls, when the ``source`` "
+"is ``\"api\"`` or \\`“silent”."
+msgstr ""
+
+#: ../../source/docs/api/editor.rst:47
+msgid "focus"
+msgstr "focus"
+
+#: ../../source/docs/api/editor.rst:49
+msgid "Focuses the editor and restores its last range."
+msgstr "Focuses the editor and restores its last range."
+
+#: ../../source/docs/api/editor.rst:64
+msgid "hasFocus"
+msgstr "hasFocus"
+
+#: ../../source/docs/api/editor.rst:66
+msgid ""
+"Checks if editor has focus. Note focus on toolbar, tooltips, does not "
+"count as the editor."
+msgstr ""
+
+#: ../../source/docs/api/editor.rst:82
+msgid "update"
+msgstr "update"
+
+#: ../../source/docs/api/editor.rst:84
+msgid ""
+"Synchronously check editor for user updates and fires events, if changes "
+"have occurred. Useful for collaborative use cases during conflict "
+"resolution requiring the latest up to date state. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:2
+msgid "Events"
+msgstr "Events"
+
+#: ../../source/docs/api/events.rst:5
+msgid "text-change"
+msgstr "text-change"
+
+#: ../../source/docs/api/events.rst:7
+msgid ""
+"Emitted when the contents of Quill have changed. Details of the change, "
+"representation of the editor contents before the change, along with the "
+"source of the change are provided. The source will be ``\"user\"`` if it "
+"originates from the users. For example:"
+msgstr ""
+
+#: ../../source/docs/api/events.rst:12
+msgid "User types into the editor"
+msgstr "User types into the editor"
+
+#: ../../source/docs/api/events.rst:13
+msgid "User formats text using the toolbar"
+msgstr "User formats text using the toolbar"
+
+#: ../../source/docs/api/events.rst:14
+msgid "User uses a hotkey to undo"
+msgstr "User uses a hotkey to undo"
+
+#: ../../source/docs/api/events.rst:15
+msgid "User uses OS spelling correction"
+msgstr "User uses OS spelling correction"
+
+#: ../../source/docs/api/events.rst:17
+msgid ""
+"Changes may occur through an API but as long as they originate from the "
+"user, the provided source should still be ``\"user\"``. For example, when"
+" a user clicks on the toolbar, technically the toolbar module calls a "
+"Quill API to effect the change. But source is still ``\"user\"`` since "
+"the origin of the change was the user’s click."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:23
+msgid ""
+"APIs causing text to change may also be called with a ``\"silent\"`` "
+"source, in which case ``text-change`` will not be emitted. This is not "
+"recommended as it will likely break the undo stack and other functions "
+"that rely on a full record of text changes."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:28
+msgid ""
+"Changes to text may cause changes to the selection (ex. typing advances "
+"the cursor), however during the ``text-change`` handler, the selection is"
+" not yet updated, and native browser behavior may place it in an "
+"inconsistent state. Use ```selection-change`` <#selection-change>`__ or "
+"```editor-change`` <#editor-change>`__ for reliable selection updates."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:34 ../../source/docs/api/events.rst:67
+#: ../../source/docs/api/events.rst:100
+msgid "**Callback Signature**"
+msgstr "**Callback Signature**"
+
+#: ../../source/docs/api/events.rst:53
+msgid "selection-change"
+msgstr "selection-change"
+
+#: ../../source/docs/api/events.rst:55
+msgid ""
+"Emitted when a user or API causes the selection to change, with a range "
+"representing the selection boundaries. A null range indicates selection "
+"loss (usually caused by loss of focus from the editor). You can also use "
+"this event as a focus change event by just checking if the emitted range "
+"is null or not."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:61
+msgid ""
+"APIs causing the selection to change may also be called with a "
+"``\"silent\"`` source, in which case ``selection-change`` will not be "
+"emitted. This is useful if ``selection-change`` is a side effect. For "
+"example, typing causes the selection to change but would be very noisy to"
+" also emit a ``selection-change`` event on every character."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:93
+msgid "editor-change"
+msgstr "editor-change"
+
+#: ../../source/docs/api/events.rst:95
+msgid ""
+"Emitted when either ``text-change`` or ``selection-change`` would be "
+"emitted, even when the source is ``\"silent\"``. The first parameter is "
+"the event name, either ``text-change`` or ``selection-change``, followed "
+"by the arguments normally passed to those respective handlers."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:119
+msgid "on"
+msgstr "on"
+
+#: ../../source/docs/api/events.rst:121
+msgid ""
+"Adds event handler. See `text-change <#text-change>`__ or `selection-"
+"change <#selection-change>`__ for more details on the events themselves."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:140
+msgid "once"
+msgstr "once"
+
+#: ../../source/docs/api/events.rst:142
+msgid ""
+"Adds handler for one emission of an event. See `text-change <#text-"
+"change>`__ or `selection-change <#selection-change>`__ for more details "
+"on the events themselves."
+msgstr ""
+
+#: ../../source/docs/api/events.rst:162
+msgid "off"
+msgstr "off"
+
+#: ../../source/docs/api/events.rst:164
+msgid "Removes event handler."
+msgstr "Removes event handler."
+
+#: ../../source/docs/api/extension.rst:2
+msgid "Extension"
+msgstr "Extension"
+
+#: ../../source/docs/api/extension.rst:5 ../../source/docs/configuration.rst:59
+msgid "debug"
+msgstr "debug"
+
+#: ../../source/docs/api/extension.rst:7
+msgid ""
+"Static method enabling logging messages at a given level: ``'error'``, "
+"``'warn'``, ``'log'``, or ``'info'``. Passing ``true`` is equivalent to "
+"passing ``'log'``. Passing ``false`` disables all messages."
+msgstr ""
+
+#: ../../source/docs/api/extension.rst:24
+msgid "import"
+msgstr "import"
+
+#: ../../source/docs/api/extension.rst:26
+msgid ""
+"Static method returning Quill library, format, module, or theme. In "
+"general the path should map exactly to Quill source code directory "
+"structure. Unless stated otherwise, modification of returned entities may"
+" break required Quill functionality and is strongly discouraged."
+msgstr ""
+
+#: ../../source/docs/api/extension.rst:49
+msgid "register"
+msgstr "register"
+
+#: ../../source/docs/api/extension.rst:51
+msgid ""
+"Registers a module, theme, or format(s), making them available to be "
+"added to an editor. Can later be retrieved with ```Quill.import`` "
+"</docs/api/#import>`__. Use the path prefix of ``'formats/'``, "
+"``'modules/'``, or ``'themes/'`` for registering formats, modules or "
+"themes, respectively. For formats specifically there is a shortand to "
+"just pass in the format directly and the path will be autogenerated. Will"
+" overwrite existing definitions with the same path."
+msgstr ""
+
+#: ../../source/docs/api/extension.rst:89
+msgid "addContainer"
+msgstr "addContainer"
+
+#: ../../source/docs/api/extension.rst:91
+msgid ""
+"Adds and returns a container element inside the Quill container, sibling "
+"to the editor itself. By convention, Quill modules should have a class "
+"name prefixed with ``ql-``. Optionally include a refNode where container "
+"should be inserted before."
+msgstr ""
+
+#: ../../source/docs/api/extension.rst:110
+msgid "getModule"
+msgstr "getModule"
+
+#: ../../source/docs/api/extension.rst:112
+msgid "Retrieves a module that has been added to the editor."
+msgstr "Retrieves a module that has been added to the editor."
+
+#: ../../source/docs/api/extension.rst:134
+msgid ""
+"Set ability for user to edit, via input devices like the mouse or "
+"keyboard. Does not affect capabilities of API calls."
+msgstr ""
+
+#: ../../source/docs/api/formatting.rst:2
+msgid "Formatting"
+msgstr "Formatting"
+
+#: ../../source/docs/api/formatting.rst:5
+#: ../../source/docs/modules/keyboard.rst:122
+msgid "format"
+msgstr "format"
+
+#: ../../source/docs/api/formatting.rst:7
+msgid ""
+"Format text at user’s current selection, returning a `Delta </guides"
+"/working-with-deltas/>`__ representing the change. If the user’s "
+"selection length is 0, i.e. it is a cursor, the format will be set "
+"active, so the next character the user types will have that formatting. "
+"`Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/formatting.rst:29
+msgid "formatLine"
+msgstr "formatLine"
+
+#: ../../source/docs/api/formatting.rst:31
+msgid ""
+"Formats all lines in given range, returning a `Delta </guides/working-"
+"with-deltas/>`__ representing the change. See `formats "
+"</docs/formats/>`__ for a list of available formats. Has no effect when "
+"called with inline formats. To remove formatting, pass ``false`` for the "
+"value argument. The user’s selection may not be preserved. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/formatting.rst:60
+msgid "formatText"
+msgstr "formatText"
+
+#: ../../source/docs/api/formatting.rst:62
+msgid ""
+"Formats text in the editor, returning a `Delta </guides/working-with-"
+"deltas/>`__ representing the change. For line level formats, such as text"
+" alignment, target the newline character or use the ```formatLine`` "
+"<#formatline>`__ helper. See `formats </docs/formats/>`__ for a list of "
+"available formats. To remove formatting, pass ``false`` for the value "
+"argument. The user’s selection may not be preserved. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/formatting.rst:98
+msgid "getFormat"
+msgstr "getFormat"
+
+#: ../../source/docs/api/formatting.rst:100
+msgid ""
+"Retrieves common formatting of the text in the given range. For a format "
+"to be reported, all text within the range must have a truthy value. If "
+"there are different truthy values, an array with all truthy values will "
+"be reported. If no range is supplied, the user’s current selection range "
+"is used. May be used to show which formats have been set on the cursor. "
+"If called with no arguments, the user’s current selection range will be "
+"used."
+msgstr ""
+
+#: ../../source/docs/api/formatting.rst:140
+msgid "removeFormat"
+msgstr "removeFormat"
+
+#: ../../source/docs/api/formatting.rst:142
+msgid ""
+"Removes all formatting and embeds within given range, returning a `Delta "
+"</guides/working-with-deltas/>`__ representing the change. Line "
+"formatting will be removed if any part of the line is included in the "
+"range. The user’s selection may not be preserved. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/index.rst:2
+msgid "api"
+msgstr "api"
+
+#: ../../source/docs/api/model.rst:2
+msgid "Model"
+msgstr "Model"
+
+#: ../../source/docs/api/model.rst:5
+msgid "find experimental"
+msgstr "find experimental"
+
+#: ../../source/docs/api/model.rst:7
+msgid ""
+"Static method returning the Quill or `Blot "
+"<https://github.com/quilljs/parchment>`__ instance for the given DOM "
+"node. In the latter case, passing in true for the ``bubble`` parameter "
+"will search up the given DOM’s ancestors until it finds a corresponding "
+"`Blot <https://github.com/quilljs/parchment>`__."
+msgstr ""
+
+#: ../../source/docs/api/model.rst:32
+msgid "getIndex experimental"
+msgstr "getIndex experimental"
+
+#: ../../source/docs/api/model.rst:34
+msgid ""
+"Returns the distance between the beginning of document to the occurrence "
+"of the given `Blot <https://github.com/quilljs/parchment>`__."
+msgstr ""
+
+#: ../../source/docs/api/model.rst:51
+msgid "getLeaf experimental"
+msgstr "getLeaf experimental"
+
+#: ../../source/docs/api/model.rst:53
+msgid ""
+"Returns the leaf `Blot <https://github.com/quilljs/parchment>`__ at the "
+"specified index within the document."
+msgstr ""
+
+#: ../../source/docs/api/model.rst:74
+msgid "getLine experimental"
+msgstr "getLine experimental"
+
+#: ../../source/docs/api/model.rst:76
+msgid ""
+"Returns the line `Blot <https://github.com/quilljs/parchment>`__ at the "
+"specified index within the document."
+msgstr ""
+
+#: ../../source/docs/api/model.rst:96
+msgid "getLines experimental"
+msgstr "getLines experimental"
+
+#: ../../source/docs/api/model.rst:98
+msgid "Returns the lines contained within the specified location."
+msgstr "Returns the lines contained within the specified location."
+
+#: ../../source/docs/api/selection.rst:2
+msgid "Selection"
+msgstr "Selection"
+
+#: ../../source/docs/api/selection.rst:5
+msgid "getBounds"
+msgstr "getBounds"
+
+#: ../../source/docs/api/selection.rst:7
+msgid ""
+"Retrieves the pixel position (relative to the editor container) and "
+"dimensions of a selection at a given location. The user’s current "
+"selection need not be at that index. Useful for calculating where to "
+"place tooltips."
+msgstr ""
+
+#: ../../source/docs/api/selection.rst:27
+msgid "getSelection"
+msgstr "getSelection"
+
+#: ../../source/docs/api/selection.rst:29
+msgid ""
+"Retrieves the user’s selection range, optionally to focus the editor "
+"first. Otherwise ``null`` may be returned if editor does not have focus."
+msgstr ""
+
+#: ../../source/docs/api/selection.rst:55
+msgid "setSelection"
+msgstr "setSelection"
+
+#: ../../source/docs/api/selection.rst:57
+msgid ""
+"Sets user selection to given range, which will also focus the editor. "
+"Providing ``null`` as the selection range will blur the editor. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:2
+msgid "configure"
+msgstr "configure"
+
+#: ../../source/docs/configuration.rst:4
+msgid ""
+"Quill allows several ways to customize it to suit your needs. This "
+"section is dedicated to tweaking existing functionality. See the `Modules"
+" </docs/modules/>`__ section for adding new functionality and the `Themes"
+" </docs/themes/>`__ section for styling."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:10
+#: ../../source/docs/modules/toolbar.rst:48
+msgid "Container"
+msgstr "Container"
+
+#: ../../source/docs/configuration.rst:12
+msgid ""
+"Quill requires a container where the editor will be appended. You can "
+"pass in either a CSS selector or a DOM object."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:30
+msgid "Options"
+msgstr "Options"
+
+#: ../../source/docs/configuration.rst:32
+msgid "To configure Quill, pass in an options object:"
+msgstr "To configure Quill, pass in an options object:"
+
+#: ../../source/docs/configuration.rst:47
+msgid "The following keys are recognized:"
+msgstr "The following keys are recognized:"
+
+#: ../../source/docs/configuration.rst:50
+msgid "bounds"
+msgstr "bounds"
+
+#: ../../source/docs/configuration.rst:52
+msgid "Default: ``document.body``"
+msgstr "Default: ``document.body``"
+
+#: ../../source/docs/configuration.rst:54
+msgid ""
+"DOM Element or a CSS selector for a DOM Element, within which the "
+"editor’s ui elements (i.e. tooltips, etc.) should be confined. Currently,"
+" it only considers left and right boundaries."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:61
+msgid "Default: ``warn``"
+msgstr "Default: ``warn``"
+
+#: ../../source/docs/configuration.rst:63
+msgid ""
+"Shortcut for `debug </docs/api/#debug>`__. Note ``debug`` is a static "
+"method and will affect other instances of Quill editors on the page. Only"
+" warning and error messages are enabled by default."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:68 ../../source/docs/formats.rst:2
+msgid "formats"
+msgstr "formats"
+
+#: ../../source/docs/configuration.rst:70
+msgid "Default: All formats"
+msgstr "Default: All formats"
+
+#: ../../source/docs/configuration.rst:72
+msgid ""
+"Whitelist of formats to allow in the editor. See `Formats "
+"</docs/formats/>`__ for a complete list."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:76 ../../source/docs/modules.rst:2
+#: ../../source/docs/modules/index.rst:2
+msgid "modules"
+msgstr "modules"
+
+#: ../../source/docs/configuration.rst:78
+msgid ""
+"Collection of modules to include and respective options. See `Modules "
+"</docs/modules/>`__ for more information."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:82
+msgid "placeholder"
+msgstr "placeholder"
+
+#: ../../source/docs/configuration.rst:84
+msgid "Default: None"
+msgstr "Default: None"
+
+#: ../../source/docs/configuration.rst:86
+msgid "Placeholder text to show when editor is empty."
+msgstr "Placeholder text to show when editor is empty."
+
+#: ../../source/docs/configuration.rst:89
+msgid "readOnly"
+msgstr "readOnly"
+
+#: ../../source/docs/configuration.rst:91
+#: ../../source/docs/modules/history.rst:34
+msgid "Default: ``false``"
+msgstr "Default: ``false``"
+
+#: ../../source/docs/configuration.rst:93
+msgid "Whether to instantiate the editor to read-only mode."
+msgstr "Whether to instantiate the editor to read-only mode."
+
+#: ../../source/docs/configuration.rst:96
+msgid "scrollingContainer"
+msgstr "scrollingContainer"
+
+#: ../../source/docs/configuration.rst:98
+msgid "Default: ``null``"
+msgstr "Default: ``null``"
+
+#: ../../source/docs/configuration.rst:100
+msgid ""
+"DOM Element or a CSS selector for a DOM Element, specifying which "
+"container has the scrollbars (i.e. ``overflow-y: auto``), if is has been "
+"changed from the default ``ql-editor`` with custom CSS. Necessary to fix "
+"scroll jumping bugs when Quill is set to `auto grow "
+"</playground/#autogrow>`__ its height, and another ancestor container is "
+"responsible from the scrolling."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:108
+msgid "theme"
+msgstr "theme"
+
+#: ../../source/docs/configuration.rst:110
+msgid ""
+"Name of theme to use. The builtin options are “bubble” or “snow”. An "
+"invalid or falsy value will load a default minimal theme. Note the "
+"theme’s specific stylesheet still needs to be included manually. See "
+"`Themes </docs/themes/>`__ for more information."
+msgstr ""
+
+#: ../../source/docs/delta.rst:2
+msgid "delta"
+msgstr "delta"
+
+#: ../../source/docs/delta.rst:4
+msgid ""
+"Deltas are a simple, yet expressive format that can be used to describe "
+"Quill’s contents and changes. The format is a strict subset of JSON, is "
+"human readable, and easily parsible by machines. Deltas can describe any "
+"Quill document, includes all text and formatting information, without the"
+" ambiguity and complexity of HTML."
+msgstr ""
+
+#: ../../source/docs/delta.rst:10
+msgid ""
+"Don’t be confused by its name Delta—Deltas represents both documents and "
+"changes to documents. If you think of Deltas as the instructions from "
+"going from one document to another, the way Deltas represent a document "
+"is by expressing the instructions starting from an empty document."
+msgstr ""
+
+#: ../../source/docs/delta.rst:15
+msgid ""
+"Deltas are implemented as a separate `standalone library "
+"<https://github.com/quilljs/delta/>`__, allowing its use outside of "
+"Quill. It is suitable for `Operational Transform "
+"<https://en.wikipedia.org/wiki/Operational_transformation>`__ and can be "
+"used in realtime, Google Docs like applications. For a more in depth "
+"explanation behind Deltas, see `Designing the Delta Format </guides"
+"/designing-the-delta-format/>`__."
+msgstr ""
+
+#: ../../source/docs/delta.rst:23
+msgid ""
+"**Note:** It is not recommended to construct Deltas by hand—rather use "
+"the chainable ```insert()`` <https://github.com/quilljs/delta#insert>`__,"
+" ```delete()`` <https://github.com/quilljs/delta#delete>`__, and "
+"```retain()`` <https://github.com/quilljs/delta#retain>`__ methods to "
+"create new Deltas. You can use ```import()`` </docs/api/#import>`__ to "
+"access Delta from Quill."
+msgstr ""
+
+#: ../../source/docs/delta.rst:32
+msgid "Document"
+msgstr "Document"
+
+#: ../../source/docs/delta.rst:34
+msgid ""
+"The Delta format is almost entirely self-explanatory—the example below "
+"describes the string “Gandalf the Grey” where “Gandalf” is bolded and "
+"“Grey” is colored #cccccc."
+msgstr ""
+
+#: ../../source/docs/delta.rst:48
+msgid ""
+"As its name would imply, describing content is actually a special case "
+"for Deltas. The above example is more specifically instructions to insert"
+" a bolded string “Gandalf”, an unformatted string \" the “, followed by "
+"the string”Grey\" colored #cccccc. When Deltas are used to describe "
+"content, it can be thought of as the content that would be created if the"
+" Delta was applied to an empty document."
+msgstr ""
+
+#: ../../source/docs/delta.rst:55
+msgid ""
+"Since Deltas are a data format, there is no inherent meaning to the "
+"values of ``attribute`` keypairs. For example, there is nothing in the "
+"Delta format that dictates color value must be in hex—this is a choice "
+"that Quill makes, and can be modified if desired with `Parchment "
+"<https://github.com/quilljs/parchment/>`__."
+msgstr ""
+
+#: ../../source/docs/delta.rst:62 ../../source/docs/formats.rst:44
+msgid "Embeds"
+msgstr "Embeds"
+
+#: ../../source/docs/delta.rst:64
+msgid ""
+"For non-text content such as images or formulas, the insert key can be an"
+" object. The object should have one key, which will be used to determine "
+"its type. This is the ``blotName`` if you are building custom content "
+"with `Parchment <https://github.com/quilljs/parchment/>`__. Like text, "
+"embeds can still have an ``attributes`` key to describe formatting to be "
+"applied to the embed. All embeds have a length of one."
+msgstr ""
+
+#: ../../source/docs/delta.rst:86
+msgid "Line Formatting"
+msgstr "Line Formatting"
+
+#: ../../source/docs/delta.rst:88
+msgid ""
+"Attributes associated with a newline character describes formatting for "
+"that line."
+msgstr ""
+
+#: ../../source/docs/delta.rst:101
+msgid ""
+"All Quill documents must end with a newline character, even if there is "
+"no formatting applied to the last line. This way, you will always have a "
+"character position to apply line formatting to."
+msgstr ""
+
+#: ../../source/docs/delta.rst:105
+msgid ""
+"Many line formats are exclusive. For example Quill does not allow a line "
+"to simultaneously be both a header and a list, despite being possible to "
+"represent in the Delta format."
+msgstr ""
+
+#: ../../source/docs/delta.rst:110
+msgid "Changes"
+msgstr "Changes"
+
+#: ../../source/docs/delta.rst:112
+msgid ""
+"When you register a listener for Quill’s ```text-change`` </docs/api"
+"/#text-change>`__ event, one of the arguments you will get is a Delta "
+"describing what changed. In addition to ``insert`` operations, this Delta"
+" might also have ``delete`` or ``retain`` operations."
+msgstr ""
+
+#: ../../source/docs/delta.rst:119
+msgid "Delete"
+msgstr "Delete"
+
+#: ../../source/docs/delta.rst:121
+msgid ""
+"The ``delete`` operation instructs exactly what it implies: delete the "
+"next number of characters."
+msgstr ""
+
+#: ../../source/docs/delta.rst:132
+msgid ""
+"Since ``delete`` operations do not include *what* was deleted, a Delta is"
+" not reversible."
+msgstr ""
+
+#: ../../source/docs/delta.rst:136
+msgid "Retain"
+msgstr "Retain"
+
+#: ../../source/docs/delta.rst:138
+msgid ""
+"A ``retain`` operation simply means keep the next number of characters, "
+"without modification. If ``attributes`` is specified, it still means keep"
+" those characters, but apply the formatting specified by the "
+"``attributes`` object. A ``null`` value for an attributes key is used to "
+"specify format removal."
+msgstr ""
+
+#: ../../source/docs/delta.rst:144
+msgid "Starting with the above “Gandalf the Grey” example:"
+msgstr "Starting with the above “Gandalf the Grey” example:"
+
+#: ../../source/docs/delta.rst:172
+msgid ""
+"Note that a Delta’s instructions always starts at the beginning of the "
+"document. And because of plain ``retain`` operations, we never need to "
+"specify an index for a ``delete`` or ``insert`` operation."
+msgstr ""
+
+#: ../../source/docs/delta.rst:177
+msgid "Playground"
+msgstr "Playground"
+
+#: ../../source/docs/delta.rst:179
+msgid ""
+"Play around with Quill and take a look at how its content and changes "
+"look. Open your developer console for another view into the Deltas."
+msgstr ""
+
+#: ../../source/docs/download.rst:2
+msgid "download"
+msgstr "download"
+
+#: ../../source/docs/download.rst:4
+msgid "Quill comes ready to use in several convenient forms."
+msgstr "Quill comes ready to use in several convenient forms."
+
+#: ../../source/docs/download.rst:7
+msgid "CDN"
+msgstr "CDN"
+
+#: ../../source/docs/download.rst:9
+msgid ""
+"A globally distributed and available CDN is provided, backed by `Render "
+"<https://render.com/>`__."
+msgstr ""
+
+#: ../../source/docs/download.rst:27
+msgid "NPM"
+msgstr "NPM"
+
+#: ../../source/docs/download.rst:29
+msgid ""
+"Add Quill as an `NPM <//www.npmjs.org/>`__ dependency and add it your own"
+" build workflow, or use the included built options. Compiled stylesheets "
+"are also included in ``dist/`` folder."
+msgstr ""
+
+#: ../../source/docs/download.rst:38
+msgid "Direct Download"
+msgstr "Direct Download"
+
+#: ../../source/docs/download.rst:40
+msgid ""
+"Quill builds are also available for direct download on every `release "
+"<https://github.com/quilljs/quill/releases/tag/v%7B%7Bsite.version%7D%7D>`__."
+msgstr ""
+
+#: ../../source/docs/download.rst:44
+msgid "Source"
+msgstr "Source"
+
+#: ../../source/docs/download.rst:46
+msgid ""
+"And of course the complete source code is always available on `Github "
+"<https://github.com/quilljs/quill>`__."
+msgstr ""
+
+#: ../../source/docs/formats.rst:4
+msgid "Quill supports a number of formats, both in UI controls and API calls."
+msgstr "Quill supports a number of formats, both in UI controls and API calls."
+
+#: ../../source/docs/formats.rst:6
+msgid ""
+"By default all formats are enabled and allowed to exist within a Quill "
+"editor and can be configured with the `formats "
+"</docs/configuration/#formats>`__ option. This is separate from adding a "
+"control in the `Toolbar </docs/modules/toolbar/>`__. For example, you can"
+" configure Quill to allow bolded content to be pasted into an editor that"
+" has no bold button in the toolbar."
+msgstr ""
+
+#: ../../source/docs/formats.rst:13 ../../source/docs/standalone/full.rst:4
+#, python-format
+msgid "{% include standalone/full.html %}"
+msgstr "{% include standalone/full.html %}"
+
+#: ../../source/docs/formats.rst:15 ../../source/docs/themes.rst:33
+#: ../../source/docs/themes.rst:45
+msgid "Standalone"
+msgstr "Standalone"
+
+#: ../../source/docs/formats.rst:18
+msgid "Inline"
+msgstr "Inline"
+
+#: ../../source/docs/formats.rst:20
+msgid "Background Color - ``background``"
+msgstr "Background Color - ``background``"
+
+#: ../../source/docs/formats.rst:21
+msgid "Bold - ``bold``"
+msgstr "Bold - ``bold``"
+
+#: ../../source/docs/formats.rst:22
+msgid "Color - ``color``"
+msgstr "Color - ``color``"
+
+#: ../../source/docs/formats.rst:23
+msgid "Font - ``font``"
+msgstr "Font - ``font``"
+
+#: ../../source/docs/formats.rst:24
+msgid "Inline Code - ``code``"
+msgstr "Inline Code - ``code``"
+
+#: ../../source/docs/formats.rst:25
+msgid "Italic - ``italic``"
+msgstr "Italic - ``italic``"
+
+#: ../../source/docs/formats.rst:26
+msgid "Link - ``link``"
+msgstr "Link - ``link``"
+
+#: ../../source/docs/formats.rst:27
+msgid "Size - ``size``"
+msgstr "Size - ``size``"
+
+#: ../../source/docs/formats.rst:28
+msgid "Strikethrough - ``strike``"
+msgstr "Strikethrough - ``strike``"
+
+#: ../../source/docs/formats.rst:29
+msgid "Superscript/Subscript - ``script``"
+msgstr "Superscript/Subscript - ``script``"
+
+#: ../../source/docs/formats.rst:30
+msgid "Underline - ``underline``"
+msgstr "Underline - ``underline``"
+
+#: ../../source/docs/formats.rst:33
+msgid "Block"
+msgstr "Block"
+
+#: ../../source/docs/formats.rst:35
+msgid "Blockquote - ``blockquote``"
+msgstr "Blockquote - ``blockquote``"
+
+#: ../../source/docs/formats.rst:36
+msgid "Header - ``header``"
+msgstr "Header - ``header``"
+
+#: ../../source/docs/formats.rst:37
+msgid "Indent - ``indent``"
+msgstr "Indent - ``indent``"
+
+#: ../../source/docs/formats.rst:38
+msgid "List - ``list``"
+msgstr "List - ``list``"
+
+#: ../../source/docs/formats.rst:39
+msgid "Text Alignment - ``align``"
+msgstr "Text Alignment - ``align``"
+
+#: ../../source/docs/formats.rst:40
+msgid "Text Direction - ``direction``"
+msgstr "Text Direction - ``direction``"
+
+#: ../../source/docs/formats.rst:41
+msgid "Code Block - ``code-block``"
+msgstr "Code Block - ``code-block``"
+
+#: ../../source/docs/formats.rst:46
+msgid "Formula - ``formula`` (requires `KaTex <https://khan.github.io/KaTeX/>`__)"
+msgstr "Formula - ``formula`` (requires `KaTex <https://khan.github.io/KaTeX/>`__)"
+
+#: ../../source/docs/formats.rst:48
+msgid "Image - ``image``"
+msgstr "Image - ``image``"
+
+#: ../../source/docs/formats.rst:49
+msgid "Video - ``video``"
+msgstr "Video - ``video``"
+
+#: ../../source/docs/index.rst:2
+msgid "Documentation"
+msgstr "Documentation"
+
+#: ../../source/docs/modules.rst:4
+msgid ""
+"Modules allow Quill’s behavior and functionality to be customized. "
+"Several officially supported modules are available to pick and choose "
+"from, some with additional configuration options and APIs. Refer to their"
+" respective documentation pages for more details."
+msgstr ""
+
+#: ../../source/docs/modules.rst:9
+msgid "To enable a module, simply include it in Quill’s configuration."
+msgstr "To enable a module, simply include it in Quill’s configuration."
+
+#: ../../source/docs/modules.rst:23
+msgid ""
+"The `Clipboard </docs/modules/clipboard/>`__, `Keyboard "
+"</docs/modules/keyboard/>`__, and `History </docs/modules/history/>`__ "
+"modules are required by Quill and do not need to be included explictly, "
+"but may be configured like any other module."
+msgstr ""
+
+#: ../../source/docs/modules.rst:30
+msgid "Extending"
+msgstr "Extending"
+
+#: ../../source/docs/modules.rst:32
+msgid ""
+"Modules may also be extended and re-registered, replacing the original "
+"module. Even required modules may be re-registered and replaced."
+msgstr ""
+
+#: ../../source/docs/modules.rst:56
+msgid ""
+"*Note: This particular example was selected to show what is possible. It "
+"is often easier to just use an API or configuration the existing module "
+"exposes. In this example, the existing Clipboard’s*\\ `addMatcher "
+"</docs/modules/clipboard/#addmatcher>`__\\ *API is suitable for most "
+"paste customization scenarios.*"
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:2
+msgid "clipboard"
+msgstr "clipboard"
+
+#: ../../source/docs/modules/clipboard.rst:4
+msgid ""
+"The Clipboard handles copy, cut and paste between Quill and external "
+"applications. A set of defaults exist to provide sane interpretation of "
+"pasted content, with the ability for further customization through "
+"matchers."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:9
+msgid ""
+"The Clipboard interprets pasted HTML by traversing the corresponding DOM "
+"tree in `post-order <https://en.wikipedia.org/wiki/Tree_traversal#Post-"
+"order>`__, building up a `Delta </docs/delta/>`__ representation of all "
+"subtrees. At each descendant node, matcher functions are called with the "
+"DOM Node and Delta interpretation so far, allowing the matcher to return "
+"a modified Delta interpretation."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:17
+msgid ""
+"Familiarity and comfort with `Deltas </docs/delta/>`__ is necessary in "
+"order to effectively use matchers."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:21
+#: ../../source/docs/modules/history.rst:58
+msgid "API"
+msgstr "API"
+
+#: ../../source/docs/modules/clipboard.rst:24
+msgid "addMatcher"
+msgstr "addMatcher"
+
+#: ../../source/docs/modules/clipboard.rst:26
+msgid ""
+"Adds a custom matcher to the Clipboard. Matchers using ``nodeType`` are "
+"called first, in the order they were added, followed by matchers using a "
+"CSS ``selector``, also in the order they were added. ```nodeType`` "
+"<https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType>`__ may "
+"be ``Node.ELEMENT_NODE`` or ``Node.TEXT_NODE``."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:53
+msgid "dangerouslyPasteHTML"
+msgstr "dangerouslyPasteHTML"
+
+#: ../../source/docs/modules/clipboard.rst:55
+msgid ""
+"Inserts content represented by HTML snippet into editor at a given index."
+" The snippet is interpreted by Clipboard `matchers <#addMatcher>`__, "
+"which may not produce the exactly input HTML. If no insertion index is "
+"provided, the entire editor contents will be overwritten. The `source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:62
+msgid ""
+"Improper handling of HTML can lead to `cross site scripting (XSS) "
+"<https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)>`__ and "
+"failure to sanitize properly is both notoriously error-prone and a "
+"leading cause of web vulnerabilities. This method follows React’s example"
+" and is aptly named to ensure the developer has taken the necessary "
+"precautions."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:86
+#: ../../source/docs/modules/history.rst:8
+#: ../../source/docs/modules/keyboard.rst:185
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../source/docs/modules/clipboard.rst:91
+msgid ""
+"An array of matchers can be passed into Clipboard’s configuration "
+"options. These will be appended after Quill’s own default matchers."
+msgstr ""
+
+#: ../../source/docs/modules/history.rst:2
+msgid "history"
+msgstr "history"
+
+#: ../../source/docs/modules/history.rst:4
+msgid ""
+"The History module is responsible for handling undo and redo for Quill. "
+"It can be configured with the following options:"
+msgstr ""
+
+#: ../../source/docs/modules/history.rst:11
+msgid "delay"
+msgstr "delay"
+
+#: ../../source/docs/modules/history.rst:13
+msgid "Default: ``1000``"
+msgstr "Default: ``1000``"
+
+#: ../../source/docs/modules/history.rst:15
+msgid ""
+"Changes occuring within the ``delay`` number of milliseconds is merged "
+"into a single change."
+msgstr ""
+
+#: ../../source/docs/modules/history.rst:18
+msgid ""
+"For example, with delay set to ``0``, nearly every character is recorded "
+"as one change and so undo would undo one character at a time. With delay "
+"set to ``1000``, undo would undo all changes that occured within the last"
+" 1000 milliseconds."
+msgstr ""
+
+#: ../../source/docs/modules/history.rst:24
+msgid "maxStack"
+msgstr "maxStack"
+
+#: ../../source/docs/modules/history.rst:26
+msgid "Default: ``100``"
+msgstr "Default: ``100``"
+
+#: ../../source/docs/modules/history.rst:28
+msgid ""
+"Maximum size of the history’s undo/redo stack. Merged changes with the "
+"``delay`` option counts as a singular change."
+msgstr ""
+
+#: ../../source/docs/modules/history.rst:32
+msgid "userOnly"
+msgstr "userOnly"
+
+#: ../../source/docs/modules/history.rst:36
+msgid ""
+"By default all changes, whether originating from user input or "
+"programmatically through the API, are treated the same and change be "
+"undone or redone by the history module. If ``userOnly`` is set to "
+"``true``, only user changes will be undone or redone."
+msgstr ""
+
+#: ../../source/docs/modules/history.rst:42
+#: ../../source/docs/modules/syntax.rst:15
+msgid "Example"
+msgstr "Example"
+
+#: ../../source/docs/modules/history.rst:61
+msgid "clear"
+msgstr "clear"
+
+#: ../../source/docs/modules/history.rst:63
+msgid "Clears the history stack."
+msgstr "Clears the history stack."
+
+#: ../../source/docs/modules/history.rst:78
+msgid "cutoff experimental"
+msgstr "cutoff experimental"
+
+#: ../../source/docs/modules/history.rst:80
+msgid ""
+"Normally changes made in short succession (configured by ``delay``) are "
+"merged as a single change, so that triggering an undo will undo multiple "
+"changes. Using ``cutoff()`` will reset the merger window so that a "
+"changes before and after ``cutoff()`` is called will not be merged."
+msgstr ""
+
+#: ../../source/docs/modules/history.rst:98
+msgid "undo"
+msgstr "undo"
+
+#: ../../source/docs/modules/history.rst:100
+msgid "Undo last change."
+msgstr "Undo last change."
+
+#: ../../source/docs/modules/history.rst:115
+msgid "redo"
+msgstr "redo"
+
+#: ../../source/docs/modules/history.rst:117
+msgid "If last change was an undo, redo this undo. Otherwise does nothing."
+msgstr "If last change was an undo, redo this undo. Otherwise does nothing."
+
+#: ../../source/docs/modules/keyboard.rst:2
+msgid "keyboard"
+msgstr "keyboard"
+
+#: ../../source/docs/modules/keyboard.rst:4
+msgid ""
+"The Keyboard module enables custom behavior for keyboard events in "
+"particular contexts. Quill uses this to bind formatting hotkeys and "
+"prevent undesirable browser side effects."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:9
+msgid "Key Bindings"
+msgstr "Key Bindings"
+
+#: ../../source/docs/modules/keyboard.rst:11
+msgid ""
+"Keyboard handlers are bound to a particular key and key modifiers. The "
+"``key`` is the JavaScript event key code, but string shorthands are "
+"allowed for alphanumeric keys and some common keys."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:15
+msgid ""
+"Key modifiers include: ``metaKey``, ``ctrlKey``, ``shiftKey`` and "
+"``altKey``. In addition, ``shortKey`` is a platform specific modifier "
+"equivalent to ``metaKey`` on a Mac and ``ctrlKey`` on Linux and Windows."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:19
+msgid ""
+"Handlers will be called with ``this`` bound to the keyboard instance and "
+"be passed the current selection range."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:41
+msgid ""
+"If a modifier key is ``false``, it is assumed to mean that modifier is "
+"not active. You may also pass ``null`` to mean any value for the "
+"modifier."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:56
+msgid ""
+"Multiple handlers may be bound to the same key and modifier combination. "
+"Handlers will be called synchronously, in the order they were bound. By "
+"default, a handler stops propagating to the next handler, unless it "
+"explicitly returns ``true``."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:69
+msgid ""
+"Note: Since Quill’s default handlers are added at initialization, the "
+"only way to prevent them is to add yours in the `configuration "
+"<#configuration>`__."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:74
+msgid "Context"
+msgstr "Context"
+
+#: ../../source/docs/modules/keyboard.rst:76
+msgid ""
+"Contexts enable further specification for handlers to be called only in "
+"particular scenarios. Regardless if context is specified, a context "
+"object is provided as a second parameter for all handlers."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:97
+msgid "collapsed"
+msgstr "collapsed"
+
+#: ../../source/docs/modules/keyboard.rst:99
+msgid ""
+"If ``true``, handler is called only if the user’s selection is collapsed,"
+" i.e. in cursor form. If ``false``, the users’s selection must be non-"
+"zero length, such as when the user has highlighted text."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:104
+msgid "empty"
+msgstr "empty"
+
+#: ../../source/docs/modules/keyboard.rst:106
+msgid ""
+"If ``true``, called only if user’s selection is on an empty line, "
+"``false`` for a non-empty line. Note setting empty to be true implies "
+"collapsed is also true and offset is 0—otherwise the user’s selection "
+"would not be on an empty line."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:124
+msgid ""
+"When an Array, handler will be called if *any* of the specified formats "
+"are active. When an Object, *all* specified formats conditions must be "
+"met. In either case, the format property of the context parameter will be"
+" an Object of all current active formats, the same returned by "
+"``quill.getFormat()``."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:141
+msgid "offset"
+msgstr "offset"
+
+#: ../../source/docs/modules/keyboard.rst:143
+msgid ""
+"Handler will be only called when the user’s selection starts ``offset`` "
+"characters from the beginning of the line. Note this is before printable "
+"keys have been applied. This is useful in combination with other context "
+"specifications."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:149
+msgid "prefix"
+msgstr "prefix"
+
+#: ../../source/docs/modules/keyboard.rst:151
+msgid ""
+"Regex that must match the text immediately preceding the user’s "
+"selection’s start position. The text will not match cross format "
+"boundaries. The supplied ``context.prefix`` value will be the entire "
+"immediately preceding text, not just the regex match."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:179
+msgid "suffix"
+msgstr "suffix"
+
+#: ../../source/docs/modules/keyboard.rst:181
+msgid ""
+"The same as ```prefix`` <#prefix>`__ except matching text immediately "
+"following the user’s selection’s end position."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:187
+msgid ""
+"By default, Quill comes with several useful key bindings, for example "
+"indenting lists with tabs. You can add your own upon initization."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:190
+msgid ""
+"Some bindings are essential to preventing dangerous browser defaults, "
+"such as the enter and backspace keys. You cannot remove these bindings to"
+" revert to native browser behaviors. However since bindings specified in "
+"the configuration will run before Quill’s defaults, you can handle "
+"special cases and propagate to Quill’s otherwise."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:196
+msgid ""
+"Adding a binding with ``quill.keyboard.addBinding`` will not run before "
+"Quill’s because the defaults bindings will have been added by that point."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:200
+msgid ""
+"Each binding config must contain ``key`` and ``handler`` options, and may"
+" optionally include any of the ``context`` options."
+msgstr ""
+
+#: ../../source/docs/modules/keyboard.rst:249
+msgid "Performance"
+msgstr "Performance"
+
+#: ../../source/docs/modules/keyboard.rst:251
+msgid ""
+"Like DOM events, Quill key bindings are blocking calls on every match, so"
+" it is a bad idea to have a very expensive handler for a very common key "
+"binding. Apply the same performance best practices as you would when "
+"attaching to common blocking DOM events, like ``scroll`` or "
+"``mousemove``."
+msgstr ""
+
+#: ../../source/docs/modules/syntax.rst:2
+msgid "syntax"
+msgstr "syntax"
+
+#: ../../source/docs/modules/syntax.rst:4
+msgid ""
+"The Syntax Module enhances the Code Block format by automatically "
+"detecting and applying syntax highlighting. The excellent `highlight.js "
+"<https://highlightjs.org/>`__ library is used as a dependency to parse "
+"and tokenize code blocks."
+msgstr ""
+
+#: ../../source/docs/modules/syntax.rst:9
+msgid ""
+"In general, you may `configure "
+"<https://highlightjs.readthedocs.io/en/latest/api.html#configure-"
+"options>`__ highlight.js as needed. However, Quill expects and requires "
+"the ``useBR`` option to be ``false``."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:2
+msgid "toolbar"
+msgstr "toolbar"
+
+#: ../../source/docs/modules/toolbar.rst:8
+msgid "The Toolbar module allow users to easily format Quill’s contents."
+msgstr "The Toolbar module allow users to easily format Quill’s contents."
+
+#: ../../source/docs/modules/toolbar.rst:15
+#, python-format
+msgid "{% include full-toolbar.html %}"
+msgstr "{% include full-toolbar.html %}"
+
+#: ../../source/docs/modules/toolbar.rst:20
+msgid "It can be configured with a custom container and handlers."
+msgstr "It can be configured with a custom container and handlers."
+
+#: ../../source/docs/modules/toolbar.rst:35
+msgid ""
+"Because the ``container`` option is so common, a top level shorthand is "
+"also allowed."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:50
+msgid ""
+"Toolbar controls can either be specified by a simple array of format "
+"names or a custom HTML container."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:53
+msgid "To begin with the simpler array option:"
+msgstr "To begin with the simpler array option:"
+
+#: ../../source/docs/modules/toolbar.rst:65
+msgid ""
+"Controls can also be grouped by one level of nesting an array. This will "
+"wrap controls in a ``<span>`` with class name ``ql-formats``, providing "
+"structure for themes to utilize. For example `Snow "
+"</docs/themes/#snow/>`__ adds extra spacing between control groups."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:75
+msgid ""
+"Buttons with custom values can be specified with an Object with the name "
+"of the format as its only key."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:82
+msgid ""
+"Dropdowns are similarly specified by an Object, but with an array of "
+"possible values. CSS is used to control the visual labels for dropdown "
+"options."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:95
+msgid ""
+"Note `Themes </docs/themes/>`__ may also specify default values for "
+"dropdowns. For example, `Snow </docs/themes/#snow/>`__ provides a default"
+" list of 35 colors for the ``color`` and ``background`` formats, if set "
+"to an empty array."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:129
+msgid ""
+"For use cases requiring even more customization, you can manually create "
+"a toolbar in HTML, and pass the DOM element or selector into Quill. The "
+"``ql-toolbar`` class will be added to the toolbar container and Quill "
+"attach appropriate handlers to ``<button>`` and ``<select>`` elements "
+"with a class name in the form ``ql-${format}``. Buttons element may "
+"optionally have a custom ``value`` attribute."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:165
+msgid ""
+"Note by supplying your own HTML element, Quill searches for particular "
+"input elements, but your own inputs that have nothing to do with Quill "
+"can still be added and styled and coexist."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:195
+msgid "Handlers"
+msgstr "Handlers"
+
+#: ../../source/docs/modules/toolbar.rst:197
+msgid ""
+"The toolbar controls by default applies and removes formatting, but you "
+"can also overwrite this with custom handlers, for example in order to "
+"show external UI."
+msgstr ""
+
+#: ../../source/docs/modules/toolbar.rst:201
+msgid ""
+"Handler functions will be bound to the toolbar (so using ``this`` will "
+"refer to the toolbar instance) and passed the ``value`` attribute of the "
+"input if the corresponding format is inactive, and ``false`` otherwise. "
+"Adding a custom handler will overwrite the default toolbar and theme "
+"behavior."
+msgstr ""
+
+#: ../../source/docs/quickstart.rst:2
+msgid "quickstart"
+msgstr "quickstart"
+
+#: ../../source/docs/quickstart.rst:4
+msgid ""
+"The best way to get started is try a simple example. Quill is initialized"
+" with a DOM element to contain the editor. The contents of that element "
+"will become the initial contents of Quill."
+msgstr ""
+
+#: ../../source/docs/quickstart.rst:30
+msgid "And that’s all there is to it!"
+msgstr "And that’s all there is to it!"
+
+#: ../../source/docs/quickstart.rst:33
+msgid "Next Steps"
+msgstr "Next Steps"
+
+#: ../../source/docs/quickstart.rst:35
+msgid ""
+"The real magic of Quill comes in its flexibility and extensibility. You "
+"can get an idea of what is possible by playing around with the demos "
+"throughout this site or head straight to the `Interactive Playground "
+"</playground/>`__. For an in-depth walkthrough, take a look at `How to "
+"Customize Quill </guides/how-to-customize-quill/>`__."
+msgstr ""
+
+#: ../../source/docs/standalone/autogrow.rst:2
+msgid "autogrow"
+msgstr "autogrow"
+
+#: ../../source/docs/standalone/basic.rst:2
+msgid "basic"
+msgstr "basic"
+
+#: ../../source/docs/standalone/basic.rst:33
+msgid ""
+"Sans Serif Serif Monospace Small Normal Large Huge White Black Red Orange"
+" Yellow Green Blue Purple White Black Red Orange Yellow Green Blue Purple"
+" Left Center Right Justify Bold Italic Under Strike Link Image Bullet "
+"List"
+msgstr ""
+
+#: ../../source/docs/standalone/bubble.rst:2
+msgid "bubble"
+msgstr "bubble"
+
+#: ../../source/docs/standalone/bubble.rst:4
+#, python-format
+msgid "{% include standalone/bubble.html %}"
+msgstr "{% include standalone/bubble.html %}"
+
+#: ../../source/docs/standalone/full.rst:2
+msgid "full"
+msgstr "full"
+
+#: ../../source/docs/standalone/index.rst:2
+msgid "standalone"
+msgstr "standalone"
+
+#: ../../source/docs/standalone/snow.rst:2
+msgid "snow"
+msgstr "snow"
+
+#: ../../source/docs/standalone/snow.rst:4
+#, python-format
+msgid "{% include standalone/snow.html %}"
+msgstr "{% include standalone/snow.html %}"
+
+#: ../../source/docs/themes.rst:2
+msgid "themes"
+msgstr "themes"
+
+#: ../../source/docs/themes.rst:4
+msgid ""
+"Themes allow you to easily make your editor look good with minimal "
+"effort. Quill features two offically supported themes: `Snow <#snow>`__ "
+"and `Bubble <#bubble>`__."
+msgstr ""
+
+#: ../../source/docs/themes.rst:9
+msgid "Usage"
+msgstr "Usage"
+
+#: ../../source/docs/themes.rst:24
+msgid "Bubble"
+msgstr "Bubble"
+
+#: ../../source/docs/themes.rst:26
+msgid "Bubble is a simple tooltip based theme."
+msgstr "Bubble is a simple tooltip based theme."
+
+#: ../../source/docs/themes.rst:36
+msgid "Snow"
+msgstr "Snow"
+
+#: ../../source/docs/themes.rst:38
+msgid "Snow is a clean, flat toolbar theme."
+msgstr "Snow is a clean, flat toolbar theme."
+
+#: ../../source/docs/themes.rst:48
+msgid "Customization"
+msgstr "Customization"
+
+#: ../../source/docs/themes.rst:50
+msgid ""
+"Themes primarily control the visual look of Quill through its CSS "
+"stylesheet, and many changes can easily be made by overriding these "
+"rules. This is easiest to do, as with any other web application, by "
+"simply using your browser developer console to inspect the elements to "
+"view the rules affecting them."
+msgstr ""
+
+#: ../../source/docs/themes.rst:56
+msgid ""
+"Many other customizations can be done through the respective modules. For"
+" example, the toolbar is perhaps the most visible user interface, but "
+"much of the customization is done through the `Toolbar module "
+"</docs/modules/toolbar/>`__."
+msgstr ""
+

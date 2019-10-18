@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Counting Words &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">guides</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Counting Words</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_posts/2014-08-14-building-a-custom-module.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p><em>Note: An updated guide for 1.0 and ES6 is
+available</em><a class="reference external" href="/guides/building-a-custom-module/">here</a><em>.</em></p>
+<p>Quill’s core strength as an editor is its rich API and powerful
+customization capabilities. One of the best ways to customize Quill is
+with a module. A module is a simple way to augment Quill’s
+functionality. For the purpose of this guide, we will walk through one
+way to build a word counter module, a commonly found feature in many
+word processors.</p>
+<div class="section" id="counting-words">
+<h1>Counting Words<a class="headerlink" href="#counting-words" title="永久链接至标题">¶</a></h1>
+<p>At its core a word counter simply counts the number of words in the
+editor and displays this value in some UI. Thus we need to:</p>
+<ol class="arabic simple">
+<li><p>Listen on text changes in Quill.</p></li>
+<li><p>Count the number of words.</p></li>
+<li><p>Display this value.</p></li>
+</ol>
+<p>Let’s jump straight in with a complete example!</p>
+<!-- more --><div class="codepen docutils container">
+<pre><code>
+// Implement and register module
+Quill.registerModule('counter', function(quill, options) {
+  var container = document.querySelector('#counter');
+  quill.on('text-change', function() {
+    var text = quill.getText();
+    // There are a couple issues with counting
+    // this way but we'll fix this later
+    container.innerHTML = text.split(/\s+/).length;
+  });
+});
+
+// We can now initialize Quill with something like this:
+var quill = new Quill('#editor', {
+  modules: {
+    counter: true
+  }
+});
+</code></pre></div>
+<p>That’s all it takes to add a custom module to Quill! A function can be
+<a class="reference external" href="/docs/api/#quillregistermodule/">registered</a> as a module and it will
+be passed the corresponding Quill editor object along with any options.</p>
+</div>
+<div class="section" id="using-options">
+<h1>Using Options<a class="headerlink" href="#using-options" title="永久链接至标题">¶</a></h1>
+<p>Modules are passed an options object that can be used to fine tune the
+desired behavior. We can use this to accept a selector for the counter
+container instead of a hard-coded string. Let’s also customize the
+counter to either count words or characters:</p>
+<div class="codepen docutils container">
+<pre><code>
+Quill.registerModule('counter', function(quill, options) {
+  var container = document.querySelector(options.container);
+  quill.on('text-change', function() {
+    var text = quill.getText();
+    if (options.unit === 'word') {
+      container.innerHTML = text.split(/\s+/).length + ' words';
+    } else {
+      container.innerHTML = text.length + ' characters';
+    }
+  });
+});
+
+var quill = new Quill('#editor', {
+  modules: {
+    counter: {
+      container: '#counter',
+      unit: 'word'
+    }
+  }
+});
+</code></pre></div>
+</div>
+<div class="section" id="constructors">
+<h1>Constructors<a class="headerlink" href="#constructors" title="永久链接至标题">¶</a></h1>
+<p>Since any function can be registered as a Quill module, we could have
+implemented our counter as a constructor. This allows us to access and
+utilize the module directly.</p>
+<div class="codepen docutils container">
+<pre><code>
+var Counter = function(quill, options) {
+  this.quill = quill;
+  this.options = options;
+  var container = document.querySelector(options.container);
+  var _this = this;
+  quill.on('text-change', function() {
+    var length = _this.calculate();
+    container.innerHTML = length + ' ' + options.unit + 's';
+  });
+};
+
+Counter.prototype.calculate = function() {
+  var text = this.quill.getText();
+  if (this.options.unit === 'word') {
+    return text.split(/\s+/).length;
+  } else {
+    return text.length;
+  }
+};
+
+Quill.registerModule('counter', Counter);
+
+var quill = new Quill('#editor');
+var counter = quill.addModule('counter', {
+  container: '#counter',
+  unit: 'word'
+});
+
+// We can now access calculate() directly
+console.log(counter.calculate(), 'words');
+</code></pre></div>
+</div>
+<div class="section" id="wrapping-it-all-up">
+<h1>Wrapping It All Up<a class="headerlink" href="#wrapping-it-all-up" title="永久链接至标题">¶</a></h1>
+<p>Now let’s polish off the module and fix a few pesky bugs.</p>
+<div class="codepen docutils container">
+<pre><code>
+var Counter = function(quill, options) {
+  this.quill = quill;
+  this.options = options;
+  this.container = document.querySelector(options.container);
+  quill.on('text-change', this.update.bind(this));
+  this.update();  // Account for initial contents
+};
+
+Counter.prototype.calculate = function() {
+  var text = this.quill.getText();
+  if (this.options.unit === 'word') {
+    text = text.trim();
+    // Splitting empty text returns a non-empty array
+    return text.length > 0 ? text.split(/\s+/).length : 0;
+  } else {
+    return text.length;
+  }
+};
+
+Counter.prototype.update = function() {
+  var length = this.calculate();
+  var label = this.options.unit;
+  if (length !== 1) {
+    label += 's';
+  }
+  this.container.innerHTML = length + ' ' + label;
+}
+
+Quill.registerModule('counter', Counter);
+
+var quill = new Quill('#editor');
+var counter = quill.addModule('counter', {
+  container: '#counter',
+  unit: 'word'
+});
+</code></pre></div>
+<p>That’s all there is to it! Stay tuned for more guides on common types of
+modules you can build.</p>
+<!-- script --><script src="//codepen.io/assets/embed/ei.js"></script><!-- script --></div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

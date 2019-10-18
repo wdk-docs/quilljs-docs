@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:08+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/index.rst:7
+msgid "Your powerful rich text editor"
+msgstr "你强大的富文本编辑器"
+
+#: ../../source/index.rst:17
+msgid "Indices and tables"
+msgstr "指数和表"
+
+#: ../../source/index.rst:19
+msgid ":ref:`genindex`"
+msgstr ":ref:`genindex`"
+
+#: ../../source/index.rst:20
+msgid ":ref:`modindex`"
+msgstr ":ref:`modindex`"
+
+#: ../../source/index.rst:21
+msgid ":ref:`search`"
+msgstr ":ref:`search`"
+
+#~ msgid "Contents:"
+#~ msgstr ""
+
+#~ msgid "Welcome to quilljs-docs's documentation!"
+#~ msgstr ""
+

@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>与其他富文本编辑器比较 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="克隆与羊皮纸介质" href="cloning-medium-with-parchment.html" />
+    <link rel="prev" title="与其他富文本编辑器相比" href="designing-the-delta-format.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">指南</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html">如何自定义鹅毛笔？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html">与其他富文本编辑器相比</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">与其他富文本编辑器比较</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ckeditor-and-tinymce">CKEditor and TinyMCE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#draft">Draft</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#prosemirror">ProseMirror</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#trix">Trix</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-2-0.html">升级到2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">指南</a> &raquo;</li>
+        
+      <li>与其他富文本编辑器比较</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guides/comparison-with-other-rich-text-editors.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="comparison-with-other-rich-text-editors">
+<h1>与其他富文本编辑器比较<a class="headerlink" href="#comparison-with-other-rich-text-editors" title="永久链接至标题">¶</a></h1>
+<div class="section" id="ckeditor-and-tinymce">
+<h2>CKEditor and TinyMCE<a class="headerlink" href="#ckeditor-and-tinymce" title="永久链接至标题">¶</a></h2>
+<p>CKEditor and TinyMCE are both very widely used, having been around for
+over a decade. Quill introduces several new ideas that separate it from
+these traditional editors:</p>
+<ul class="simple">
+<li><p>It treats <code class="docutils literal notranslate"><span class="pre">contenteditable</span></code> as an input, not a complete editor or
+API. Browsers never fully agreed on or specified the complete scope
+of <code class="docutils literal notranslate"><span class="pre">contenteditable</span></code>. Left to their own interpretations, each ended
+with different implementations that featured their own quirks and a
+proliferation of bugs, earning <code class="docutils literal notranslate"><span class="pre">contenteditable</span></code> deserved
+notoriety. It is still possible today to crash an entire browser
+using <code class="docutils literal notranslate"><span class="pre">contenteditable</span></code> APIs.</p></li>
+<li><p>It offers a substantive API on top of the DOM. Most of CKEditor and
+TinyMCE’s APIs offer little more than syntactic sugar on top of
+existing DOM APIs. Quill maintains an internal document model and
+does not rely on the DOM as the source of truth, allowing it to offer
+far more powerful and relevant APIs for text editing.</p></li>
+<li><p>It allows customization and new additions of formats and content.
+Quill considers the web as a target output, not just paper.
+Therefore, in addition to supporting traditional formats commonly
+found in word processors (like bold, italics and lists), Quill allows
+the definition of entirely new formats and content not previously
+imagined. Quill’s users have already added customizations to embed
+slide decks, interactive checklists and 3D models.</p></li>
+</ul>
+<p>Although there are differences between them, CKEditor and TinyMCE are
+compared together because they differ from Quill in similar ways.
+Nevertheless, CKEditor or TinyMCE might be a better choice if:</p>
+<ul class="simple">
+<li><p>You need to support very old browsers. Quill follows the policy of
+many other Javascript libraries of supporting the latest two versions
+of each major browser.</p></li>
+<li><p>You need to set or edit the underlying HTML directly with arbitrary
+HTML. Quill does not support arbitrary modifications to its contents
+with <code class="docutils literal notranslate"><span class="pre">innerHTML</span></code> as it leads to surprising and buggy behavior.
+Instead, it provides a consistent <a class="reference external" href="/docs/api/">API</a> for
+modification and the ability to define new formats and content
+through <a class="reference external" href="https://github.com/quilljs/parchment/">Parchment</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="draft">
+<h2>Draft<a class="headerlink" href="#draft" title="永久链接至标题">¶</a></h2>
+<p>Draft is often compared with Quill, but Draft, by its own description,
+is a “Rich Text Editor Framework for React.” It provides the building
+blocks to create an editor, but is not one ready to use by itself. It is
+still worthwhile to compare Quill’s internals with Draft however:</p>
+<ul>
+<li><p>Prior to Quill 1.0, Draft allowed more customization over its content
+and document model, but this is no longer the case. Quill now exposes
+its document model, called
+<a class="reference external" href="https://github.com/quilljs/parchment">Parchment</a>, and allows
+customization to an even deeper level than Draft at this point.
+<a class="reference external" href="/guides/cloning-medium-with-parchment/">Cloning Medium with
+Parchment</a> is a great
+demonstration of what is possible with Parchment.</p></li>
+<li><p>Draft organizes nodes into two levels: block and inline. Parchment
+also has a block and inline layer, but inline nodes can be nested,
+allowing semantic output such as
+<code class="docutils literal notranslate"><span class="pre">&lt;strong&gt;&lt;em&gt;Stronger&lt;/em&gt;&lt;/strong&gt;</span></code> whereas the equivalent in
+Draft must use just one inline format node and utilizes inline
+styles:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">span</span> <span class="na">data-offset-key</span><span class="o">=</span><span class="s">&quot;1oo4h-0-0&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;font-weight: bold; font-style: italic;&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">data-text</span><span class="o">=</span><span class="s">&quot;true&quot;</span><span class="p">&gt;</span>Stronger<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Draft’s API inherits primitives and ideas from React that are more
+appropriate for general websites. Quill’s only use case is rich text
+content allowing for a simpler API geared specifically for that use
+case. API simplicity is subjective, so the best metric for you might
+be to think of a common task, like bolding a range of text, and try
+to figure out how to do it in Quill and how to do it in Draft.</p></li>
+<li><p>React, React DOM, and immutable.js are dependencies of Draft which
+add a lot of weight for users not already using React.</p></li>
+</ul>
+<p>The main difference is still that Quill is a ready to use rich text
+editor, with user interactions considered and interfaces thought out and
+implemented. Draft provides the building blocks but you will have to
+implement all the pieces above the data layer yourself.</p>
+</div>
+<div class="section" id="prosemirror">
+<h2>ProseMirror<a class="headerlink" href="#prosemirror" title="永久链接至标题">¶</a></h2>
+<p>ProseMirror is relatively new but has already captured signficant
+attention, being built by the same author of CodeMirror. That being said
+a robust comparison of the product and implementation is premature since
+ProseMirror is still in the development stages, as noted in their
+README:</p>
+<blockquote>
+<div><p>NOTE: This project is in BETA stage. It isn’t thoroughly tested, and
+the API might still change across 0.x releases. You are welcome to
+use it, but don’t expect it to be very stable yet.</p>
+</div></blockquote>
+<p>Instead we will compare the ideas and goals:</p>
+<ul class="simple">
+<li><p>Both Quill and ProseMirror implement and maintain a data model to
+operate on with APIs, instead of allowing users to modify the DOM
+directly.</p></li>
+<li><p>Support realtime collaboration. Quill users are already doing so in
+production.</p></li>
+<li><p>Quill’s architecture is more modular, allowing for easier
+customization of internals. Core modules that handle basic
+functionality like copy/paste and undo/redo can be swapped out in
+Quill.</p></li>
+<li><p>ProseMirror favors broad exposure of API methods, configurations and
+variables. Quill treats developers as users and designs an organized
+API surface, judicious in what to expose, sometimes hiding confusing
+methods or creating new ones that unify several internal operations.</p></li>
+</ul>
+</div>
+<div class="section" id="trix">
+<h2>Trix<a class="headerlink" href="#trix" title="永久链接至标题">¶</a></h2>
+<p>Trix is another newly released editor that has adopted many modern ideas
+in rich text editing. This includes a data model on top of the DOM and
+treating <code class="docutils literal notranslate"><span class="pre">contenteditable</span></code> as an input, which Quill and other modern
+editors also embrace. In addition, Quill offers some significant
+advantages over Trix:</p>
+<ul class="simple">
+<li><p>More <a class="reference external" href="/docs/formats/">format</a> support. Quill supports all formats
+found in Trix, and also supports text color, font, background, size,
+superscript, subscript, underline, text alignment, text direction,
+syntax highlighted code, videos, and formulas, which are not
+supported in Trix.</p></li>
+<li><p>Allows customization of existing formats and content, or even adding
+new ones. Trix implements each format in one way, and allows no
+further customization.</p></li>
+<li><p>Modularized internals that can be configured or even swapped out.
+Trix is architected as a monolith.</p></li>
+<li><p>Trix offers one UI, that users likely will need to polish with custom
+CSS. Quill offers two beautiful, ready to use themes, one centering
+around a persistent <a class="reference external" href="/docs/themes/#snow">toolbar</a> and one around a
+Medium-like <a class="reference external" href="/docs/themes/#bubble">tooltip theme</a>.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cloning-medium-with-parchment.html" class="btn btn-neutral float-right" title="克隆与羊皮纸介质" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="designing-the-delta-format.html" class="btn btn-neutral float-left" title="与其他富文本编辑器相比" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

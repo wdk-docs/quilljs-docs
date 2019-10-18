@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:2
+msgid "2014-09-29 a new delta"
+msgstr "2014-09-29 a new delta"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:4
+msgid "Part of providing a complete API in Quill is providing events for when and what changes occur in the editor. Those changes are currently represented by a `Delta </guides/working-with-deltas/>`__ object, which aims to be intuitive, human-readable, and expressive for any change or document that might need to represented. Over the past few weeks I’ve been working on a new format that better fulfills those goals and addresses the challenges in the current format."
+msgstr "Part of providing a complete API in Quill is providing events for when and what changes occur in the editor. Those changes are currently represented by a `Delta </guides/working-with-deltas/>`__ object, which aims to be intuitive, human-readable, and expressive for any change or document that might need to represented. Over the past few weeks I’ve been working on a new format that better fulfills those goals and addresses the challenges in the current format."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:12
+msgid "Documentation for the new Delta format can be found in its own `Github repository <https://github.com/ottypes/rich-text>`__ but I will go over some of the rationale behind some of the changes in this post."
+msgstr "Documentation for the new Delta format can be found in its own `Github repository <https://github.com/ottypes/rich-text>`__ but I will go over some of the rationale behind some of the changes in this post."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:21
+msgid "Reduced Complexity"
+msgstr "Reduced Complexity"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:23
+msgid "When the Delta format was originally designed, it had ambitious goals of being general purpose and being able to represent any kind of document. The new format reduces the scope to just rich text documents, allowing for a much tighter implementation [1]_."
+msgstr "When the Delta format was originally designed, it had ambitious goals of being general purpose and being able to represent any kind of document. The new format reduces the scope to just rich text documents, allowing for a much tighter implementation [1]_."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:28
+msgid "Quill is not specifically built to be a collaborative editor but the ability to be used as one is a good benchmark of the API. The new Delta format maintains this capability and fulfills the specifications of an `ottype <https://github.com/ottypes/docs>`__, making it compatible with `ShareJS <https://github.com/share/ShareJS>`__."
+msgstr "Quill is not specifically built to be a collaborative editor but the ability to be used as one is a good benchmark of the API. The new Delta format maintains this capability and fulfills the specifications of an `ottype <https://github.com/ottypes/docs>`__, making it compatible with `ShareJS <https://github.com/share/ShareJS>`__."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:35
+msgid "Explicit Deletes"
+msgstr "Explicit Deletes"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:37
+msgid "In the current Delta format, a delete operation is implied by a lack of a retain operation. Basically everything is deleted unless you say it should be kept. This has some nice properties from an implementation perspective [2]_ but was probably the largest source of confusion for users trying to work with Deltas and challenged the human-readability goal. It is very difficult to keep track of indexes to figure out what was not accounted for, to figure out what should be deleted."
+msgstr "In the current Delta format, a delete operation is implied by a lack of a retain operation. Basically everything is deleted unless you say it should be kept. This has some nice properties from an implementation perspective [2]_ but was probably the largest source of confusion for users trying to work with Deltas and challenged the human-readability goal. It is very difficult to keep track of indexes to figure out what was not accounted for, to figure out what should be deleted."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:45
+msgid "The new format has an explicit delete operation and by default everything is kept. Here’s a comparison of the two formats both representing removing the ‘b’ in ‘abc’."
+msgstr "The new format has an explicit delete operation and by default everything is kept. Here’s a comparison of the two formats both representing removing the ‘b’ in ‘abc’."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:67
+msgid "A side effect of having explicit deletes and defaulting to keeping text is that in practice the representation for new Deltas will usually be smaller."
+msgstr "A side effect of having explicit deletes and defaulting to keeping text is that in practice the representation for new Deltas will usually be smaller."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:72
+msgid "Embed Support"
+msgstr "Embed Support"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:74
+msgid "The new Delta format provides native support for embeds, which can be used to represent images, video, etc. There is no support for this in the current format and implementation is hackily achieved by representing an ‘!’ with a image key in the attributes (which will break when video support is added)."
+msgstr "The new Delta format provides native support for embeds, which can be used to represent images, video, etc. There is no support for this in the current format and implementation is hackily achieved by representing an ‘!’ with a image key in the attributes (which will break when video support is added)."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:98
+msgid "Going Forward"
+msgstr "Going Forward"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:100
+msgid "This new format will be the finalized representation for changes and state in Quill going forward and is one of the major steps toward a 1.0 release (a topic for another post)."
+msgstr "This new format will be the finalized representation for changes and state in Quill going forward and is one of the major steps toward a 1.0 release (a topic for another post)."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:105
+msgid "Currently 28658 vs 9507 lines of code (though in practice is less relevant due to minification and gzip)."
+msgstr "Currently 28658 vs 9507 lines of code (though in practice is less relevant due to minification and gzip)."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:109
+msgid "Minimizes number of operations to support, and easy to calculate the length of text of the resulting document which is useful for sanity checks."
+msgstr "Minimizes number of operations to support, and easy to calculate the length of text of the resulting document which is useful for sanity checks."
+

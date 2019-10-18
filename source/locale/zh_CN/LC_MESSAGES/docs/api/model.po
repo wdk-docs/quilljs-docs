@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/api/model.rst:2
+msgid "Model"
+msgstr "Model"
+
+#: ../../source/docs/api/model.rst:5
+msgid "find experimental"
+msgstr "find experimental"
+
+#: ../../source/docs/api/model.rst:7
+msgid ""
+"Static method returning the Quill or `Blot "
+"<https://github.com/quilljs/parchment>`__ instance for the given DOM "
+"node. In the latter case, passing in true for the ``bubble`` parameter "
+"will search up the given DOM’s ancestors until it finds a corresponding "
+"`Blot <https://github.com/quilljs/parchment>`__."
+msgstr ""
+
+#: ../../source/docs/api/model.rst:13 ../../source/docs/api/model.rst:37
+#: ../../source/docs/api/model.rst:56 ../../source/docs/api/model.rst:79
+#: ../../source/docs/api/model.rst:100
+msgid "**Methods**"
+msgstr "**Methods**"
+
+#: ../../source/docs/api/model.rst:19 ../../source/docs/api/model.rst:43
+#: ../../source/docs/api/model.rst:62 ../../source/docs/api/model.rst:85
+#: ../../source/docs/api/model.rst:107
+msgid "**Examples**"
+msgstr "**Examples**"
+
+#: ../../source/docs/api/model.rst:32
+msgid "getIndex experimental"
+msgstr "getIndex experimental"
+
+#: ../../source/docs/api/model.rst:34
+msgid ""
+"Returns the distance between the beginning of document to the occurrence "
+"of the given `Blot <https://github.com/quilljs/parchment>`__."
+msgstr ""
+
+#: ../../source/docs/api/model.rst:51
+msgid "getLeaf experimental"
+msgstr "getLeaf experimental"
+
+#: ../../source/docs/api/model.rst:53
+msgid ""
+"Returns the leaf `Blot <https://github.com/quilljs/parchment>`__ at the "
+"specified index within the document."
+msgstr ""
+
+#: ../../source/docs/api/model.rst:74
+msgid "getLine experimental"
+msgstr "getLine experimental"
+
+#: ../../source/docs/api/model.rst:76
+msgid ""
+"Returns the line `Blot <https://github.com/quilljs/parchment>`__ at the "
+"specified index within the document."
+msgstr ""
+
+#: ../../source/docs/api/model.rst:96
+msgid "getLines experimental"
+msgstr "getLines experimental"
+
+#: ../../source/docs/api/model.rst:98
+msgid "Returns the lines contained within the specified location."
+msgstr "Returns the lines contained within the specified location."
+

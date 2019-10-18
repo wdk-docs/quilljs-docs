@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Styles &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">guides</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Styles</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/_posts/2014-11-06-quill-v0-19-no-more-iframes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>Customizability is core to Quill’s ethos and the new <a class="reference external" href="https://github.com/quilljs/quill/releases/tag/v0.19.0">v0.19
+release</a> is a
+big step towards fulfilling that mission. In previous versions Quill
+utilized an iframe to contain the editor. This unfortunately prevented
+expected browser behaviors and made it difficult for developers to
+access and extend Quill <a class="footnote-reference brackets" href="#id2" id="id1">1</a>. Its removal is the biggest change in v0.19
+and some rippling effects are expected. They, and other changes for
+v0.19, are summarized here.</p>
+<div class="section" id="styles">
+<h1>Styles<a class="headerlink" href="#styles" title="永久链接至标题">¶</a></h1>
+<p>With iframes gone it is now much easier to customize the styling of the
+Quill editor and unecessary for Quill to do so on your behalf in most
+cases. This leads to a few changes:</p>
+<p>You can now pass <code class="docutils literal notranslate"><span class="pre">false</span></code> into the <a class="reference external" href="/docs/configuration/#styles">style
+config</a> to prevent Quill from injecting
+any <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> tags. No change is necessary if the default behavior is
+preferred, but this added option makes it easier and more efficient for
+those that prefer to completely control styling with stylesheets. For
+this latter route, <code class="docutils literal notranslate"><span class="pre">quill.base.css</span></code> is now included in releases and
+the CDN.</p>
+<!-- more --><p>Since adding and customizing styles is no longer inaccessible, the
+<code class="docutils literal notranslate"><span class="pre">addStyles</span></code> helper is no longer particularly useful and has been
+removed.</p>
+<p>All Quill containers’ class names have changed to be prefixed with
+<code class="docutils literal notranslate"><span class="pre">ql-</span></code>. If your application was using these names in any way they will
+need to be updated.</p>
+<p>Quill is also no longer “protected” from external styles so it should be
+treated with the same caution as any other front end library. In
+particular, avoiding overly general css rules will help ensure a
+peaceful coexistence.</p>
+</div>
+<div class="section" id="scripts">
+<h1>Scripts<a class="headerlink" href="#scripts" title="永久链接至标题">¶</a></h1>
+<p>It was always possible to access and manipulate Quill’s editor, but
+without an iframe the task is now easy. While this greatly simplifies
+custom enhancements it also makes it easier to inadvertently interfere
+with Quill’s necessary operations. But with modern developer tools and
+practices, the risks can be mitigated and ultimately the benefits of
+customization is worthwhile.</p>
+<p>This is a good time to reiterate good bug reporting practices, not just
+for Quill but for all open source projects. Reducing bugs into the
+simplest case and providing repeatable reproduction instructions will
+help isolate the source of issues.</p>
+</div>
+<div class="section" id="default-theme">
+<h1>Default Theme<a class="headerlink" href="#default-theme" title="永久链接至标题">¶</a></h1>
+<p>The default theme in Quill has been renamed from <code class="docutils literal notranslate"><span class="pre">default</span></code> to
+<code class="docutils literal notranslate"><span class="pre">base</span></code>. No change should be necessary unless the <code class="docutils literal notranslate"><span class="pre">default</span></code> theme was
+explicitly being included in the <a class="reference external" href="/docs/configuration/#theme">theme
+config</a> in which case it should be
+changed to <code class="docutils literal notranslate"><span class="pre">base</span></code>.</p>
+</div>
+<div class="section" id="npm">
+<h1>NPM<a class="headerlink" href="#npm" title="永久链接至标题">¶</a></h1>
+<p>Quill is now listed in npm as <code class="docutils literal notranslate"><span class="pre">quill</span></code> instead of <code class="docutils literal notranslate"><span class="pre">quilljs</span></code>. Quill
+was already listed as <code class="docutils literal notranslate"><span class="pre">quill</span></code> on bower so its name will now be
+consistent across package managers.</p>
+</div>
+<div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="永久链接至标题">¶</a></h1>
+<p>Finally, community contribution and involvement has been tremendous and
+both the project and everyone using it reaps the benefits. A big thanks
+for all the contributions so far and keep them coming!</p>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>See <a class="reference external" href="https://www.jasonchen.me/editors-and-iframes/">Editors and
+Iframes</a> for full
+details.</p>
+</dd>
+</dl>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

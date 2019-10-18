@@ -1,0 +1,352 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:2
+msgid "cloning medium with parchment"
+msgstr "克隆与羊皮纸介质"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:4
+msgid ""
+"To provide a consistent editing experience, you need both consistent data"
+" and predictable behaviors. The DOM unfortunately lacks both of these. "
+"The solution for modern editors is to maintain their own document model "
+"to represent their contents. `Parchment "
+"<https://github.com/quilljs/parchment/>`__ is that solution for Quill. It"
+" is organized in its own codebase with its own API layer. Through "
+"Parchment you can customize the content and formats Quill recognizes, or "
+"add entirely new ones."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:13
+msgid ""
+"In this guide, we will use the building blocks provided by Parchment and "
+"Quill to replicate the editor on Medium. We will start with the bare "
+"bones of Quill, without any themes, extraneous modules, or formats. At "
+"this basic level, Quill only understands plain text. But by the end of "
+"this guide, links, videos, and even tweets will be understood."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:20
+msgid "Groundwork"
+msgstr "Groundwork"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:22
+msgid ""
+"Let’s start without even using Quill, with just a textarea and button, "
+"hooked up to a dummy event listener. We’ll use jQuery for convenience "
+"throughout this guide, but neither Quill nor Parchment depends on this. "
+"We’ll also add some basic styling, with the help of `Google Fonts "
+"<https://fonts.google.com/>`__ and `Font Awesome "
+"<https://fontawesome.io/>`__. None of this has anything to do with Quill "
+"or Parchment, so we’ll move through quickly."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:33
+msgid "Adding Quill Core"
+msgstr "Adding Quill Core"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:35
+msgid ""
+"Next, we’ll replace the textarea with Quill core, absent of themes, "
+"formats and extraneous modules. Open up your developer console to inspect"
+" the demo while you type into the editor. You can see the basic building "
+"blocks of a Parchment document at work."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:42
+msgid ""
+"Like the DOM, a Parchment document is a tree. Its nodes, called Blots, "
+"are an abstraction over DOM Nodes. A few blots are already defined for "
+"us: Scroll, Block, Inline, Text and Break. As you type, a Text blot is "
+"synchronized with the corresponding DOM Text node; enters are handled by "
+"creating a new Block blot. In Parchment, Blots that can have children "
+"must have at least one child, so empty Blocks are filled with a Break "
+"blot. This makes handling leaves simple and predictable. All this is "
+"organized under a root Scroll blot."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:51
+msgid ""
+"You cannot observe an Inline blot by just typing at this point since it "
+"does not contribute meaningful structure or formatting to the document. A"
+" valid Quill document must be canonical and compact. There is only one "
+"valid DOM tree that can represent a given document, and that DOM tree "
+"contains the minimal number of nodes."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:57
+msgid ""
+"Since ``<p><span>Text</span></p>`` and ``<p>Text</p>`` represent the same"
+" content, the former is invalid and it is part of Quill’s optimization "
+"process to unwrap the ``<span>``. Similarly, once we add formatting, "
+"``<p><em>Te</em><em>st</em></p>`` and ``<p><em><em>Test</em></em></p>`` "
+"are also invalid, as they are not the most compact representation."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:64
+msgid ""
+"Because of these constraints, **Quill cannot support arbitrary DOM trees "
+"and HTML changes**. But as we will see, the consistency and predicability"
+" this structure provides enables us to easily build rich editing "
+"experiences."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:70
+msgid "Basic Formatting"
+msgstr "Basic Formatting"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:72
+msgid ""
+"We mentioned earlier that an Inline does not contribute formatting. This "
+"is the exception, rather than the rule, made for the base Inline class. "
+"The base Block blot works the same way for block level elements."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:76
+msgid ""
+"To implement bold and italics, we need only to inherit from Inline, set "
+"the ``blotName`` and ``tagName``, and register it with Quill. For a "
+"compelete reference of the signatures of inherited and static methods and"
+" variables, take a look at `Parchment "
+"<https://github.com/quilljs/parchment/>`__."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:97
+msgid ""
+"We follow Medium’s example here in using ``strong`` and ``em`` tags but "
+"you could just as well use ``b`` and ``i`` tags. The name of the blot "
+"will be used as the name of the format by Quill. By registering our "
+"blots, we can now use Quill’s full API on our new formats:"
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:114
+msgid ""
+"Let’s get rid of our dummy button handler and hook up the bold and italic"
+" buttons to Quill’s ```format()`` </docs/api/#format>`__. We will "
+"hardcode ``true`` to always add formatting for simplicity. In your "
+"application, you can use ```getFormat()`` </docs/api/#getformat>`__ to "
+"retrieve the current formatting over a arbitrary range to decide whether "
+"to add or remove a format. The `Toolbar </docs/modules/toolbar/>`__ "
+"module implements this for Quill, and we will not reimplement it here."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:122
+msgid ""
+"Open your developer console and try out Quill’s `APIs </docs/api/>`__ on "
+"your new bold and italic formats! Make sure to set the context to the "
+"correct CodePen iframe to be able to access the ``quill`` variable in the"
+" demo."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:129
+msgid ""
+"Note that if you apply both bold and italic to some text, regardless of "
+"what order you do so, Quill wraps the ``<strong>`` tag outside of the "
+"``<em>`` tag, in a consistent order."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:134
+msgid "Links"
+msgstr "Links"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:136
+msgid ""
+"Links are slightly more complicated, since we need more than a boolean to"
+" store the link url. This affects our Link blot in two ways: creation and"
+" format retrieval. We will represent the url as a string value, but we "
+"could easily do so in other ways, such as an object with a url key, "
+"allowing for other key/value pairs to be set and define a link. We will "
+"demonstrate this later with `images <#images>`__."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:168
+msgid ""
+"Now we can hook our link button up to a fancy ``prompt``, again to keep "
+"things simple, before passing to Quill’s ``format()``."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:174
+msgid "Blockquote and Headers"
+msgstr "Blockquote and Headers"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:176
+msgid ""
+"Blockquotes are implemented the same way as Bold blots, except we will "
+"inherit from Block, the base block level Blot. While Inline blots can be "
+"nested, Block blots cannot. Instead of wrapping, Block blots replace one "
+"another when applied to the same text range."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:189
+msgid ""
+"Headers are implemented exactly the same way, with only one difference: "
+"it can be represented by more than one DOM element. The value of the "
+"format by default becomes the tagName, instead of just ``true``. We can "
+"customize this by extending ``formats()``, similar to how we did so for "
+"`links <#links>`__."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:207
+msgid ""
+"Let’s hook these new blots up to their respective buttons and add some "
+"CSS for the ``<blockquote>`` tag."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:212
+msgid ""
+"Try setting some text to H1, and in your console, run "
+"``quill.getContents()``. You will see our custom static ``formats()`` "
+"function at work. Make sure to set the context to the correct CodePen "
+"iframe to be able to access the ``quill`` variable in the demo."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:218
+msgid "Dividers"
+msgstr "Dividers"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:220
+msgid ""
+"Now let’s implement our first leaf Blot. While our previous Blot examples"
+" contribute formatting and implement ``format()``, leaf Blots contribute "
+"content and implement ``value()``. Leaf Blots can either be Text or Embed"
+" Blots, so our section divider will be an Embed. Once created, Embed "
+"Blots’ value is immutable, requiring deletion and reinsertion to change "
+"the content at that location."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:227
+msgid ""
+"Our methodology is similar to before, except we inherit from a "
+"BlockEmbed. Embed also exists under ``blots/embed``, but is meant for "
+"inline level blots. We want the block level implementation instead for "
+"dividers."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:240
+msgid ""
+"Our click handler calls ```insertEmbed()`` </docs/api/#insertembed>`__, "
+"which does not as convienently determine, save, and restore the user "
+"selection for us like ```format()`` </docs/api/#format>`__ does, so we "
+"have to do a little more work to preserve selection ourselves. In "
+"addition, when we try to insert a BlockEmbed in the middle of the Block, "
+"Quill splits the Block for us. To make this behavior more clear, we will "
+"explicitly split the block oursevles by inserting a newline before "
+"inserting the divider. Take a look at the Babel tab in the CodePen for "
+"specifics."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:253
+msgid "Images"
+msgstr "Images"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:255
+msgid ""
+"Images can be added with what we learned building the `Link <#links>`__ "
+"and `Divider <#divider>`__ blots. We will use an object for the value to "
+"show how this is supported. Our button handler to insert images will use "
+"a static value, so we are not distracted by tooltip UI code irrelevant to"
+" `Parchment <https://github.com/quilljs/parchment/>`__, the focus of this"
+" guide."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:287
+msgid "Videos"
+msgstr "Videos"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:289
+msgid ""
+"We will implement videos in a similar way as we did `images <#images>`__."
+" We could use the HTML5 ``<video>`` tag but we cannot play YouTube videos"
+" this way, and since this is likely the more common and relevant use "
+"case, we will use an ``<iframe>`` to support this. We do not have to "
+"here, but if you want multiple Blots to use the same tag, you can use "
+"``className`` in addition to ``tagName``, demonstrated in the next `Tweet"
+" <#tweet>`__ example."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:297
+msgid ""
+"Additionally we will add support for widths and heights, as unregistered "
+"formats. Formats specific to Embeds do not have to be registered "
+"separately, as long as there is no namespace collision with registered "
+"formats. This works since Blots just pass unknown formats to its "
+"children, eventually reaching the leaves. This also allows different "
+"Embeds to handle unregistered formats differently. For example, our "
+"`image <#images>`__ embed from earlier could have recognized and handled "
+"the ``width`` format differently than our video does here."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:351
+msgid ""
+"Note if you open your console and call ```getContents`` "
+"</docs/api/#getcontents>`__, Quill will report the video as:"
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:372
+msgid "Tweets"
+msgstr "Tweets"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:374
+msgid ""
+"Medium supports many embed types, but we will just focus on Tweets for "
+"this guide. The Tweet blot is implemented almost exactly the same as "
+"`images <#images>`__. We take advantage of the fact that Embed blots do "
+"not have to correspond to a void node. It can be any arbitrary node and "
+"Quill will treat it like a void node and not traverse its children or "
+"descendants. This allows us to use a ``<div>`` and the native Twitter "
+"Javascript library to do what it pleases within the ``<div>`` container "
+"we specify."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:383
+msgid ""
+"Since our root Scroll Blot also uses a ``<div>``, we also specify a "
+"``className`` to disambiguate. Note Inline blots use ``<span>`` and Block"
+" Blots use ``<p>`` by default, so if you would like to use these tags for"
+" your custom Blots, you will have to specify a ``className`` in addition "
+"to a ``tagName``."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:389
+msgid ""
+"We use the Tweet id as the value defining our Blot. Again our click "
+"handler uses a static value to avoid distraction from irrelevant UI code."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:415
+msgid "Final Polish"
+msgstr "Final Polish"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:417
+msgid ""
+"We began with just a bunch of buttons and a Quill core that just "
+"understands plaintext. With Parchment, we are able to add bold, italic, "
+"links, blockquotes, headers, section dividers, images, videos, and even "
+"Tweets. All of this comes while maintaining a predictable and consistent "
+"document, allowing us to use Quill’s powerful `APIs </docs/api/>`__ with "
+"these new formats and content."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:424
+msgid ""
+"Let’s add some final polish to finish off our demo. It won’t compare to "
+"Medium’s UI, but we’ll try to get close."
+msgstr ""
+

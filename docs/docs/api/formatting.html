@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Formatting &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Model" href="model.html" />
+    <link rel="prev" title="Extension" href="extension.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../download.html">download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html">configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../formats.html">formats</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">api</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="contents.html">Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="editor.html">Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="extension.html">Extension</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Formatting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#format">format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formatline">formatLine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formattext">formatText</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#getformat">getFormat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#removeformat">removeFormat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="model.html">Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="selection.html">Selection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../delta.html">delta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/index.html">modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../themes.html">themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standalone/index.html">standalone</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+          <li><a href="index.html">api</a> &raquo;</li>
+        
+      <li>Formatting</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/docs/api/formatting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="formatting">
+<h1>Formatting<a class="headerlink" href="#formatting" title="永久链接至标题">¶</a></h1>
+<div class="section" id="format">
+<h2>format<a class="headerlink" href="#format" title="永久链接至标题">¶</a></h2>
+<p>Format text at user’s current selection, returning a
+<a class="reference external" href="/guides/working-with-deltas/">Delta</a> representing the change. If the
+user’s selection length is 0, i.e. it is a cursor, the format will be
+set active, so the next character the user types will have that
+formatting. <a class="reference external" href="/docs/api/#events">Source</a> may be <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;api&quot;</span></code>,
+or <code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code>. Calls where the <code class="docutils literal notranslate"><span class="pre">source</span></code> is <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code> when the
+editor is <a class="reference external" href="#disable">disabled</a> are ignored.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">format</span><span class="p">(</span><span class="nx">name</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="nx">any</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span><span class="o">:</span> <span class="nx">Delta</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;align&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="formatline">
+<h2>formatLine<a class="headerlink" href="#formatline" title="永久链接至标题">¶</a></h2>
+<p>Formats all lines in given range, returning a
+<a class="reference external" href="/guides/working-with-deltas/">Delta</a> representing the change. See
+<a class="reference external" href="/docs/formats/">formats</a> for a list of available formats. Has no
+effect when called with inline formats. To remove formatting, pass
+<code class="docutils literal notranslate"><span class="pre">false</span></code> for the value argument. The user’s selection may not be
+preserved. <a class="reference external" href="/docs/api/#events">Source</a> may be <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;api&quot;</span></code>,
+or <code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code>. Calls where the <code class="docutils literal notranslate"><span class="pre">source</span></code> is <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code> when the
+editor is <a class="reference external" href="#disable">disabled</a> are ignored.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">formatLine</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span><span class="o">:</span> <span class="nx">Delta</span>
+<span class="nx">formatLine</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">format</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="nx">any</span><span class="p">,</span>
+           <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span><span class="o">:</span> <span class="nx">Delta</span>
+<span class="nx">formatLine</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">formats</span><span class="o">:</span> <span class="p">{</span> <span class="p">[</span><span class="nb">String</span><span class="p">]</span><span class="o">:</span> <span class="nx">any</span> <span class="p">},</span>
+           <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span><span class="o">:</span> <span class="nx">Delta</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s1">&#39;Hello\nWorld!\n&#39;</span><span class="p">);</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatLine</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;align&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">);</span>   <span class="c1">// right aligns the first line</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatLine</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;align&#39;</span><span class="p">,</span> <span class="s1">&#39;center&#39;</span><span class="p">);</span>  <span class="c1">// center aligns both lines</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="formattext">
+<h2>formatText<a class="headerlink" href="#formattext" title="永久链接至标题">¶</a></h2>
+<p>Formats text in the editor, returning a
+<a class="reference external" href="/guides/working-with-deltas/">Delta</a> representing the change. For
+line level formats, such as text alignment, target the newline character
+or use the <code class="docutils literal notranslate"><span class="pre">`formatLine</span></code> &lt;#formatline&gt;`__ helper. See
+<a class="reference external" href="/docs/formats/">formats</a> for a list of available formats. To remove
+formatting, pass <code class="docutils literal notranslate"><span class="pre">false</span></code> for the value argument. The user’s selection
+may not be preserved. <a class="reference external" href="/docs/api/#events">Source</a> may be <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&quot;api&quot;</span></code>, or <code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code>. Calls where the <code class="docutils literal notranslate"><span class="pre">source</span></code> is <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code>
+when the editor is <a class="reference external" href="#disable">disabled</a> are ignored.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">formatText</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span><span class="o">:</span> <span class="nx">Delta</span>
+<span class="nx">formatText</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">format</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">value</span><span class="o">:</span> <span class="nx">any</span><span class="p">,</span>
+           <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span><span class="o">:</span> <span class="nx">Delta</span>
+<span class="nx">formatText</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">formats</span><span class="o">:</span> <span class="p">{</span> <span class="p">[</span><span class="nb">String</span><span class="p">]</span><span class="o">:</span> <span class="nx">any</span> <span class="p">},</span>
+           <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span><span class="o">:</span> <span class="nx">Delta</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s1">&#39;Hello\nWorld!\n&#39;</span><span class="p">);</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>      <span class="c1">// bolds &#39;hello&#39;</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="p">{</span>                   <span class="c1">// unbolds &#39;hello&#39; and set its color to blue</span>
+  <span class="s1">&#39;bold&#39;</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="s1">&#39;color&#39;</span><span class="o">:</span> <span class="s1">&#39;rgb(0, 0, 255)&#39;</span>
+<span class="p">});</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;align&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">);</span>  <span class="c1">// right aligns the &#39;hello&#39; line</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="getformat">
+<h2>getFormat<a class="headerlink" href="#getformat" title="永久链接至标题">¶</a></h2>
+<p>Retrieves common formatting of the text in the given range. For a format
+to be reported, all text within the range must have a truthy value. If
+there are different truthy values, an array with all truthy values will
+be reported. If no range is supplied, the user’s current selection range
+is used. May be used to show which formats have been set on the cursor.
+If called with no arguments, the user’s current selection range will be
+used.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">getFormat</span><span class="p">(</span><span class="nx">range</span><span class="o">:</span> <span class="nx">Range</span> <span class="o">=</span> <span class="nx">current</span><span class="p">)</span><span class="o">:</span> <span class="p">{</span> <span class="p">[</span><span class="nb">String</span><span class="p">]</span><span class="o">:</span> <span class="nx">any</span> <span class="p">}</span>
+<span class="nx">getFormat</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span><span class="o">:</span> <span class="p">{</span> <span class="p">[</span><span class="nb">String</span><span class="p">]</span><span class="o">:</span> <span class="nx">any</span> <span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;italic&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">getFormat</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>   <span class="c1">// { bold: true }</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">getFormat</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>   <span class="c1">// { bold: true, italic: true }</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">getFormat</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>   <span class="c1">// { color: [&#39;red&#39;, &#39;blue&#39;] }</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">setSelection</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">getFormat</span><span class="p">();</span>       <span class="c1">// { italic: true, color: &#39;blue&#39; }</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;strike&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">getFormat</span><span class="p">();</span>       <span class="c1">// { italic: true, color: &#39;blue&#39;, strike: true }</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatLine</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;align&#39;</span><span class="p">,</span> <span class="s1">&#39;right&#39;</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">getFormat</span><span class="p">();</span>       <span class="c1">// { italic: true, color: &#39;blue&#39;, strike: true,</span>
+                         <span class="c1">//   align: &#39;right&#39; }</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="removeformat">
+<h2>removeFormat<a class="headerlink" href="#removeformat" title="永久链接至标题">¶</a></h2>
+<p>Removes all formatting and embeds within given range, returning a
+<a class="reference external" href="/guides/working-with-deltas/">Delta</a> representing the change. Line
+formatting will be removed if any part of the line is included in the
+range. The user’s selection may not be preserved.
+<a class="reference external" href="/docs/api/#events">Source</a> may be <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;api&quot;</span></code>, or
+<code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code>. Calls where the <code class="docutils literal notranslate"><span class="pre">source</span></code> is <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code> when the editor
+is <a class="reference external" href="#disable">disabled</a> are ignored.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">removeFormat</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span><span class="o">:</span> <span class="nx">Delta</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">setContents</span><span class="p">([</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;\n&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="p">{</span> <span class="nx">formula</span><span class="o">:</span> <span class="s1">&#39;x^2&#39;</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;\n&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">italic</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}},</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;\n&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s1">&#39;center&#39;</span> <span class="p">}</span> <span class="p">}</span>
+<span class="p">]);</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">removeFormat</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">);</span>
+<span class="c1">// Editor contents are now</span>
+<span class="c1">// [</span>
+<span class="c1">//   { insert: &#39;Hel&#39;, { bold: true } },</span>
+<span class="c1">//   { insert: &#39;lo\n\nWo&#39; },</span>
+<span class="c1">//   { insert: &#39;rld&#39;, { italic: true }},</span>
+<span class="c1">//   { insert: &#39;\n&#39;, { align: &#39;center&#39; } }</span>
+<span class="c1">// ]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="model.html" class="btn btn-neutral float-right" title="Model" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="extension.html" class="btn btn-neutral float-left" title="Extension" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

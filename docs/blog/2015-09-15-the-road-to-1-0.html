@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2015年9月15日道路1.0 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="2016年3月14日我们到了1.0" href="2016-03-14-are-we-there-yet-to-1-0.html" />
+    <link rel="prev" title="2014年11月6日鹅毛笔v0.19没有更多的I帧" href="2014-11-06-quill-v0-19-no-more-iframes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">指南</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">博客</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="2014-08-12-an-official-cdn-for-quill.html">2014年8月12日的羽毛笔官方CDN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2014-08-14-building-a-custom-module.html">2014年8月14日建立一个自定义模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2014-09-29-a-new-delta.html">2014年9月29日一个新的增量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2014-10-19-upgrading-to-rich-text-deltas.html">2014年10月19日升级到富文本三角洲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2014-11-06-quill-v0-19-no-more-iframes.html">2014年11月6日鹅毛笔v0.19没有更多的I帧</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2015年9月15日道路1.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#parchment">Parchment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#formats">Formats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#beyond-1-0">Beyond 1.0</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="2016-03-14-are-we-there-yet-to-1-0.html">2016年3月14日我们到了1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2016-05-03-quill-1-0-beta-release.html">2016年5月3日套筒1.0 beta版</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2016-08-18-quill-1-0-release-candidate-released.html">发布2016年8月18日鹅毛笔1.0发布候选</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2016-09-06-accouncing-quill-1-0.html">2016年9月6日accouncing鹅毛笔1.0</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">博客</a> &raquo;</li>
+        
+      <li>2015年9月15日道路1.0</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/blog/2015-09-15-the-road-to-1-0.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-road-to-1-0">
+<h1>2015年9月15日道路1.0<a class="headerlink" href="#the-road-to-1-0" title="永久链接至标题">¶</a></h1>
+<p>Quill launched with the ambitious goal of becoming <em>the</em> rich text
+editor for the web, being both easy to use for drop in use cases, and
+powerful enough for complex ones. Its current <a class="reference external" href="/docs/api/">API</a> is
+core to those goals.</p>
+<p>In the past months, much effort has been placed into providing even
+greater means for customization, particularly the editor’s contents.
+With this nearing completion, Quill is approaching its 1.0 coming of
+age.</p>
+<div class="section" id="parchment">
+<h2>Parchment<a class="headerlink" href="#parchment" title="永久链接至标题">¶</a></h2>
+<p>A full introduction and guide to Parchment is still forthcoming, but in
+short it is a new document model for Quill. An editor’s document model
+is an important abstraction over the DOM that allows the editor and API
+users to reason about its contents through a much simpler yet more
+expressive interface than directly interacting with the browser. For
+Quill, this enables an elegant solution to the longstanding problem of
+format customization.</p>
+<!-- more --><p>Prior to Parchment, Quill required near complete control over its editor
+container and descendant DOM nodes in order to provide its precise
+retrieval and manipulation API. Even simple modifications such as
+changing the default link open behavior required hacks and defining new
+content types, such as syntax highlighted code, was impossible.</p>
+<p>Parchment hands control of entire subtrees back to the user, allowing
+the definition of new nodes or overwriting existing ones. The
+requirement is that certain methods such as <code class="docutils literal notranslate"><span class="pre">getValue</span></code> and
+<code class="docutils literal notranslate"><span class="pre">getFormat</span></code> be defined in order to happily exist within a Parchment
+document. Those familiar will find this very similar to <code class="docutils literal notranslate"><span class="pre">render</span></code> and
+Components in <a class="reference external" href="https://facebook.github.io/react/">React</a>, a
+significant influencer of Parchment’s design.</p>
+<p>While the Parchment interface is still being stabilized, a preview of a
+definition for a <a class="reference external" href="https://github.com/Khan/KaTeX">KaTeX</a> equation
+looks like this (with ES6 syntax):</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">class</span> <span class="nx">Equation</span> <span class="kr">extends</span> <span class="nx">Parchment</span><span class="p">.</span><span class="nx">Embed</span> <span class="p">{</span>
+  <span class="nx">constructor</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">super</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">domNode</span><span class="p">.</span><span class="nx">setAttribute</span><span class="p">(</span><span class="s1">&#39;contenteditable&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+    <span class="nx">katex</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">domNode</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">getValue</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">Quill</span><span class="p">.</span><span class="nx">registerFormat</span><span class="p">(</span><span class="nx">Equation</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The current priority is to integrate Parchment into Quill as its new
+document model. However, Parchment is and will remain organized as its
+own <a class="reference external" href="https://github.com/quilljs/parchment">repository</a>, as it was
+designed as a general purpose tool. Hopefully one day it may serve as
+the document model for other editors as well.</p>
+</div>
+<div class="section" id="formats">
+<h2>Formats<a class="headerlink" href="#formats" title="永久链接至标题">¶</a></h2>
+<p>Parchment opens the doors to scalably support many more formats, many of
+which will be included in the 1.0 release. The complete list is not
+ready for announcement but they will at least include semantic headers
+and nested lists. Equations and syntax highlighted code will also be
+added as separate repositories because of their likely dependency on
+external libraries.</p>
+</div>
+<div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="永久链接至标题">¶</a></h2>
+<p>Quill organizes most of its source code as modules to make it easy to
+overwrite their default behavior. Unfortunately a documentation gap
+currently exists for these modules–this will have to be filled for their
+extensibility to be realized.</p>
+<p>Some non-essential modules will also be moved out into their own
+repositories. Custom builds are planned to conveniently include or
+exclude these modules, along with other permutations, though this may
+land post 1.0 depending on timing.</p>
+</div>
+<div class="section" id="beyond-1-0">
+<h2>Beyond 1.0<a class="headerlink" href="#beyond-1-0" title="永久链接至标题">¶</a></h2>
+<p>With Quill 1.0, the main foundations will be complete and much more
+emphasis will be placed into building examples and enhancing support,
+with internationalization, accessibility, and cross application
+interactions (copy/paste) as main focus points.</p>
+<p>In addition, Quill’s UI is due for an upgrade. While the aesthetics of
+Quill is already completely customizable, more numerous defaults could
+be available for those wanting a drop in solution. Here’s a sneak peak
+at a couple of upcoming themes in the works:</p>
+<p></p><p>Finally, the community deserves a great thank you for all of your
+contributions and support! All the <a class="reference external" href="https://github.com/quilljs/quill/labels/bug">bug
+reports</a>, <a class="reference external" href="https://github.com/quilljs/quill/labels/feature">features
+suggestions</a> and
+<a class="reference external" href="https://github.com/quilljs/quill/pulls?q=is%3Apr">pull requests</a>
+make Quill what it is today. Keep these coming! Exciting times are ahead
+for web editing and for Quill.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="2016-03-14-are-we-there-yet-to-1-0.html" class="btn btn-neutral float-right" title="2016年3月14日我们到了1.0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2014-11-06-quill-v0-19-no-more-iframes.html" class="btn btn-neutral float-left" title="2014年11月6日鹅毛笔v0.19没有更多的I帧" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

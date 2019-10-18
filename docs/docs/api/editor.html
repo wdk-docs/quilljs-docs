@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Editor &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Events" href="events.html" />
+    <link rel="prev" title="Content" href="contents.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../download.html">download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html">configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../formats.html">formats</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">api</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="contents.html">Content</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Editor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#blur">blur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#disable">disable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enable">enable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#focus">focus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hasfocus">hasFocus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#update">update</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="extension.html">Extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="formatting.html">Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="model.html">Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="selection.html">Selection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../delta.html">delta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/index.html">modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../themes.html">themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standalone/index.html">standalone</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+          <li><a href="index.html">api</a> &raquo;</li>
+        
+      <li>Editor</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/docs/api/editor.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="editor">
+<h1>Editor<a class="headerlink" href="#editor" title="永久链接至标题">¶</a></h1>
+<div class="section" id="blur">
+<h2>blur<a class="headerlink" href="#blur" title="永久链接至标题">¶</a></h2>
+<p>Removes focus from the editor.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">blur</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">blur</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="disable">
+<h2>disable<a class="headerlink" href="#disable" title="永久链接至标题">¶</a></h2>
+<p>Shorthand for <code class="docutils literal notranslate"><span class="pre">`enable(false)</span></code> &lt;#enable&gt;`__.</p>
+</div>
+<div class="section" id="enable">
+<h2>enable<a class="headerlink" href="#enable" title="永久链接至标题">¶</a></h2>
+<p>Set ability for user to edit, via input devices like the mouse or
+keyboard. Does not affect capabilities of API calls, when the <code class="docutils literal notranslate"><span class="pre">source</span></code>
+is <code class="docutils literal notranslate"><span class="pre">&quot;api&quot;</span></code> or `“silent”.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">enable</span><span class="p">(</span><span class="nx">enabled</span><span class="o">:</span> <span class="kr">boolean</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">enable</span><span class="p">();</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">enable</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>   <span class="c1">// Disables user input</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="focus">
+<h2>focus<a class="headerlink" href="#focus" title="永久链接至标题">¶</a></h2>
+<p>Focuses the editor and restores its last range.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">focus</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">focus</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="hasfocus">
+<h2>hasFocus<a class="headerlink" href="#hasfocus" title="永久链接至标题">¶</a></h2>
+<p>Checks if editor has focus. Note focus on toolbar, tooltips, does not
+count as the editor.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">hasFocus</span><span class="p">()</span><span class="o">:</span> <span class="nb">Boolean</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">hasFocus</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="update">
+<h2>update<a class="headerlink" href="#update" title="永久链接至标题">¶</a></h2>
+<p>Synchronously check editor for user updates and fires events, if changes
+have occurred. Useful for collaborative use cases during conflict
+resolution requiring the latest up to date state.
+<a class="reference external" href="/docs/api/#events">Source</a> may be <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;api&quot;</span></code>, or
+<code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code>.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">update</span><span class="p">(</span><span class="nx">source</span><span class="o">:</span> <span class="nb">String</span> <span class="o">=</span> <span class="s1">&#39;user&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">update</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="events.html" class="btn btn-neutral float-right" title="Events" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="contents.html" class="btn btn-neutral float-left" title="Content" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>配置 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="格式" href="formats.html" />
+    <link rel="prev" title="下载" href="download.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">快速开始</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html">下载</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">配置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#container">容器</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options">选项</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bounds">bounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#debug">debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#formats">formats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#modules">modules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#placeholder">placeholder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#readonly">readOnly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scrollingcontainer">scrollingContainer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#theme">theme</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="formats.html">格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html">api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delta.html">三角洲</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/index.html">模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="themes.html">主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standalone/index.html">独立</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">文档</a> &raquo;</li>
+        
+      <li>配置</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/docs/configuration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="configure">
+<h1>配置<a class="headerlink" href="#configure" title="永久链接至标题">¶</a></h1>
+<p>Quill allows several ways to customize it to suit your needs. This
+section is dedicated to tweaking existing functionality. See the
+<a class="reference external" href="/docs/modules/">Modules</a> section for adding new functionality and
+the <a class="reference external" href="/docs/themes/">Themes</a> section for styling.</p>
+<div class="section" id="container">
+<h2>容器<a class="headerlink" href="#container" title="永久链接至标题">¶</a></h2>
+<p>Quill requires a container where the editor will be appended. You can
+pass in either a CSS selector or a DOM object.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;.editor&#39;</span><span class="p">);</span>  <span class="c1">// First matching element will be used</span>
+</pre></div>
+</div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;editor&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="nx">container</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">container</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.editor&#39;</span><span class="p">).</span><span class="nx">get</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="nx">container</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="options">
+<h2>选项<a class="headerlink" href="#options" title="永久链接至标题">¶</a></h2>
+<p>要配置奎尔，传递一个选择对象:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">debug</span><span class="o">:</span> <span class="s1">&#39;info&#39;</span><span class="p">,</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="s1">&#39;#toolbar&#39;</span>
+  <span class="p">},</span>
+  <span class="nx">placeholder</span><span class="o">:</span> <span class="s1">&#39;Compose an epic...&#39;</span><span class="p">,</span>
+  <span class="nx">readOnly</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">theme</span><span class="o">:</span> <span class="s1">&#39;snow&#39;</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">editor</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="nx">options</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>下面的键被认可:</p>
+<div class="section" id="bounds">
+<h3>bounds<a class="headerlink" href="#bounds" title="永久链接至标题">¶</a></h3>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">document.body</span></code></p>
+<p>DOM Element or a CSS selector for a DOM Element, within which the
+editor’s ui elements (i.e. tooltips, etc.) should be confined.
+Currently, it only considers left and right boundaries.</p>
+</div>
+<div class="section" id="debug">
+<h3>debug<a class="headerlink" href="#debug" title="永久链接至标题">¶</a></h3>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">warn</span></code></p>
+<p>Shortcut for <a class="reference external" href="/docs/api/#debug">debug</a>. Note <code class="docutils literal notranslate"><span class="pre">debug</span></code> is a static
+method and will affect other instances of Quill editors on the page.
+Only warning and error messages are enabled by default.</p>
+</div>
+<div class="section" id="formats">
+<h3>formats<a class="headerlink" href="#formats" title="永久链接至标题">¶</a></h3>
+<p>Default: All formats</p>
+<p>Whitelist of formats to allow in the editor. See
+<a class="reference external" href="/docs/formats/">Formats</a> for a complete list.</p>
+</div>
+<div class="section" id="modules">
+<h3>modules<a class="headerlink" href="#modules" title="永久链接至标题">¶</a></h3>
+<p>Collection of modules to include and respective options. See
+<a class="reference external" href="/docs/modules/">Modules</a> for more information.</p>
+</div>
+<div class="section" id="placeholder">
+<h3>placeholder<a class="headerlink" href="#placeholder" title="永久链接至标题">¶</a></h3>
+<p>Default: None</p>
+<p>Placeholder text to show when editor is empty.</p>
+</div>
+<div class="section" id="readonly">
+<h3>readOnly<a class="headerlink" href="#readonly" title="永久链接至标题">¶</a></h3>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">false</span></code></p>
+<p>Whether to instantiate the editor to read-only mode.</p>
+</div>
+<div class="section" id="scrollingcontainer">
+<h3>scrollingContainer<a class="headerlink" href="#scrollingcontainer" title="永久链接至标题">¶</a></h3>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">null</span></code></p>
+<p>DOM Element or a CSS selector for a DOM Element, specifying which
+container has the scrollbars (i.e. <code class="docutils literal notranslate"><span class="pre">overflow-y:</span> <span class="pre">auto</span></code>), if is has been
+changed from the default <code class="docutils literal notranslate"><span class="pre">ql-editor</span></code> with custom CSS. Necessary to fix
+scroll jumping bugs when Quill is set to <a class="reference external" href="/playground/#autogrow">auto
+grow</a> its height, and another ancestor
+container is responsible from the scrolling.</p>
+</div>
+<div class="section" id="theme">
+<h3>theme<a class="headerlink" href="#theme" title="永久链接至标题">¶</a></h3>
+<p>Name of theme to use. The builtin options are “bubble” or “snow”. An
+invalid or falsy value will load a default minimal theme. Note the
+theme’s specific stylesheet still needs to be included manually. See
+<a class="reference external" href="/docs/themes/">Themes</a> for more information.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="formats.html" class="btn btn-neutral float-right" title="格式" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="download.html" class="btn btn-neutral float-left" title="下载" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

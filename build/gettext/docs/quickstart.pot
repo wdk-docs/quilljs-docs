@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/docs/quickstart.rst:2
+msgid "quickstart"
+msgstr "quickstart"
+
+#: ../../source/docs/quickstart.rst:4
+msgid "The best way to get started is try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
+msgstr "The best way to get started is try a simple example. Quill is initialized with a DOM element to contain the editor. The contents of that element will become the initial contents of Quill."
+
+#: ../../source/docs/quickstart.rst:30
+msgid "And that’s all there is to it!"
+msgstr "And that’s all there is to it!"
+
+#: ../../source/docs/quickstart.rst:33
+msgid "Next Steps"
+msgstr "Next Steps"
+
+#: ../../source/docs/quickstart.rst:35
+msgid "The real magic of Quill comes in its flexibility and extensibility. You can get an idea of what is possible by playing around with the demos throughout this site or head straight to the `Interactive Playground </playground/>`__. For an in-depth walkthrough, take a look at `How to Customize Quill </guides/how-to-customize-quill/>`__."
+msgstr "The real magic of Quill comes in its flexibility and extensibility. You can get an idea of what is possible by playing around with the demos throughout this site or head straight to the `Interactive Playground </playground/>`__. For an in-depth walkthrough, take a look at `How to Customize Quill </guides/how-to-customize-quill/>`__."
+

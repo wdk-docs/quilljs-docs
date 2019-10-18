@@ -1,0 +1,1934 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:01+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:2
+msgid "adding quill to your build pipeline"
+msgstr "adding quill to your build pipeline"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:4
+msgid ""
+"Each version of Quill is built and ready to use from a variety of "
+"sources, including `NPM <https://www.npmjs.com/package/quill>`__ or its "
+"`CDN </docs/download/>`__. However there may be use cases where you would"
+" like to build Quill from source, as part of your application’s build "
+"pipeline. If this desire has not occurred to you, don’t sweat it! Using "
+"pre-built versions is the easiest way to use Quill."
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:11
+msgid ""
+"Quill is built using `Webpack <https://webpack.js.org/concepts/>`__ and "
+"this guide is mostly targeted towards Webpack users. However some "
+"principles may translate to other build environments."
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:15
+msgid ""
+"A minimal working example of everything covered in this guide can be "
+"found at `quill-webpack-example <https://github.com/quilljs/webpack-"
+"example/>`__."
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:20
+msgid "Webpack"
+msgstr "Webpack"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:22
+msgid ""
+"You will need to add Webpack and appropriate loaders as development "
+"dependencies to your app. The Typescript compiler is necessary if you "
+"want to build Parchment from source as well."
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:26
+msgid ""
+"Quill source code - ```babel-core`` <https://www.npmjs.com/package/babel-"
+"core>`__, ```babel-loader`` <https://www.npmjs.com/package/babel-"
+"loader>`__, ```babel-preset-es2015`` <https://www.npmjs.com/package"
+"/babel-preset-es2015>`__"
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:30
+msgid ""
+"Parchment source code - ```ts-loader`` <https://www.npmjs.com/package/ts-"
+"loader>`__, ```typescript`` <https://www.npmjs.com/package/typescript>`__"
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:33
+msgid ""
+"SVG icons - ```html-loader`` <https://www.npmjs.com/package/html-"
+"loader>`__"
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:36
+msgid ""
+"Your Webpack configuration file will also need to alias Quill and "
+"Parchment to point to their respective entry source files. Without this, "
+"Webpack will use the pre-built files included in NPM, instead of building"
+" from source."
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:42
+msgid "Entry"
+msgstr "Entry"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:44
+msgid ""
+"Quill is distributed with builds ``quill.js`` and ``quill.core.js``. The "
+"purpose of the entry files for both builds, `quill.js "
+"<https://github.com/quilljs/quill/blob/master/quill.js>`__ and `core.js "
+"<https://github.com/quilljs/quill/blob/master/core.js>`__, is to import "
+"and register necessary dependencies. You will likely want a similar entry"
+" point in your application that includes only the formats, modules, or "
+"themes that you use."
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:76
+msgid "Stylesheets"
+msgstr "Stylesheets"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:78
+msgid ""
+"There is not as much to benefit from building from source in the realm of"
+" stylesheets, since rules can be so easily overwritten. However, ```css-"
+"loader`` <https://www.npmjs.com/package/css-loader>`__\\ ’s tilde prefix "
+"may be useful to include Quill styles in a your application css file."
+msgstr ""
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:91
+msgid "Example"
+msgstr "Example"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:93
+msgid ""
+"Take a look at `quill-webpack-example <https://github.com/quilljs"
+"/webpack-example/>`__ for a minimal working example."
+msgstr ""
+
+#: ../../source/guides/building-a-custom-module.rst:2
+msgid "building a custom module"
+msgstr "building a custom module"
+
+#: ../../source/guides/building-a-custom-module.rst:4
+msgid ""
+"Quill’s core strength as an editor is its rich API and powerful "
+"customization capabilities. As you implement functionality on top of "
+"Quill’s API, it may be convenient to organize this as a module. For the "
+"purpose of this guide, we will walk through one way to build a word "
+"counter module, a commonly found feature in many word processors."
+msgstr ""
+
+#: ../../source/guides/building-a-custom-module.rst:10
+msgid ""
+"*Note: Internally modules are how much of Quill’s functionality is "
+"organized. You can overwrite these default*\\ `modules "
+"</docs/modules/>`__\\ *by implementing your own and registering it with "
+"the same name.*"
+msgstr ""
+
+#: ../../source/guides/building-a-custom-module.rst:16
+msgid "Counting Words"
+msgstr "Counting Words"
+
+#: ../../source/guides/building-a-custom-module.rst:18
+msgid ""
+"At its core a word counter simply counts the number of words in the "
+"editor and displays this value in some UI. Thus we need to:"
+msgstr ""
+
+#: ../../source/guides/building-a-custom-module.rst:21
+msgid "Listen for text changes in Quill."
+msgstr "Listen for text changes in Quill."
+
+#: ../../source/guides/building-a-custom-module.rst:22
+msgid "Count the number of words."
+msgstr "Count the number of words."
+
+#: ../../source/guides/building-a-custom-module.rst:23
+msgid "Display this value."
+msgstr "Display this value."
+
+#: ../../source/guides/building-a-custom-module.rst:25
+msgid "Let’s jump straight in with a complete example!"
+msgstr "Let’s jump straight in with a complete example!"
+
+#: ../../source/guides/building-a-custom-module.rst:55
+msgid ""
+"That’s all it takes to add a custom module to Quill! A function can be "
+"`registered </docs/api/#quillregistermodule/>`__ as a module and it will "
+"be passed the corresponding Quill editor object along with any options."
+msgstr ""
+
+#: ../../source/guides/building-a-custom-module.rst:60
+msgid "Using Options"
+msgstr "Using Options"
+
+#: ../../source/guides/building-a-custom-module.rst:62
+msgid ""
+"Modules are passed an options object that can be used to fine tune the "
+"desired behavior. We can use this to accept a selector for the counter "
+"container instead of a hard-coded string. Let’s also customize the "
+"counter to either count words or characters:"
+msgstr ""
+
+#: ../../source/guides/building-a-custom-module.rst:95
+msgid "Constructors"
+msgstr "Constructors"
+
+#: ../../source/guides/building-a-custom-module.rst:97
+msgid ""
+"Since any function can be registered as a Quill module, we could have "
+"implemented our counter as an ES5 constructor or ES6 class. This allows "
+"us to access and utilize the module directly."
+msgstr ""
+
+#: ../../source/guides/building-a-custom-module.rst:144
+msgid "Wrapping It All Up"
+msgstr "Wrapping It All Up"
+
+#: ../../source/guides/building-a-custom-module.rst:146
+msgid ""
+"Now let’s polish off the module in ES6 and fix a few pesky bugs. That’s "
+"all there is to it!"
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:2
+msgid "cloning medium with parchment"
+msgstr "cloning medium with parchment"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:4
+msgid ""
+"To provide a consistent editing experience, you need both consistent data"
+" and predictable behaviors. The DOM unfortunately lacks both of these. "
+"The solution for modern editors is to maintain their own document model "
+"to represent their contents. `Parchment "
+"<https://github.com/quilljs/parchment/>`__ is that solution for Quill. It"
+" is organized in its own codebase with its own API layer. Through "
+"Parchment you can customize the content and formats Quill recognizes, or "
+"add entirely new ones."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:13
+msgid ""
+"In this guide, we will use the building blocks provided by Parchment and "
+"Quill to replicate the editor on Medium. We will start with the bare "
+"bones of Quill, without any themes, extraneous modules, or formats. At "
+"this basic level, Quill only understands plain text. But by the end of "
+"this guide, links, videos, and even tweets will be understood."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:20
+msgid "Groundwork"
+msgstr "Groundwork"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:22
+msgid ""
+"Let’s start without even using Quill, with just a textarea and button, "
+"hooked up to a dummy event listener. We’ll use jQuery for convenience "
+"throughout this guide, but neither Quill nor Parchment depends on this. "
+"We’ll also add some basic styling, with the help of `Google Fonts "
+"<https://fonts.google.com/>`__ and `Font Awesome "
+"<https://fontawesome.io/>`__. None of this has anything to do with Quill "
+"or Parchment, so we’ll move through quickly."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:33
+msgid "Adding Quill Core"
+msgstr "Adding Quill Core"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:35
+msgid ""
+"Next, we’ll replace the textarea with Quill core, absent of themes, "
+"formats and extraneous modules. Open up your developer console to inspect"
+" the demo while you type into the editor. You can see the basic building "
+"blocks of a Parchment document at work."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:42
+msgid ""
+"Like the DOM, a Parchment document is a tree. Its nodes, called Blots, "
+"are an abstraction over DOM Nodes. A few blots are already defined for "
+"us: Scroll, Block, Inline, Text and Break. As you type, a Text blot is "
+"synchronized with the corresponding DOM Text node; enters are handled by "
+"creating a new Block blot. In Parchment, Blots that can have children "
+"must have at least one child, so empty Blocks are filled with a Break "
+"blot. This makes handling leaves simple and predictable. All this is "
+"organized under a root Scroll blot."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:51
+msgid ""
+"You cannot observe an Inline blot by just typing at this point since it "
+"does not contribute meaningful structure or formatting to the document. A"
+" valid Quill document must be canonical and compact. There is only one "
+"valid DOM tree that can represent a given document, and that DOM tree "
+"contains the minimal number of nodes."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:57
+msgid ""
+"Since ``<p><span>Text</span></p>`` and ``<p>Text</p>`` represent the same"
+" content, the former is invalid and it is part of Quill’s optimization "
+"process to unwrap the ``<span>``. Similarly, once we add formatting, "
+"``<p><em>Te</em><em>st</em></p>`` and ``<p><em><em>Test</em></em></p>`` "
+"are also invalid, as they are not the most compact representation."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:64
+msgid ""
+"Because of these constraints, **Quill cannot support arbitrary DOM trees "
+"and HTML changes**. But as we will see, the consistency and predicability"
+" this structure provides enables us to easily build rich editing "
+"experiences."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:70
+msgid "Basic Formatting"
+msgstr "Basic Formatting"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:72
+msgid ""
+"We mentioned earlier that an Inline does not contribute formatting. This "
+"is the exception, rather than the rule, made for the base Inline class. "
+"The base Block blot works the same way for block level elements."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:76
+msgid ""
+"To implement bold and italics, we need only to inherit from Inline, set "
+"the ``blotName`` and ``tagName``, and register it with Quill. For a "
+"compelete reference of the signatures of inherited and static methods and"
+" variables, take a look at `Parchment "
+"<https://github.com/quilljs/parchment/>`__."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:97
+msgid ""
+"We follow Medium’s example here in using ``strong`` and ``em`` tags but "
+"you could just as well use ``b`` and ``i`` tags. The name of the blot "
+"will be used as the name of the format by Quill. By registering our "
+"blots, we can now use Quill’s full API on our new formats:"
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:114
+msgid ""
+"Let’s get rid of our dummy button handler and hook up the bold and italic"
+" buttons to Quill’s ```format()`` </docs/api/#format>`__. We will "
+"hardcode ``true`` to always add formatting for simplicity. In your "
+"application, you can use ```getFormat()`` </docs/api/#getformat>`__ to "
+"retrieve the current formatting over a arbitrary range to decide whether "
+"to add or remove a format. The `Toolbar </docs/modules/toolbar/>`__ "
+"module implements this for Quill, and we will not reimplement it here."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:122
+msgid ""
+"Open your developer console and try out Quill’s `APIs </docs/api/>`__ on "
+"your new bold and italic formats! Make sure to set the context to the "
+"correct CodePen iframe to be able to access the ``quill`` variable in the"
+" demo."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:129
+msgid ""
+"Note that if you apply both bold and italic to some text, regardless of "
+"what order you do so, Quill wraps the ``<strong>`` tag outside of the "
+"``<em>`` tag, in a consistent order."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:134
+msgid "Links"
+msgstr "Links"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:136
+msgid ""
+"Links are slightly more complicated, since we need more than a boolean to"
+" store the link url. This affects our Link blot in two ways: creation and"
+" format retrieval. We will represent the url as a string value, but we "
+"could easily do so in other ways, such as an object with a url key, "
+"allowing for other key/value pairs to be set and define a link. We will "
+"demonstrate this later with `images <#images>`__."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:168
+msgid ""
+"Now we can hook our link button up to a fancy ``prompt``, again to keep "
+"things simple, before passing to Quill’s ``format()``."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:174
+msgid "Blockquote and Headers"
+msgstr "Blockquote and Headers"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:176
+msgid ""
+"Blockquotes are implemented the same way as Bold blots, except we will "
+"inherit from Block, the base block level Blot. While Inline blots can be "
+"nested, Block blots cannot. Instead of wrapping, Block blots replace one "
+"another when applied to the same text range."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:189
+msgid ""
+"Headers are implemented exactly the same way, with only one difference: "
+"it can be represented by more than one DOM element. The value of the "
+"format by default becomes the tagName, instead of just ``true``. We can "
+"customize this by extending ``formats()``, similar to how we did so for "
+"`links <#links>`__."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:207
+msgid ""
+"Let’s hook these new blots up to their respective buttons and add some "
+"CSS for the ``<blockquote>`` tag."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:212
+msgid ""
+"Try setting some text to H1, and in your console, run "
+"``quill.getContents()``. You will see our custom static ``formats()`` "
+"function at work. Make sure to set the context to the correct CodePen "
+"iframe to be able to access the ``quill`` variable in the demo."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:218
+msgid "Dividers"
+msgstr "Dividers"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:220
+msgid ""
+"Now let’s implement our first leaf Blot. While our previous Blot examples"
+" contribute formatting and implement ``format()``, leaf Blots contribute "
+"content and implement ``value()``. Leaf Blots can either be Text or Embed"
+" Blots, so our section divider will be an Embed. Once created, Embed "
+"Blots’ value is immutable, requiring deletion and reinsertion to change "
+"the content at that location."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:227
+msgid ""
+"Our methodology is similar to before, except we inherit from a "
+"BlockEmbed. Embed also exists under ``blots/embed``, but is meant for "
+"inline level blots. We want the block level implementation instead for "
+"dividers."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:240
+msgid ""
+"Our click handler calls ```insertEmbed()`` </docs/api/#insertembed>`__, "
+"which does not as convienently determine, save, and restore the user "
+"selection for us like ```format()`` </docs/api/#format>`__ does, so we "
+"have to do a little more work to preserve selection ourselves. In "
+"addition, when we try to insert a BlockEmbed in the middle of the Block, "
+"Quill splits the Block for us. To make this behavior more clear, we will "
+"explicitly split the block oursevles by inserting a newline before "
+"inserting the divider. Take a look at the Babel tab in the CodePen for "
+"specifics."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:253
+msgid "Images"
+msgstr "Images"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:255
+msgid ""
+"Images can be added with what we learned building the `Link <#links>`__ "
+"and `Divider <#divider>`__ blots. We will use an object for the value to "
+"show how this is supported. Our button handler to insert images will use "
+"a static value, so we are not distracted by tooltip UI code irrelevant to"
+" `Parchment <https://github.com/quilljs/parchment/>`__, the focus of this"
+" guide."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:287
+msgid "Videos"
+msgstr "Videos"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:289
+msgid ""
+"We will implement videos in a similar way as we did `images <#images>`__."
+" We could use the HTML5 ``<video>`` tag but we cannot play YouTube videos"
+" this way, and since this is likely the more common and relevant use "
+"case, we will use an ``<iframe>`` to support this. We do not have to "
+"here, but if you want multiple Blots to use the same tag, you can use "
+"``className`` in addition to ``tagName``, demonstrated in the next `Tweet"
+" <#tweet>`__ example."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:297
+msgid ""
+"Additionally we will add support for widths and heights, as unregistered "
+"formats. Formats specific to Embeds do not have to be registered "
+"separately, as long as there is no namespace collision with registered "
+"formats. This works since Blots just pass unknown formats to its "
+"children, eventually reaching the leaves. This also allows different "
+"Embeds to handle unregistered formats differently. For example, our "
+"`image <#images>`__ embed from earlier could have recognized and handled "
+"the ``width`` format differently than our video does here."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:351
+msgid ""
+"Note if you open your console and call ```getContents`` "
+"</docs/api/#getcontents>`__, Quill will report the video as:"
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:372
+msgid "Tweets"
+msgstr "Tweets"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:374
+msgid ""
+"Medium supports many embed types, but we will just focus on Tweets for "
+"this guide. The Tweet blot is implemented almost exactly the same as "
+"`images <#images>`__. We take advantage of the fact that Embed blots do "
+"not have to correspond to a void node. It can be any arbitrary node and "
+"Quill will treat it like a void node and not traverse its children or "
+"descendants. This allows us to use a ``<div>`` and the native Twitter "
+"Javascript library to do what it pleases within the ``<div>`` container "
+"we specify."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:383
+msgid ""
+"Since our root Scroll Blot also uses a ``<div>``, we also specify a "
+"``className`` to disambiguate. Note Inline blots use ``<span>`` and Block"
+" Blots use ``<p>`` by default, so if you would like to use these tags for"
+" your custom Blots, you will have to specify a ``className`` in addition "
+"to a ``tagName``."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:389
+msgid ""
+"We use the Tweet id as the value defining our Blot. Again our click "
+"handler uses a static value to avoid distraction from irrelevant UI code."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:415
+msgid "Final Polish"
+msgstr "Final Polish"
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:417
+msgid ""
+"We began with just a bunch of buttons and a Quill core that just "
+"understands plaintext. With Parchment, we are able to add bold, italic, "
+"links, blockquotes, headers, section dividers, images, videos, and even "
+"Tweets. All of this comes while maintaining a predictable and consistent "
+"document, allowing us to use Quill’s powerful `APIs </docs/api/>`__ with "
+"these new formats and content."
+msgstr ""
+
+#: ../../source/guides/cloning-medium-with-parchment.rst:424
+msgid ""
+"Let’s add some final polish to finish off our demo. It won’t compare to "
+"Medium’s UI, but we’ll try to get close."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:2
+msgid "comparison with other rich text editors"
+msgstr "comparison with other rich text editors"
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:5
+msgid "CKEditor and TinyMCE"
+msgstr "CKEditor and TinyMCE"
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:7
+msgid ""
+"CKEditor and TinyMCE are both very widely used, having been around for "
+"over a decade. Quill introduces several new ideas that separate it from "
+"these traditional editors:"
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:11
+msgid ""
+"It treats ``contenteditable`` as an input, not a complete editor or API. "
+"Browsers never fully agreed on or specified the complete scope of "
+"``contenteditable``. Left to their own interpretations, each ended with "
+"different implementations that featured their own quirks and a "
+"proliferation of bugs, earning ``contenteditable`` deserved notoriety. It"
+" is still possible today to crash an entire browser using "
+"``contenteditable`` APIs."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:19
+msgid ""
+"It offers a substantive API on top of the DOM. Most of CKEditor and "
+"TinyMCE’s APIs offer little more than syntactic sugar on top of existing "
+"DOM APIs. Quill maintains an internal document model and does not rely on"
+" the DOM as the source of truth, allowing it to offer far more powerful "
+"and relevant APIs for text editing."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:25
+msgid ""
+"It allows customization and new additions of formats and content. Quill "
+"considers the web as a target output, not just paper. Therefore, in "
+"addition to supporting traditional formats commonly found in word "
+"processors (like bold, italics and lists), Quill allows the definition of"
+" entirely new formats and content not previously imagined. Quill’s users "
+"have already added customizations to embed slide decks, interactive "
+"checklists and 3D models."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:33
+msgid ""
+"Although there are differences between them, CKEditor and TinyMCE are "
+"compared together because they differ from Quill in similar ways. "
+"Nevertheless, CKEditor or TinyMCE might be a better choice if:"
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:37
+msgid ""
+"You need to support very old browsers. Quill follows the policy of many "
+"other Javascript libraries of supporting the latest two versions of each "
+"major browser."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:41
+msgid ""
+"You need to set or edit the underlying HTML directly with arbitrary HTML."
+" Quill does not support arbitrary modifications to its contents with "
+"``innerHTML`` as it leads to surprising and buggy behavior. Instead, it "
+"provides a consistent `API </docs/api/>`__ for modification and the "
+"ability to define new formats and content through `Parchment "
+"<https://github.com/quilljs/parchment/>`__."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:49
+msgid "Draft"
+msgstr "Draft"
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:51
+msgid ""
+"Draft is often compared with Quill, but Draft, by its own description, is"
+" a “Rich Text Editor Framework for React.” It provides the building "
+"blocks to create an editor, but is not one ready to use by itself. It is "
+"still worthwhile to compare Quill’s internals with Draft however:"
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:56
+msgid ""
+"Prior to Quill 1.0, Draft allowed more customization over its content and"
+" document model, but this is no longer the case. Quill now exposes its "
+"document model, called `Parchment "
+"<https://github.com/quilljs/parchment>`__, and allows customization to an"
+" even deeper level than Draft at this point. `Cloning Medium with "
+"Parchment </guides/cloning-medium-with-parchment/>`__ is a great "
+"demonstration of what is possible with Parchment."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:65
+msgid ""
+"Draft organizes nodes into two levels: block and inline. Parchment also "
+"has a block and inline layer, but inline nodes can be nested, allowing "
+"semantic output such as ``<strong><em>Stronger</em></strong>`` whereas "
+"the equivalent in Draft must use just one inline format node and utilizes"
+" inline styles:"
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:78
+msgid ""
+"Draft’s API inherits primitives and ideas from React that are more "
+"appropriate for general websites. Quill’s only use case is rich text "
+"content allowing for a simpler API geared specifically for that use case."
+" API simplicity is subjective, so the best metric for you might be to "
+"think of a common task, like bolding a range of text, and try to figure "
+"out how to do it in Quill and how to do it in Draft."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:85
+msgid ""
+"React, React DOM, and immutable.js are dependencies of Draft which add a "
+"lot of weight for users not already using React."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:88
+msgid ""
+"The main difference is still that Quill is a ready to use rich text "
+"editor, with user interactions considered and interfaces thought out and "
+"implemented. Draft provides the building blocks but you will have to "
+"implement all the pieces above the data layer yourself."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:94
+msgid "ProseMirror"
+msgstr "ProseMirror"
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:96
+msgid ""
+"ProseMirror is relatively new but has already captured signficant "
+"attention, being built by the same author of CodeMirror. That being said "
+"a robust comparison of the product and implementation is premature since "
+"ProseMirror is still in the development stages, as noted in their README:"
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:102
+msgid ""
+"NOTE: This project is in BETA stage. It isn’t thoroughly tested, and the "
+"API might still change across 0.x releases. You are welcome to use it, "
+"but don’t expect it to be very stable yet."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:106
+msgid "Instead we will compare the ideas and goals:"
+msgstr "Instead we will compare the ideas and goals:"
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:108
+msgid ""
+"Both Quill and ProseMirror implement and maintain a data model to operate"
+" on with APIs, instead of allowing users to modify the DOM directly."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:112
+msgid ""
+"Support realtime collaboration. Quill users are already doing so in "
+"production."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:115
+msgid ""
+"Quill’s architecture is more modular, allowing for easier customization "
+"of internals. Core modules that handle basic functionality like "
+"copy/paste and undo/redo can be swapped out in Quill."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:120
+msgid ""
+"ProseMirror favors broad exposure of API methods, configurations and "
+"variables. Quill treats developers as users and designs an organized API "
+"surface, judicious in what to expose, sometimes hiding confusing methods "
+"or creating new ones that unify several internal operations."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:126
+msgid "Trix"
+msgstr "Trix"
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:128
+msgid ""
+"Trix is another newly released editor that has adopted many modern ideas "
+"in rich text editing. This includes a data model on top of the DOM and "
+"treating ``contenteditable`` as an input, which Quill and other modern "
+"editors also embrace. In addition, Quill offers some significant "
+"advantages over Trix:"
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:134
+msgid ""
+"More `format </docs/formats/>`__ support. Quill supports all formats "
+"found in Trix, and also supports text color, font, background, size, "
+"superscript, subscript, underline, text alignment, text direction, syntax"
+" highlighted code, videos, and formulas, which are not supported in Trix."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:140
+msgid ""
+"Allows customization of existing formats and content, or even adding new "
+"ones. Trix implements each format in one way, and allows no further "
+"customization."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:144
+msgid ""
+"Modularized internals that can be configured or even swapped out. Trix is"
+" architected as a monolith."
+msgstr ""
+
+#: ../../source/guides/comparison-with-other-rich-text-editors.rst:147
+msgid ""
+"Trix offers one UI, that users likely will need to polish with custom "
+"CSS. Quill offers two beautiful, ready to use themes, one centering "
+"around a persistent `toolbar </docs/themes/#snow>`__ and one around a "
+"Medium-like `tooltip theme </docs/themes/#bubble>`__."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:2
+msgid "designing the delta format"
+msgstr "designing the delta format"
+
+#: ../../source/guides/designing-the-delta-format.rst:4
+msgid ""
+"Rich text editors lack a specification to express its own contents. Until"
+" recently, most rich text editors did not even know what was in their own"
+" edit areas. These editors just pass the user HTML, along with the burden"
+" of parsing and interpretting this. At any given time, this "
+"interpretation will differ from those of major browser vendors, leading "
+"to different editing experiences for users."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:11
+msgid ""
+"Quill is the first rich text editor to actually understand its own "
+"contents. Key to this is Deltas, the specification describing rich text. "
+"Deltas are designed to be easy to understand and use. We will walk "
+"through some of the thinking behind Deltas, to shed light on *why* things"
+" are the way they are."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:17
+msgid ""
+"If you are looking for a reference on *what* Deltas are, the `Delta "
+"documentation </docs/delta/>`__ is a more concise resource."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:21
+msgid "Plain Text"
+msgstr "Plain Text"
+
+#: ../../source/guides/designing-the-delta-format.rst:23
+msgid ""
+"Let’s start at the basics with just plain text. There already is a "
+"ubiquitous format to store plain text: the string. Now if we want to "
+"build upon this and describe formatted text, such as when a range is "
+"bold, we need to add additional information."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:28
+msgid ""
+"Arrays are the only other ordered data type available, so we use an array"
+" of objects. This also allows us to leverage JSON for compatibility with "
+"a breadth of tools."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:39
+msgid ""
+"We can add italics, underline, and other formats to the main object if we"
+" want to; but it is cleaner to separate ``text`` from all of this so we "
+"organize formatting under one field, which we will name ``attributes``."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:52
+msgid "Compact"
+msgstr "Compact"
+
+#: ../../source/guides/designing-the-delta-format.rst:54
+msgid ""
+"Even with our simple Delta format so far, it is unpredictable since the "
+"above “Hello World” example can be represented differently, so we cannot "
+"predict which will be generated:"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:66
+msgid ""
+"To solve this, we add the constraint that Deltas must be compact. With "
+"this constraint, the above representation is not a valid Delta, since it "
+"can be represented more compactly by the previous example, where “Hel” "
+"and “lo” were not separate. Similarly we cannot have ``{ bold: false, "
+"italic: true, underline: null }``, because ``{ italic: true }`` is more "
+"compact."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:74
+msgid "Canonical"
+msgstr "Canonical"
+
+#: ../../source/guides/designing-the-delta-format.rst:76
+msgid ""
+"We have not assigned any meaning to ``bold``, just that it describes some"
+" formatting for text. We could very well have used different names, such "
+"as ``weighted`` or ``strong``, or used a different range of possible "
+"values, such as a numerical or descriptive range of weights. An example "
+"can be found in CSS, where most of these ambiguities are at play. If we "
+"saw bolded text on a page, we cannot predict if its rule set is ``font-"
+"weight: bold`` or ``font-weight: 700``. This makes the task of parsing "
+"CSS to discern its meaning, much more complex."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:85
+msgid ""
+"We do not define the set of possible attributes, nor their meanings, but "
+"we do add an additional constraint that Deltas must be canonical. If two "
+"Deltas are equal, the content they represent must be equal, and there "
+"cannot be two unequal Deltas that represent the same content. "
+"Programmatically, this allows you to simply deep compare two Deltas to "
+"determine if the content they represent is equal."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:92
+msgid ""
+"So if we had the following, the only conclusion we can draw is ``a`` is "
+"different from ``b``, but not what ``a`` or ``b`` means."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:105
+msgid "It is up to the implementer to pick appropriate names:"
+msgstr "It is up to the implementer to pick appropriate names:"
+
+#: ../../source/guides/designing-the-delta-format.rst:117
+msgid ""
+"This canonicalization applies to both keys and values, ``text`` and "
+"``attributes``. For example, Quill by default:"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:120
+msgid "Uses six character hex values to represent colors and not RGB"
+msgstr "Uses six character hex values to represent colors and not RGB"
+
+#: ../../source/guides/designing-the-delta-format.rst:121
+msgid ""
+"There is only one way to represent a newline which is with ``\\n``, not "
+"``\\r`` or ``\\r\\n``"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:123
+msgid ""
+"text: “Hello  World” unambiguously means there are precisely two spaces "
+"between “Hello” and “World”"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:126
+msgid ""
+"Some of these choices may be customized by the user, but the canonical "
+"constraint in Deltas dictate that the choice must be unique."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:129
+msgid ""
+"This unambiguous predictability makes Deltas easier to work with, both "
+"because you have fewer cases to handle and because there are no surprises"
+" in what a corresponding Delta will look like. Long term, this makes "
+"applications using Deltas easier to understand and maintain."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:135
+msgid "Line Formatting"
+msgstr "Line Formatting"
+
+#: ../../source/guides/designing-the-delta-format.rst:137
+msgid ""
+"Line formats affect the contents of an entire line, so they present an "
+"interesting challenge for our compact and canonical constraints. A "
+"seemingly reasonable way to represent centered text would be the "
+"following:"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:149
+msgid ""
+"But what if the user deletes the newline character? If we just naively "
+"get rid of the newline character, the Delta would now look like this:"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:159
+msgid ""
+"Is this line still centered? If the answer is no, then our representation"
+" is not compact, since we do not need the attribute object and can "
+"combine the two strings:"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:169
+msgid ""
+"But if the answer is yes, then we violate the canonical constraint since "
+"any permutation of characters having an align attribute would represent "
+"the same content."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:173
+msgid ""
+"So we cannot just naively get rid of the newline character. We also have "
+"to either get rid of line attributes, or expand them to fill all "
+"characters on the line."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:177
+msgid "What if we removed the newline from the following?"
+msgstr "What if we removed the newline from the following?"
+
+#: ../../source/guides/designing-the-delta-format.rst:187
+msgid ""
+"It is not clear if our resulting line is aligned center or right. We "
+"could delete both or have some ordering rule to favor one over the other,"
+" but our Delta is becoming more complex and harder to work with on this "
+"path."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:192
+msgid ""
+"This problem begs for atomicity, and we find this in the *newline* "
+"character itself. But we have an off by one problem in that if we have "
+"*n* lines, we only have *n-1* newline characters."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:196
+msgid ""
+"To solve this, Quill “adds” a newline to all documents and always ends "
+"Deltas with “:raw-latex:`\\n`”."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:210
+msgid "Embedded Content"
+msgstr "Embedded Content"
+
+#: ../../source/guides/designing-the-delta-format.rst:212
+msgid ""
+"We want to add embedded content like images or video. Strings were "
+"natural to use for text but we have a lot more options for embeds. Since "
+"there are different types of embeds, our choice just needs to include "
+"this type information, and then the actual content. There are many "
+"reasonable options here but we will use an object whose only key is the "
+"embed type and the value is the content representation, which may have "
+"any type or value."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:232
+msgid ""
+"Similar to text, images might have some defining characteristics, and "
+"some transient ones. We used ``attributes`` for text content and can use "
+"the same ``attributes`` field for images. But because of this, we can "
+"keep the general structure we have been using, but should rename our "
+"``text`` key into something more general. For reasons we will explore "
+"later, we will choose the name ``insert``. Putting this all together we "
+"have:"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:255
+msgid "Describing Changes"
+msgstr "Describing Changes"
+
+#: ../../source/guides/designing-the-delta-format.rst:257
+msgid ""
+"As the name Delta implies, our format can describe changes to documents, "
+"as well as documents themselves. In fact we can think of documents as the"
+" changes we would make to the empty document, to get to the one we are "
+"describing. As you might have already guessed, using Deltas to also "
+"describe changes is why we renamed ``text`` to ``insert`` earlier. We "
+"call each element in our Delta array an Operation."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:267
+msgid ""
+"To describe deleting text, we need to know where and how many characters "
+"to delete. To delete embeds, there needs not be any special treatment, "
+"other than to understand the length of an embed. If it is anything other "
+"than one, we would then need to specify what happens when only part of an"
+" embed is deleted. There is currently no such specification, so "
+"regardless of how many pixels make up an image, how many minutes long a "
+"video is, or how many slides are in a deck; embeds are all of length "
+"**one**."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:276
+msgid ""
+"One reasonable way to describe a deletion is to explicitly store its "
+"index and length."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:293
+msgid ""
+"We would have to order the deletions based on indexes, and ensure no "
+"ranges overlap, otherwise our canonical constraint would be violated. "
+"There are a couple other shortcomings to this index and length approach, "
+"but they are easier to appreciate after describing format changes."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:301
+msgid ""
+"Now that Deltas may be describing changes to a non-empty document, ``{ "
+"insert: \"Hello\" }`` is insufficient, because we do not know where "
+"“Hello” should be inserted. We can solve this by also adding an index, "
+"similar to ``delete``."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:309
+msgid ""
+"Similar to deletes, we need to specify the range of text to format, along"
+" with the format change itself. Formatting exists in the ``attributes`` "
+"object, so a simple solution is to provide an additional ``attributes`` "
+"object to merge with the existing one. This merge is shallow to keep "
+"things simple. We have not found a use case that is compelling enough to "
+"require a deep merge and warrants the added complexity."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:329
+msgid ""
+"The special case is when we want to remove formatting. We will use "
+"``null`` for this purpose, so ``{ bold: null }`` would mean remove the "
+"bold format. We could have specified any falsy value, but there may be "
+"legitimate use cases for an attribute value to be ``0`` or the empty "
+"string."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:335
+msgid ""
+"**Note:** We now have to be careful with indexes at the application "
+"layer. As mentioned earlier, Deltas do not ascribe any inherent meaning "
+"to any the ``attributes``\\ ’ key-value pairs, nor any embed types or "
+"values. Deltas do not know an image does not have duration, text does not"
+" have alternative texts, and videos cannot be bolded. The following is a "
+"*legal* Delta that might have been the result of applying other *legal* "
+"Deltas, by an application not being careful of format ranges."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:369
+msgid ""
+"First, we should be clear that an index must refer to its position in the"
+" document **before** any Operations are applied. Otherwise, a later "
+"Operation may delete a previous insert, unformat a previous format, etc.,"
+" which would violate compactness."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:374
+msgid ""
+"Operations must also be strictly ordered to satisfy our canonical "
+"constraint. Ordering by index, then length, and then type is one valid "
+"way this can be accomplished."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:378
+msgid ""
+"As stated earlier, delete ranges cannot overlap. The case against "
+"overlapping format ranges is less brief, but it turns out we do not want "
+"overlapping formats either."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:382
+msgid ""
+"The number of reasons a Delta might be invalid is piling up. A better "
+"format would simply not allow such cases to be expressed at all."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:388
+msgid ""
+"If we step back from our compactness formalities for a moment, we can "
+"describe a much simpler format to express inserting, deleting, and "
+"formatting:"
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:392
+msgid ""
+"A Delta would have Operations that are at least as long as the document "
+"being modified."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:394
+msgid "Each Operation would describe what happens to the character at that index."
+msgstr "Each Operation would describe what happens to the character at that index."
+
+#: ../../source/guides/designing-the-delta-format.rst:396
+msgid ""
+"Optional insert Operations may make the Delta longer than the document it"
+" describes."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:399
+msgid ""
+"This necessitates the creation of a new Operation, that will simply mean "
+"“keep this character as is”. We call this a ``retain``."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:420
+msgid ""
+"Since every character is described, explicit indexes and lengths are no "
+"longer necessary. This makes overlapping ranges and out-of-order indexes "
+"impossible to express."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:424
+msgid ""
+"Therefore, we can make the easy optimization to merge adjacent equal "
+"Operations, re-introducing *length*. If the last Operation is a "
+"``retain`` we can simply drop it, for it simply instructs to “do nothing "
+"to the rest of the document”."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:436
+msgid ""
+"Furthermore, you might notice that a ``retain`` is in some ways just a "
+"special case of ``format``. For instance, there is no practical "
+"difference between ``{ format: 1, attributes: {} }`` and ``{ retain: 1 "
+"}``. Compacting would drop the empty ``attributes`` object leaving us "
+"with just ``{ format: 1 }``, creating a canonicalization conflict. Thus, "
+"in our example we will simply combine ``format`` and ``retain``, and keep"
+" the name ``retain``."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:451
+msgid "We now have a Delta that is very close to the current standard format."
+msgstr "We now have a Delta that is very close to the current standard format."
+
+#: ../../source/guides/designing-the-delta-format.rst:456
+msgid ""
+"Right now we have an easy to use JSON Array that describes rich text. "
+"This is great at the storage and transport layers, but applications could"
+" benefit from more functionality. We can add this by implementing Deltas "
+"as a class, that can be easily initialized from or exported to JSON, and "
+"then providing it with relevant methods."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:462
+msgid ""
+"At the time of Delta’s inception, it was not possible to sub-class an "
+"Array. For this reason Deltas are expressed as Objects, with a single "
+"property ``ops`` that stores an array of Operations like the ones we have"
+" been discussing."
+msgstr ""
+
+#: ../../source/guides/designing-the-delta-format.rst:483
+msgid ""
+"Finally, we arrive at the `Delta format </docs/delta/>`__, as it exists "
+"today."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:2
+msgid "How to customize quill?"
+msgstr "How to customize quill?"
+
+#: ../../source/guides/how-to-customize-quill.rst:4
+msgid ""
+"Quill was designed with customization and extension in mind. This is "
+"achieved by implementing a small editor core exposed by a granular, well "
+"defined `API </docs/api/>`__. The core is augmented by `modules "
+"</docs/modules>`__, using the same `APIs </docs/api/>`__ you have access "
+"to."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:10
+msgid ""
+"In general, common customizations are handled in `configurations "
+"<#configurations/>`__, user interfaces by `Themes <#themes>`__ and CSS, "
+"functionality by `modules <#modules>`__, and editor contents by "
+"`Parchment <#content-and-formatting>`__."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:16
+msgid "Configurations"
+msgstr "Configurations"
+
+#: ../../source/guides/how-to-customize-quill.rst:18
+msgid ""
+"Quill favors Code over Configuration™, but for very common needs, "
+"especially where the equivalent code would be lengthy or complex, Quill "
+"provides `configuration </docs/configuration/>`__ options. This would be "
+"a good first place to look to determine if you even need to implement any"
+" custom functionality."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:24
+msgid ""
+"Two of the most powerful options is ``modules`` and ``theme``. You can "
+"drastically change or expand what Quill can and does do by simply adding "
+"or removing individual `modules </docs/modules/>`__ or using a different "
+"`theme </docs/themes/>`__."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:30
+msgid "Themes"
+msgstr "Themes"
+
+#: ../../source/guides/how-to-customize-quill.rst:32
+msgid ""
+"Quill officially supports a standard toolbar theme `Snow "
+"</docs/themes/#snow>`__ and a floating tooltip theme `Bubble "
+"</docs/themes/#bubble>`__. Since Quill is not confined within an iframe "
+"like many legacy editors, many visual modifications can be made with just"
+" CSS, using one of the existing themes."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:38
+msgid ""
+"If you would like to drastically change UI interactions, you can omit the"
+" ``theme`` configuration option, which will give you an unstyled Quill "
+"editor. You do still need to include a minimal stylesheet that, for "
+"example, makes sure spaces render in all browsers and ordered lists are "
+"appropriately numbered."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:48
+msgid ""
+"From there you can implement and attach your own UI elements like custom "
+"dropdowns or tooltips. The last section of `Cloning Medium with Parchment"
+" </guides/cloning-medium-with-parchment/#final-polish>`__ provides an "
+"example of this in action."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:54
+#: ../../source/guides/upgrading-to-1-0.rst:78
+msgid "Modules"
+msgstr "Modules"
+
+#: ../../source/guides/how-to-customize-quill.rst:56
+msgid ""
+"Quill is designed with a modular architecture composed of a small editing"
+" core, surrounded by modules that augment its functionality. Some of this"
+" functionality is quite integral to editing, such as the `History "
+"</docs/modules/history/>`__ module, which manages undo and redo. Because "
+"all modules use the same public `API </docs/api/>`__ exposed to the "
+"developer, even interchanging core modules is possible, when necessary."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:64
+msgid ""
+"Like Quill’s core itself, many `modules </docs/modules/>`__ expose "
+"additional configuration options and APIs. Before deciding to replace a "
+"module, take a look at its documentation. Often your desired "
+"customization is already implemented as a configuration or API call."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:69
+msgid ""
+"Otherwise, if you would like to drastically change functionality an "
+"existing module already covers, you can simply not include it—or "
+"explicitly exclude it when a theme includes it by default—and implement "
+"the functionality to your liking external to Quill, using the same `API "
+"</docs/api/>`__ the default module uses."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:84
+msgid ""
+"A few modules—\\ `Clipboard </docs/modules/clipboard/>`__, `Keyboard "
+"</docs/modules/keyboard/>`__, and `History "
+"</docs/modules/history/>`__—need to be included as core functionality "
+"depend on the APIs they provide. For example, even though undo and redo "
+"is basic, expected, editor functionality, the native browser behavior "
+"handling of this is inconsistent and unpredictable. The History module "
+"bridges the gap by implementing its own undo manager and exposing "
+"``undo()`` and ``redo()`` as APIs."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:93
+msgid ""
+"Nevertheless, staying true to Quill modular design, you can still "
+"drastically change the way undo and redo—or any other core "
+"functionality—works by implementing your own undo manager to replace the "
+"History module. As long as you implement the same API interface, Quill "
+"will happily use your replacement module. This is most easily done by "
+"inheriting from the existing module, and overwriting the methods you want"
+" to change. Take a look at the `modules </docs/modules/>`__ documentation"
+" for a very simple example of overwriting the core `Clipboard "
+"</docs/modules/clipboard/>`__ module."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:103
+msgid ""
+"Finally, you may want to add functionality not provided by existing "
+"modules. In this case, it may be convenient to organize this as a Quill "
+"module, which the `Building A Custom Module </guides/building-a-custom-"
+"module/>`__ guide covers. Of course, it is certainly valid to just keep "
+"this logic separate from Quill, in your application code instead."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:111
+msgid "Content and Formatting"
+msgstr "Content and Formatting"
+
+#: ../../source/guides/how-to-customize-quill.rst:113
+msgid ""
+"Quill allows modification and extension of the contents and formats that "
+"it understands through its document model `Parchment "
+"<https://github.com/quilljs/parchment/>`__. Content and formats are "
+"represented in Parchment as either Blots or Attributors, which roughly "
+"correspond to Nodes or Attributes in the DOM."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:120
+msgid "Class vs Inline"
+msgstr "Class vs Inline"
+
+#: ../../source/guides/how-to-customize-quill.rst:122
+msgid ""
+"Quill uses classes, instead of inline style attributes, when possible, "
+"but both are implemented for you to pick and choose. A live example of "
+"this is implemented as a `Playground snippet </playground/#class-vs-"
+"inline-style>`__."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:143
+msgid "Customizing Attributors"
+msgstr "Customizing Attributors"
+
+#: ../../source/guides/how-to-customize-quill.rst:145
+msgid ""
+"In addition to choosing the particular Attributor, you can also customize"
+" existing ones. Here is an example of the font whitelist to add "
+"additional fonts."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:157
+msgid "Note you still need to add styling for these classes into your CSS files."
+msgstr "Note you still need to add styling for these classes into your CSS files."
+
+#: ../../source/guides/how-to-customize-quill.rst:170
+msgid "Customizing Blots"
+msgstr "Customizing Blots"
+
+#: ../../source/guides/how-to-customize-quill.rst:172
+msgid ""
+"Formats represented by Blots can also be customized. Here is how you "
+"would change the DOM Node used to represent bold formatting."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:190
+msgid "Extending Blots"
+msgstr "Extending Blots"
+
+#: ../../source/guides/how-to-customize-quill.rst:192
+msgid ""
+"You can also extend existing formats. Here is a quick ES6 implementation "
+"of a list item that does not permit formatting its contents. Code blocks "
+"are implemented in exactly this way."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:220
+msgid ""
+"You can view a list of Blots and Attributors available by calling "
+"``console.log(Quill.imports);``. Direct modification of this object is "
+"not supported. Use ```Quill.register`` </docs/api/#register>`__ instead."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:224
+msgid ""
+"A complete reference on Parchment, Blots and Attributors can be found on "
+"Parchment’s own `README <https://github.com/quilljs/parchment/>`__. For "
+"an in-depth walkthrough, take a look at `Cloning Medium with Parchment "
+"</guides/cloning-medium-with-parchment/>`__, which starts with Quill "
+"understanding just plain text, to adding all of the formats `Medium "
+"<https://medium.com/>`__ supports. Most of the time, you will not have to"
+" build formats from scratch since most are already implemented in Quill, "
+"but it is still useful to understanding how Quill works at this deeper "
+"level."
+msgstr ""
+
+#: ../../source/guides/index.rst:2
+msgid "Guides"
+msgstr "Guides"
+
+#: ../../source/guides/upgrading-to-1-0.rst:2
+msgid "upgrading to 1.0"
+msgstr "upgrading to 1.0"
+
+#: ../../source/guides/upgrading-to-1-0.rst:4
+msgid ""
+"Quill 1.0 introduces major changes aimed at greater ability to customize "
+"Quill. Interfaces stayed the same where possible and this guide helps "
+"bridge the gap otherwise."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:8
+msgid ""
+"To realize the full benefits of 1.0, it is encouraged to take a fresh "
+"view of Quill 1.0 and revisit even basic topics on this documentation "
+"site. Often, you will find that even though you could do things the old "
+"way, there is a better new way."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:14
+#: ../../source/guides/upgrading-to-2-0.rst:27
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../source/guides/upgrading-to-1-0.rst:16
+msgid ""
+"``styles`` *removed* - Previous versions of Quill allowed custom CSS to "
+"be injected through ``<style>`` additions. This option has been removed "
+"due to `Content Security Policy "
+"<https://developers.google.com/web/fundamentals/security/csp/>`__. "
+"Instead you should use external CSS directly."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:23
+msgid "API"
+msgstr "API"
+
+#: ../../source/guides/upgrading-to-1-0.rst:25
+msgid ""
+"``getHTML`` *removed* - Previous versions of Quill required the usage of "
+"class names to identify lines ``ql-line`` and an ``id`` attribute to "
+"identify particular lines. This is no longer a requirement and a custom "
+"API call no longer adds any value on top of the DOM’s existing innerHTML."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:31
+msgid ""
+"``setHTML`` *removed* - Quill, like many editors with a data layer on top"
+" of the DOM, does not allow arbitrary changes to the underlying HTML. "
+"Previously Quill would detect an illegal state and correct it, but this "
+"makes the naming setHTML disingenuous and the reasoning behind the "
+"correction is unintuitive. Most use cases of ``setHTML`` can be suitably "
+"met or improved (since cursor preservation is much better) with the new "
+"```pasteHTML`` </docs/api/#pastehtml>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:39
+msgid ""
+"``addModule`` *removed* - Modules are now initialized based off of the "
+"initial Quill `configuration </docs/configuration/>`__, instead of having"
+" a separate function."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:43
+msgid ""
+"``onModuleLoad`` *removed* - Module loading is handled by Themes and "
+"similar behavior should be achieved by extending the theme."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:46
+msgid ""
+"``destroy`` *removed* - No longer necessary as Quill no longer keeps "
+"references to editor instances, allowing Javascript garbage collectors to"
+" work as expected."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:50
+msgid ""
+"``prepareFormat`` *renamed* - A new API ```format`` "
+"</docs/api/#format>`__ now provides formatting functionality for all "
+"selection states, including those previously covered by "
+"``prepareFormat``."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:55
+msgid ""
+"For consistency, all positions are now index and length based versus the "
+"start and end representation sometimes used by ```deleteText`` "
+"</docs/api/#deletetext>`__, ```formatText`` </docs/api/#formattext>`__, "
+"```formatLine`` </docs/api/#formatline>`__, and the Range object used by "
+"selection APIs such as on ```getSelection`` </docs/api/#getselection>`__,"
+" ```setSelection`` </docs/api/#setselection>`__, and the ```selection-"
+"change`` </docs/api/#selection-change>`__ event."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:65
+msgid ""
+"``registerModule`` *renamed* - A new API ```register`` "
+"</docs/api/#register>`__ is now used to registers all modules, themes and"
+" formats."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:69
+msgid "``require`` *renamed* - Renamed to ``import`` for consistency with ES6."
+msgstr "``require`` *renamed* - Renamed to ``import`` for consistency with ES6."
+
+#: ../../source/guides/upgrading-to-1-0.rst:72
+msgid ""
+"``addContainer`` *modified* - The `second parameter "
+"</docs/api/#addcontainer>`__ is changed to allow insertion before any "
+"container, not just the editor. Thus instead of an optional boolean, it "
+"now an optional HTMLElement."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:80
+msgid ""
+"Toolbars, when initialized with a custom HTML element, requires buttons "
+"to be actual HTMLButtonElements. Previously it allowed any element with "
+"an appropriate class name."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:84
+msgid ""
+"The `Snow </docs/themes/#snow/>`__ toolbar no longer adds or uses ``ql-"
+"format-separator`` and renamed ``ql-format-group`` to ``ql-formats``."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:88
+msgid ""
+"The authorship and multi-cursor modules have been temporarily removed. "
+"Similar functionality will be re-added at a later time, either separately"
+" or in a bundled collaboration module."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:92
+msgid "UndoManager has been renamed to `History </docs/modules/history/>`__."
+msgstr "UndoManager has been renamed to `History </docs/modules/history/>`__."
+
+#: ../../source/guides/upgrading-to-1-0.rst:94
+msgid ""
+"PasteManager has been renamed to `Clipboard "
+"</docs/modules/clipboard/>`__, and will provide custom copy and paste "
+"behavior."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:98
+msgid ""
+"LinkTooltip has been moved to be theme specific. With the addition of "
+"`Bubble </docs/themes/#bubble>`__ and videos and `formulas "
+"</docs/modules/formula/>`__, it no longer made sense to open a separate "
+"tooltip for links as its own general UI element. The old tooltip behavior"
+" is still present in Snow, but is now specific to that theme."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:105
+msgid ""
+"ImageTooltip has been removed in favor of a simpler and more native flow."
+" The image button now opens the OS file picker and the selected image "
+"file is inserted into the editor as a base64 image."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:110
+msgid "Deltas"
+msgstr "Deltas"
+
+#: ../../source/guides/upgrading-to-1-0.rst:112
+msgid ""
+"The default `Delta </guides/working-with-deltas/>`__ representation of "
+"some content has changed. In all cases the old format is still supported "
+"in methods using Deltas as in input, such as ``setContents`` and "
+"``updateContents``. But outputted Deltas, such as the ones reported by "
+"``text-change`` and ``getContents`` will be in the new form. Since "
+"`Parchment <https://github.com/quilljs/parchment>`__ now allows custom "
+"content and formats, it is possible to customize these Delta "
+"representations entirely."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:160
+msgid "Defaults"
+msgstr "Defaults"
+
+#: ../../source/guides/upgrading-to-1-0.rst:162
+msgid ""
+"Quill previously used inline styles to implement font family and size. A "
+"class implementation is now default. To revert this, see `Content and "
+"Formatting </guides/how-to-customize-quill/#content-and-formatting>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:168
+msgid "Browsers"
+msgstr "Browsers"
+
+#: ../../source/guides/upgrading-to-1-0.rst:170
+msgid ""
+"Quill now follows other major open source libraries in supporting the "
+"last two versions of major browser releases. Support for IE9 and IE10 "
+"have been dropped, and MS Edge has been added."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:174
+msgid ""
+"Android browser support now applies to Chrome on Android, instead of the "
+"stock Android Browser, which Google has phased out support for."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:178
+msgid "Improvements"
+msgstr "Improvements"
+
+#: ../../source/guides/upgrading-to-1-0.rst:180
+msgid ""
+"Ability to add new formats and content, or modify existing ones with "
+"`Parchment <https://github.com/quilljs/parchment/>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:183
+msgid ""
+"Added support for nested list, superscript, subscript, inline code, code "
+"block, header, blockquote, text direction, video and forumla support."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:187
+msgid "Ability to format with classes instead of inline styles."
+msgstr "Ability to format with classes instead of inline styles."
+
+#: ../../source/guides/upgrading-to-1-0.rst:189
+msgid "New tooltip based theme called `Bubble </docs/themes/#bubble/>`__."
+msgstr "New tooltip based theme called `Bubble </docs/themes/#bubble/>`__."
+
+#: ../../source/guides/upgrading-to-1-0.rst:191
+msgid ""
+"Improved `Toolbar </docs/modules/toolbar/>`__ initialization with format "
+"arrays and customization with custom values."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:194
+msgid ""
+"Toolbar icons now use SVGs instead of inline PNGs allowing freedom to "
+"resize icons while retaining clarity. CSS can now also be used to easily "
+"change the active state color instead of the default #06c blue."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:199
+msgid ""
+"Improved ability to customize interpretation of pastes in `Clipboard "
+"</docs/modules/clipboard/>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:202
+msgid ""
+"Improved ability to customize `keyboard handlers "
+"</docs/modules/keyboard/>`__."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-1-0.rst:205
+msgid "A placeholder configuration option."
+msgstr "A placeholder configuration option."
+
+#: ../../source/guides/upgrading-to-1-0.rst:207
+msgid "Editable `syntax highlighted code </docs/modules/syntax/>`__ block."
+msgstr "Editable `syntax highlighted code </docs/modules/syntax/>`__ block."
+
+#: ../../source/guides/upgrading-to-1-0.rst:209
+msgid "Several new `APIs </docs/api/>`__."
+msgstr "Several new `APIs </docs/api/>`__."
+
+#: ../../source/guides/upgrading-to-1-0.rst:211
+msgid "Many, many bug fixes."
+msgstr "Many, many bug fixes."
+
+#: ../../source/guides/upgrading-to-2-0.rst:2
+msgid "upgrading to 2.0"
+msgstr "upgrading to 2.0"
+
+#: ../../source/guides/upgrading-to-2-0.rst:4
+msgid "In progress"
+msgstr "In progress"
+
+#: ../../source/guides/upgrading-to-2-0.rst:7
+msgid "Quill"
+msgstr "Quill"
+
+#: ../../source/guides/upgrading-to-2-0.rst:9
+msgid ""
+"``strict`` *removed* - Previously some changes that were small in "
+"practice (renames) but would warrant a semver major bump would be hidden "
+"under this configuration. This ended up being more confusing than helpful"
+" as we will no longer make use of this."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:13
+msgid ""
+"``registry`` - added to allow multiple editors with different formats to "
+"coexist on the same page."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:15
+msgid ""
+"``formats`` *removed* - ``registry`` is now strictly more powerful and "
+"safer."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:19
+msgid "Clipboard"
+msgstr "Clipboard"
+
+#: ../../source/guides/upgrading-to-2-0.rst:21
+msgid ""
+"``convert`` - API changed to include both HTML and text and previous "
+"functionality is broken into multiple method calls (``convert``, "
+"``onCapturePaste``) to allow more surface to hook into."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:24
+msgid "``onCapturePaste`` - Added"
+msgstr "``onCapturePaste`` - Added"
+
+#: ../../source/guides/upgrading-to-2-0.rst:29
+msgid ""
+"``matchVisual`` *removed* - Previously there was a choice between using "
+"visual or semantic interpretation of pasted whitespace; now just the "
+"semantic interpretation is used. Visual matching was expensive, requiring"
+" the DOM renderer which is no longer available in the new clipboard "
+"rewrite."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:34
+msgid "``pasteHTML`` *removed* - Deprecated alias to ``dangerouslyPasteHTML``."
+msgstr "``pasteHTML`` *removed* - Deprecated alias to ``dangerouslyPasteHTML``."
+
+#: ../../source/guides/upgrading-to-2-0.rst:38
+msgid "Keyboard"
+msgstr "Keyboard"
+
+#: ../../source/guides/upgrading-to-2-0.rst:40
+msgid ""
+"Binding ``key`` is no longer case insensitive. To support bindings like "
+"``key: '@'``, modifiers are taken into account so the shift modifier will"
+" affect case sensitivity."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:43
+msgid ""
+"Binding ``key`` now supports an array of keys to easily bind to multiple "
+"shortcuts."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:45
+msgid "Native keyboard event object is now also passed into handlers."
+msgstr "Native keyboard event object is now also passed into handlers."
+
+#: ../../source/guides/upgrading-to-2-0.rst:48
+msgid "Parchment"
+msgstr "Parchment"
+
+#: ../../source/guides/upgrading-to-2-0.rst:50
+msgid ""
+"All lists use ``<ol>`` instead of both ``<ul>`` and ``<ol>`` allowing "
+"better nesting between the two. Copied content will generate the correct "
+"semantic markup for paste into other applications."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:53
+msgid ""
+"Code block markup now uses ``<div>`` to better support syntax "
+"highlighting."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:55
+msgid ""
+"Static ``register`` method added to allow dependent chains of "
+"registration."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:57
+msgid "Static ``formats`` method now passes in ``scroll``."
+msgstr "Static ``formats`` method now passes in ``scroll``."
+
+#: ../../source/guides/upgrading-to-2-0.rst:58
+msgid "Blot constructor now requires ``scroll`` to be passed in."
+msgstr "Blot constructor now requires ``scroll`` to be passed in."
+
+#: ../../source/guides/upgrading-to-2-0.rst:61
+msgid "Delta"
+msgstr "Delta"
+
+#: ../../source/guides/upgrading-to-2-0.rst:63
+msgid ""
+"Support for the deprecated delta format, where embeds had integer values "
+"and list attributes had different keys, is now removed"
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:67
+msgid "Browser"
+msgstr "Browser"
+
+#: ../../source/guides/upgrading-to-2-0.rst:69
+msgid ""
+"Quill builds now use ``babel-env`` to determine the right level of "
+"transpiling and polyfilling."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:71
+msgid "IE11 support is dropped build size reduced ~25% as a result."
+msgstr "IE11 support is dropped build size reduced ~25% as a result."
+
+#: ../../source/guides/why-quill.rst:2
+msgid "why quill"
+msgstr "why quill"
+
+#: ../../source/guides/why-quill.rst:4
+msgid ""
+"Content creation has been at the core to the web since its beginning. The"
+" ``<textarea>`` provides a native and essential solution to almost any "
+"web application. But at some point you may need to add formatting to text"
+" input. This is where rich text editors come in. There are many solutions"
+" to choose from, but Quill brings a few modern ideas to consider."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:12
+msgid "API Driven Design"
+msgstr "API Driven Design"
+
+#: ../../source/guides/why-quill.rst:14
+msgid ""
+"Rich text editors are built to help people write text. Yet surprisingly, "
+"most rich text editors have no idea what text the user composed. These "
+"editors see their content through the same lens a web developer does: the"
+" DOM. This presents an impedance mismatch since the DOM is made up of "
+"Nodes organized in an unbalanced tree, whereas text is made up of lines, "
+"words and characters."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:21
+msgid ""
+"There is no DOM API where characters is the unit of measure. With this "
+"limitation, most rich text editors cannot answer simple questions such as"
+" “What text is in this range?” or “Is the cursor on bolded text?” Trying "
+"to build rich editing experiences on top of such primitives is very "
+"difficult and frustrating."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:27
+msgid ""
+"Quill was designed for editing and characters in mind, and built its APIs"
+" on top of these natural text centric units. To find out if something is "
+"bold, Quill does not require traversing the DOM looking for ``<b>`` or "
+"``<strong>`` nodes or a font-weight style attributes—just call "
+"```getFormat(5, 1)`` </docs/api/#getformat>`__. All of its core `API "
+"</docs/api/>`__ calls allow arbitrary indexes and lengths for access or "
+"modification. Its `event API </docs/api/#events>`__ also reports changes "
+"in an intuitive JSON format. No need to parse HTML or diff DOM trees."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:38
+msgid "Custom Content and Formatting"
+msgstr "Custom Content and Formatting"
+
+#: ../../source/guides/why-quill.rst:40
+msgid ""
+"It was not far in the past that evaluating rich text editors was as "
+"simple as comparing a checklist of desired formats. The mark of a good "
+"rich text editor was simply how many formats it supported. This is still "
+"an important measure, but the lower bound is approaching infinity."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:45
+msgid ""
+"Text is no longer written to be printed. It is written to be rendered on "
+"the web—a much richer canvas than paper. Content can be live, "
+"interactive, or even collaborative. Only some rich text editors can even "
+"support simple media like images and videos; almost none can embed a "
+"tweet or interactive graph. Yet this is the direction the web is moving: "
+"richer and more interactive. The tools supporting content creation need "
+"to consider these use cases."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:53
+msgid ""
+"Quill exposes its own document model, a powerful abstraction over the "
+"DOM, allowing for extension and customization. The upper limit on the "
+"formats and content Quill can support is unlimited. Users have already "
+"used it to add embedded slide decks, interactive checklists, and 3D "
+"models."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:60
+msgid "Cross Platform"
+msgstr "Cross Platform"
+
+#: ../../source/guides/why-quill.rst:62
+msgid ""
+"Cross platform support is important to many Javascript libraries, but the"
+" criteria for what this means often differs. For Quill, the bar is not "
+"just that it runs or works, it has to run or work *the same way*. Not "
+"only is functionality a cross platform consideration, but user and "
+"developer experience is as well. If some content produces a particular "
+"markup in Chrome on OSX, it will produce the same markup on IE. If "
+"hitting enter preserves bold format state in Firefox on Windows, it will "
+"be preserved on mobile Safari."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:72
+msgid "Easy to Use"
+msgstr "Easy to Use"
+
+#: ../../source/guides/why-quill.rst:74
+msgid ""
+"All of these benefits come in an easy to use package. Quill ships with "
+"sane defaults you can immediately use with just a few lines of "
+"Javascript:"
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:85
+msgid ""
+"If your application never demands it, you never have to customize "
+"Quill—just enjoy the rich and consistent experience that comes out of the"
+" box."
+msgstr ""
+
+#: ../../source/guides/why-quill.rst:89
+msgid "Enjoy!"
+msgstr "Enjoy!"
+

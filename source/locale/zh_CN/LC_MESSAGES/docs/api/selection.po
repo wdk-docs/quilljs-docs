@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/api/selection.rst:2
+msgid "Selection"
+msgstr "Selection"
+
+#: ../../source/docs/api/selection.rst:5
+msgid "getBounds"
+msgstr "getBounds"
+
+#: ../../source/docs/api/selection.rst:7
+msgid ""
+"Retrieves the pixel position (relative to the editor container) and "
+"dimensions of a selection at a given location. The user’s current "
+"selection need not be at that index. Useful for calculating where to "
+"place tooltips."
+msgstr ""
+
+#: ../../source/docs/api/selection.rst:12
+#: ../../source/docs/api/selection.rst:32
+#: ../../source/docs/api/selection.rst:62
+msgid "**Methods**"
+msgstr "**Methods**"
+
+#: ../../source/docs/api/selection.rst:19
+#: ../../source/docs/api/selection.rst:38
+#: ../../source/docs/api/selection.rst:70
+msgid "**Examples**"
+msgstr "**Examples**"
+
+#: ../../source/docs/api/selection.rst:27
+msgid "getSelection"
+msgstr "getSelection"
+
+#: ../../source/docs/api/selection.rst:29
+msgid ""
+"Retrieves the user’s selection range, optionally to focus the editor "
+"first. Otherwise ``null`` may be returned if editor does not have focus."
+msgstr ""
+
+#: ../../source/docs/api/selection.rst:55
+msgid "setSelection"
+msgstr "setSelection"
+
+#: ../../source/docs/api/selection.rst:57
+msgid ""
+"Sets user selection to given range, which will also focus the editor. "
+"Providing ``null`` as the selection range will blur the editor. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``."
+msgstr ""
+

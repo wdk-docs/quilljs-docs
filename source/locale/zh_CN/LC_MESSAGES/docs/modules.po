@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/modules.rst:2
+msgid "modules"
+msgstr "模块"
+
+#: ../../source/docs/modules.rst:4
+msgid ""
+"Modules allow Quill’s behavior and functionality to be customized. "
+"Several officially supported modules are available to pick and choose "
+"from, some with additional configuration options and APIs. Refer to their"
+" respective documentation pages for more details."
+msgstr ""
+
+#: ../../source/docs/modules.rst:9
+msgid "To enable a module, simply include it in Quill’s configuration."
+msgstr "To enable a module, simply include it in Quill’s configuration."
+
+#: ../../source/docs/modules.rst:23
+msgid ""
+"The `Clipboard </docs/modules/clipboard/>`__, `Keyboard "
+"</docs/modules/keyboard/>`__, and `History </docs/modules/history/>`__ "
+"modules are required by Quill and do not need to be included explictly, "
+"but may be configured like any other module."
+msgstr ""
+
+#: ../../source/docs/modules.rst:30
+msgid "Extending"
+msgstr "Extending"
+
+#: ../../source/docs/modules.rst:32
+msgid ""
+"Modules may also be extended and re-registered, replacing the original "
+"module. Even required modules may be re-registered and replaced."
+msgstr ""
+
+#: ../../source/docs/modules.rst:56
+msgid ""
+"*Note: This particular example was selected to show what is possible. It "
+"is often easier to just use an API or configuration the existing module "
+"exposes. In this example, the existing Clipboard’s*\\ `addMatcher "
+"</docs/modules/clipboard/#addmatcher>`__\\ *API is suitable for most "
+"paste customization scenarios.*"
+msgstr ""
+

@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/docs/themes.rst:2
+msgid "themes"
+msgstr "themes"
+
+#: ../../source/docs/themes.rst:4
+msgid "Themes allow you to easily make your editor look good with minimal effort. Quill features two offically supported themes: `Snow <#snow>`__ and `Bubble <#bubble>`__."
+msgstr "Themes allow you to easily make your editor look good with minimal effort. Quill features two offically supported themes: `Snow <#snow>`__ and `Bubble <#bubble>`__."
+
+#: ../../source/docs/themes.rst:9
+msgid "Usage"
+msgstr "Usage"
+
+#: ../../source/docs/themes.rst:24
+msgid "Bubble"
+msgstr "Bubble"
+
+#: ../../source/docs/themes.rst:26
+msgid "Bubble is a simple tooltip based theme."
+msgstr "Bubble is a simple tooltip based theme."
+
+#: ../../source/docs/themes.rst:33
+#: ../../source/docs/themes.rst:45
+msgid "Standalone"
+msgstr "Standalone"
+
+#: ../../source/docs/themes.rst:36
+msgid "Snow"
+msgstr "Snow"
+
+#: ../../source/docs/themes.rst:38
+msgid "Snow is a clean, flat toolbar theme."
+msgstr "Snow is a clean, flat toolbar theme."
+
+#: ../../source/docs/themes.rst:48
+msgid "Customization"
+msgstr "Customization"
+
+#: ../../source/docs/themes.rst:50
+msgid "Themes primarily control the visual look of Quill through its CSS stylesheet, and many changes can easily be made by overriding these rules. This is easiest to do, as with any other web application, by simply using your browser developer console to inspect the elements to view the rules affecting them."
+msgstr "Themes primarily control the visual look of Quill through its CSS stylesheet, and many changes can easily be made by overriding these rules. This is easiest to do, as with any other web application, by simply using your browser developer console to inspect the elements to view the rules affecting them."
+
+#: ../../source/docs/themes.rst:56
+msgid "Many other customizations can be done through the respective modules. For example, the toolbar is perhaps the most visible user interface, but much of the customization is done through the `Toolbar module </docs/modules/toolbar/>`__."
+msgstr "Many other customizations can be done through the respective modules. For example, the toolbar is perhaps the most visible user interface, but much of the customization is done through the `Toolbar module </docs/modules/toolbar/>`__."
+

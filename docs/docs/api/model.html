@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Model &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Selection" href="selection.html" />
+    <link rel="prev" title="Formatting" href="formatting.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../download.html">download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html">configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../formats.html">formats</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">api</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="contents.html">Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="editor.html">Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l3"><a class="reference internal" href="extension.html">Extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="formatting.html">Formatting</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Model</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#find-experimental">find experimental</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#getindex-experimental">getIndex experimental</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#getleaf-experimental">getLeaf experimental</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#getline-experimental">getLine experimental</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#getlines-experimental">getLines experimental</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="selection.html">Selection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../delta.html">delta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/index.html">modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../themes.html">themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standalone/index.html">standalone</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+          <li><a href="index.html">api</a> &raquo;</li>
+        
+      <li>Model</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/docs/api/model.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="model">
+<h1>Model<a class="headerlink" href="#model" title="永久链接至标题">¶</a></h1>
+<div class="section" id="find-experimental">
+<h2>find experimental<a class="headerlink" href="#find-experimental" title="永久链接至标题">¶</a></h2>
+<p>Static method returning the Quill or
+<a class="reference external" href="https://github.com/quilljs/parchment">Blot</a> instance for the given
+DOM node. In the latter case, passing in true for the <code class="docutils literal notranslate"><span class="pre">bubble</span></code>
+parameter will search up the given DOM’s ancestors until it finds a
+corresponding <a class="reference external" href="https://github.com/quilljs/parchment">Blot</a>.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">Quill</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">domNode</span><span class="o">:</span> <span class="nx">Node</span><span class="p">,</span> <span class="nx">bubble</span><span class="o">:</span> <span class="kr">boolean</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span><span class="o">:</span> <span class="nx">Blot</span> <span class="o">|</span> <span class="nx">Quill</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s2">&quot;#container&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="nx">container</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Quill</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">container</span><span class="p">)</span> <span class="o">===</span> <span class="nx">quill</span><span class="p">);</span>   <span class="c1">// Should be true</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">insertText</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="s1">&#39;link&#39;</span><span class="p">,</span> <span class="s1">&#39;https://world.com&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">linkNode</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#container a&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">linkBlot</span> <span class="o">=</span> <span class="nx">Quill</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">linkNode</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="getindex-experimental">
+<h2>getIndex experimental<a class="headerlink" href="#getindex-experimental" title="永久链接至标题">¶</a></h2>
+<p>Returns the distance between the beginning of document to the occurrence
+of the given <a class="reference external" href="https://github.com/quilljs/parchment">Blot</a>.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">getIndex</span><span class="p">(</span><span class="nx">blot</span><span class="o">:</span> <span class="nx">Blot</span><span class="p">)</span><span class="o">:</span> <span class="nb">Number</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="p">[</span><span class="nx">line</span><span class="p">,</span> <span class="nx">offset</span><span class="p">]</span> <span class="o">=</span> <span class="nx">quill</span><span class="p">.</span><span class="nx">getLine</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">quill</span><span class="p">.</span><span class="nx">getIndex</span><span class="p">(</span><span class="nx">line</span><span class="p">);</span>   <span class="c1">// index + offset should == 10</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="getleaf-experimental">
+<h2>getLeaf experimental<a class="headerlink" href="#getleaf-experimental" title="永久链接至标题">¶</a></h2>
+<p>Returns the leaf <a class="reference external" href="https://github.com/quilljs/parchment">Blot</a> at the
+specified index within the document.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">getLeaf</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">)</span><span class="o">:</span> <span class="nx">Blot</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s1">&#39;Hello Good World!&#39;</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;bold&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="p">[</span><span class="nx">leaf</span><span class="p">,</span> <span class="nx">offset</span><span class="p">]</span> <span class="o">=</span> <span class="nx">quill</span><span class="p">.</span><span class="nx">getLeaf</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
+<span class="c1">// leaf should be a Text Blot with value &quot;Good&quot;</span>
+<span class="c1">// offset should be 1, since the returned leaf started at index 6</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="getline-experimental">
+<h2>getLine experimental<a class="headerlink" href="#getline-experimental" title="永久链接至标题">¶</a></h2>
+<p>Returns the line <a class="reference external" href="https://github.com/quilljs/parchment">Blot</a> at the
+specified index within the document.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">getLine</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">)</span><span class="o">:</span> <span class="p">[</span><span class="nx">Blot</span><span class="p">,</span> <span class="nb">Number</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s1">&#39;Hello\nWorld!&#39;</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="p">[</span><span class="nx">line</span><span class="p">,</span> <span class="nx">offset</span><span class="p">]</span> <span class="o">=</span> <span class="nx">quill</span><span class="p">.</span><span class="nx">getLine</span><span class="p">(</span><span class="mi">7</span><span class="p">);</span>
+<span class="c1">// line should be a Block Blot representing the 2nd &quot;World!&quot; line</span>
+<span class="c1">// offset should be 1, since the returned line started at index 6</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="getlines-experimental">
+<h2>getLines experimental<a class="headerlink" href="#getlines-experimental" title="永久链接至标题">¶</a></h2>
+<p>Returns the lines contained within the specified location.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">getLines</span><span class="p">(</span><span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span> <span class="o">=</span> <span class="nx">remaining</span><span class="p">)</span><span class="o">:</span> <span class="nx">Blot</span><span class="p">[]</span>
+<span class="nx">getLines</span><span class="p">(</span><span class="nx">range</span><span class="o">:</span> <span class="nx">Range</span><span class="p">)</span><span class="o">:</span> <span class="nx">Blot</span><span class="p">[]</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">setText</span><span class="p">(</span><span class="s1">&#39;Hello\nGood\nWorld!&#39;</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">formatLine</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;list&#39;</span><span class="p">,</span> <span class="s1">&#39;bullet&#39;</span><span class="p">);</span>
+
+<span class="kd">let</span> <span class="nx">lines</span> <span class="o">=</span> <span class="nx">quill</span><span class="p">.</span><span class="nx">getLines</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+<span class="c1">// array with a ListItem and Block Blot,</span>
+<span class="c1">// representing the first two lines</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="selection.html" class="btn btn-neutral float-right" title="Selection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="formatting.html" class="btn btn-neutral float-left" title="Formatting" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

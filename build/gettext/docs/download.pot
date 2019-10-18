@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/docs/download.rst:2
+msgid "download"
+msgstr "download"
+
+#: ../../source/docs/download.rst:4
+msgid "Quill comes ready to use in several convenient forms."
+msgstr "Quill comes ready to use in several convenient forms."
+
+#: ../../source/docs/download.rst:7
+msgid "CDN"
+msgstr "CDN"
+
+#: ../../source/docs/download.rst:9
+msgid "A globally distributed and available CDN is provided, backed by `Render <https://render.com/>`__."
+msgstr "A globally distributed and available CDN is provided, backed by `Render <https://render.com/>`__."
+
+#: ../../source/docs/download.rst:27
+msgid "NPM"
+msgstr "NPM"
+
+#: ../../source/docs/download.rst:29
+msgid "Add Quill as an `NPM <//www.npmjs.org/>`__ dependency and add it your own build workflow, or use the included built options. Compiled stylesheets are also included in ``dist/`` folder."
+msgstr "Add Quill as an `NPM <//www.npmjs.org/>`__ dependency and add it your own build workflow, or use the included built options. Compiled stylesheets are also included in ``dist/`` folder."
+
+#: ../../source/docs/download.rst:38
+msgid "Direct Download"
+msgstr "Direct Download"
+
+#: ../../source/docs/download.rst:40
+msgid "Quill builds are also available for direct download on every `release <https://github.com/quilljs/quill/releases/tag/v%7B%7Bsite.version%7D%7D>`__."
+msgstr "Quill builds are also available for direct download on every `release <https://github.com/quilljs/quill/releases/tag/v%7B%7Bsite.version%7D%7D>`__."
+
+#: ../../source/docs/download.rst:44
+msgid "Source"
+msgstr "Source"
+
+#: ../../source/docs/download.rst:46
+msgid "And of course the complete source code is always available on `Github <https://github.com/quilljs/quill>`__."
+msgstr "And of course the complete source code is always available on `Github <https://github.com/quilljs/quill>`__."
+

@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/docs/api/editor.rst:2
+msgid "Editor"
+msgstr "Editor"
+
+#: ../../source/docs/api/editor.rst:5
+msgid "blur"
+msgstr "blur"
+
+#: ../../source/docs/api/editor.rst:7
+msgid "Removes focus from the editor."
+msgstr "Removes focus from the editor."
+
+#: ../../source/docs/api/editor.rst:9
+#: ../../source/docs/api/editor.rst:33
+#: ../../source/docs/api/editor.rst:51
+#: ../../source/docs/api/editor.rst:69
+#: ../../source/docs/api/editor.rst:90
+msgid "**Methods**"
+msgstr "**Methods**"
+
+#: ../../source/docs/api/editor.rst:15
+#: ../../source/docs/api/editor.rst:39
+#: ../../source/docs/api/editor.rst:57
+#: ../../source/docs/api/editor.rst:75
+#: ../../source/docs/api/editor.rst:96
+msgid "**Examples**"
+msgstr "**Examples**"
+
+#: ../../source/docs/api/editor.rst:22
+msgid "disable"
+msgstr "disable"
+
+#: ../../source/docs/api/editor.rst:24
+msgid "Shorthand for ```enable(false)`` <#enable>`__."
+msgstr "Shorthand for ```enable(false)`` <#enable>`__."
+
+#: ../../source/docs/api/editor.rst:27
+msgid "enable"
+msgstr "enable"
+
+#: ../../source/docs/api/editor.rst:29
+msgid "Set ability for user to edit, via input devices like the mouse or keyboard. Does not affect capabilities of API calls, when the ``source`` is ``\"api\"`` or \\`“silent”."
+msgstr "Set ability for user to edit, via input devices like the mouse or keyboard. Does not affect capabilities of API calls, when the ``source`` is ``\"api\"`` or \\`“silent”."
+
+#: ../../source/docs/api/editor.rst:47
+msgid "focus"
+msgstr "focus"
+
+#: ../../source/docs/api/editor.rst:49
+msgid "Focuses the editor and restores its last range."
+msgstr "Focuses the editor and restores its last range."
+
+#: ../../source/docs/api/editor.rst:64
+msgid "hasFocus"
+msgstr "hasFocus"
+
+#: ../../source/docs/api/editor.rst:66
+msgid "Checks if editor has focus. Note focus on toolbar, tooltips, does not count as the editor."
+msgstr "Checks if editor has focus. Note focus on toolbar, tooltips, does not count as the editor."
+
+#: ../../source/docs/api/editor.rst:82
+msgid "update"
+msgstr "update"
+
+#: ../../source/docs/api/editor.rst:84
+msgid "Synchronously check editor for user updates and fires events, if changes have occurred. Useful for collaborative use cases during conflict resolution requiring the latest up to date state. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``."
+msgstr "Synchronously check editor for user updates and fires events, if changes have occurred. Useful for collaborative use cases during conflict resolution requiring the latest up to date state. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``."
+

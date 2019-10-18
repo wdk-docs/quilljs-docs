@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Events &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Extension" href="extension.html" />
+    <link rel="prev" title="Editor" href="editor.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../download.html">download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html">configure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../formats.html">formats</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">api</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="contents.html">Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="editor.html">Editor</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Events</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#text-change">text-change</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#selection-change">selection-change</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editor-change">editor-change</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#on">on</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#once">once</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#off">off</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="extension.html">Extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="formatting.html">Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="model.html">Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="selection.html">Selection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../delta.html">delta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/index.html">modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../themes.html">themes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standalone/index.html">standalone</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+          <li><a href="index.html">api</a> &raquo;</li>
+        
+      <li>Events</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/docs/api/events.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="events">
+<h1>Events<a class="headerlink" href="#events" title="永久链接至标题">¶</a></h1>
+<div class="section" id="text-change">
+<h2>text-change<a class="headerlink" href="#text-change" title="永久链接至标题">¶</a></h2>
+<p>Emitted when the contents of Quill have changed. Details of the change,
+representation of the editor contents before the change, along with the
+source of the change are provided. The source will be <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code> if it
+originates from the users. For example:</p>
+<ul class="simple">
+<li><p>User types into the editor</p></li>
+<li><p>User formats text using the toolbar</p></li>
+<li><p>User uses a hotkey to undo</p></li>
+<li><p>User uses OS spelling correction</p></li>
+</ul>
+<p>Changes may occur through an API but as long as they originate from the
+user, the provided source should still be <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code>. For example, when
+a user clicks on the toolbar, technically the toolbar module calls a
+Quill API to effect the change. But source is still <code class="docutils literal notranslate"><span class="pre">&quot;user&quot;</span></code> since the
+origin of the change was the user’s click.</p>
+<p>APIs causing text to change may also be called with a <code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code>
+source, in which case <code class="docutils literal notranslate"><span class="pre">text-change</span></code> will not be emitted. This is not
+recommended as it will likely break the undo stack and other functions
+that rely on a full record of text changes.</p>
+<p>Changes to text may cause changes to the selection (ex. typing advances
+the cursor), however during the <code class="docutils literal notranslate"><span class="pre">text-change</span></code> handler, the selection
+is not yet updated, and native browser behavior may place it in an
+inconsistent state. Use <code class="docutils literal notranslate"><span class="pre">`selection-change</span></code> &lt;#selection-change&gt;`__ or
+<code class="docutils literal notranslate"><span class="pre">`editor-change</span></code> &lt;#editor-change&gt;`__ for reliable selection updates.</p>
+<p><strong>Callback Signature</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">handler</span><span class="p">(</span><span class="nx">delta</span><span class="o">:</span> <span class="nx">Delta</span><span class="p">,</span> <span class="nx">oldContents</span><span class="o">:</span> <span class="nx">Delta</span><span class="p">,</span> <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;text-change&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">delta</span><span class="p">,</span> <span class="nx">oldDelta</span><span class="p">,</span> <span class="nx">source</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">source</span> <span class="o">==</span> <span class="s1">&#39;api&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;An API call triggered this change.&quot;</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">source</span> <span class="o">==</span> <span class="s1">&#39;user&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;A user action triggered this change.&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="selection-change">
+<h2>selection-change<a class="headerlink" href="#selection-change" title="永久链接至标题">¶</a></h2>
+<p>Emitted when a user or API causes the selection to change, with a range
+representing the selection boundaries. A null range indicates selection
+loss (usually caused by loss of focus from the editor). You can also use
+this event as a focus change event by just checking if the emitted range
+is null or not.</p>
+<p>APIs causing the selection to change may also be called with a
+<code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code> source, in which case <code class="docutils literal notranslate"><span class="pre">selection-change</span></code> will not be
+emitted. This is useful if <code class="docutils literal notranslate"><span class="pre">selection-change</span></code> is a side effect. For
+example, typing causes the selection to change but would be very noisy
+to also emit a <code class="docutils literal notranslate"><span class="pre">selection-change</span></code> event on every character.</p>
+<p><strong>Callback Signature</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">handler</span><span class="p">(</span><span class="nx">range</span><span class="o">:</span> <span class="p">{</span> <span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span> <span class="p">},</span>
+        <span class="nx">oldRange</span><span class="o">:</span> <span class="p">{</span> <span class="nx">index</span><span class="o">:</span> <span class="nb">Number</span><span class="p">,</span> <span class="nx">length</span><span class="o">:</span> <span class="nb">Number</span> <span class="p">},</span>
+        <span class="nx">source</span><span class="o">:</span> <span class="nb">String</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;selection-change&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="nx">oldRange</span><span class="p">,</span> <span class="nx">source</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">range</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">range</span><span class="p">.</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;User cursor is on&#39;</span><span class="p">,</span> <span class="nx">range</span><span class="p">.</span><span class="nx">index</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">quill</span><span class="p">.</span><span class="nx">getText</span><span class="p">(</span><span class="nx">range</span><span class="p">.</span><span class="nx">index</span><span class="p">,</span> <span class="nx">range</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;User has highlighted&#39;</span><span class="p">,</span> <span class="nx">text</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Cursor not in the editor&#39;</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="editor-change">
+<h2>editor-change<a class="headerlink" href="#editor-change" title="永久链接至标题">¶</a></h2>
+<p>Emitted when either <code class="docutils literal notranslate"><span class="pre">text-change</span></code> or <code class="docutils literal notranslate"><span class="pre">selection-change</span></code> would be
+emitted, even when the source is <code class="docutils literal notranslate"><span class="pre">&quot;silent&quot;</span></code>. The first parameter is
+the event name, either <code class="docutils literal notranslate"><span class="pre">text-change</span></code> or <code class="docutils literal notranslate"><span class="pre">selection-change</span></code>, followed
+by the arguments normally passed to those respective handlers.</p>
+<p><strong>Callback Signature</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">handler</span><span class="p">(</span><span class="nx">name</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="p">...</span><span class="nx">args</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;editor-change&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">eventName</span><span class="p">,</span> <span class="p">...</span><span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">eventName</span> <span class="o">===</span> <span class="s1">&#39;text-change&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// args[0] will be delta</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">eventName</span> <span class="o">===</span> <span class="s1">&#39;selection-change&#39;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// args[0] will be old range</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="on">
+<h2>on<a class="headerlink" href="#on" title="永久链接至标题">¶</a></h2>
+<p>Adds event handler. See <a class="reference external" href="#text-change">text-change</a> or
+<a class="reference external" href="#selection-change">selection-change</a> for more details on the events
+themselves.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">on</span><span class="p">(</span><span class="nx">name</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">handler</span><span class="o">:</span> <span class="nb">Function</span><span class="p">)</span><span class="o">:</span> <span class="nx">Quill</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;text-change&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Text change!&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="once">
+<h2>once<a class="headerlink" href="#once" title="永久链接至标题">¶</a></h2>
+<p>Adds handler for one emission of an event. See
+<a class="reference external" href="#text-change">text-change</a> or
+<a class="reference external" href="#selection-change">selection-change</a> for more details on the events
+themselves.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">once</span><span class="p">(</span><span class="nx">name</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">handler</span><span class="o">:</span> <span class="nb">Function</span><span class="p">)</span><span class="o">:</span> <span class="nx">Quill</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">once</span><span class="p">(</span><span class="s1">&#39;text-change&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;First text change!&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="off">
+<h2>off<a class="headerlink" href="#off" title="永久链接至标题">¶</a></h2>
+<p>Removes event handler.</p>
+<p><strong>Methods</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">off</span><span class="p">(</span><span class="nx">name</span><span class="o">:</span> <span class="nb">String</span><span class="p">,</span> <span class="nx">handler</span><span class="o">:</span> <span class="nb">Function</span><span class="p">)</span><span class="o">:</span> <span class="nx">Quill</span>
+</pre></div>
+</div>
+<p><strong>Examples</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">handler</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">quill</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;text-change&#39;</span><span class="p">,</span> <span class="nx">handler</span><span class="p">);</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">off</span><span class="p">(</span><span class="s1">&#39;text-change&#39;</span><span class="p">,</span> <span class="nx">handler</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="extension.html" class="btn btn-neutral float-right" title="Extension" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="editor.html" class="btn btn-neutral float-left" title="Editor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

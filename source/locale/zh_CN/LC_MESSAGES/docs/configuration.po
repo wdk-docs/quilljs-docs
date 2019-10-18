@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/configuration.rst:2
+msgid "configure"
+msgstr "配置"
+
+#: ../../source/docs/configuration.rst:4
+msgid ""
+"Quill allows several ways to customize it to suit your needs. This "
+"section is dedicated to tweaking existing functionality. See the `Modules"
+" </docs/modules/>`__ section for adding new functionality and the `Themes"
+" </docs/themes/>`__ section for styling."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:10
+msgid "Container"
+msgstr "容器"
+
+#: ../../source/docs/configuration.rst:12
+msgid ""
+"Quill requires a container where the editor will be appended. You can "
+"pass in either a CSS selector or a DOM object."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:30
+msgid "Options"
+msgstr "选项"
+
+#: ../../source/docs/configuration.rst:32
+msgid "To configure Quill, pass in an options object:"
+msgstr "要配置奎尔，传递一个选择对象:"
+
+#: ../../source/docs/configuration.rst:47
+msgid "The following keys are recognized:"
+msgstr "下面的键被认可:"
+
+#: ../../source/docs/configuration.rst:50
+msgid "bounds"
+msgstr "bounds"
+
+#: ../../source/docs/configuration.rst:52
+msgid "Default: ``document.body``"
+msgstr "Default: ``document.body``"
+
+#: ../../source/docs/configuration.rst:54
+msgid ""
+"DOM Element or a CSS selector for a DOM Element, within which the "
+"editor’s ui elements (i.e. tooltips, etc.) should be confined. Currently,"
+" it only considers left and right boundaries."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:59
+msgid "debug"
+msgstr "debug"
+
+#: ../../source/docs/configuration.rst:61
+msgid "Default: ``warn``"
+msgstr "Default: ``warn``"
+
+#: ../../source/docs/configuration.rst:63
+msgid ""
+"Shortcut for `debug </docs/api/#debug>`__. Note ``debug`` is a static "
+"method and will affect other instances of Quill editors on the page. Only"
+" warning and error messages are enabled by default."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:68
+msgid "formats"
+msgstr "formats"
+
+#: ../../source/docs/configuration.rst:70
+msgid "Default: All formats"
+msgstr "Default: All formats"
+
+#: ../../source/docs/configuration.rst:72
+msgid ""
+"Whitelist of formats to allow in the editor. See `Formats "
+"</docs/formats/>`__ for a complete list."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:76
+msgid "modules"
+msgstr "modules"
+
+#: ../../source/docs/configuration.rst:78
+msgid ""
+"Collection of modules to include and respective options. See `Modules "
+"</docs/modules/>`__ for more information."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:82
+msgid "placeholder"
+msgstr "placeholder"
+
+#: ../../source/docs/configuration.rst:84
+msgid "Default: None"
+msgstr "Default: None"
+
+#: ../../source/docs/configuration.rst:86
+msgid "Placeholder text to show when editor is empty."
+msgstr "Placeholder text to show when editor is empty."
+
+#: ../../source/docs/configuration.rst:89
+msgid "readOnly"
+msgstr "readOnly"
+
+#: ../../source/docs/configuration.rst:91
+msgid "Default: ``false``"
+msgstr "Default: ``false``"
+
+#: ../../source/docs/configuration.rst:93
+msgid "Whether to instantiate the editor to read-only mode."
+msgstr "Whether to instantiate the editor to read-only mode."
+
+#: ../../source/docs/configuration.rst:96
+msgid "scrollingContainer"
+msgstr "scrollingContainer"
+
+#: ../../source/docs/configuration.rst:98
+msgid "Default: ``null``"
+msgstr "Default: ``null``"
+
+#: ../../source/docs/configuration.rst:100
+msgid ""
+"DOM Element or a CSS selector for a DOM Element, specifying which "
+"container has the scrollbars (i.e. ``overflow-y: auto``), if is has been "
+"changed from the default ``ql-editor`` with custom CSS. Necessary to fix "
+"scroll jumping bugs when Quill is set to `auto grow "
+"</playground/#autogrow>`__ its height, and another ancestor container is "
+"responsible from the scrolling."
+msgstr ""
+
+#: ../../source/docs/configuration.rst:108
+msgid "theme"
+msgstr "theme"
+
+#: ../../source/docs/configuration.rst:110
+msgid ""
+"Name of theme to use. The builtin options are “bubble” or “snow”. An "
+"invalid or falsy value will load a default minimal theme. Note the "
+"theme’s specific stylesheet still needs to be included manually. See "
+"`Themes </docs/themes/>`__ for more information."
+msgstr ""
+

@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>升级到2.0 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="为什么鹅毛笔" href="why-quill.html" />
+    <link rel="prev" title="升级到1.0" href="upgrading-to-1-0.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">指南</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html">如何自定义鹅毛笔？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html">与其他富文本编辑器相比</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">升级到2.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#quill">Quill</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clipboard">Clipboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#keyboard">Keyboard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parchment">Parchment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delta">Delta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browser">Browser</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">指南</a> &raquo;</li>
+        
+      <li>升级到2.0</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guides/upgrading-to-2-0.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upgrading-to-2-0">
+<h1>升级到2.0<a class="headerlink" href="#upgrading-to-2-0" title="永久链接至标题">¶</a></h1>
+<p>In progress</p>
+<div class="section" id="quill">
+<h2>Quill<a class="headerlink" href="#quill" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">strict</span></code> <em>removed</em> - Previously some changes that were small in
+practice (renames) but would warrant a semver major bump would be
+hidden under this configuration. This ended up being more confusing
+than helpful as we will no longer make use of this.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">registry</span></code> - added to allow multiple editors with different formats
+to coexist on the same page.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">formats</span></code> <em>removed</em> - <code class="docutils literal notranslate"><span class="pre">registry</span></code> is now strictly more powerful
+and safer.</p></li>
+</ul>
+</div>
+<div class="section" id="clipboard">
+<h2>Clipboard<a class="headerlink" href="#clipboard" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">convert</span></code> - API changed to include both HTML and text and previous
+functionality is broken into multiple method calls (<code class="docutils literal notranslate"><span class="pre">convert</span></code>,
+<code class="docutils literal notranslate"><span class="pre">onCapturePaste</span></code>) to allow more surface to hook into.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">onCapturePaste</span></code> - Added</p></li>
+</ul>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">matchVisual</span></code> <em>removed</em> - Previously there was a choice between
+using visual or semantic interpretation of pasted whitespace; now
+just the semantic interpretation is used. Visual matching was
+expensive, requiring the DOM renderer which is no longer available in
+the new clipboard rewrite.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pasteHTML</span></code> <em>removed</em> - Deprecated alias to
+<code class="docutils literal notranslate"><span class="pre">dangerouslyPasteHTML</span></code>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="keyboard">
+<h2>Keyboard<a class="headerlink" href="#keyboard" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Binding <code class="docutils literal notranslate"><span class="pre">key</span></code> is no longer case insensitive. To support bindings
+like <code class="docutils literal notranslate"><span class="pre">key:</span> <span class="pre">'&#64;'</span></code>, modifiers are taken into account so the shift
+modifier will affect case sensitivity.</p></li>
+<li><p>Binding <code class="docutils literal notranslate"><span class="pre">key</span></code> now supports an array of keys to easily bind to
+multiple shortcuts.</p></li>
+<li><p>Native keyboard event object is now also passed into handlers.</p></li>
+</ul>
+</div>
+<div class="section" id="parchment">
+<h2>Parchment<a class="headerlink" href="#parchment" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>All lists use <code class="docutils literal notranslate"><span class="pre">&lt;ol&gt;</span></code> instead of both <code class="docutils literal notranslate"><span class="pre">&lt;ul&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;ol&gt;</span></code> allowing
+better nesting between the two. Copied content will generate the
+correct semantic markup for paste into other applications.</p></li>
+<li><p>Code block markup now uses <code class="docutils literal notranslate"><span class="pre">&lt;div&gt;</span></code> to better support syntax
+highlighting.</p></li>
+<li><p>Static <code class="docutils literal notranslate"><span class="pre">register</span></code> method added to allow dependent chains of
+registration.</p></li>
+<li><p>Static <code class="docutils literal notranslate"><span class="pre">formats</span></code> method now passes in <code class="docutils literal notranslate"><span class="pre">scroll</span></code>.</p></li>
+<li><p>Blot constructor now requires <code class="docutils literal notranslate"><span class="pre">scroll</span></code> to be passed in.</p></li>
+</ul>
+</div>
+<div class="section" id="delta">
+<h2>Delta<a class="headerlink" href="#delta" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Support for the deprecated delta format, where embeds had integer
+values and list attributes had different keys, is now removed</p></li>
+</ul>
+</div>
+<div class="section" id="browser">
+<h2>Browser<a class="headerlink" href="#browser" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Quill builds now use <code class="docutils literal notranslate"><span class="pre">babel-env</span></code> to determine the right level of
+transpiling and polyfilling.</p></li>
+<li><p>IE11 support is dropped build size reduced ~25% as a result.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="why-quill.html" class="btn btn-neutral float-right" title="为什么鹅毛笔" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="upgrading-to-1-0.html" class="btn btn-neutral float-left" title="升级到1.0" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,628 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>与其他富文本编辑器相比 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="与其他富文本编辑器比较" href="comparison-with-other-rich-text-editors.html" />
+    <link rel="prev" title="如何自定义鹅毛笔？" href="how-to-customize-quill.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">指南</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html">如何自定义鹅毛笔？</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">与其他富文本编辑器相比</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#plain-text">Plain Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#compact">Compact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#canonical">Canonical</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#line-formatting">Line Formatting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#embedded-content">Embedded Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#describing-changes">Describing Changes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-2-0.html">升级到2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">指南</a> &raquo;</li>
+        
+      <li>与其他富文本编辑器相比</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guides/designing-the-delta-format.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="designing-the-delta-format">
+<h1>与其他富文本编辑器相比<a class="headerlink" href="#designing-the-delta-format" title="永久链接至标题">¶</a></h1>
+<p>Rich text editors lack a specification to express its own contents.
+Until recently, most rich text editors did not even know what was in
+their own edit areas. These editors just pass the user HTML, along with
+the burden of parsing and interpretting this. At any given time, this
+interpretation will differ from those of major browser vendors, leading
+to different editing experiences for users.</p>
+<p>Quill is the first rich text editor to actually understand its own
+contents. Key to this is Deltas, the specification describing rich text.
+Deltas are designed to be easy to understand and use. We will walk
+through some of the thinking behind Deltas, to shed light on <em>why</em>
+things are the way they are.</p>
+<p>If you are looking for a reference on <em>what</em> Deltas are, the <a class="reference external" href="/docs/delta/">Delta
+documentation</a> is a more concise resource.</p>
+<div class="section" id="plain-text">
+<h2>Plain Text<a class="headerlink" href="#plain-text" title="永久链接至标题">¶</a></h2>
+<p>Let’s start at the basics with just plain text. There already is a
+ubiquitous format to store plain text: the string. Now if we want to
+build upon this and describe formatted text, such as when a range is
+bold, we need to add additional information.</p>
+<p>Arrays are the only other ordered data type available, so we use an
+array of objects. This also allows us to leverage JSON for compatibility
+with a breadth of tools.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello&#39;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<p>We can add italics, underline, and other formats to the main object if
+we want to; but it is cleaner to separate <code class="docutils literal notranslate"><span class="pre">text</span></code> from all of this so
+we organize formatting under one field, which we will name
+<code class="docutils literal notranslate"><span class="pre">attributes</span></code>.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hello&#39;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">}</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<div class="section" id="compact">
+<h3>Compact<a class="headerlink" href="#compact" title="永久链接至标题">¶</a></h3>
+<p>Even with our simple Delta format so far, it is unpredictable since the
+above “Hello World” example can be represented differently, so we cannot
+predict which will be generated:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;Hel&#39;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;lo&#39;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">}</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<p>To solve this, we add the constraint that Deltas must be compact. With
+this constraint, the above representation is not a valid Delta, since it
+can be represented more compactly by the previous example, where “Hel”
+and “lo” were not separate. Similarly we cannot have
+<code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">bold:</span> <span class="pre">false,</span> <span class="pre">italic:</span> <span class="pre">true,</span> <span class="pre">underline:</span> <span class="pre">null</span> <span class="pre">}</span></code>, because
+<code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">italic:</span> <span class="pre">true</span> <span class="pre">}</span></code> is more compact.</p>
+</div>
+<div class="section" id="canonical">
+<h3>Canonical<a class="headerlink" href="#canonical" title="永久链接至标题">¶</a></h3>
+<p>We have not assigned any meaning to <code class="docutils literal notranslate"><span class="pre">bold</span></code>, just that it describes
+some formatting for text. We could very well have used different names,
+such as <code class="docutils literal notranslate"><span class="pre">weighted</span></code> or <code class="docutils literal notranslate"><span class="pre">strong</span></code>, or used a different range of
+possible values, such as a numerical or descriptive range of weights. An
+example can be found in CSS, where most of these ambiguities are at
+play. If we saw bolded text on a page, we cannot predict if its rule set
+is <code class="docutils literal notranslate"><span class="pre">font-weight:</span> <span class="pre">bold</span></code> or <code class="docutils literal notranslate"><span class="pre">font-weight:</span> <span class="pre">700</span></code>. This makes the task of
+parsing CSS to discern its meaning, much more complex.</p>
+<p>We do not define the set of possible attributes, nor their meanings, but
+we do add an additional constraint that Deltas must be canonical. If two
+Deltas are equal, the content they represent must be equal, and there
+cannot be two unequal Deltas that represent the same content.
+Programmatically, this allows you to simply deep compare two Deltas to
+determine if the content they represent is equal.</p>
+<p>So if we had the following, the only conclusion we can draw is <code class="docutils literal notranslate"><span class="pre">a</span></code> is
+different from <code class="docutils literal notranslate"><span class="pre">b</span></code>, but not what <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">b</span></code> means.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[{</span>
+  <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Mystery&quot;</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">a</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">b</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">}</span>
+<span class="p">}];</span>
+</pre></div>
+</div>
+<p>It is up to the implementer to pick appropriate names:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[{</span>
+  <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Mystery&quot;</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">italic</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">}</span>
+<span class="p">}];</span>
+</pre></div>
+</div>
+<p>This canonicalization applies to both keys and values, <code class="docutils literal notranslate"><span class="pre">text</span></code> and
+<code class="docutils literal notranslate"><span class="pre">attributes</span></code>. For example, Quill by default:</p>
+<ul class="simple">
+<li><p>Uses six character hex values to represent colors and not RGB</p></li>
+<li><p>There is only one way to represent a newline which is with <code class="docutils literal notranslate"><span class="pre">\n</span></code>,
+not <code class="docutils literal notranslate"><span class="pre">\r</span></code> or <code class="docutils literal notranslate"><span class="pre">\r\n</span></code></p></li>
+<li><p>text: “Hello  World” unambiguously means there are precisely two
+spaces between “Hello” and “World”</p></li>
+</ul>
+<p>Some of these choices may be customized by the user, but the canonical
+constraint in Deltas dictate that the choice must be unique.</p>
+<p>This unambiguous predictability makes Deltas easier to work with, both
+because you have fewer cases to handle and because there are no
+surprises in what a corresponding Delta will look like. Long term, this
+makes applications using Deltas easier to understand and maintain.</p>
+</div>
+</div>
+<div class="section" id="line-formatting">
+<h2>Line Formatting<a class="headerlink" href="#line-formatting" title="永久链接至标题">¶</a></h2>
+<p>Line formats affect the contents of an entire line, so they present an
+interesting challenge for our compact and canonical constraints. A
+seemingly reasonable way to represent centered text would be the
+following:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s2">&quot;center&quot;</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;\nWorld&quot;</span> <span class="p">}</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<p>But what if the user deletes the newline character? If we just naively
+get rid of the newline character, the Delta would now look like this:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s2">&quot;center&quot;</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;World&quot;</span> <span class="p">}</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<p>Is this line still centered? If the answer is no, then our
+representation is not compact, since we do not need the attribute object
+and can combine the two strings:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;HelloWorld&quot;</span> <span class="p">}</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<p>But if the answer is yes, then we violate the canonical constraint since
+any permutation of characters having an align attribute would represent
+the same content.</p>
+<p>So we cannot just naively get rid of the newline character. We also have
+to either get rid of line attributes, or expand them to fill all
+characters on the line.</p>
+<p>What if we removed the newline from the following?</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s2">&quot;center&quot;</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;\n&quot;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s2">&quot;right&quot;</span> <span class="p">}</span> <span class="p">}</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<p>It is not clear if our resulting line is aligned center or right. We
+could delete both or have some ordering rule to favor one over the
+other, but our Delta is becoming more complex and harder to work with on
+this path.</p>
+<p>This problem begs for atomicity, and we find this in the <em>newline</em>
+character itself. But we have an off by one problem in that if we have
+<em>n</em> lines, we only have <em>n-1</em> newline characters.</p>
+<p>To solve this, Quill “adds” a newline to all documents and always ends
+Deltas with “<a href="#id1"><span class="problematic" id="id2">:raw-latex:`\n`</span></a>”.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Hello World on two lines</span>
+<span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Hello&quot;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;\n&quot;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s2">&quot;center&quot;</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;World&quot;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;\n&quot;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">align</span><span class="o">:</span> <span class="s2">&quot;right&quot;</span> <span class="p">}</span> <span class="p">}</span>   <span class="c1">// Deltas must end with newline</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="embedded-content">
+<h2>Embedded Content<a class="headerlink" href="#embedded-content" title="永久链接至标题">¶</a></h2>
+<p>We want to add embedded content like images or video. Strings were
+natural to use for text but we have a lot more options for embeds. Since
+there are different types of embeds, our choice just needs to include
+this type information, and then the actual content. There are many
+reasonable options here but we will use an object whose only key is the
+embed type and the value is the content representation, which may have
+any type or value.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">img</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">image</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;https://quilljs.com/logo.png&#39;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">f</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">formula</span><span class="o">:</span> <span class="s1">&#39;e=mc^2&#39;</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>Similar to text, images might have some defining characteristics, and
+some transient ones. We used <code class="docutils literal notranslate"><span class="pre">attributes</span></code> for text content and can use
+the same <code class="docutils literal notranslate"><span class="pre">attributes</span></code> field for images. But because of this, we can
+keep the general structure we have been using, but should rename our
+<code class="docutils literal notranslate"><span class="pre">text</span></code> key into something more general. For reasons we will explore
+later, we will choose the name <code class="docutils literal notranslate"><span class="pre">insert</span></code>. Putting this all together we
+have:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="p">[{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;Hello&#39;</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;World&#39;</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">image</span><span class="o">:</span> <span class="s1">&#39;https://exclamation.com/mark.png&#39;</span>
+  <span class="p">},</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">width</span><span class="o">:</span> <span class="s1">&#39;100&#39;</span> <span class="p">}</span>
+<span class="p">}];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="describing-changes">
+<h2>Describing Changes<a class="headerlink" href="#describing-changes" title="永久链接至标题">¶</a></h2>
+<p>As the name Delta implies, our format can describe changes to documents,
+as well as documents themselves. In fact we can think of documents as
+the changes we would make to the empty document, to get to the one we
+are describing. As you might have already guessed, using Deltas to also
+describe changes is why we renamed <code class="docutils literal notranslate"><span class="pre">text</span></code> to <code class="docutils literal notranslate"><span class="pre">insert</span></code> earlier. We
+call each element in our Delta array an Operation.</p>
+<p>To describe deleting text, we need to know where and how many characters
+to delete. To delete embeds, there needs not be any special treatment,
+other than to understand the length of an embed. If it is anything other
+than one, we would then need to specify what happens when only part of
+an embed is deleted. There is currently no such specification, so
+regardless of how many pixels make up an image, how many minutes long a
+video is, or how many slides are in a deck; embeds are all of length
+<strong>one</strong>.</p>
+<p>One reasonable way to describe a deletion is to explicitly store its
+index and length.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">delta</span> <span class="o">=</span> <span class="p">[{</span>
+  <span class="k">delete</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">index</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="nx">length</span><span class="o">:</span> <span class="mi">1</span>
+  <span class="p">}</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="k">delete</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">index</span><span class="o">:</span> <span class="mi">12</span><span class="p">,</span>
+    <span class="nx">length</span><span class="o">:</span> <span class="mi">3</span>
+  <span class="p">}</span>
+<span class="p">}];</span>
+</pre></div>
+</div>
+<p>We would have to order the deletions based on indexes, and ensure no
+ranges overlap, otherwise our canonical constraint would be violated.
+There are a couple other shortcomings to this index and length approach,
+but they are easier to appreciate after describing format changes.</p>
+<p>Now that Deltas may be describing changes to a non-empty document,
+<code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">insert:</span> <span class="pre">&quot;Hello&quot;</span> <span class="pre">}</span></code> is insufficient, because we do not know where
+“Hello” should be inserted. We can solve this by also adding an index,
+similar to <code class="docutils literal notranslate"><span class="pre">delete</span></code>.</p>
+<p>Similar to deletes, we need to specify the range of text to format,
+along with the format change itself. Formatting exists in the
+<code class="docutils literal notranslate"><span class="pre">attributes</span></code> object, so a simple solution is to provide an additional
+<code class="docutils literal notranslate"><span class="pre">attributes</span></code> object to merge with the existing one. This merge is
+shallow to keep things simple. We have not found a use case that is
+compelling enough to require a deep merge and warrants the added
+complexity.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">delta</span> <span class="o">=</span> <span class="p">[{</span>
+  <span class="nx">format</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">index</span><span class="o">:</span> <span class="mi">4</span><span class="p">,</span>
+    <span class="nx">length</span><span class="o">:</span> <span class="mi">1</span>
+  <span class="p">},</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">}</span>
+<span class="p">}];</span>
+</pre></div>
+</div>
+<p>The special case is when we want to remove formatting. We will use
+<code class="docutils literal notranslate"><span class="pre">null</span></code> for this purpose, so <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">bold:</span> <span class="pre">null</span> <span class="pre">}</span></code> would mean remove the
+bold format. We could have specified any falsy value, but there may be
+legitimate use cases for an attribute value to be <code class="docutils literal notranslate"><span class="pre">0</span></code> or the empty
+string.</p>
+<p><strong>Note:</strong> We now have to be careful with indexes at the application
+layer. As mentioned earlier, Deltas do not ascribe any inherent meaning
+to any the <code class="docutils literal notranslate"><span class="pre">attributes</span></code>’ key-value pairs, nor any embed types or
+values. Deltas do not know an image does not have duration, text does
+not have alternative texts, and videos cannot be bolded. The following
+is a <em>legal</em> Delta that might have been the result of applying other
+<em>legal</em> Deltas, by an application not being careful of format ranges.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">delta</span> <span class="o">=</span> <span class="p">[{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">image</span><span class="o">:</span> <span class="s2">&quot;https://imgur.com/&quot;</span>
+  <span class="p">},</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">duration</span><span class="o">:</span> <span class="mi">600</span>
+  <span class="p">}</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="s2">&quot;Hello&quot;</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">alt</span><span class="o">:</span> <span class="s2">&quot;Funny cat photo&quot;</span>
+  <span class="p">}</span>
+<span class="p">},</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">video</span><span class="o">:</span> <span class="s2">&quot;https://youtube.com/&quot;</span>
+  <span class="p">},</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">}</span>
+<span class="p">}];</span>
+</pre></div>
+</div>
+<p>First, we should be clear that an index must refer to its position in
+the document <strong>before</strong> any Operations are applied. Otherwise, a later
+Operation may delete a previous insert, unformat a previous format,
+etc., which would violate compactness.</p>
+<p>Operations must also be strictly ordered to satisfy our canonical
+constraint. Ordering by index, then length, and then type is one valid
+way this can be accomplished.</p>
+<p>As stated earlier, delete ranges cannot overlap. The case against
+overlapping format ranges is less brief, but it turns out we do not want
+overlapping formats either.</p>
+<p>The number of reasons a Delta might be invalid is piling up. A better
+format would simply not allow such cases to be expressed at all.</p>
+<p>If we step back from our compactness formalities for a moment, we can
+describe a much simpler format to express inserting, deleting, and
+formatting:</p>
+<ul class="simple">
+<li><p>A Delta would have Operations that are at least as long as the
+document being modified.</p></li>
+<li><p>Each Operation would describe what happens to the character at that
+index.</p></li>
+<li><p>Optional insert Operations may make the Delta longer than the
+document it describes.</p></li>
+</ul>
+<p>This necessitates the creation of a new Operation, that will simply mean
+“keep this character as is”. We call this a <code class="docutils literal notranslate"><span class="pre">retain</span></code>.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Starting with &quot;HelloWorld&quot;,</span>
+<span class="c1">// bold &quot;Hello&quot;, and insert a space right after it</span>
+<span class="kd">var</span> <span class="nx">change</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">format</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>  <span class="c1">// H</span>
+  <span class="p">{</span> <span class="nx">format</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>  <span class="c1">// e</span>
+  <span class="p">{</span> <span class="nx">format</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>  <span class="c1">// l</span>
+  <span class="p">{</span> <span class="nx">format</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>  <span class="c1">// l</span>
+  <span class="p">{</span> <span class="nx">format</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>  <span class="c1">// o</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39; &#39;</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>  <span class="c1">// W</span>
+  <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>  <span class="c1">// o</span>
+  <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>  <span class="c1">// r</span>
+  <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span>  <span class="c1">// l</span>
+  <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span>   <span class="c1">// d</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Since every character is described, explicit indexes and lengths are no
+longer necessary. This makes overlapping ranges and out-of-order indexes
+impossible to express.</p>
+<p>Therefore, we can make the easy optimization to merge adjacent equal
+Operations, re-introducing <em>length</em>. If the last Operation is a
+<code class="docutils literal notranslate"><span class="pre">retain</span></code> we can simply drop it, for it simply instructs to “do nothing
+to the rest of the document”.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">change</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">format</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">}</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39; &#39;</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Furthermore, you might notice that a <code class="docutils literal notranslate"><span class="pre">retain</span></code> is in some ways just a
+special case of <code class="docutils literal notranslate"><span class="pre">format</span></code>. For instance, there is no practical
+difference between <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">format:</span> <span class="pre">1,</span> <span class="pre">attributes:</span> <span class="pre">{}</span> <span class="pre">}</span></code> and
+<code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">retain:</span> <span class="pre">1</span> <span class="pre">}</span></code>. Compacting would drop the empty <code class="docutils literal notranslate"><span class="pre">attributes</span></code> object
+leaving us with just <code class="docutils literal notranslate"><span class="pre">{</span> <span class="pre">format:</span> <span class="pre">1</span> <span class="pre">}</span></code>, creating a canonicalization
+conflict. Thus, in our example we will simply combine <code class="docutils literal notranslate"><span class="pre">format</span></code> and
+<code class="docutils literal notranslate"><span class="pre">retain</span></code>, and keep the name <code class="docutils literal notranslate"><span class="pre">retain</span></code>.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">change</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="mi">5</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39; &#39;</span> <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>We now have a Delta that is very close to the current standard format.</p>
+<p>Right now we have an easy to use JSON Array that describes rich text.
+This is great at the storage and transport layers, but applications
+could benefit from more functionality. We can add this by implementing
+Deltas as a class, that can be easily initialized from or exported to
+JSON, and then providing it with relevant methods.</p>
+<p>At the time of Delta’s inception, it was not possible to sub-class an
+Array. For this reason Deltas are expressed as Objects, with a single
+property <code class="docutils literal notranslate"><span class="pre">ops</span></code> that stores an array of Operations like the ones we
+have been discussing.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">delta</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[{</span>
+    <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;Hello&#39;</span>
+  <span class="p">},</span> <span class="p">{</span>
+    <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;World&#39;</span><span class="p">,</span>
+    <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span>
+  <span class="p">},</span> <span class="p">{</span>
+    <span class="nx">insert</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">image</span><span class="o">:</span> <span class="s1">&#39;https://exclamation.com/mark.png&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">width</span><span class="o">:</span> <span class="s1">&#39;100&#39;</span> <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p>Finally, we arrive at the <a class="reference external" href="/docs/delta/">Delta format</a>, as it exists
+today.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="comparison-with-other-rich-text-editors.html" class="btn btn-neutral float-right" title="与其他富文本编辑器比较" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="how-to-customize-quill.html" class="btn btn-neutral float-left" title="如何自定义鹅毛笔？" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

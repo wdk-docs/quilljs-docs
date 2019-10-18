@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>键盘 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="句法" href="syntax.html" />
+    <link rel="prev" title="历史" href="history.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">快速开始</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../download.html">下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html">配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../formats.html">格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html">api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../delta.html">三角洲</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">模块</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="clipboard.html">剪贴板</a></li>
+<li class="toctree-l3"><a class="reference internal" href="history.html">历史</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">键盘</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#key-bindings">Key Bindings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#context">Context</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#performance">Performance</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html">句法</a></li>
+<li class="toctree-l3"><a class="reference internal" href="toolbar.html">工具栏</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../themes.html">主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standalone/index.html">独立</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+          <li><a href="index.html">模块</a> &raquo;</li>
+        
+      <li>键盘</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/docs/modules/keyboard.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="keyboard">
+<h1>键盘<a class="headerlink" href="#keyboard" title="永久链接至标题">¶</a></h1>
+<p>The Keyboard module enables custom behavior for keyboard events in
+particular contexts. Quill uses this to bind formatting hotkeys and
+prevent undesirable browser side effects.</p>
+<div class="section" id="key-bindings">
+<h2>Key Bindings<a class="headerlink" href="#key-bindings" title="永久链接至标题">¶</a></h2>
+<p>Keyboard handlers are bound to a particular key and key modifiers. The
+<code class="docutils literal notranslate"><span class="pre">key</span></code> is the JavaScript event key code, but string shorthands are
+allowed for alphanumeric keys and some common keys.</p>
+<p>Key modifiers include: <code class="docutils literal notranslate"><span class="pre">metaKey</span></code>, <code class="docutils literal notranslate"><span class="pre">ctrlKey</span></code>, <code class="docutils literal notranslate"><span class="pre">shiftKey</span></code> and
+<code class="docutils literal notranslate"><span class="pre">altKey</span></code>. In addition, <code class="docutils literal notranslate"><span class="pre">shortKey</span></code> is a platform specific modifier
+equivalent to <code class="docutils literal notranslate"><span class="pre">metaKey</span></code> on a Mac and <code class="docutils literal notranslate"><span class="pre">ctrlKey</span></code> on Linux and Windows.</p>
+<p>Handlers will be called with <code class="docutils literal notranslate"><span class="pre">this</span></code> bound to the keyboard instance and
+be passed the current selection range.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span>
+  <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span>
+  <span class="nx">shortKey</span><span class="o">:</span> <span class="kc">true</span>
+<span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">formatText</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="c1">// addBinding may also be called with one parameter,</span>
+<span class="c1">// in the same form as in initialization</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span>
+  <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span>
+  <span class="nx">shortKey</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">handler</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>If a modifier key is <code class="docutils literal notranslate"><span class="pre">false</span></code>, it is assumed to mean that modifier is
+not active. You may also pass <code class="docutils literal notranslate"><span class="pre">null</span></code> to mean any value for the
+modifier.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// Only b with no modifier will trigger</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;B&#39;</span> <span class="p">},</span> <span class="nx">handler</span><span class="p">);</span>
+
+<span class="c1">// Only shift+b will trigger</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="nx">shiftKey</span><span class="o">:</span> <span class="kc">true</span> <span class="p">},</span> <span class="nx">handler</span><span class="p">);</span>
+
+<span class="c1">// Either b or shift+b will trigger</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="nx">shiftKey</span><span class="o">:</span> <span class="kc">null</span> <span class="p">},</span> <span class="nx">handler</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Multiple handlers may be bound to the same key and modifier combination.
+Handlers will be called synchronously, in the order they were bound. By
+default, a handler stops propagating to the next handler, unless it
+explicitly returns <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;tab&#39;</span> <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// I will normally prevent handlers of the tab key</span>
+  <span class="c1">// Return true to let later handlers be called</span>
+  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>Note: Since Quill’s default handlers are added at initialization, the
+only way to prevent them is to add yours in the
+<a class="reference external" href="#configuration">configuration</a>.</p>
+</div>
+<div class="section" id="context">
+<h2>Context<a class="headerlink" href="#context" title="永久链接至标题">¶</a></h2>
+<p>Contexts enable further specification for handlers to be called only in
+particular scenarios. Regardless if context is specified, a context
+object is provided as a second parameter for all handlers.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// If the user hits backspace at the beginning of list or blockquote,</span>
+<span class="c1">// remove the format instead delete any text</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span> <span class="nx">key</span><span class="o">:</span> <span class="nx">Keyboard</span><span class="p">.</span><span class="nx">keys</span><span class="p">.</span><span class="nx">BACKSPACE</span> <span class="p">},</span> <span class="p">{</span>
+  <span class="nx">collapsed</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">format</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;blockquote&#39;</span><span class="p">,</span> <span class="s1">&#39;list&#39;</span><span class="p">],</span>
+  <span class="nx">offset</span><span class="o">:</span> <span class="mi">0</span>
+<span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">context</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;list&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;blockquote&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<div class="section" id="collapsed">
+<h3>collapsed<a class="headerlink" href="#collapsed" title="永久链接至标题">¶</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, handler is called only if the user’s selection is
+collapsed, i.e. in cursor form. If <code class="docutils literal notranslate"><span class="pre">false</span></code>, the users’s selection must
+be non-zero length, such as when the user has highlighted text.</p>
+</div>
+<div class="section" id="empty">
+<h3>empty<a class="headerlink" href="#empty" title="永久链接至标题">¶</a></h3>
+<p>If <code class="docutils literal notranslate"><span class="pre">true</span></code>, called only if user’s selection is on an empty line,
+<code class="docutils literal notranslate"><span class="pre">false</span></code> for a non-empty line. Note setting empty to be true implies
+collapsed is also true and offset is 0—otherwise the user’s selection
+would not be on an empty line.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// If the user hits enter on an empty list, remove the list instead</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span> <span class="nx">key</span><span class="o">:</span> <span class="nx">Keyboard</span><span class="p">.</span><span class="nx">keys</span><span class="p">.</span><span class="nx">ENTER</span> <span class="p">},</span> <span class="p">{</span>
+  <span class="nx">empty</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>    <span class="c1">// implies collapsed: true and offset: 0</span>
+  <span class="nx">format</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;list&#39;</span><span class="p">]</span>
+<span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;list&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="format">
+<h3>format<a class="headerlink" href="#format" title="永久链接至标题">¶</a></h3>
+<p>When an Array, handler will be called if <em>any</em> of the specified formats
+are active. When an Object, <em>all</em> specified formats conditions must be
+met. In either case, the format property of the context parameter will
+be an Object of all current active formats, the same returned by
+<code class="docutils literal notranslate"><span class="pre">quill.getFormat()</span></code>.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">context</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">format</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">list</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>       <span class="c1">// must be on a list, but can be any value</span>
+    <span class="nx">script</span><span class="o">:</span> <span class="s1">&#39;super&#39;</span><span class="p">,</span>  <span class="c1">// must be exactly &#39;super&#39;, &#39;sub&#39; will not suffice</span>
+    <span class="nx">link</span><span class="o">:</span> <span class="kc">false</span>       <span class="c1">// cannot be in any link</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="offset">
+<h3>offset<a class="headerlink" href="#offset" title="永久链接至标题">¶</a></h3>
+<p>Handler will be only called when the user’s selection starts <code class="docutils literal notranslate"><span class="pre">offset</span></code>
+characters from the beginning of the line. Note this is before printable
+keys have been applied. This is useful in combination with other context
+specifications.</p>
+</div>
+<div class="section" id="prefix">
+<h3>prefix<a class="headerlink" href="#prefix" title="永久链接至标题">¶</a></h3>
+<p>Regex that must match the text immediately preceding the user’s
+selection’s start position. The text will not match cross format
+boundaries. The supplied <code class="docutils literal notranslate"><span class="pre">context.prefix</span></code> value will be the entire
+immediately preceding text, not just the regex match.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// When the user types space...</span>
+<span class="nx">quill</span><span class="p">.</span><span class="nx">keyboard</span><span class="p">.</span><span class="nx">addBinding</span><span class="p">({</span> <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39; &#39;</span> <span class="p">},</span> <span class="p">{</span>
+  <span class="nx">collapsed</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="nx">format</span><span class="o">:</span> <span class="p">{</span> <span class="nx">list</span><span class="o">:</span> <span class="kc">false</span> <span class="p">},</span>  <span class="c1">// ...on an line that&#39;s not already a list</span>
+  <span class="nx">prefix</span><span class="o">:</span> <span class="sr">/^-$/</span><span class="p">,</span>            <span class="c1">// ...following a &#39;-&#39; character</span>
+  <span class="nx">offset</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>                <span class="c1">// ...at the 1st position of the line,</span>
+                            <span class="c1">// otherwise handler would trigger if the user</span>
+                            <span class="c1">// typed hyphen+space mid sentence</span>
+<span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// the space character is consumed by this handler</span>
+  <span class="c1">// so we only need to delete the hyphen</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">deleteText</span><span class="p">(</span><span class="nx">range</span><span class="p">.</span><span class="nx">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+  <span class="c1">// apply bullet formatting to the line</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">formatLine</span><span class="p">(</span><span class="nx">range</span><span class="p">.</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;list&#39;</span><span class="p">,</span> <span class="s1">&#39;bullet&#39;</span><span class="p">);</span>
+  <span class="c1">// restore selection</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">setSelection</span><span class="p">(</span><span class="nx">range</span><span class="p">.</span><span class="nx">index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+
+  <span class="c1">// console.log(context.prefix) would print &#39;-&#39;</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="suffix">
+<h3>suffix<a class="headerlink" href="#suffix" title="永久链接至标题">¶</a></h3>
+<p>The same as <code class="docutils literal notranslate"><span class="pre">`prefix</span></code> &lt;#prefix&gt;`__ except matching text immediately
+following the user’s selection’s end position.</p>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="永久链接至标题">¶</a></h2>
+<p>By default, Quill comes with several useful key bindings, for example
+indenting lists with tabs. You can add your own upon initization.</p>
+<p>Some bindings are essential to preventing dangerous browser defaults,
+such as the enter and backspace keys. You cannot remove these bindings
+to revert to native browser behaviors. However since bindings specified
+in the configuration will run before Quill’s defaults, you can handle
+special cases and propagate to Quill’s otherwise.</p>
+<p>Adding a binding with <code class="docutils literal notranslate"><span class="pre">quill.keyboard.addBinding</span></code> will not run before
+Quill’s because the defaults bindings will have been added by that
+point.</p>
+<p>Each binding config must contain <code class="docutils literal notranslate"><span class="pre">key</span></code> and <code class="docutils literal notranslate"><span class="pre">handler</span></code> options, and
+may optionally include any of the <code class="docutils literal notranslate"><span class="pre">context</span></code> options.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">bindings</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="c1">// This will overwrite the default binding also named &#39;tab&#39;</span>
+  <span class="nx">tab</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">key</span><span class="o">:</span> <span class="mi">9</span><span class="p">,</span>
+    <span class="nx">handler</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="c1">// Handle tab</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+
+  <span class="c1">// There is no default binding named &#39;custom&#39;</span>
+  <span class="c1">// so this will be added without overwriting anything</span>
+  <span class="nx">custom</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span>
+    <span class="nx">shiftKey</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nx">handler</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Handle shift+b</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+
+  <span class="nx">list</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;backspace&#39;</span><span class="p">,</span>
+    <span class="nx">format</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;list&#39;</span><span class="p">],</span>
+    <span class="nx">handler</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">range</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">context</span><span class="p">.</span><span class="nx">offset</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// When backspace on the first character of a list,</span>
+        <span class="c1">// remove the list instead</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;list&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">Quill</span><span class="p">.</span><span class="nx">sources</span><span class="p">.</span><span class="nx">USER</span><span class="p">);</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="c1">// Otherwise propogate to Quill&#39;s default</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">keyboard</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">bindings</span><span class="o">:</span> <span class="nx">bindings</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="performance">
+<h2>Performance<a class="headerlink" href="#performance" title="永久链接至标题">¶</a></h2>
+<p>Like DOM events, Quill key bindings are blocking calls on every match,
+so it is a bad idea to have a very expensive handler for a very common
+key binding. Apply the same performance best practices as you would when
+attaching to common blocking DOM events, like <code class="docutils literal notranslate"><span class="pre">scroll</span></code> or
+<code class="docutils literal notranslate"><span class="pre">mousemove</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="syntax.html" class="btn btn-neutral float-right" title="句法" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="history.html" class="btn btn-neutral float-left" title="历史" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

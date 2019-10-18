@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/guides/how-to-customize-quill.rst:2
+msgid "How to customize quill?"
+msgstr "如何自定义鹅毛笔？"
+
+#: ../../source/guides/how-to-customize-quill.rst:4
+msgid ""
+"Quill was designed with customization and extension in mind. This is "
+"achieved by implementing a small editor core exposed by a granular, well "
+"defined `API </docs/api/>`__. The core is augmented by `modules "
+"</docs/modules>`__, using the same `APIs </docs/api/>`__ you have access "
+"to."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:10
+msgid ""
+"In general, common customizations are handled in `configurations "
+"<#configurations/>`__, user interfaces by `Themes <#themes>`__ and CSS, "
+"functionality by `modules <#modules>`__, and editor contents by "
+"`Parchment <#content-and-formatting>`__."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:16
+msgid "Configurations"
+msgstr "Configurations"
+
+#: ../../source/guides/how-to-customize-quill.rst:18
+msgid ""
+"Quill favors Code over Configuration™, but for very common needs, "
+"especially where the equivalent code would be lengthy or complex, Quill "
+"provides `configuration </docs/configuration/>`__ options. This would be "
+"a good first place to look to determine if you even need to implement any"
+" custom functionality."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:24
+msgid ""
+"Two of the most powerful options is ``modules`` and ``theme``. You can "
+"drastically change or expand what Quill can and does do by simply adding "
+"or removing individual `modules </docs/modules/>`__ or using a different "
+"`theme </docs/themes/>`__."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:30
+msgid "Themes"
+msgstr "Themes"
+
+#: ../../source/guides/how-to-customize-quill.rst:32
+msgid ""
+"Quill officially supports a standard toolbar theme `Snow "
+"</docs/themes/#snow>`__ and a floating tooltip theme `Bubble "
+"</docs/themes/#bubble>`__. Since Quill is not confined within an iframe "
+"like many legacy editors, many visual modifications can be made with just"
+" CSS, using one of the existing themes."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:38
+msgid ""
+"If you would like to drastically change UI interactions, you can omit the"
+" ``theme`` configuration option, which will give you an unstyled Quill "
+"editor. You do still need to include a minimal stylesheet that, for "
+"example, makes sure spaces render in all browsers and ordered lists are "
+"appropriately numbered."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:48
+msgid ""
+"From there you can implement and attach your own UI elements like custom "
+"dropdowns or tooltips. The last section of `Cloning Medium with Parchment"
+" </guides/cloning-medium-with-parchment/#final-polish>`__ provides an "
+"example of this in action."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:54
+msgid "Modules"
+msgstr "Modules"
+
+#: ../../source/guides/how-to-customize-quill.rst:56
+msgid ""
+"Quill is designed with a modular architecture composed of a small editing"
+" core, surrounded by modules that augment its functionality. Some of this"
+" functionality is quite integral to editing, such as the `History "
+"</docs/modules/history/>`__ module, which manages undo and redo. Because "
+"all modules use the same public `API </docs/api/>`__ exposed to the "
+"developer, even interchanging core modules is possible, when necessary."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:64
+msgid ""
+"Like Quill’s core itself, many `modules </docs/modules/>`__ expose "
+"additional configuration options and APIs. Before deciding to replace a "
+"module, take a look at its documentation. Often your desired "
+"customization is already implemented as a configuration or API call."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:69
+msgid ""
+"Otherwise, if you would like to drastically change functionality an "
+"existing module already covers, you can simply not include it—or "
+"explicitly exclude it when a theme includes it by default—and implement "
+"the functionality to your liking external to Quill, using the same `API "
+"</docs/api/>`__ the default module uses."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:84
+msgid ""
+"A few modules—\\ `Clipboard </docs/modules/clipboard/>`__, `Keyboard "
+"</docs/modules/keyboard/>`__, and `History "
+"</docs/modules/history/>`__—need to be included as core functionality "
+"depend on the APIs they provide. For example, even though undo and redo "
+"is basic, expected, editor functionality, the native browser behavior "
+"handling of this is inconsistent and unpredictable. The History module "
+"bridges the gap by implementing its own undo manager and exposing "
+"``undo()`` and ``redo()`` as APIs."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:93
+msgid ""
+"Nevertheless, staying true to Quill modular design, you can still "
+"drastically change the way undo and redo—or any other core "
+"functionality—works by implementing your own undo manager to replace the "
+"History module. As long as you implement the same API interface, Quill "
+"will happily use your replacement module. This is most easily done by "
+"inheriting from the existing module, and overwriting the methods you want"
+" to change. Take a look at the `modules </docs/modules/>`__ documentation"
+" for a very simple example of overwriting the core `Clipboard "
+"</docs/modules/clipboard/>`__ module."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:103
+msgid ""
+"Finally, you may want to add functionality not provided by existing "
+"modules. In this case, it may be convenient to organize this as a Quill "
+"module, which the `Building A Custom Module </guides/building-a-custom-"
+"module/>`__ guide covers. Of course, it is certainly valid to just keep "
+"this logic separate from Quill, in your application code instead."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:111
+msgid "Content and Formatting"
+msgstr "Content and Formatting"
+
+#: ../../source/guides/how-to-customize-quill.rst:113
+msgid ""
+"Quill allows modification and extension of the contents and formats that "
+"it understands through its document model `Parchment "
+"<https://github.com/quilljs/parchment/>`__. Content and formats are "
+"represented in Parchment as either Blots or Attributors, which roughly "
+"correspond to Nodes or Attributes in the DOM."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:120
+msgid "Class vs Inline"
+msgstr "Class vs Inline"
+
+#: ../../source/guides/how-to-customize-quill.rst:122
+msgid ""
+"Quill uses classes, instead of inline style attributes, when possible, "
+"but both are implemented for you to pick and choose. A live example of "
+"this is implemented as a `Playground snippet </playground/#class-vs-"
+"inline-style>`__."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:143
+msgid "Customizing Attributors"
+msgstr "Customizing Attributors"
+
+#: ../../source/guides/how-to-customize-quill.rst:145
+msgid ""
+"In addition to choosing the particular Attributor, you can also customize"
+" existing ones. Here is an example of the font whitelist to add "
+"additional fonts."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:157
+msgid "Note you still need to add styling for these classes into your CSS files."
+msgstr "Note you still need to add styling for these classes into your CSS files."
+
+#: ../../source/guides/how-to-customize-quill.rst:170
+msgid "Customizing Blots"
+msgstr "Customizing Blots"
+
+#: ../../source/guides/how-to-customize-quill.rst:172
+msgid ""
+"Formats represented by Blots can also be customized. Here is how you "
+"would change the DOM Node used to represent bold formatting."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:190
+msgid "Extending Blots"
+msgstr "Extending Blots"
+
+#: ../../source/guides/how-to-customize-quill.rst:192
+msgid ""
+"You can also extend existing formats. Here is a quick ES6 implementation "
+"of a list item that does not permit formatting its contents. Code blocks "
+"are implemented in exactly this way."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:220
+msgid ""
+"You can view a list of Blots and Attributors available by calling "
+"``console.log(Quill.imports);``. Direct modification of this object is "
+"not supported. Use ```Quill.register`` </docs/api/#register>`__ instead."
+msgstr ""
+
+#: ../../source/guides/how-to-customize-quill.rst:224
+msgid ""
+"A complete reference on Parchment, Blots and Attributors can be found on "
+"Parchment’s own `README <https://github.com/quilljs/parchment/>`__. For "
+"an in-depth walkthrough, take a look at `Cloning Medium with Parchment "
+"</guides/cloning-medium-with-parchment/>`__, which starts with Quill "
+"understanding just plain text, to adding all of the formats `Medium "
+"<https://medium.com/>`__ supports. Most of the time, you will not have to"
+" build formats from scratch since most are already implemented in Quill, "
+"but it is still useful to understanding how Quill works at this deeper "
+"level."
+msgstr ""
+

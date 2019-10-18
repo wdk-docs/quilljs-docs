@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/modules/syntax.rst:2
+msgid "syntax"
+msgstr "句法"
+
+#: ../../source/docs/modules/syntax.rst:4
+msgid ""
+"The Syntax Module enhances the Code Block format by automatically "
+"detecting and applying syntax highlighting. The excellent `highlight.js "
+"<https://highlightjs.org/>`__ library is used as a dependency to parse "
+"and tokenize code blocks."
+msgstr ""
+
+#: ../../source/docs/modules/syntax.rst:9
+msgid ""
+"In general, you may `configure "
+"<https://highlightjs.readthedocs.io/en/latest/api.html#configure-"
+"options>`__ highlight.js as needed. However, Quill expects and requires "
+"the ``useBR`` option to be ``false``."
+msgstr ""
+
+#: ../../source/docs/modules/syntax.rst:15
+msgid "Example"
+msgstr "Example"
+

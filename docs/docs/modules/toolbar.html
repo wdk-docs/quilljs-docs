@@ -1,0 +1,435 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>工具栏 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="主题" href="../themes.html" />
+    <link rel="prev" title="句法" href="syntax.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../quickstart.html">快速开始</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../download.html">下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration.html">配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../formats.html">格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html">api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../delta.html">三角洲</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">模块</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="clipboard.html">剪贴板</a></li>
+<li class="toctree-l3"><a class="reference internal" href="history.html">历史</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard.html">键盘</a></li>
+<li class="toctree-l3"><a class="reference internal" href="syntax.html">句法</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">工具栏</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#container">Container</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#handlers">Handlers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../themes.html">主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../standalone/index.html">独立</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">文档</a> &raquo;</li>
+        
+          <li><a href="index.html">模块</a> &raquo;</li>
+        
+      <li>工具栏</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/docs/modules/toolbar.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="toolbar">
+<h1>工具栏<a class="headerlink" href="#toolbar" title="永久链接至标题">¶</a></h1>
+<!-- head --><p>The Toolbar module allow users to easily format Quill’s contents.</p>
+<div class="quill-wrapper docutils container">
+<div class="toolbar docutils container" id="toolbar-toolbar">
+<p>{% include full-toolbar.html %}</p>
+</div>
+</div>
+<p>It can be configured with a custom container and handlers.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">container</span><span class="o">:</span> <span class="s1">&#39;#toolbar&#39;</span><span class="p">,</span>  <span class="c1">// Selector for toolbar container</span>
+      <span class="nx">handlers</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bold&#39;</span><span class="o">:</span> <span class="nx">customBoldHandler</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>Because the <code class="docutils literal notranslate"><span class="pre">container</span></code> option is so common, a top level shorthand is
+also allowed.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="c1">// Equivalent to { toolbar: { container: &#39;#toolbar&#39; }}</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="s1">&#39;#toolbar&#39;</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<div class="section" id="container">
+<h2>Container<a class="headerlink" href="#container" title="永久链接至标题">¶</a></h2>
+<p>Toolbar controls can either be specified by a simple array of format
+names or a custom HTML container.</p>
+<p>To begin with the simpler array option:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">toolbarOptions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;italic&#39;</span><span class="p">,</span> <span class="s1">&#39;underline&#39;</span><span class="p">,</span> <span class="s1">&#39;strike&#39;</span><span class="p">];</span>
+
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="nx">toolbarOptions</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>Controls can also be grouped by one level of nesting an array. This will
+wrap controls in a <code class="docutils literal notranslate"><span class="pre">&lt;span&gt;</span></code> with class name <code class="docutils literal notranslate"><span class="pre">ql-formats</span></code>, providing
+structure for themes to utilize. For example
+<a class="reference external" href="/docs/themes/#snow/">Snow</a> adds extra spacing between control
+groups.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">toolbarOptions</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;italic&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;link&#39;</span><span class="p">,</span> <span class="s1">&#39;image&#39;</span><span class="p">]];</span>
+</pre></div>
+</div>
+<p>Buttons with custom values can be specified with an Object with the name
+of the format as its only key.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">toolbarOptions</span> <span class="o">=</span> <span class="p">[{</span> <span class="s1">&#39;header&#39;</span><span class="o">:</span> <span class="s1">&#39;3&#39;</span> <span class="p">}];</span>
+</pre></div>
+</div>
+<p>Dropdowns are similarly specified by an Object, but with an array of
+possible values. CSS is used to control the visual labels for dropdown
+options.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Note false, not &#39;normal&#39;, is the correct value</span>
+<span class="c1">// quill.format(&#39;size&#39;, false) removes the format,</span>
+<span class="c1">// allowing default styling to work</span>
+<span class="kd">var</span> <span class="nx">toolbarOptions</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nx">size</span><span class="o">:</span> <span class="p">[</span> <span class="s1">&#39;small&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="s1">&#39;large&#39;</span><span class="p">,</span> <span class="s1">&#39;huge&#39;</span> <span class="p">]}</span>
+<span class="p">];</span>
+</pre></div>
+</div>
+<p>Note <a class="reference external" href="/docs/themes/">Themes</a> may also specify default values for
+dropdowns. For example, <a class="reference external" href="/docs/themes/#snow/">Snow</a> provides a
+default list of 35 colors for the <code class="docutils literal notranslate"><span class="pre">color</span></code> and <code class="docutils literal notranslate"><span class="pre">background</span></code> formats,
+if set to an empty array.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">toolbarOptions</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">[</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span> <span class="s1">&#39;italic&#39;</span><span class="p">,</span> <span class="s1">&#39;underline&#39;</span><span class="p">,</span> <span class="s1">&#39;strike&#39;</span><span class="p">],</span>        <span class="c1">// toggled buttons</span>
+  <span class="p">[</span><span class="s1">&#39;blockquote&#39;</span><span class="p">,</span> <span class="s1">&#39;code-block&#39;</span><span class="p">],</span>
+
+  <span class="p">[{</span> <span class="s1">&#39;header&#39;</span><span class="o">:</span> <span class="mi">1</span> <span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;header&#39;</span><span class="o">:</span> <span class="mi">2</span> <span class="p">}],</span>               <span class="c1">// custom button values</span>
+  <span class="p">[{</span> <span class="s1">&#39;list&#39;</span><span class="o">:</span> <span class="s1">&#39;ordered&#39;</span><span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;list&#39;</span><span class="o">:</span> <span class="s1">&#39;bullet&#39;</span> <span class="p">}],</span>
+  <span class="p">[{</span> <span class="s1">&#39;script&#39;</span><span class="o">:</span> <span class="s1">&#39;sub&#39;</span><span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;script&#39;</span><span class="o">:</span> <span class="s1">&#39;super&#39;</span> <span class="p">}],</span>      <span class="c1">// superscript/subscript</span>
+  <span class="p">[{</span> <span class="s1">&#39;indent&#39;</span><span class="o">:</span> <span class="s1">&#39;-1&#39;</span><span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;indent&#39;</span><span class="o">:</span> <span class="s1">&#39;+1&#39;</span> <span class="p">}],</span>          <span class="c1">// outdent/indent</span>
+  <span class="p">[{</span> <span class="s1">&#39;direction&#39;</span><span class="o">:</span> <span class="s1">&#39;rtl&#39;</span> <span class="p">}],</span>                         <span class="c1">// text direction</span>
+
+  <span class="p">[{</span> <span class="s1">&#39;size&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;small&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="s1">&#39;large&#39;</span><span class="p">,</span> <span class="s1">&#39;huge&#39;</span><span class="p">]</span> <span class="p">}],</span>  <span class="c1">// custom dropdown</span>
+  <span class="p">[{</span> <span class="s1">&#39;header&#39;</span><span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="kc">false</span><span class="p">]</span> <span class="p">}],</span>
+
+  <span class="p">[{</span> <span class="s1">&#39;color&#39;</span><span class="o">:</span> <span class="p">[]</span> <span class="p">},</span> <span class="p">{</span> <span class="s1">&#39;background&#39;</span><span class="o">:</span> <span class="p">[]</span> <span class="p">}],</span>          <span class="c1">// dropdown with defaults from theme</span>
+  <span class="p">[{</span> <span class="s1">&#39;font&#39;</span><span class="o">:</span> <span class="p">[]</span> <span class="p">}],</span>
+  <span class="p">[{</span> <span class="s1">&#39;align&#39;</span><span class="o">:</span> <span class="p">[]</span> <span class="p">}],</span>
+
+  <span class="p">[</span><span class="s1">&#39;clean&#39;</span><span class="p">]</span>                                         <span class="c1">// remove formatting button</span>
+<span class="p">];</span>
+
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="nx">toolbarOptions</span>
+  <span class="p">},</span>
+  <span class="nx">theme</span><span class="o">:</span> <span class="s1">&#39;snow&#39;</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>For use cases requiring even more customization, you can manually create
+a toolbar in HTML, and pass the DOM element or selector into Quill. The
+<code class="docutils literal notranslate"><span class="pre">ql-toolbar</span></code> class will be added to the toolbar container and Quill
+attach appropriate handlers to <code class="docutils literal notranslate"><span class="pre">&lt;button&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;select&gt;</span></code> elements
+with a class name in the form <code class="docutils literal notranslate"><span class="pre">ql-${format}</span></code>. Buttons element may
+optionally have a custom <code class="docutils literal notranslate"><span class="pre">value</span></code> attribute.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="c">&lt;!-- Create toolbar container --&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;toolbar&quot;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- Add font size dropdown --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">select</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ql-size&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;small&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="c">&lt;!-- Note a missing, thus falsy value, is used to reset to default --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">selected</span><span class="p">&gt;&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;large&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;huge&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- Add a bold button --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ql-bold&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- Add subscript and superscript buttons --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ql-script&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;sub&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ql-script&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;super&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;editor&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="c">&lt;!-- Initialize editor with toolbar --&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">toolbar</span><span class="o">:</span> <span class="s1">&#39;#toolbar&#39;</span>
+    <span class="p">}</span>
+  <span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Note by supplying your own HTML element, Quill searches for particular
+input elements, but your own inputs that have nothing to do with Quill
+can still be added and styled and coexist.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;toolbar&quot;</span><span class="p">&gt;</span>
+  <span class="c">&lt;!-- Add buttons as you would before --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ql-bold&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;ql-italic&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+  <span class="c">&lt;!-- But you can also add your own --&gt;</span>
+  <span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;custom-button&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;editor&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="s1">&#39;#toolbar&#39;</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">customButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;#custom-button&#39;</span><span class="p">);</span>
+<span class="nx">customButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Clicked!&#39;</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="handlers">
+<h2>Handlers<a class="headerlink" href="#handlers" title="永久链接至标题">¶</a></h2>
+<p>The toolbar controls by default applies and removes formatting, but you
+can also overwrite this with custom handlers, for example in order to
+show external UI.</p>
+<p>Handler functions will be bound to the toolbar (so using <code class="docutils literal notranslate"><span class="pre">this</span></code> will
+refer to the toolbar instance) and passed the <code class="docutils literal notranslate"><span class="pre">value</span></code> attribute of the
+input if the corresponding format is inactive, and <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise.
+Adding a custom handler will overwrite the default toolbar and theme
+behavior.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">toolbarOptions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">handlers</span><span class="o">:</span> <span class="p">{</span>
+    <span class="c1">// handlers object will be merged with default handlers object</span>
+    <span class="s1">&#39;link&#39;</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">href</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s1">&#39;Enter the URL&#39;</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;link&#39;</span><span class="p">,</span> <span class="nx">href</span><span class="p">);</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">quill</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;link&#39;</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">quill</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Quill</span><span class="p">(</span><span class="s1">&#39;#editor&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">toolbar</span><span class="o">:</span> <span class="nx">toolbarOptions</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="c1">// Handlers can also be added post initialization</span>
+<span class="kd">var</span> <span class="nx">toolbar</span> <span class="o">=</span> <span class="nx">quill</span><span class="p">.</span><span class="nx">getModule</span><span class="p">(</span><span class="s1">&#39;toolbar&#39;</span><span class="p">);</span>
+<span class="nx">toolbar</span><span class="p">.</span><span class="nx">addHandler</span><span class="p">(</span><span class="s1">&#39;image&#39;</span><span class="p">,</span> <span class="nx">showImageUI</span><span class="p">);</span>
+</pre></div>
+</div>
+<!-- script --><script src="{{site.cdn}}{{site.version}}/{{site.quill}}"></script><script>
+  var quill = new Quill('#toolbar-editor', {
+    modules: {
+      toolbar: { container: '#toolbar-toolbar' }
+    },
+    theme: 'snow'
+  });
+</script><!-- script --></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../themes.html" class="btn btn-neutral float-right" title="主题" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="syntax.html" class="btn btn-neutral float-left" title="句法" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

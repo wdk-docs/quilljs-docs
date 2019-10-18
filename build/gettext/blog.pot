@@ -1,0 +1,618 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:01+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/blog/2014-08-12-an-official-cdn-for-quill.rst:2
+msgid "2014-08-12 an official cdn for quill"
+msgstr "2014-08-12 an official cdn for quill"
+
+#: ../../source/blog/2014-08-12-an-official-cdn-for-quill.rst:4
+msgid "Quill now has an offical Content Distribution Network so you can have access to a reliable, high-speed host for the library. To include a file:"
+msgstr "Quill now has an offical Content Distribution Network so you can have access to a reliable, high-speed host for the library. To include a file:"
+
+#: ../../source/blog/2014-08-12-an-official-cdn-for-quill.rst:16
+msgid "You can also use “latest” as the version:"
+msgstr "You can also use “latest” as the version:"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:2
+msgid "2014-08-14 building a custom module"
+msgstr "2014-08-14 building a custom module"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:4
+msgid "*Note: An updated guide for 1.0 and ES6 is available*\\ `here </guides/building-a-custom-module/>`__\\ *.*"
+msgstr "*Note: An updated guide for 1.0 and ES6 is available*\\ `here </guides/building-a-custom-module/>`__\\ *.*"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:7
+msgid "Quill’s core strength as an editor is its rich API and powerful customization capabilities. One of the best ways to customize Quill is with a module. A module is a simple way to augment Quill’s functionality. For the purpose of this guide, we will walk through one way to build a word counter module, a commonly found feature in many word processors."
+msgstr "Quill’s core strength as an editor is its rich API and powerful customization capabilities. One of the best ways to customize Quill is with a module. A module is a simple way to augment Quill’s functionality. For the purpose of this guide, we will walk through one way to build a word counter module, a commonly found feature in many word processors."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:15
+msgid "Counting Words"
+msgstr "Counting Words"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:17
+msgid "At its core a word counter simply counts the number of words in the editor and displays this value in some UI. Thus we need to:"
+msgstr "At its core a word counter simply counts the number of words in the editor and displays this value in some UI. Thus we need to:"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:20
+msgid "Listen on text changes in Quill."
+msgstr "Listen on text changes in Quill."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:21
+msgid "Count the number of words."
+msgstr "Count the number of words."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:22
+msgid "Display this value."
+msgstr "Display this value."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:24
+msgid "Let’s jump straight in with a complete example!"
+msgstr "Let’s jump straight in with a complete example!"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:54
+msgid "That’s all it takes to add a custom module to Quill! A function can be `registered </docs/api/#quillregistermodule/>`__ as a module and it will be passed the corresponding Quill editor object along with any options."
+msgstr "That’s all it takes to add a custom module to Quill! A function can be `registered </docs/api/#quillregistermodule/>`__ as a module and it will be passed the corresponding Quill editor object along with any options."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:59
+msgid "Using Options"
+msgstr "Using Options"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:61
+msgid "Modules are passed an options object that can be used to fine tune the desired behavior. We can use this to accept a selector for the counter container instead of a hard-coded string. Let’s also customize the counter to either count words or characters:"
+msgstr "Modules are passed an options object that can be used to fine tune the desired behavior. We can use this to accept a selector for the counter container instead of a hard-coded string. Let’s also customize the counter to either count words or characters:"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:94
+msgid "Constructors"
+msgstr "Constructors"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:96
+msgid "Since any function can be registered as a Quill module, we could have implemented our counter as a constructor. This allows us to access and utilize the module directly."
+msgstr "Since any function can be registered as a Quill module, we could have implemented our counter as a constructor. This allows us to access and utilize the module directly."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:138
+msgid "Wrapping It All Up"
+msgstr "Wrapping It All Up"
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:140
+msgid "Now let’s polish off the module and fix a few pesky bugs."
+msgstr "Now let’s polish off the module and fix a few pesky bugs."
+
+#: ../../source/blog/2014-08-14-building-a-custom-module.rst:184
+msgid "That’s all there is to it! Stay tuned for more guides on common types of modules you can build."
+msgstr "That’s all there is to it! Stay tuned for more guides on common types of modules you can build."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:2
+msgid "2014-09-29 a new delta"
+msgstr "2014-09-29 a new delta"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:4
+msgid "Part of providing a complete API in Quill is providing events for when and what changes occur in the editor. Those changes are currently represented by a `Delta </guides/working-with-deltas/>`__ object, which aims to be intuitive, human-readable, and expressive for any change or document that might need to represented. Over the past few weeks I’ve been working on a new format that better fulfills those goals and addresses the challenges in the current format."
+msgstr "Part of providing a complete API in Quill is providing events for when and what changes occur in the editor. Those changes are currently represented by a `Delta </guides/working-with-deltas/>`__ object, which aims to be intuitive, human-readable, and expressive for any change or document that might need to represented. Over the past few weeks I’ve been working on a new format that better fulfills those goals and addresses the challenges in the current format."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:12
+msgid "Documentation for the new Delta format can be found in its own `Github repository <https://github.com/ottypes/rich-text>`__ but I will go over some of the rationale behind some of the changes in this post."
+msgstr "Documentation for the new Delta format can be found in its own `Github repository <https://github.com/ottypes/rich-text>`__ but I will go over some of the rationale behind some of the changes in this post."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:21
+msgid "Reduced Complexity"
+msgstr "Reduced Complexity"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:23
+msgid "When the Delta format was originally designed, it had ambitious goals of being general purpose and being able to represent any kind of document. The new format reduces the scope to just rich text documents, allowing for a much tighter implementation [1]_."
+msgstr "When the Delta format was originally designed, it had ambitious goals of being general purpose and being able to represent any kind of document. The new format reduces the scope to just rich text documents, allowing for a much tighter implementation [1]_."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:28
+msgid "Quill is not specifically built to be a collaborative editor but the ability to be used as one is a good benchmark of the API. The new Delta format maintains this capability and fulfills the specifications of an `ottype <https://github.com/ottypes/docs>`__, making it compatible with `ShareJS <https://github.com/share/ShareJS>`__."
+msgstr "Quill is not specifically built to be a collaborative editor but the ability to be used as one is a good benchmark of the API. The new Delta format maintains this capability and fulfills the specifications of an `ottype <https://github.com/ottypes/docs>`__, making it compatible with `ShareJS <https://github.com/share/ShareJS>`__."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:35
+msgid "Explicit Deletes"
+msgstr "Explicit Deletes"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:37
+msgid "In the current Delta format, a delete operation is implied by a lack of a retain operation. Basically everything is deleted unless you say it should be kept. This has some nice properties from an implementation perspective [2]_ but was probably the largest source of confusion for users trying to work with Deltas and challenged the human-readability goal. It is very difficult to keep track of indexes to figure out what was not accounted for, to figure out what should be deleted."
+msgstr "In the current Delta format, a delete operation is implied by a lack of a retain operation. Basically everything is deleted unless you say it should be kept. This has some nice properties from an implementation perspective [2]_ but was probably the largest source of confusion for users trying to work with Deltas and challenged the human-readability goal. It is very difficult to keep track of indexes to figure out what was not accounted for, to figure out what should be deleted."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:45
+msgid "The new format has an explicit delete operation and by default everything is kept. Here’s a comparison of the two formats both representing removing the ‘b’ in ‘abc’."
+msgstr "The new format has an explicit delete operation and by default everything is kept. Here’s a comparison of the two formats both representing removing the ‘b’ in ‘abc’."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:67
+msgid "A side effect of having explicit deletes and defaulting to keeping text is that in practice the representation for new Deltas will usually be smaller."
+msgstr "A side effect of having explicit deletes and defaulting to keeping text is that in practice the representation for new Deltas will usually be smaller."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:72
+msgid "Embed Support"
+msgstr "Embed Support"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:74
+msgid "The new Delta format provides native support for embeds, which can be used to represent images, video, etc. There is no support for this in the current format and implementation is hackily achieved by representing an ‘!’ with a image key in the attributes (which will break when video support is added)."
+msgstr "The new Delta format provides native support for embeds, which can be used to represent images, video, etc. There is no support for this in the current format and implementation is hackily achieved by representing an ‘!’ with a image key in the attributes (which will break when video support is added)."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:98
+msgid "Going Forward"
+msgstr "Going Forward"
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:100
+msgid "This new format will be the finalized representation for changes and state in Quill going forward and is one of the major steps toward a 1.0 release (a topic for another post)."
+msgstr "This new format will be the finalized representation for changes and state in Quill going forward and is one of the major steps toward a 1.0 release (a topic for another post)."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:105
+msgid "Currently 28658 vs 9507 lines of code (though in practice is less relevant due to minification and gzip)."
+msgstr "Currently 28658 vs 9507 lines of code (though in practice is less relevant due to minification and gzip)."
+
+#: ../../source/blog/2014-09-29-a-new-delta.rst:109
+msgid "Minimizes number of operations to support, and easy to calculate the length of text of the resulting document which is useful for sanity checks."
+msgstr "Minimizes number of operations to support, and easy to calculate the length of text of the resulting document which is useful for sanity checks."
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:2
+msgid "2014-10-19 upgrading to rich text deltas"
+msgstr "2014-10-19 upgrading to rich text deltas"
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:4
+msgid "The new rich text type is now live and being used in Quill v0.18.0. It is a big step towards 1.0 and will be the way documents and changes are represented going forward. In most cases this update is non-disruptive and an upgrade can be a simple increment of the version number [1]_."
+msgstr "The new rich text type is now live and being used in Quill v0.18.0. It is a big step towards 1.0 and will be the way documents and changes are represented going forward. In most cases this update is non-disruptive and an upgrade can be a simple increment of the version number [1]_."
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:9
+msgid "However, if you happened to be storing the old Delta format, here’s a short guide on how to migrate."
+msgstr "However, if you happened to be storing the old Delta format, here’s a short guide on how to migrate."
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:12
+msgid "The main relevant differences between the old and new Deltas are:"
+msgstr "The main relevant differences between the old and new Deltas are:"
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:14
+msgid "Explicit deletes - We need to go through the old Delta, find the implied deletes and insert explicit delete operations into the new Delta"
+msgstr "Explicit deletes - We need to go through the old Delta, find the implied deletes and insert explicit delete operations into the new Delta"
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:17
+msgid "Support for embeds - If we see the hacky representation of embeds, replace with the new representation"
+msgstr "Support for embeds - If we see the hacky representation of embeds, replace with the new representation"
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:65
+msgid "If you cannot use the rich-text module or if you are using this as a general guide for another language, the following might be helpful in crafting insert, delete and retain operations."
+msgstr "If you cannot use the rich-text module or if you are using this as a general guide for another language, the following might be helpful in crafting insert, delete and retain operations."
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:101
+msgid "There are some optimizations performed by rich-text such as excluding no-ops (delete 0 characters) and merging two adjacent operations of the same type (insert ‘A’ followed by insert ‘B’ is merged to be a single insert ‘AB’ operation). But you should not have to worry about these cases since the old Delta format had similar optimizations."
+msgstr "There are some optimizations performed by rich-text such as excluding no-ops (delete 0 characters) and merging two adjacent operations of the same type (insert ‘A’ followed by insert ‘B’ is merged to be a single insert ‘AB’ operation). But you should not have to worry about these cases since the old Delta format had similar optimizations."
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:108
+msgid "All it took to upgrade the examples on quilljs.com was: `2580c2 <https://github.com/quilljs/quill/commit/2580c2a5d440622d226fbef407df7a5a5e9dcf61>`__"
+msgstr "All it took to upgrade the examples on quilljs.com was: `2580c2 <https://github.com/quilljs/quill/commit/2580c2a5d440622d226fbef407df7a5a5e9dcf61>`__"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:2
+msgid "2014-11-06 quill v0.19 no more iframes"
+msgstr "2014-11-06 quill v0.19 no more iframes"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:4
+msgid "Customizability is core to Quill’s ethos and the new `v0.19 release <https://github.com/quilljs/quill/releases/tag/v0.19.0>`__ is a big step towards fulfilling that mission. In previous versions Quill utilized an iframe to contain the editor. This unfortunately prevented expected browser behaviors and made it difficult for developers to access and extend Quill [1]_. Its removal is the biggest change in v0.19 and some rippling effects are expected. They, and other changes for v0.19, are summarized here."
+msgstr "Customizability is core to Quill’s ethos and the new `v0.19 release <https://github.com/quilljs/quill/releases/tag/v0.19.0>`__ is a big step towards fulfilling that mission. In previous versions Quill utilized an iframe to contain the editor. This unfortunately prevented expected browser behaviors and made it difficult for developers to access and extend Quill [1]_. Its removal is the biggest change in v0.19 and some rippling effects are expected. They, and other changes for v0.19, are summarized here."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:14
+msgid "Styles"
+msgstr "Styles"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:16
+msgid "With iframes gone it is now much easier to customize the styling of the Quill editor and unecessary for Quill to do so on your behalf in most cases. This leads to a few changes:"
+msgstr "With iframes gone it is now much easier to customize the styling of the Quill editor and unecessary for Quill to do so on your behalf in most cases. This leads to a few changes:"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:20
+msgid "You can now pass ``false`` into the `style config </docs/configuration/#styles>`__ to prevent Quill from injecting any ``<style>`` tags. No change is necessary if the default behavior is preferred, but this added option makes it easier and more efficient for those that prefer to completely control styling with stylesheets. For this latter route, ``quill.base.css`` is now included in releases and the CDN."
+msgstr "You can now pass ``false`` into the `style config </docs/configuration/#styles>`__ to prevent Quill from injecting any ``<style>`` tags. No change is necessary if the default behavior is preferred, but this added option makes it easier and more efficient for those that prefer to completely control styling with stylesheets. For this latter route, ``quill.base.css`` is now included in releases and the CDN."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:32
+msgid "Since adding and customizing styles is no longer inaccessible, the ``addStyles`` helper is no longer particularly useful and has been removed."
+msgstr "Since adding and customizing styles is no longer inaccessible, the ``addStyles`` helper is no longer particularly useful and has been removed."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:36
+msgid "All Quill containers’ class names have changed to be prefixed with ``ql-``. If your application was using these names in any way they will need to be updated."
+msgstr "All Quill containers’ class names have changed to be prefixed with ``ql-``. If your application was using these names in any way they will need to be updated."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:40
+msgid "Quill is also no longer “protected” from external styles so it should be treated with the same caution as any other front end library. In particular, avoiding overly general css rules will help ensure a peaceful coexistence."
+msgstr "Quill is also no longer “protected” from external styles so it should be treated with the same caution as any other front end library. In particular, avoiding overly general css rules will help ensure a peaceful coexistence."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:46
+msgid "Scripts"
+msgstr "Scripts"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:48
+msgid "It was always possible to access and manipulate Quill’s editor, but without an iframe the task is now easy. While this greatly simplifies custom enhancements it also makes it easier to inadvertently interfere with Quill’s necessary operations. But with modern developer tools and practices, the risks can be mitigated and ultimately the benefits of customization is worthwhile."
+msgstr "It was always possible to access and manipulate Quill’s editor, but without an iframe the task is now easy. While this greatly simplifies custom enhancements it also makes it easier to inadvertently interfere with Quill’s necessary operations. But with modern developer tools and practices, the risks can be mitigated and ultimately the benefits of customization is worthwhile."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:55
+msgid "This is a good time to reiterate good bug reporting practices, not just for Quill but for all open source projects. Reducing bugs into the simplest case and providing repeatable reproduction instructions will help isolate the source of issues."
+msgstr "This is a good time to reiterate good bug reporting practices, not just for Quill but for all open source projects. Reducing bugs into the simplest case and providing repeatable reproduction instructions will help isolate the source of issues."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:61
+msgid "Default Theme"
+msgstr "Default Theme"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:63
+msgid "The default theme in Quill has been renamed from ``default`` to ``base``. No change should be necessary unless the ``default`` theme was explicitly being included in the `theme config </docs/configuration/#theme>`__ in which case it should be changed to ``base``."
+msgstr "The default theme in Quill has been renamed from ``default`` to ``base``. No change should be necessary unless the ``default`` theme was explicitly being included in the `theme config </docs/configuration/#theme>`__ in which case it should be changed to ``base``."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:70
+msgid "NPM"
+msgstr "NPM"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:72
+msgid "Quill is now listed in npm as ``quill`` instead of ``quilljs``. Quill was already listed as ``quill`` on bower so its name will now be consistent across package managers."
+msgstr "Quill is now listed in npm as ``quill`` instead of ``quilljs``. Quill was already listed as ``quill`` on bower so its name will now be consistent across package managers."
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:77
+msgid "Contributing"
+msgstr "Contributing"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:79
+msgid "Finally, community contribution and involvement has been tremendous and both the project and everyone using it reaps the benefits. A big thanks for all the contributions so far and keep them coming!"
+msgstr "Finally, community contribution and involvement has been tremendous and both the project and everyone using it reaps the benefits. A big thanks for all the contributions so far and keep them coming!"
+
+#: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:84
+msgid "See `Editors and Iframes <https://www.jasonchen.me/editors-and-iframes/>`__ for full details."
+msgstr "See `Editors and Iframes <https://www.jasonchen.me/editors-and-iframes/>`__ for full details."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:2
+msgid "2015-09-15 the road to 1.0"
+msgstr "2015-09-15 the road to 1.0"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:4
+msgid "Quill launched with the ambitious goal of becoming *the* rich text editor for the web, being both easy to use for drop in use cases, and powerful enough for complex ones. Its current `API </docs/api/>`__ is core to those goals."
+msgstr "Quill launched with the ambitious goal of becoming *the* rich text editor for the web, being both easy to use for drop in use cases, and powerful enough for complex ones. Its current `API </docs/api/>`__ is core to those goals."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:9
+msgid "In the past months, much effort has been placed into providing even greater means for customization, particularly the editor’s contents. With this nearing completion, Quill is approaching its 1.0 coming of age."
+msgstr "In the past months, much effort has been placed into providing even greater means for customization, particularly the editor’s contents. With this nearing completion, Quill is approaching its 1.0 coming of age."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:15
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:89
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:68
+msgid "Parchment"
+msgstr "Parchment"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:17
+msgid "A full introduction and guide to Parchment is still forthcoming, but in short it is a new document model for Quill. An editor’s document model is an important abstraction over the DOM that allows the editor and API users to reason about its contents through a much simpler yet more expressive interface than directly interacting with the browser. For Quill, this enables an elegant solution to the longstanding problem of format customization."
+msgstr "A full introduction and guide to Parchment is still forthcoming, but in short it is a new document model for Quill. An editor’s document model is an important abstraction over the DOM that allows the editor and API users to reason about its contents through a much simpler yet more expressive interface than directly interacting with the browser. For Quill, this enables an elegant solution to the longstanding problem of format customization."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:29
+msgid "Prior to Parchment, Quill required near complete control over its editor container and descendant DOM nodes in order to provide its precise retrieval and manipulation API. Even simple modifications such as changing the default link open behavior required hacks and defining new content types, such as syntax highlighted code, was impossible."
+msgstr "Prior to Parchment, Quill required near complete control over its editor container and descendant DOM nodes in order to provide its precise retrieval and manipulation API. Even simple modifications such as changing the default link open behavior required hacks and defining new content types, such as syntax highlighted code, was impossible."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:35
+msgid "Parchment hands control of entire subtrees back to the user, allowing the definition of new nodes or overwriting existing ones. The requirement is that certain methods such as ``getValue`` and ``getFormat`` be defined in order to happily exist within a Parchment document. Those familiar will find this very similar to ``render`` and Components in `React <https://facebook.github.io/react/>`__, a significant influencer of Parchment’s design."
+msgstr "Parchment hands control of entire subtrees back to the user, allowing the definition of new nodes or overwriting existing ones. The requirement is that certain methods such as ``getValue`` and ``getFormat`` be defined in order to happily exist within a Parchment document. Those familiar will find this very similar to ``render`` and Components in `React <https://facebook.github.io/react/>`__, a significant influencer of Parchment’s design."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:43
+msgid "While the Parchment interface is still being stabilized, a preview of a definition for a `KaTeX <https://github.com/Khan/KaTeX>`__ equation looks like this (with ES6 syntax):"
+msgstr "While the Parchment interface is still being stabilized, a preview of a definition for a `KaTeX <https://github.com/Khan/KaTeX>`__ equation looks like this (with ES6 syntax):"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:64
+msgid "The current priority is to integrate Parchment into Quill as its new document model. However, Parchment is and will remain organized as its own `repository <https://github.com/quilljs/parchment>`__, as it was designed as a general purpose tool. Hopefully one day it may serve as the document model for other editors as well."
+msgstr "The current priority is to integrate Parchment into Quill as its new document model. However, Parchment is and will remain organized as its own `repository <https://github.com/quilljs/parchment>`__, as it was designed as a general purpose tool. Hopefully one day it may serve as the document model for other editors as well."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:71
+msgid "Formats"
+msgstr "Formats"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:73
+msgid "Parchment opens the doors to scalably support many more formats, many of which will be included in the 1.0 release. The complete list is not ready for announcement but they will at least include semantic headers and nested lists. Equations and syntax highlighted code will also be added as separate repositories because of their likely dependency on external libraries."
+msgstr "Parchment opens the doors to scalably support many more formats, many of which will be included in the 1.0 release. The complete list is not ready for announcement but they will at least include semantic headers and nested lists. Equations and syntax highlighted code will also be added as separate repositories because of their likely dependency on external libraries."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:81
+msgid "Modules"
+msgstr "Modules"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:83
+msgid "Quill organizes most of its source code as modules to make it easy to overwrite their default behavior. Unfortunately a documentation gap currently exists for these modules–this will have to be filled for their extensibility to be realized."
+msgstr "Quill organizes most of its source code as modules to make it easy to overwrite their default behavior. Unfortunately a documentation gap currently exists for these modules–this will have to be filled for their extensibility to be realized."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:88
+msgid "Some non-essential modules will also be moved out into their own repositories. Custom builds are planned to conveniently include or exclude these modules, along with other permutations, though this may land post 1.0 depending on timing."
+msgstr "Some non-essential modules will also be moved out into their own repositories. Custom builds are planned to conveniently include or exclude these modules, along with other permutations, though this may land post 1.0 depending on timing."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:94
+msgid "Beyond 1.0"
+msgstr "Beyond 1.0"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:96
+msgid "With Quill 1.0, the main foundations will be complete and much more emphasis will be placed into building examples and enhancing support, with internationalization, accessibility, and cross application interactions (copy/paste) as main focus points."
+msgstr "With Quill 1.0, the main foundations will be complete and much more emphasis will be placed into building examples and enhancing support, with internationalization, accessibility, and cross application interactions (copy/paste) as main focus points."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:101
+msgid "In addition, Quill’s UI is due for an upgrade. While the aesthetics of Quill is already completely customizable, more numerous defaults could be available for those wanting a drop in solution. Here’s a sneak peak at a couple of upcoming themes in the works:"
+msgstr "In addition, Quill’s UI is due for an upgrade. While the aesthetics of Quill is already completely customizable, more numerous defaults could be available for those wanting a drop in solution. Here’s a sneak peak at a couple of upcoming themes in the works:"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:114
+msgid "Finally, the community deserves a great thank you for all of your contributions and support! All the `bug reports <https://github.com/quilljs/quill/labels/bug>`__, `features suggestions <https://github.com/quilljs/quill/labels/feature>`__ and `pull requests <https://github.com/quilljs/quill/pulls?q=is%3Apr>`__ make Quill what it is today. Keep these coming! Exciting times are ahead for web editing and for Quill."
+msgstr "Finally, the community deserves a great thank you for all of your contributions and support! All the `bug reports <https://github.com/quilljs/quill/labels/bug>`__, `features suggestions <https://github.com/quilljs/quill/labels/feature>`__ and `pull requests <https://github.com/quilljs/quill/pulls?q=is%3Apr>`__ make Quill what it is today. Keep these coming! Exciting times are ahead for web editing and for Quill."
+
+#: ../../source/blog/2016-03-14-are-we-there-yet-to-1-0.rst:2
+msgid "2016-03-14 are we there yet to 1.0"
+msgstr "2016-03-14 are we there yet to 1.0"
+
+#: ../../source/blog/2016-03-14-are-we-there-yet-to-1-0.rst:4
+msgid "When Quill laid out its `1.0 roadmap </blog/the-road-to-1-0/>`__, core to its journey was the development of a new document model called Parchment. Today a beta release of Parchment is being made available on `Github <https://github.com/quilljs/parchment>`__ and `NPM <https://www.npmjs.com/package/parchment>`__."
+msgstr "When Quill laid out its `1.0 roadmap </blog/the-road-to-1-0/>`__, core to its journey was the development of a new document model called Parchment. Today a beta release of Parchment is being made available on `Github <https://github.com/quilljs/parchment>`__ and `NPM <https://www.npmjs.com/package/parchment>`__."
+
+#: ../../source/blog/2016-03-14-are-we-there-yet-to-1-0.rst:10
+msgid "What this means is its design and API is reasonably stable and the adventurous can now take an early look. The latest Quill source is already using Parchment to implement its formatting and content capabilities, and its `integration <https://github.com/quilljs/quill/tree/develop/formats>`__ would be a helpful example of Parchment in action. Of course, this is in addition to Parchment’s own `documentation <https://github.com/quilljs/parchment/blob/master/README.md>`__."
+msgstr "What this means is its design and API is reasonably stable and the adventurous can now take an early look. The latest Quill source is already using Parchment to implement its formatting and content capabilities, and its `integration <https://github.com/quilljs/quill/tree/develop/formats>`__ would be a helpful example of Parchment in action. Of course, this is in addition to Parchment’s own `documentation <https://github.com/quilljs/parchment/blob/master/README.md>`__."
+
+#: ../../source/blog/2016-03-14-are-we-there-yet-to-1-0.rst:24
+msgid "New Formats"
+msgstr "New Formats"
+
+#: ../../source/blog/2016-03-14-are-we-there-yet-to-1-0.rst:26
+msgid "Parchment enables Quill to scalably support many formats and many are being added in 1.0. The list includes headers, blockquotes, code, superscript, subscript, text direction, nested lists, and video embeds. Syntax highlighted code and formulas will also be available through externally supported modules. In addition, formats that previously relied on style attributes are reimplemented to optionally use classes instead. By default, fonts, sizes, and text alignment will use classes, while foreground and background colors will still use style attributes, since there are so many possible color values."
+msgstr "Parchment enables Quill to scalably support many formats and many are being added in 1.0. The list includes headers, blockquotes, code, superscript, subscript, text direction, nested lists, and video embeds. Syntax highlighted code and formulas will also be available through externally supported modules. In addition, formats that previously relied on style attributes are reimplemented to optionally use classes instead. By default, fonts, sizes, and text alignment will use classes, while foreground and background colors will still use style attributes, since there are so many possible color values."
+
+#: ../../source/blog/2016-03-14-are-we-there-yet-to-1-0.rst:37
+msgid "Quill 1.0 Beta"
+msgstr "Quill 1.0 Beta"
+
+#: ../../source/blog/2016-03-14-are-we-there-yet-to-1-0.rst:39
+msgid "With Parchment out of the way, Quill is nearing its own 1.0 release. This will also be prefaced with a beta period, optimistically planned for early April. You can also set up the `local development <https://github.com/quilljs/quill/blob/develop/.github/CONTRIBUTING.md#local-development>`__ environment to follow along with the latest changes and progress."
+msgstr "With Parchment out of the way, Quill is nearing its own 1.0 release. This will also be prefaced with a beta period, optimistically planned for early April. You can also set up the `local development <https://github.com/quilljs/quill/blob/develop/.github/CONTRIBUTING.md#local-development>`__ environment to follow along with the latest changes and progress."
+
+#: ../../source/blog/2016-03-14-are-we-there-yet-to-1-0.rst:45
+msgid "If you are currently using Quill at your company or project, we’d love to hear about your use case hello@quilljs.com!"
+msgstr "If you are currently using Quill at your company or project, we’d love to hear about your use case hello@quilljs.com!"
+
+#: ../../source/blog/2016-05-03-quill-1-0-beta-release.rst:2
+msgid "2016-05-03 quill 1.0 beta release"
+msgstr "2016-05-03 quill 1.0 beta release"
+
+#: ../../source/blog/2016-05-03-quill-1-0-beta-release.rst:4
+msgid "Today Quill is ready for its first beta preview of 1.0. This is the biggest rewrite to Quill since its inception and enables many new possibilities not available in previous versions of Quill, nor any other editor. The code is as always available on Github and through npm:"
+msgstr "Today Quill is ready for its first beta preview of 1.0. This is the biggest rewrite to Quill since its inception and enables many new possibilities not available in previous versions of Quill, nor any other editor. The code is as always available on Github and through npm:"
+
+#: ../../source/blog/2016-05-03-quill-1-0-beta-release.rst:13
+msgid "The skeleton of a new documentation site is also being built out at `beta.quilljs.com <https://beta.quilljs.com>`__. Whereas the current site focuses on being a referential resource, the new site will also be a guide to provide insight on approaching different customization goals. There is also an `interactive playground <https://beta.quilljs.com/playground/>`__ to try out various configurations and explore the API."
+msgstr "The skeleton of a new documentation site is also being built out at `beta.quilljs.com <https://beta.quilljs.com>`__. Whereas the current site focuses on being a referential resource, the new site will also be a guide to provide insight on approaching different customization goals. There is also an `interactive playground <https://beta.quilljs.com/playground/>`__ to try out various configurations and explore the API."
+
+#: ../../source/blog/2016-05-03-quill-1-0-beta-release.rst:25
+msgid "The goal now is of course an official 1.0 release. To get there, Quill will now enter a weekly cadence of beta releases, so you can expect rapid interations on stability and bug fixes each week. Github is still the center of all development so please do report `Issues <https://github.com/quilljs/quill/issues>`__ as you encounter them in the beta preview."
+msgstr "The goal now is of course an official 1.0 release. To get there, Quill will now enter a weekly cadence of beta releases, so you can expect rapid interations on stability and bug fixes each week. Github is still the center of all development so please do report `Issues <https://github.com/quilljs/quill/issues>`__ as you encounter them in the beta preview."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:2
+msgid "2016-08-18 quill 1.0 release candidate released"
+msgstr "2016-08-18 quill 1.0 release candidate released"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:4
+msgid "Today Quill enters its highly anticipated 1.0 release candidacy. Through the 11 beta releases, over 300 reported bugs were fixed, and almost 1000 commits were made. **Thank you to all contributors who pitched in, in ways small and large, isolated and numerous, either reporting issues, committing code, or otherwise helping out the community!**"
+msgstr "Today Quill enters its highly anticipated 1.0 release candidacy. Through the 11 beta releases, over 300 reported bugs were fixed, and almost 1000 commits were made. **Thank you to all contributors who pitched in, in ways small and large, isolated and numerous, either reporting issues, committing code, or otherwise helping out the community!**"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:10
+msgid "The `API </docs/api/>`__ should now be considered stable, with only backwards compatible bug fixes to look forward to. No additional new features are planned until after the official 1.0 release."
+msgstr "The `API </docs/api/>`__ should now be considered stable, with only backwards compatible bug fixes to look forward to. No additional new features are planned until after the official 1.0 release."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:18
+msgid "You can now access the release candidate from npm:"
+msgstr "You can now access the release candidate from npm:"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:24
+msgid "As always our CDN is also available:"
+msgstr "As always our CDN is also available:"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:34
+msgid "If you are just joining from the 0.20.1 or older, take a look at the updated `Upgrading to 1.0 Guide </guides/upgrading-to-1-0/>`__. If you prefer to stay with 0.20, the `documentation </0.20/>`__ will remain available."
+msgstr "If you are just joining from the 0.20.1 or older, take a look at the updated `Upgrading to 1.0 Guide </guides/upgrading-to-1-0/>`__. If you prefer to stay with 0.20, the `documentation </0.20/>`__ will remain available."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:40
+msgid "Many New Formats"
+msgstr "Many New Formats"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:42
+msgid "Quill 1.0 adds several new formats and improves on existing ones. Superscript, subscript, inline code and blocks, headers, blockquotes, text direction, and video support have all been added. List can also now be nested and formats previously implemented with just inline styles can now use classes `instead </playground/#class-vs-inline-style>`__."
+msgstr "Quill 1.0 adds several new formats and improves on existing ones. Superscript, subscript, inline code and blocks, headers, blockquotes, text direction, and video support have all been added. List can also now be nested and formats previously implemented with just inline styles can now use classes `instead </playground/#class-vs-inline-style>`__."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:48
+msgid "Syntax highlighted `code </docs/modules/syntax/>`__ and LaTeX `formulas </docs/modules/formula/>`__ can also be added with an optional module."
+msgstr "Syntax highlighted `code </docs/modules/syntax/>`__ and LaTeX `formulas </docs/modules/formula/>`__ can also be added with an optional module."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:53
+msgid "Brand New Theme"
+msgstr "Brand New Theme"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:55
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:55
+msgid "An entirely new theme `Bubble </docs/themes/#bubble>`__ has also been added, based on a floating toolbar."
+msgstr "An entirely new theme `Bubble </docs/themes/#bubble>`__ has also been added, based on a floating toolbar."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:61
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:71
+msgid "Color Icon"
+msgstr "Color Icon"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:63
+msgid "Both Snow and Bubble now also use SVG icons to sharply scale to whatever size your application demands. The icons are implemented to be added to the DOM directly so you can customize the active color and enable less obvious UI enhancements."
+msgstr "Both Snow and Bubble now also use SVG icons to sharply scale to whatever size your application demands. The icons are implemented to be added to the DOM directly so you can customize the active color and enable less obvious UI enhancements."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:74
+msgid "More Configurable Modules"
+msgstr "More Configurable Modules"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:76
+msgid "Existing modules have much more customization capabilities in 1.0, with new configurations and APIs. Most notably:"
+msgstr "Existing modules have much more customization capabilities in 1.0, with new configurations and APIs. Most notably:"
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:79
+msgid "`Clipboard </docs/modules/clipboard/>`__ introduces the ability to customize interpretation of pasted content before it reaches the editor."
+msgstr "`Clipboard </docs/modules/clipboard/>`__ introduces the ability to customize interpretation of pasted content before it reaches the editor."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:82
+msgid "`Keyboard </docs/modules/keyboard/>`__ adds a context option to give much more granular control over when bindings are triggered."
+msgstr "`Keyboard </docs/modules/keyboard/>`__ adds a context option to give much more granular control over when bindings are triggered."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:84
+msgid "`Toolbar </docs/modules/toolbar/>`__ can be much more easily configured with just an array, and now exposes options to overwrite its handler."
+msgstr "`Toolbar </docs/modules/toolbar/>`__ can be much more easily configured with just an array, and now exposes options to overwrite its handler."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:91
+msgid "`Parchment <https://github.com/quilljs/parchment/>`__ also enters its 1.0 release candidacy today. For Quill, not only did Parchment enable the addition the numerous formats, it enables a path to the new generation of content creation. Text today is written to be rendered on the web, offering a much richer canvas than a printed piece of paper. Content can now be live, interactive, or even collaborative."
+msgstr "`Parchment <https://github.com/quilljs/parchment/>`__ also enters its 1.0 release candidacy today. For Quill, not only did Parchment enable the addition the numerous formats, it enables a path to the new generation of content creation. Text today is written to be rendered on the web, offering a much richer canvas than a printed piece of paper. Content can now be live, interactive, or even collaborative."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:98
+msgid "Users have already been using Quill in beta to successfully support these editing experiences. This is possible in part due to the `API </docs/api/>`__ Quill was designed with at inception, but now Parchment takes that further by providing a powerful abstraction layer over the DOM. This enables the addition of new content and formats that cannot exist on paper or even anticipated by Quill’s developers."
+msgstr "Users have already been using Quill in beta to successfully support these editing experiences. This is possible in part due to the `API </docs/api/>`__ Quill was designed with at inception, but now Parchment takes that further by providing a powerful abstraction layer over the DOM. This enables the addition of new content and formats that cannot exist on paper or even anticipated by Quill’s developers."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:105
+msgid "Of course, Quill still ships with ready to go defaults, so you can integrate and use it with just a few lines of code—you never have to do more if your product needs never demands it."
+msgstr "Of course, Quill still ships with ready to go defaults, so you can integrate and use it with just a few lines of code—you never have to do more if your product needs never demands it."
+
+#: ../../source/blog/2016-08-18-quill-1-0-release-candidate-released.rst:109
+msgid "Jump to the `demo </>`__ to see Quill’s new features or try out some code in the `Interactive Playground </playground/>`__!"
+msgstr "Jump to the `demo </>`__ to see Quill’s new features or try out some code in the `Interactive Playground </playground/>`__!"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:2
+msgid "2016-09-06 accouncing quill 1.0"
+msgstr "2016-09-06 accouncing quill 1.0"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:4
+msgid "Quill 1.0 has arrived. It was just two years ago that Quill made its public debut as an open source project. Today, it can be found in applications and products of all sizes, ranging from personal projects and promising startups, to established public companies."
+msgstr "Quill 1.0 has arrived. It was just two years ago that Quill made its public debut as an open source project. Today, it can be found in applications and products of all sizes, ranging from personal projects and promising startups, to established public companies."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:9
+msgid "**Quill is designed as an easy to use editor, to support content creation across the web.** It is built on top of consistent and predictable constructs, exposed through a powerful `API </docs/api/>`__. With coverage across both ends of the complexity spectrum, Quill aims to be the defacto rich text editor for the web."
+msgstr "**Quill is designed as an easy to use editor, to support content creation across the web.** It is built on top of consistent and predictable constructs, exposed through a powerful `API </docs/api/>`__. With coverage across both ends of the complexity spectrum, Quill aims to be the defacto rich text editor for the web."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:15
+msgid "In the 111 releases, Quill has iterated relentlessly towards this goal. It has stabilized its API, moved essential internal implementations into customizable modules, and exposed its document model for users to define and add entirely new formats and content."
+msgstr "In the 111 releases, Quill has iterated relentlessly towards this goal. It has stabilized its API, moved essential internal implementations into customizable modules, and exposed its document model for users to define and add entirely new formats and content."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:20
+msgid "`New Features </blog/announcing-quill-1-0/#new-features>`__"
+msgstr "`New Features </blog/announcing-quill-1-0/#new-features>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:21
+msgid "`Parchment </blog/announcing-quill-1-0/#parchment>`__"
+msgstr "`Parchment </blog/announcing-quill-1-0/#parchment>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:22
+msgid "`Website </blog/announcing-quill-1-0/#website>`__"
+msgstr "`Website </blog/announcing-quill-1-0/#website>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:23
+msgid "`What’s Next </blog/announcing-quill-1-0/#whats-next>`__"
+msgstr "`What’s Next </blog/announcing-quill-1-0/#whats-next>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:24
+msgid "`Getting Started </blog/announcing-quill-1-0/#getting-started>`__"
+msgstr "`Getting Started </blog/announcing-quill-1-0/#getting-started>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:25
+msgid "`Credits </blog/announcing-quill-1-0/#credits>`__"
+msgstr "`Credits </blog/announcing-quill-1-0/#credits>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:32
+msgid "New Features"
+msgstr "New Features"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:34
+msgid "Editable `Syntax Highlighted Code </docs/modules/syntax/>`__ blocks can now seamlessly exist inline with the rest of your text."
+msgstr "Editable `Syntax Highlighted Code </docs/modules/syntax/>`__ blocks can now seamlessly exist inline with the rest of your text."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:40
+msgid "Syntax Highlighted Code"
+msgstr "Syntax Highlighted Code"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:42
+msgid "Beautifully rendered `LaTeX formulas </docs/modules/formula/>`__ can be inserted to your contents."
+msgstr "Beautifully rendered `LaTeX formulas </docs/modules/formula/>`__ can be inserted to your contents."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:48
+msgid "Formula"
+msgstr "Formula"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:50
+msgid "**Many, many new formats** have been added, including superscript, subscript, inline code, code blocks, headers, blockquotes, text direction, videos, and nested lists. Inline styles can now also use classes `instead </playground/#class-vs-inline-style>`__."
+msgstr "**Many, many new formats** have been added, including superscript, subscript, inline code, code blocks, headers, blockquotes, text direction, videos, and nested lists. Inline styles can now also use classes `instead </playground/#class-vs-inline-style>`__."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:61
+msgid "Bubble Theme"
+msgstr "Bubble Theme"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:63
+msgid "Take a look at the `Changelog <https://github.com/quilljs/quill/blob/develop/CHANGELOG.md>`__ to see an exhaustive list."
+msgstr "Take a look at the `Changelog <https://github.com/quilljs/quill/blob/develop/CHANGELOG.md>`__ to see an exhaustive list."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:70
+msgid "As the biggest feature in Quill 1.0, `Parchment <https://github.com/quilljs/parchment/>`__ deserves its own mention. It offers a powerful abstraction over the DOM to enable custom formats and content in Quill. It is responsible for the numerous new formats added in Quill 1.0, including videos, syntax highlighted code, and formulas."
+msgstr "As the biggest feature in Quill 1.0, `Parchment <https://github.com/quilljs/parchment/>`__ deserves its own mention. It offers a powerful abstraction over the DOM to enable custom formats and content in Quill. It is responsible for the numerous new formats added in Quill 1.0, including videos, syntax highlighted code, and formulas."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:77
+msgid "With Parchment, you can now enhance or customize existing Quill formats or add entirely new ones in your own application. Take a look at `Cloning Medium with Parchment </guides/cloning-medium-with-parchment/>`__ for a detailed guide."
+msgstr "With Parchment, you can now enhance or customize existing Quill formats or add entirely new ones in your own application. Take a look at `Cloning Medium with Parchment </guides/cloning-medium-with-parchment/>`__ for a detailed guide."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:84
+msgid "Website"
+msgstr "Website"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:86
+msgid "In addition to the fancy new features, Quill’s documentation site has also been given an upgrade. The `referential </docs/>`__ portions have all been filled out, with no more incomplete or unstable pages. A new `Guides </guides/>`__ section has been added to cover some of the common how-tos and whys behind design decisions."
+msgstr "In addition to the fancy new features, Quill’s documentation site has also been given an upgrade. The `referential </docs/>`__ portions have all been filled out, with no more incomplete or unstable pages. A new `Guides </guides/>`__ section has been added to cover some of the common how-tos and whys behind design decisions."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:92
+msgid "There is now also an `Interactive Playground </playground/>`__, for tinkerers and immediate gratification. You can use it try out Quill’s features and experiment with its API, without any setup or installation."
+msgstr "There is now also an `Interactive Playground </playground/>`__, for tinkerers and immediate gratification. You can use it try out Quill’s features and experiment with its API, without any setup or installation."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:97
+msgid "What’s Next"
+msgstr "What’s Next"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:99
+msgid "Quill will continue to refine itself in being the easiest editor to use, while allowing for the most sophisticated customizations. With a stable and solid foundation on 1.0, some areas of focus will include:"
+msgstr "Quill will continue to refine itself in being the easiest editor to use, while allowing for the most sophisticated customizations. With a stable and solid foundation on 1.0, some areas of focus will include:"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:103
+msgid "Iterating on modules and themes, making them easier to create, customize and share"
+msgstr "Iterating on modules and themes, making them easier to create, customize and share"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:105
+msgid "Add remaining common formats, such as tables"
+msgstr "Add remaining common formats, such as tables"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:106
+msgid "Better internationalization support"
+msgstr "Better internationalization support"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:109
+msgid "Getting Started"
+msgstr "Getting Started"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:111
+msgid "If you are just joining us today, the example editors on the `homepage </>`__ are an excellent demonstration of the gorgeous editing experiences you can add to your application. Make sure to open up your developer console to play around with the API."
+msgstr "If you are just joining us today, the example editors on the `homepage </>`__ are an excellent demonstration of the gorgeous editing experiences you can add to your application. Make sure to open up your developer console to play around with the API."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:116
+msgid "Head to the `Interactive Playground </playground/>`__ if you want to tinker some more or to the `Quickstart </docs/quickstart/>`__ docs if you are ready to add Quill, with just a few lines of code."
+msgstr "Head to the `Interactive Playground </playground/>`__ if you want to tinker some more or to the `Quickstart </docs/quickstart/>`__ docs if you are ready to add Quill, with just a few lines of code."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:121
+msgid "Credits"
+msgstr "Credits"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:123
+msgid "Last, but not least, **a special thank you goes out to Quill’s community.** Whether you contributed code for the codebase, help for other community members, reports or context for bugs, ideas for new features or improve existing ones, feedback on use cases, or evangelism for the project, Quill would not be nearly as successful without your collective efforts. Thank you for your contribution!"
+msgstr "Last, but not least, **a special thank you goes out to Quill’s community.** Whether you contributed code for the codebase, help for other community members, reports or context for bugs, ideas for new features or improve existing ones, feedback on use cases, or evangelism for the project, Quill would not be nearly as successful without your collective efforts. Thank you for your contribution!"
+
+#: ../../source/blog/index.rst:2
+msgid "Blog"
+msgstr "Blog"
+

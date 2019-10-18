@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/api/contents.rst:2
+msgid "Content"
+msgstr "Content"
+
+#: ../../source/docs/api/contents.rst:5
+msgid "deleteText"
+msgstr "deleteText"
+
+#: ../../source/docs/api/contents.rst:7
+msgid ""
+"Deletes text from the editor, returning a `Delta </guides/working-with-"
+"deltas/>`__ representing the change. `Source </docs/api/#events>`__ may "
+"be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the "
+"``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are"
+" ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:13 ../../source/docs/api/contents.rst:31
+#: ../../source/docs/api/contents.rst:50 ../../source/docs/api/contents.rst:74
+#: ../../source/docs/api/contents.rst:95 ../../source/docs/api/contents.rst:117
+#: ../../source/docs/api/contents.rst:148
+#: ../../source/docs/api/contents.rst:174
+#: ../../source/docs/api/contents.rst:196
+msgid "**Methods**"
+msgstr "**Methods**"
+
+#: ../../source/docs/api/contents.rst:19 ../../source/docs/api/contents.rst:37
+#: ../../source/docs/api/contents.rst:56 ../../source/docs/api/contents.rst:80
+#: ../../source/docs/api/contents.rst:101
+#: ../../source/docs/api/contents.rst:127
+#: ../../source/docs/api/contents.rst:154
+#: ../../source/docs/api/contents.rst:180
+#: ../../source/docs/api/contents.rst:202
+msgid "**Examples**"
+msgstr "**Examples**"
+
+#: ../../source/docs/api/contents.rst:26
+msgid "getContents"
+msgstr "getContents"
+
+#: ../../source/docs/api/contents.rst:28
+msgid ""
+"Retrieves contents of the editor, with formatting data, represented by a "
+"`Delta </docs/delta/>`__ object."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:44
+msgid "getLength"
+msgstr "getLength"
+
+#: ../../source/docs/api/contents.rst:46
+msgid ""
+"Retrieves the length of the editor contents. Note even when Quill is "
+"empty, there is still a blank line represented by ‘:raw-latex:`\\n`’, so "
+"``getLength`` will return 1."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:63
+msgid "getText"
+msgstr "getText"
+
+#: ../../source/docs/api/contents.rst:65
+msgid ""
+"Retrieves the string contents of the editor. Non-string content are "
+"omitted, so the returned string’s length may be shorter than the editor’s"
+" as returned by ```getLength`` <#getlength>`__. Note even when Quill is "
+"empty, there is still a blank line in the editor, so in these cases "
+"``getText`` will return ‘:raw-latex:`\\n`’."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:71
+msgid "The ``length`` parameter defaults to the length of the remaining document."
+msgstr "The ``length`` parameter defaults to the length of the remaining document."
+
+#: ../../source/docs/api/contents.rst:87
+msgid "insertEmbed"
+msgstr "insertEmbed"
+
+#: ../../source/docs/api/contents.rst:89
+msgid ""
+"Insert embedded content into the editor, returning a `Delta </guides"
+"/working-with-deltas/>`__ representing the change. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:108
+msgid "insertText"
+msgstr "insertText"
+
+#: ../../source/docs/api/contents.rst:110
+msgid ""
+"Inserts text into the editor, optionally with a specified format or "
+"multiple `formats </docs/formats/>`__. Returns a `Delta </guides/working-"
+"with-deltas/>`__ representing the change. `Source </docs/api/#events>`__ "
+"may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the "
+"``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are"
+" ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:139
+msgid "setContents"
+msgstr "setContents"
+
+#: ../../source/docs/api/contents.rst:141
+msgid ""
+"Overwrites editor with given contents. Contents should end with a "
+"`newline </docs/delta/#line-formatting>`__. Returns a Delta representing "
+"the change. This will be the same as the Delta passed in, if given Delta "
+"had no invalid operations. `Source </docs/api/#events>`__ may be "
+"``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` "
+"is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:165
+msgid "setText"
+msgstr "setText"
+
+#: ../../source/docs/api/contents.rst:167
+msgid ""
+"Sets contents of editor with given text, returing a `Delta </guides"
+"/working-with-deltas/>`__ representing the change. Note Quill documents "
+"must end with a newline so one will be added for you if omitted. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+
+#: ../../source/docs/api/contents.rst:187
+msgid "updateContents"
+msgstr "updateContents"
+
+#: ../../source/docs/api/contents.rst:189
+msgid ""
+"Applies Delta to editor contents, returing a `Delta </guides/working-"
+"with-deltas/>`__ representing the change. These Deltas will be the same "
+"if the Delta passed in had no invalid operations. `Source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the "
+"editor is `disabled <#disable>`__ are ignored."
+msgstr ""
+

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:2
+msgid "adding quill to your build pipeline"
+msgstr "adding quill to your build pipeline"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:4
+msgid "Each version of Quill is built and ready to use from a variety of sources, including `NPM <https://www.npmjs.com/package/quill>`__ or its `CDN </docs/download/>`__. However there may be use cases where you would like to build Quill from source, as part of your application’s build pipeline. If this desire has not occurred to you, don’t sweat it! Using pre-built versions is the easiest way to use Quill."
+msgstr "Each version of Quill is built and ready to use from a variety of sources, including `NPM <https://www.npmjs.com/package/quill>`__ or its `CDN </docs/download/>`__. However there may be use cases where you would like to build Quill from source, as part of your application’s build pipeline. If this desire has not occurred to you, don’t sweat it! Using pre-built versions is the easiest way to use Quill."
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:11
+msgid "Quill is built using `Webpack <https://webpack.js.org/concepts/>`__ and this guide is mostly targeted towards Webpack users. However some principles may translate to other build environments."
+msgstr "Quill is built using `Webpack <https://webpack.js.org/concepts/>`__ and this guide is mostly targeted towards Webpack users. However some principles may translate to other build environments."
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:15
+msgid "A minimal working example of everything covered in this guide can be found at `quill-webpack-example <https://github.com/quilljs/webpack-example/>`__."
+msgstr "A minimal working example of everything covered in this guide can be found at `quill-webpack-example <https://github.com/quilljs/webpack-example/>`__."
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:20
+msgid "Webpack"
+msgstr "Webpack"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:22
+msgid "You will need to add Webpack and appropriate loaders as development dependencies to your app. The Typescript compiler is necessary if you want to build Parchment from source as well."
+msgstr "You will need to add Webpack and appropriate loaders as development dependencies to your app. The Typescript compiler is necessary if you want to build Parchment from source as well."
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:26
+msgid "Quill source code - ```babel-core`` <https://www.npmjs.com/package/babel-core>`__, ```babel-loader`` <https://www.npmjs.com/package/babel-loader>`__, ```babel-preset-es2015`` <https://www.npmjs.com/package/babel-preset-es2015>`__"
+msgstr "Quill source code - ```babel-core`` <https://www.npmjs.com/package/babel-core>`__, ```babel-loader`` <https://www.npmjs.com/package/babel-loader>`__, ```babel-preset-es2015`` <https://www.npmjs.com/package/babel-preset-es2015>`__"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:30
+msgid "Parchment source code - ```ts-loader`` <https://www.npmjs.com/package/ts-loader>`__, ```typescript`` <https://www.npmjs.com/package/typescript>`__"
+msgstr "Parchment source code - ```ts-loader`` <https://www.npmjs.com/package/ts-loader>`__, ```typescript`` <https://www.npmjs.com/package/typescript>`__"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:33
+msgid "SVG icons - ```html-loader`` <https://www.npmjs.com/package/html-loader>`__"
+msgstr "SVG icons - ```html-loader`` <https://www.npmjs.com/package/html-loader>`__"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:36
+msgid "Your Webpack configuration file will also need to alias Quill and Parchment to point to their respective entry source files. Without this, Webpack will use the pre-built files included in NPM, instead of building from source."
+msgstr "Your Webpack configuration file will also need to alias Quill and Parchment to point to their respective entry source files. Without this, Webpack will use the pre-built files included in NPM, instead of building from source."
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:42
+msgid "Entry"
+msgstr "Entry"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:44
+msgid "Quill is distributed with builds ``quill.js`` and ``quill.core.js``. The purpose of the entry files for both builds, `quill.js <https://github.com/quilljs/quill/blob/master/quill.js>`__ and `core.js <https://github.com/quilljs/quill/blob/master/core.js>`__, is to import and register necessary dependencies. You will likely want a similar entry point in your application that includes only the formats, modules, or themes that you use."
+msgstr "Quill is distributed with builds ``quill.js`` and ``quill.core.js``. The purpose of the entry files for both builds, `quill.js <https://github.com/quilljs/quill/blob/master/quill.js>`__ and `core.js <https://github.com/quilljs/quill/blob/master/core.js>`__, is to import and register necessary dependencies. You will likely want a similar entry point in your application that includes only the formats, modules, or themes that you use."
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:76
+msgid "Stylesheets"
+msgstr "Stylesheets"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:78
+msgid "There is not as much to benefit from building from source in the realm of stylesheets, since rules can be so easily overwritten. However, ```css-loader`` <https://www.npmjs.com/package/css-loader>`__\\ ’s tilde prefix may be useful to include Quill styles in a your application css file."
+msgstr "There is not as much to benefit from building from source in the realm of stylesheets, since rules can be so easily overwritten. However, ```css-loader`` <https://www.npmjs.com/package/css-loader>`__\\ ’s tilde prefix may be useful to include Quill styles in a your application css file."
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:91
+msgid "Example"
+msgstr "Example"
+
+#: ../../source/guides/adding-quill-to-your-build-pipeline.rst:93
+msgid "Take a look at `quill-webpack-example <https://github.com/quilljs/webpack-example/>`__ for a minimal working example."
+msgstr "Take a look at `quill-webpack-example <https://github.com/quilljs/webpack-example/>`__ for a minimal working example."
+

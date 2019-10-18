@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/modules/clipboard.rst:2
+msgid "clipboard"
+msgstr "剪贴板"
+
+#: ../../source/docs/modules/clipboard.rst:4
+msgid ""
+"The Clipboard handles copy, cut and paste between Quill and external "
+"applications. A set of defaults exist to provide sane interpretation of "
+"pasted content, with the ability for further customization through "
+"matchers."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:9
+msgid ""
+"The Clipboard interprets pasted HTML by traversing the corresponding DOM "
+"tree in `post-order <https://en.wikipedia.org/wiki/Tree_traversal#Post-"
+"order>`__, building up a `Delta </docs/delta/>`__ representation of all "
+"subtrees. At each descendant node, matcher functions are called with the "
+"DOM Node and Delta interpretation so far, allowing the matcher to return "
+"a modified Delta interpretation."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:17
+msgid ""
+"Familiarity and comfort with `Deltas </docs/delta/>`__ is necessary in "
+"order to effectively use matchers."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:21
+msgid "API"
+msgstr "API"
+
+#: ../../source/docs/modules/clipboard.rst:24
+msgid "addMatcher"
+msgstr "addMatcher"
+
+#: ../../source/docs/modules/clipboard.rst:26
+msgid ""
+"Adds a custom matcher to the Clipboard. Matchers using ``nodeType`` are "
+"called first, in the order they were added, followed by matchers using a "
+"CSS ``selector``, also in the order they were added. ```nodeType`` "
+"<https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType>`__ may "
+"be ``Node.ELEMENT_NODE`` or ``Node.TEXT_NODE``."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:32
+#: ../../source/docs/modules/clipboard.rst:69
+msgid "**Methods**"
+msgstr "**Methods**"
+
+#: ../../source/docs/modules/clipboard.rst:39
+#: ../../source/docs/modules/clipboard.rst:76
+msgid "**Examples**"
+msgstr "**Examples**"
+
+#: ../../source/docs/modules/clipboard.rst:53
+msgid "dangerouslyPasteHTML"
+msgstr "dangerouslyPasteHTML"
+
+#: ../../source/docs/modules/clipboard.rst:55
+msgid ""
+"Inserts content represented by HTML snippet into editor at a given index."
+" The snippet is interpreted by Clipboard `matchers <#addMatcher>`__, "
+"which may not produce the exactly input HTML. If no insertion index is "
+"provided, the entire editor contents will be overwritten. The `source "
+"</docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or "
+"``\"silent\"``."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:62
+msgid ""
+"Improper handling of HTML can lead to `cross site scripting (XSS) "
+"<https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)>`__ and "
+"failure to sanitize properly is both notoriously error-prone and a "
+"leading cause of web vulnerabilities. This method follows React’s example"
+" and is aptly named to ensure the developer has taken the necessary "
+"precautions."
+msgstr ""
+
+#: ../../source/docs/modules/clipboard.rst:86
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../source/docs/modules/clipboard.rst:91
+msgid ""
+"An array of matchers can be passed into Clipboard’s configuration "
+"options. These will be appended after Quill’s own default matchers."
+msgstr ""
+

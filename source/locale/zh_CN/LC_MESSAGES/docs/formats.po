@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/docs/formats.rst:2
+msgid "formats"
+msgstr "格式"
+
+#: ../../source/docs/formats.rst:4
+msgid "Quill supports a number of formats, both in UI controls and API calls."
+msgstr "奎尔支持多种格式，无论是在UI控件和API调用。"
+
+#: ../../source/docs/formats.rst:6
+msgid ""
+"By default all formats are enabled and allowed to exist within a Quill "
+"editor and can be configured with the `formats "
+"</docs/configuration/#formats>`__ option. This is separate from adding a "
+"control in the `Toolbar </docs/modules/toolbar/>`__. For example, you can"
+" configure Quill to allow bolded content to be pasted into an editor that"
+" has no bold button in the toolbar."
+msgstr ""
+
+#: ../../source/docs/formats.rst:13
+#, python-format
+msgid "{% include standalone/full.html %}"
+msgstr "{% include standalone/full.html %}"
+
+#: ../../source/docs/formats.rst:15
+msgid "Standalone"
+msgstr "独立"
+
+#: ../../source/docs/formats.rst:18
+msgid "Inline"
+msgstr "排队"
+
+#: ../../source/docs/formats.rst:20
+msgid "Background Color - ``background``"
+msgstr "Background Color - ``background``"
+
+#: ../../source/docs/formats.rst:21
+msgid "Bold - ``bold``"
+msgstr "Bold - ``bold``"
+
+#: ../../source/docs/formats.rst:22
+msgid "Color - ``color``"
+msgstr "Color - ``color``"
+
+#: ../../source/docs/formats.rst:23
+msgid "Font - ``font``"
+msgstr "Font - ``font``"
+
+#: ../../source/docs/formats.rst:24
+msgid "Inline Code - ``code``"
+msgstr "Inline Code - ``code``"
+
+#: ../../source/docs/formats.rst:25
+msgid "Italic - ``italic``"
+msgstr "Italic - ``italic``"
+
+#: ../../source/docs/formats.rst:26
+msgid "Link - ``link``"
+msgstr "Link - ``link``"
+
+#: ../../source/docs/formats.rst:27
+msgid "Size - ``size``"
+msgstr "Size - ``size``"
+
+#: ../../source/docs/formats.rst:28
+msgid "Strikethrough - ``strike``"
+msgstr "Strikethrough - ``strike``"
+
+#: ../../source/docs/formats.rst:29
+msgid "Superscript/Subscript - ``script``"
+msgstr "Superscript/Subscript - ``script``"
+
+#: ../../source/docs/formats.rst:30
+msgid "Underline - ``underline``"
+msgstr "Underline - ``underline``"
+
+#: ../../source/docs/formats.rst:33
+msgid "Block"
+msgstr "块"
+
+#: ../../source/docs/formats.rst:35
+msgid "Blockquote - ``blockquote``"
+msgstr "Blockquote - ``blockquote``"
+
+#: ../../source/docs/formats.rst:36
+msgid "Header - ``header``"
+msgstr "Header - ``header``"
+
+#: ../../source/docs/formats.rst:37
+msgid "Indent - ``indent``"
+msgstr "Indent - ``indent``"
+
+#: ../../source/docs/formats.rst:38
+msgid "List - ``list``"
+msgstr "List - ``list``"
+
+#: ../../source/docs/formats.rst:39
+msgid "Text Alignment - ``align``"
+msgstr "Text Alignment - ``align``"
+
+#: ../../source/docs/formats.rst:40
+msgid "Text Direction - ``direction``"
+msgstr "Text Direction - ``direction``"
+
+#: ../../source/docs/formats.rst:41
+msgid "Code Block - ``code-block``"
+msgstr "Code Block - ``code-block``"
+
+#: ../../source/docs/formats.rst:44
+msgid "Embeds"
+msgstr "嵌入功能"
+
+#: ../../source/docs/formats.rst:46
+msgid "Formula - ``formula`` (requires `KaTex <https://khan.github.io/KaTeX/>`__)"
+msgstr "Formula - ``formula`` (requires `KaTex <https://khan.github.io/KaTeX/>`__)"
+
+#: ../../source/docs/formats.rst:48
+msgid "Image - ``image``"
+msgstr "Image - ``image``"
+
+#: ../../source/docs/formats.rst:49
+msgid "Video - ``video``"
+msgstr "Video - ``video``"
+

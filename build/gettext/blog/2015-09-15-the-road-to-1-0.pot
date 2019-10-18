@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:2
+msgid "2015-09-15 the road to 1.0"
+msgstr "2015-09-15 the road to 1.0"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:4
+msgid "Quill launched with the ambitious goal of becoming *the* rich text editor for the web, being both easy to use for drop in use cases, and powerful enough for complex ones. Its current `API </docs/api/>`__ is core to those goals."
+msgstr "Quill launched with the ambitious goal of becoming *the* rich text editor for the web, being both easy to use for drop in use cases, and powerful enough for complex ones. Its current `API </docs/api/>`__ is core to those goals."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:9
+msgid "In the past months, much effort has been placed into providing even greater means for customization, particularly the editor’s contents. With this nearing completion, Quill is approaching its 1.0 coming of age."
+msgstr "In the past months, much effort has been placed into providing even greater means for customization, particularly the editor’s contents. With this nearing completion, Quill is approaching its 1.0 coming of age."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:15
+msgid "Parchment"
+msgstr "Parchment"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:17
+msgid "A full introduction and guide to Parchment is still forthcoming, but in short it is a new document model for Quill. An editor’s document model is an important abstraction over the DOM that allows the editor and API users to reason about its contents through a much simpler yet more expressive interface than directly interacting with the browser. For Quill, this enables an elegant solution to the longstanding problem of format customization."
+msgstr "A full introduction and guide to Parchment is still forthcoming, but in short it is a new document model for Quill. An editor’s document model is an important abstraction over the DOM that allows the editor and API users to reason about its contents through a much simpler yet more expressive interface than directly interacting with the browser. For Quill, this enables an elegant solution to the longstanding problem of format customization."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:29
+msgid "Prior to Parchment, Quill required near complete control over its editor container and descendant DOM nodes in order to provide its precise retrieval and manipulation API. Even simple modifications such as changing the default link open behavior required hacks and defining new content types, such as syntax highlighted code, was impossible."
+msgstr "Prior to Parchment, Quill required near complete control over its editor container and descendant DOM nodes in order to provide its precise retrieval and manipulation API. Even simple modifications such as changing the default link open behavior required hacks and defining new content types, such as syntax highlighted code, was impossible."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:35
+msgid "Parchment hands control of entire subtrees back to the user, allowing the definition of new nodes or overwriting existing ones. The requirement is that certain methods such as ``getValue`` and ``getFormat`` be defined in order to happily exist within a Parchment document. Those familiar will find this very similar to ``render`` and Components in `React <https://facebook.github.io/react/>`__, a significant influencer of Parchment’s design."
+msgstr "Parchment hands control of entire subtrees back to the user, allowing the definition of new nodes or overwriting existing ones. The requirement is that certain methods such as ``getValue`` and ``getFormat`` be defined in order to happily exist within a Parchment document. Those familiar will find this very similar to ``render`` and Components in `React <https://facebook.github.io/react/>`__, a significant influencer of Parchment’s design."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:43
+msgid "While the Parchment interface is still being stabilized, a preview of a definition for a `KaTeX <https://github.com/Khan/KaTeX>`__ equation looks like this (with ES6 syntax):"
+msgstr "While the Parchment interface is still being stabilized, a preview of a definition for a `KaTeX <https://github.com/Khan/KaTeX>`__ equation looks like this (with ES6 syntax):"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:64
+msgid "The current priority is to integrate Parchment into Quill as its new document model. However, Parchment is and will remain organized as its own `repository <https://github.com/quilljs/parchment>`__, as it was designed as a general purpose tool. Hopefully one day it may serve as the document model for other editors as well."
+msgstr "The current priority is to integrate Parchment into Quill as its new document model. However, Parchment is and will remain organized as its own `repository <https://github.com/quilljs/parchment>`__, as it was designed as a general purpose tool. Hopefully one day it may serve as the document model for other editors as well."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:71
+msgid "Formats"
+msgstr "Formats"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:73
+msgid "Parchment opens the doors to scalably support many more formats, many of which will be included in the 1.0 release. The complete list is not ready for announcement but they will at least include semantic headers and nested lists. Equations and syntax highlighted code will also be added as separate repositories because of their likely dependency on external libraries."
+msgstr "Parchment opens the doors to scalably support many more formats, many of which will be included in the 1.0 release. The complete list is not ready for announcement but they will at least include semantic headers and nested lists. Equations and syntax highlighted code will also be added as separate repositories because of their likely dependency on external libraries."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:81
+msgid "Modules"
+msgstr "Modules"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:83
+msgid "Quill organizes most of its source code as modules to make it easy to overwrite their default behavior. Unfortunately a documentation gap currently exists for these modules–this will have to be filled for their extensibility to be realized."
+msgstr "Quill organizes most of its source code as modules to make it easy to overwrite their default behavior. Unfortunately a documentation gap currently exists for these modules–this will have to be filled for their extensibility to be realized."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:88
+msgid "Some non-essential modules will also be moved out into their own repositories. Custom builds are planned to conveniently include or exclude these modules, along with other permutations, though this may land post 1.0 depending on timing."
+msgstr "Some non-essential modules will also be moved out into their own repositories. Custom builds are planned to conveniently include or exclude these modules, along with other permutations, though this may land post 1.0 depending on timing."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:94
+msgid "Beyond 1.0"
+msgstr "Beyond 1.0"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:96
+msgid "With Quill 1.0, the main foundations will be complete and much more emphasis will be placed into building examples and enhancing support, with internationalization, accessibility, and cross application interactions (copy/paste) as main focus points."
+msgstr "With Quill 1.0, the main foundations will be complete and much more emphasis will be placed into building examples and enhancing support, with internationalization, accessibility, and cross application interactions (copy/paste) as main focus points."
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:101
+msgid "In addition, Quill’s UI is due for an upgrade. While the aesthetics of Quill is already completely customizable, more numerous defaults could be available for those wanting a drop in solution. Here’s a sneak peak at a couple of upcoming themes in the works:"
+msgstr "In addition, Quill’s UI is due for an upgrade. While the aesthetics of Quill is already completely customizable, more numerous defaults could be available for those wanting a drop in solution. Here’s a sneak peak at a couple of upcoming themes in the works:"
+
+#: ../../source/blog/2015-09-15-the-road-to-1-0.rst:114
+msgid "Finally, the community deserves a great thank you for all of your contributions and support! All the `bug reports <https://github.com/quilljs/quill/labels/bug>`__, `features suggestions <https://github.com/quilljs/quill/labels/feature>`__ and `pull requests <https://github.com/quilljs/quill/pulls?q=is%3Apr>`__ make Quill what it is today. Keep these coming! Exciting times are ahead for web editing and for Quill."
+msgstr "Finally, the community deserves a great thank you for all of your contributions and support! All the `bug reports <https://github.com/quilljs/quill/labels/bug>`__, `features suggestions <https://github.com/quilljs/quill/labels/feature>`__ and `pull requests <https://github.com/quilljs/quill/pulls?q=is%3Apr>`__ make Quill what it is today. Keep these coming! Exciting times are ahead for web editing and for Quill."
+

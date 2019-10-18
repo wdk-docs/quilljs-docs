@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:2
+msgid "2016-09-06 accouncing quill 1.0"
+msgstr "2016-09-06 accouncing quill 1.0"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:4
+msgid "Quill 1.0 has arrived. It was just two years ago that Quill made its public debut as an open source project. Today, it can be found in applications and products of all sizes, ranging from personal projects and promising startups, to established public companies."
+msgstr "Quill 1.0 has arrived. It was just two years ago that Quill made its public debut as an open source project. Today, it can be found in applications and products of all sizes, ranging from personal projects and promising startups, to established public companies."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:9
+msgid "**Quill is designed as an easy to use editor, to support content creation across the web.** It is built on top of consistent and predictable constructs, exposed through a powerful `API </docs/api/>`__. With coverage across both ends of the complexity spectrum, Quill aims to be the defacto rich text editor for the web."
+msgstr "**Quill is designed as an easy to use editor, to support content creation across the web.** It is built on top of consistent and predictable constructs, exposed through a powerful `API </docs/api/>`__. With coverage across both ends of the complexity spectrum, Quill aims to be the defacto rich text editor for the web."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:15
+msgid "In the 111 releases, Quill has iterated relentlessly towards this goal. It has stabilized its API, moved essential internal implementations into customizable modules, and exposed its document model for users to define and add entirely new formats and content."
+msgstr "In the 111 releases, Quill has iterated relentlessly towards this goal. It has stabilized its API, moved essential internal implementations into customizable modules, and exposed its document model for users to define and add entirely new formats and content."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:20
+msgid "`New Features </blog/announcing-quill-1-0/#new-features>`__"
+msgstr "`New Features </blog/announcing-quill-1-0/#new-features>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:21
+msgid "`Parchment </blog/announcing-quill-1-0/#parchment>`__"
+msgstr "`Parchment </blog/announcing-quill-1-0/#parchment>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:22
+msgid "`Website </blog/announcing-quill-1-0/#website>`__"
+msgstr "`Website </blog/announcing-quill-1-0/#website>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:23
+msgid "`What’s Next </blog/announcing-quill-1-0/#whats-next>`__"
+msgstr "`What’s Next </blog/announcing-quill-1-0/#whats-next>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:24
+msgid "`Getting Started </blog/announcing-quill-1-0/#getting-started>`__"
+msgstr "`Getting Started </blog/announcing-quill-1-0/#getting-started>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:25
+msgid "`Credits </blog/announcing-quill-1-0/#credits>`__"
+msgstr "`Credits </blog/announcing-quill-1-0/#credits>`__"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:32
+msgid "New Features"
+msgstr "New Features"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:34
+msgid "Editable `Syntax Highlighted Code </docs/modules/syntax/>`__ blocks can now seamlessly exist inline with the rest of your text."
+msgstr "Editable `Syntax Highlighted Code </docs/modules/syntax/>`__ blocks can now seamlessly exist inline with the rest of your text."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:40
+msgid "Syntax Highlighted Code"
+msgstr "Syntax Highlighted Code"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:42
+msgid "Beautifully rendered `LaTeX formulas </docs/modules/formula/>`__ can be inserted to your contents."
+msgstr "Beautifully rendered `LaTeX formulas </docs/modules/formula/>`__ can be inserted to your contents."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:48
+msgid "Formula"
+msgstr "Formula"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:50
+msgid "**Many, many new formats** have been added, including superscript, subscript, inline code, code blocks, headers, blockquotes, text direction, videos, and nested lists. Inline styles can now also use classes `instead </playground/#class-vs-inline-style>`__."
+msgstr "**Many, many new formats** have been added, including superscript, subscript, inline code, code blocks, headers, blockquotes, text direction, videos, and nested lists. Inline styles can now also use classes `instead </playground/#class-vs-inline-style>`__."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:55
+msgid "An entirely new theme `Bubble </docs/themes/#bubble>`__ has also been added, based on a floating toolbar."
+msgstr "An entirely new theme `Bubble </docs/themes/#bubble>`__ has also been added, based on a floating toolbar."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:61
+msgid "Bubble Theme"
+msgstr "Bubble Theme"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:63
+msgid "Take a look at the `Changelog <https://github.com/quilljs/quill/blob/develop/CHANGELOG.md>`__ to see an exhaustive list."
+msgstr "Take a look at the `Changelog <https://github.com/quilljs/quill/blob/develop/CHANGELOG.md>`__ to see an exhaustive list."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:68
+msgid "Parchment"
+msgstr "Parchment"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:70
+msgid "As the biggest feature in Quill 1.0, `Parchment <https://github.com/quilljs/parchment/>`__ deserves its own mention. It offers a powerful abstraction over the DOM to enable custom formats and content in Quill. It is responsible for the numerous new formats added in Quill 1.0, including videos, syntax highlighted code, and formulas."
+msgstr "As the biggest feature in Quill 1.0, `Parchment <https://github.com/quilljs/parchment/>`__ deserves its own mention. It offers a powerful abstraction over the DOM to enable custom formats and content in Quill. It is responsible for the numerous new formats added in Quill 1.0, including videos, syntax highlighted code, and formulas."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:77
+msgid "With Parchment, you can now enhance or customize existing Quill formats or add entirely new ones in your own application. Take a look at `Cloning Medium with Parchment </guides/cloning-medium-with-parchment/>`__ for a detailed guide."
+msgstr "With Parchment, you can now enhance or customize existing Quill formats or add entirely new ones in your own application. Take a look at `Cloning Medium with Parchment </guides/cloning-medium-with-parchment/>`__ for a detailed guide."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:84
+msgid "Website"
+msgstr "Website"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:86
+msgid "In addition to the fancy new features, Quill’s documentation site has also been given an upgrade. The `referential </docs/>`__ portions have all been filled out, with no more incomplete or unstable pages. A new `Guides </guides/>`__ section has been added to cover some of the common how-tos and whys behind design decisions."
+msgstr "In addition to the fancy new features, Quill’s documentation site has also been given an upgrade. The `referential </docs/>`__ portions have all been filled out, with no more incomplete or unstable pages. A new `Guides </guides/>`__ section has been added to cover some of the common how-tos and whys behind design decisions."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:92
+msgid "There is now also an `Interactive Playground </playground/>`__, for tinkerers and immediate gratification. You can use it try out Quill’s features and experiment with its API, without any setup or installation."
+msgstr "There is now also an `Interactive Playground </playground/>`__, for tinkerers and immediate gratification. You can use it try out Quill’s features and experiment with its API, without any setup or installation."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:97
+msgid "What’s Next"
+msgstr "What’s Next"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:99
+msgid "Quill will continue to refine itself in being the easiest editor to use, while allowing for the most sophisticated customizations. With a stable and solid foundation on 1.0, some areas of focus will include:"
+msgstr "Quill will continue to refine itself in being the easiest editor to use, while allowing for the most sophisticated customizations. With a stable and solid foundation on 1.0, some areas of focus will include:"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:103
+msgid "Iterating on modules and themes, making them easier to create, customize and share"
+msgstr "Iterating on modules and themes, making them easier to create, customize and share"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:105
+msgid "Add remaining common formats, such as tables"
+msgstr "Add remaining common formats, such as tables"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:106
+msgid "Better internationalization support"
+msgstr "Better internationalization support"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:109
+msgid "Getting Started"
+msgstr "Getting Started"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:111
+msgid "If you are just joining us today, the example editors on the `homepage </>`__ are an excellent demonstration of the gorgeous editing experiences you can add to your application. Make sure to open up your developer console to play around with the API."
+msgstr "If you are just joining us today, the example editors on the `homepage </>`__ are an excellent demonstration of the gorgeous editing experiences you can add to your application. Make sure to open up your developer console to play around with the API."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:116
+msgid "Head to the `Interactive Playground </playground/>`__ if you want to tinker some more or to the `Quickstart </docs/quickstart/>`__ docs if you are ready to add Quill, with just a few lines of code."
+msgstr "Head to the `Interactive Playground </playground/>`__ if you want to tinker some more or to the `Quickstart </docs/quickstart/>`__ docs if you are ready to add Quill, with just a few lines of code."
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:121
+msgid "Credits"
+msgstr "Credits"
+
+#: ../../source/blog/2016-09-06-accouncing-quill-1-0.rst:123
+msgid "Last, but not least, **a special thank you goes out to Quill’s community.** Whether you contributed code for the codebase, help for other community members, reports or context for bugs, ideas for new features or improve existing ones, feedback on use cases, or evangelism for the project, Quill would not be nearly as successful without your collective efforts. Thank you for your contribution!"
+msgstr "Last, but not least, **a special thank you goes out to Quill’s community.** Whether you contributed code for the codebase, help for other community members, reports or context for bugs, ideas for new features or improve existing ones, feedback on use cases, or evangelism for the project, Quill would not be nearly as successful without your collective efforts. Thank you for your contribution!"
+

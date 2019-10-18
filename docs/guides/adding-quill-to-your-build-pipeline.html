@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>加入鹅毛笔您构建流水线 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="upgrading to 1.0" href="upgrading-to-1-0.html" />
+    <link rel="prev" title="building a custom module" href="building-a-custom-module.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">指南</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html">How to customize quill?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html">designing the delta format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">comparison with other rich text editors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">cloning medium with parchment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">building a custom module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">加入鹅毛笔您构建流水线</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#webpack">Webpack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#entry">Entry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stylesheets">Stylesheets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">upgrading to 1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-2-0.html">upgrading to 2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html">why quill</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">指南</a> &raquo;</li>
+        
+      <li>加入鹅毛笔您构建流水线</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guides/adding-quill-to-your-build-pipeline.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="adding-quill-to-your-build-pipeline">
+<h1>加入鹅毛笔您构建流水线<a class="headerlink" href="#adding-quill-to-your-build-pipeline" title="永久链接至标题">¶</a></h1>
+<p>Each version of Quill is built and ready to use from a variety of
+sources, including <a class="reference external" href="https://www.npmjs.com/package/quill">NPM</a> or its
+<a class="reference external" href="/docs/download/">CDN</a>. However there may be use cases where you
+would like to build Quill from source, as part of your application’s
+build pipeline. If this desire has not occurred to you, don’t sweat it!
+Using pre-built versions is the easiest way to use Quill.</p>
+<p>Quill is built using <a class="reference external" href="https://webpack.js.org/concepts/">Webpack</a> and
+this guide is mostly targeted towards Webpack users. However some
+principles may translate to other build environments.</p>
+<p>A minimal working example of everything covered in this guide can be
+found at
+<a class="reference external" href="https://github.com/quilljs/webpack-example/">quill-webpack-example</a>.</p>
+<div class="section" id="webpack">
+<h2>Webpack<a class="headerlink" href="#webpack" title="永久链接至标题">¶</a></h2>
+<p>You will need to add Webpack and appropriate loaders as development
+dependencies to your app. The Typescript compiler is necessary if you
+want to build Parchment from source as well.</p>
+<ul class="simple">
+<li><p>Quill source code -
+<code class="docutils literal notranslate"><span class="pre">`babel-core</span></code> &lt;<a class="reference external" href="https://www.npmjs.com/package/babel-core">https://www.npmjs.com/package/babel-core</a>&gt;`__,
+<code class="docutils literal notranslate"><span class="pre">`babel-loader</span></code> &lt;<a class="reference external" href="https://www.npmjs.com/package/babel-loader">https://www.npmjs.com/package/babel-loader</a>&gt;`__,
+<code class="docutils literal notranslate"><span class="pre">`babel-preset-es2015</span></code> &lt;<a class="reference external" href="https://www.npmjs.com/package/babel-preset-es2015">https://www.npmjs.com/package/babel-preset-es2015</a>&gt;`__</p></li>
+<li><p>Parchment source code -
+<code class="docutils literal notranslate"><span class="pre">`ts-loader</span></code> &lt;<a class="reference external" href="https://www.npmjs.com/package/ts-loader">https://www.npmjs.com/package/ts-loader</a>&gt;`__,
+<code class="docutils literal notranslate"><span class="pre">`typescript</span></code> &lt;<a class="reference external" href="https://www.npmjs.com/package/typescript">https://www.npmjs.com/package/typescript</a>&gt;`__</p></li>
+<li><p>SVG icons -
+<code class="docutils literal notranslate"><span class="pre">`html-loader</span></code> &lt;<a class="reference external" href="https://www.npmjs.com/package/html-loader">https://www.npmjs.com/package/html-loader</a>&gt;`__</p></li>
+</ul>
+<p>Your Webpack configuration file will also need to alias Quill and
+Parchment to point to their respective entry source files. Without this,
+Webpack will use the pre-built files included in NPM, instead of
+building from source.</p>
+</div>
+<div class="section" id="entry">
+<h2>Entry<a class="headerlink" href="#entry" title="永久链接至标题">¶</a></h2>
+<p>Quill is distributed with builds <code class="docutils literal notranslate"><span class="pre">quill.js</span></code> and <code class="docutils literal notranslate"><span class="pre">quill.core.js</span></code>. The
+purpose of the entry files for both builds,
+<a class="reference external" href="https://github.com/quilljs/quill/blob/master/quill.js">quill.js</a> and
+<a class="reference external" href="https://github.com/quilljs/quill/blob/master/core.js">core.js</a>, is
+to import and register necessary dependencies. You will likely want a
+similar entry point in your application that includes only the formats,
+modules, or themes that you use.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="nx">Quill</span> <span class="nx">from</span> <span class="s1">&#39;quill/core&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Toolbar</span> <span class="nx">from</span> <span class="s1">&#39;quill/modules/toolbar&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Snow</span> <span class="nx">from</span> <span class="s1">&#39;quill/themes/snow&#39;</span><span class="p">;</span>
+
+<span class="kr">import</span> <span class="nx">Bold</span> <span class="nx">from</span> <span class="s1">&#39;quill/formats/bold&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Italic</span> <span class="nx">from</span> <span class="s1">&#39;quill/formats/italic&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">Header</span> <span class="nx">from</span> <span class="s1">&#39;quill/formats/header&#39;</span><span class="p">;</span>
+
+
+<span class="nx">Quill</span><span class="p">.</span><span class="nx">register</span><span class="p">({</span>
+  <span class="s1">&#39;modules/toolbar&#39;</span><span class="o">:</span> <span class="nx">Toolbar</span><span class="p">,</span>
+  <span class="s1">&#39;themes/snow&#39;</span><span class="o">:</span> <span class="nx">Snow</span><span class="p">,</span>
+  <span class="s1">&#39;formats/bold&#39;</span><span class="o">:</span> <span class="nx">Bold</span><span class="p">,</span>
+  <span class="s1">&#39;formats/italic&#39;</span><span class="o">:</span> <span class="nx">Italic</span><span class="p">,</span>
+  <span class="s1">&#39;formats/header&#39;</span><span class="o">:</span> <span class="nx">Header</span>
+<span class="p">});</span>
+
+
+<span class="kr">export</span> <span class="k">default</span> <span class="nx">Quill</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="stylesheets">
+<h2>Stylesheets<a class="headerlink" href="#stylesheets" title="永久链接至标题">¶</a></h2>
+<p>There is not as much to benefit from building from source in the realm
+of stylesheets, since rules can be so easily overwritten. However,
+<code class="docutils literal notranslate"><span class="pre">`css-loader</span></code> &lt;<a class="reference external" href="https://www.npmjs.com/package/css-loader">https://www.npmjs.com/package/css-loader</a>&gt;`__’s tilde
+prefix may be useful to include Quill styles in a your application css
+file.</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="p">@</span><span class="k">import</span> <span class="s2">&quot;~quill/dist/quill.core.css&quot;</span>
+
+<span class="o">//</span> <span class="nt">Rest</span> <span class="nt">of</span> <span class="nt">your</span> <span class="nt">application</span> <span class="nt">CSS</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="永久链接至标题">¶</a></h2>
+<p>Take a look at
+<a class="reference external" href="https://github.com/quilljs/webpack-example/">quill-webpack-example</a>
+for a minimal working example.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="upgrading-to-1-0.html" class="btn btn-neutral float-right" title="upgrading to 1.0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="building-a-custom-module.html" class="btn btn-neutral float-left" title="building a custom module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

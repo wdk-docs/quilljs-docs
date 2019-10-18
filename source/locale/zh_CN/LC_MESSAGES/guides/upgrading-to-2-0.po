@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/guides/upgrading-to-2-0.rst:2
+msgid "upgrading to 2.0"
+msgstr "升级到2.0"
+
+#: ../../source/guides/upgrading-to-2-0.rst:4
+msgid "In progress"
+msgstr "In progress"
+
+#: ../../source/guides/upgrading-to-2-0.rst:7
+msgid "Quill"
+msgstr "Quill"
+
+#: ../../source/guides/upgrading-to-2-0.rst:9
+msgid ""
+"``strict`` *removed* - Previously some changes that were small in "
+"practice (renames) but would warrant a semver major bump would be hidden "
+"under this configuration. This ended up being more confusing than helpful"
+" as we will no longer make use of this."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:13
+msgid ""
+"``registry`` - added to allow multiple editors with different formats to "
+"coexist on the same page."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:15
+msgid ""
+"``formats`` *removed* - ``registry`` is now strictly more powerful and "
+"safer."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:19
+msgid "Clipboard"
+msgstr "Clipboard"
+
+#: ../../source/guides/upgrading-to-2-0.rst:21
+msgid ""
+"``convert`` - API changed to include both HTML and text and previous "
+"functionality is broken into multiple method calls (``convert``, "
+"``onCapturePaste``) to allow more surface to hook into."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:24
+msgid "``onCapturePaste`` - Added"
+msgstr "``onCapturePaste`` - Added"
+
+#: ../../source/guides/upgrading-to-2-0.rst:27
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../source/guides/upgrading-to-2-0.rst:29
+msgid ""
+"``matchVisual`` *removed* - Previously there was a choice between using "
+"visual or semantic interpretation of pasted whitespace; now just the "
+"semantic interpretation is used. Visual matching was expensive, requiring"
+" the DOM renderer which is no longer available in the new clipboard "
+"rewrite."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:34
+msgid "``pasteHTML`` *removed* - Deprecated alias to ``dangerouslyPasteHTML``."
+msgstr "``pasteHTML`` *removed* - Deprecated alias to ``dangerouslyPasteHTML``."
+
+#: ../../source/guides/upgrading-to-2-0.rst:38
+msgid "Keyboard"
+msgstr "Keyboard"
+
+#: ../../source/guides/upgrading-to-2-0.rst:40
+msgid ""
+"Binding ``key`` is no longer case insensitive. To support bindings like "
+"``key: '@'``, modifiers are taken into account so the shift modifier will"
+" affect case sensitivity."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:43
+msgid ""
+"Binding ``key`` now supports an array of keys to easily bind to multiple "
+"shortcuts."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:45
+msgid "Native keyboard event object is now also passed into handlers."
+msgstr "Native keyboard event object is now also passed into handlers."
+
+#: ../../source/guides/upgrading-to-2-0.rst:48
+msgid "Parchment"
+msgstr "Parchment"
+
+#: ../../source/guides/upgrading-to-2-0.rst:50
+msgid ""
+"All lists use ``<ol>`` instead of both ``<ul>`` and ``<ol>`` allowing "
+"better nesting between the two. Copied content will generate the correct "
+"semantic markup for paste into other applications."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:53
+msgid ""
+"Code block markup now uses ``<div>`` to better support syntax "
+"highlighting."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:55
+msgid ""
+"Static ``register`` method added to allow dependent chains of "
+"registration."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:57
+msgid "Static ``formats`` method now passes in ``scroll``."
+msgstr "Static ``formats`` method now passes in ``scroll``."
+
+#: ../../source/guides/upgrading-to-2-0.rst:58
+msgid "Blot constructor now requires ``scroll`` to be passed in."
+msgstr "Blot constructor now requires ``scroll`` to be passed in."
+
+#: ../../source/guides/upgrading-to-2-0.rst:61
+msgid "Delta"
+msgstr "Delta"
+
+#: ../../source/guides/upgrading-to-2-0.rst:63
+msgid ""
+"Support for the deprecated delta format, where embeds had integer values "
+"and list attributes had different keys, is now removed"
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:67
+msgid "Browser"
+msgstr "Browser"
+
+#: ../../source/guides/upgrading-to-2-0.rst:69
+msgid ""
+"Quill builds now use ``babel-env`` to determine the right level of "
+"transpiling and polyfilling."
+msgstr ""
+
+#: ../../source/guides/upgrading-to-2-0.rst:71
+msgid "IE11 support is dropped build size reduced ~25% as a result."
+msgstr "IE11 support is dropped build size reduced ~25% as a result."
+

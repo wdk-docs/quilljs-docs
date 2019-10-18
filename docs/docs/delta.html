@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>三角洲 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="模块" href="modules/index.html" />
+    <link rel="prev" title="Selection" href="api/selection.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">文档</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="quickstart.html">快速开始</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html">下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration.html">配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formats.html">格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/index.html">api</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">三角洲</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#document">文献</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#embeds">Embeds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#line-formatting">Line Formatting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#changes">变化</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#delete">Delete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#retain">Retain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#playground">Playground</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules/index.html">模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="themes.html">主题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standalone/index.html">独立</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">指南</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">文档</a> &raquo;</li>
+        
+      <li>三角洲</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/docs/delta.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="delta">
+<h1>三角洲<a class="headerlink" href="#delta" title="永久链接至标题">¶</a></h1>
+<p>Deltas are a simple, yet expressive format that can be used to describe
+Quill’s contents and changes. The format is a strict subset of JSON, is
+human readable, and easily parsible by machines. Deltas can describe any
+Quill document, includes all text and formatting information, without
+the ambiguity and complexity of HTML.</p>
+<p>Don’t be confused by its name Delta—Deltas represents both documents and
+changes to documents. If you think of Deltas as the instructions from
+going from one document to another, the way Deltas represent a document
+is by expressing the instructions starting from an empty document.</p>
+<p>Deltas are implemented as a separate <a class="reference external" href="https://github.com/quilljs/delta/">standalone
+library</a>, allowing its use outside
+of Quill. It is suitable for <a class="reference external" href="https://en.wikipedia.org/wiki/Operational_transformation">Operational
+Transform</a>
+and can be used in realtime, Google Docs like applications. For a more
+in depth explanation behind Deltas, see <a class="reference external" href="/guides/designing-the-delta-format/">Designing the Delta
+Format</a>.</p>
+<p><strong>Note:</strong> It is not recommended to construct Deltas by hand—rather use
+the chainable
+<code class="docutils literal notranslate"><span class="pre">`insert()</span></code> &lt;<a class="reference external" href="https://github.com/quilljs/delta#insert">https://github.com/quilljs/delta#insert</a>&gt;`__,
+<code class="docutils literal notranslate"><span class="pre">`delete()</span></code> &lt;<a class="reference external" href="https://github.com/quilljs/delta#delete">https://github.com/quilljs/delta#delete</a>&gt;`__, and
+<code class="docutils literal notranslate"><span class="pre">`retain()</span></code> &lt;<a class="reference external" href="https://github.com/quilljs/delta#retain">https://github.com/quilljs/delta#retain</a>&gt;`__ methods to
+create new Deltas. You can use <code class="docutils literal notranslate"><span class="pre">`import()</span></code> &lt;/docs/api/#import&gt;`__ to
+access Delta from Quill.</p>
+<div class="section" id="document">
+<h2>文献<a class="headerlink" href="#document" title="永久链接至标题">¶</a></h2>
+<p>The Delta format is almost entirely self-explanatory—the example below
+describes the string “Gandalf the Grey” where “Gandalf” is bolded and
+“Grey” is colored #cccccc.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;Gandalf&#39;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39; the &#39;</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;Grey&#39;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;#cccccc&#39;</span> <span class="p">}</span> <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>As its name would imply, describing content is actually a special case
+for Deltas. The above example is more specifically instructions to
+insert a bolded string “Gandalf”, an unformatted string ” the “,
+followed by the string”Grey” colored #cccccc. When Deltas are used to
+describe content, it can be thought of as the content that would be
+created if the Delta was applied to an empty document.</p>
+<p>Since Deltas are a data format, there is no inherent meaning to the
+values of <code class="docutils literal notranslate"><span class="pre">attribute</span></code> keypairs. For example, there is nothing in the
+Delta format that dictates color value must be in hex—this is a choice
+that Quill makes, and can be modified if desired with
+<a class="reference external" href="https://github.com/quilljs/parchment/">Parchment</a>.</p>
+<div class="section" id="embeds">
+<h3>Embeds<a class="headerlink" href="#embeds" title="永久链接至标题">¶</a></h3>
+<p>For non-text content such as images or formulas, the insert key can be
+an object. The object should have one key, which will be used to
+determine its type. This is the <code class="docutils literal notranslate"><span class="pre">blotName</span></code> if you are building custom
+content with <a class="reference external" href="https://github.com/quilljs/parchment/">Parchment</a>. Like
+text, embeds can still have an <code class="docutils literal notranslate"><span class="pre">attributes</span></code> key to describe formatting
+to be applied to the embed. All embeds have a length of one.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[{</span>
+    <span class="c1">// An image link</span>
+    <span class="nx">insert</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">image</span><span class="o">:</span> <span class="s1">&#39;https://quilljs.com/assets/images/icon.png&#39;</span>
+    <span class="p">},</span>
+    <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">link</span><span class="o">:</span> <span class="s1">&#39;https://quilljs.com&#39;</span>
+    <span class="p">}</span>
+  <span class="p">}]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="line-formatting">
+<h3>Line Formatting<a class="headerlink" href="#line-formatting" title="永久链接至标题">¶</a></h3>
+<p>Attributes associated with a newline character describes formatting for
+that line.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;The Two Towers&#39;</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;\n&#39;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">header</span><span class="o">:</span> <span class="mi">1</span> <span class="p">}</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;Aragorn sped on up the hill.\n&#39;</span> <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>All Quill documents must end with a newline character, even if there is
+no formatting applied to the last line. This way, you will always have a
+character position to apply line formatting to.</p>
+<p>Many line formats are exclusive. For example Quill does not allow a line
+to simultaneously be both a header and a list, despite being possible to
+represent in the Delta format.</p>
+</div>
+</div>
+<div class="section" id="changes">
+<h2>变化<a class="headerlink" href="#changes" title="永久链接至标题">¶</a></h2>
+<p>When you register a listener for Quill’s
+<code class="docutils literal notranslate"><span class="pre">`text-change</span></code> &lt;/docs/api/#text-change&gt;`__ event, one of the arguments
+you will get is a Delta describing what changed. In addition to
+<code class="docutils literal notranslate"><span class="pre">insert</span></code> operations, this Delta might also have <code class="docutils literal notranslate"><span class="pre">delete</span></code> or
+<code class="docutils literal notranslate"><span class="pre">retain</span></code> operations.</p>
+<div class="section" id="delete">
+<h3>Delete<a class="headerlink" href="#delete" title="永久链接至标题">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">delete</span></code> operation instructs exactly what it implies: delete the
+next number of characters.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span> <span class="k">delete</span><span class="o">:</span> <span class="mi">10</span> <span class="p">}</span>  <span class="c1">// Delete the next 10 characters</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Since <code class="docutils literal notranslate"><span class="pre">delete</span></code> operations do not include <em>what</em> was deleted, a Delta
+is not reversible.</p>
+</div>
+<div class="section" id="retain">
+<h3>Retain<a class="headerlink" href="#retain" title="永久链接至标题">¶</a></h3>
+<p>A <code class="docutils literal notranslate"><span class="pre">retain</span></code> operation simply means keep the next number of characters,
+without modification. If <code class="docutils literal notranslate"><span class="pre">attributes</span></code> is specified, it still means
+keep those characters, but apply the formatting specified by the
+<code class="docutils literal notranslate"><span class="pre">attributes</span></code> object. A <code class="docutils literal notranslate"><span class="pre">null</span></code> value for an attributes key is used to
+specify format removal.</p>
+<p>Starting with the above “Gandalf the Grey” example:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// {</span>
+<span class="c1">//   ops: [</span>
+<span class="c1">//     { insert: &#39;Gandalf&#39;, attributes: { bold: true } },</span>
+<span class="c1">//     { insert: &#39; the &#39; },</span>
+<span class="c1">//     { insert: &#39;Grey&#39;, attributes: { color: &#39;#cccccc&#39; } }</span>
+<span class="c1">//   ]</span>
+<span class="c1">// }</span>
+
+<span class="p">{</span>
+  <span class="nx">ops</span><span class="o">:</span> <span class="p">[</span>
+    <span class="c1">// Unbold and italicize &quot;Gandalf&quot;</span>
+    <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="mi">7</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">bold</span><span class="o">:</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">italic</span><span class="o">:</span> <span class="kc">true</span> <span class="p">}</span> <span class="p">},</span>
+
+    <span class="c1">// Keep &quot; the &quot; as is</span>
+    <span class="p">{</span> <span class="nx">retain</span><span class="o">:</span> <span class="mi">5</span> <span class="p">},</span>
+
+    <span class="c1">// Insert &quot;White&quot; formatted with color #fff</span>
+    <span class="p">{</span> <span class="nx">insert</span><span class="o">:</span> <span class="s2">&quot;White&quot;</span><span class="p">,</span> <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span> <span class="nx">color</span><span class="o">:</span> <span class="s1">&#39;#fff&#39;</span> <span class="p">}</span> <span class="p">},</span>
+
+    <span class="c1">// Delete &quot;Grey&quot;</span>
+    <span class="p">{</span> <span class="k">delete</span><span class="o">:</span> <span class="mi">4</span> <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Note that a Delta’s instructions always starts at the beginning of the
+document. And because of plain <code class="docutils literal notranslate"><span class="pre">retain</span></code> operations, we never need to
+specify an index for a <code class="docutils literal notranslate"><span class="pre">delete</span></code> or <code class="docutils literal notranslate"><span class="pre">insert</span></code> operation.</p>
+</div>
+<div class="section" id="playground">
+<h3>Playground<a class="headerlink" href="#playground" title="永久链接至标题">¶</a></h3>
+<p>Play around with Quill and take a look at how its content and changes
+look. Open your developer console for another view into the Deltas.</p>
+<div class="codepen docutils container">
+<pre><code></code></pre></div>
+<!-- script --><script src="//codepen.io/assets/embed/ei.js"></script><!-- script --></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules/index.html" class="btn btn-neutral float-right" title="模块" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="api/selection.html" class="btn btn-neutral float-left" title="Selection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

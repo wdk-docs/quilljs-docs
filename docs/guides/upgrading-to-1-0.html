@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>升级到1.0 &mdash; quilljs-docs v2019.10.17 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="升级到2.0" href="upgrading-to-2-0.html" />
+    <link rel="prev" title="加入鹅毛笔您构建流水线" href="adding-quill-to-your-build-pipeline.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> quilljs-docs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">指南</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html">如何自定义鹅毛笔？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html">与其他富文本编辑器相比</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">升级到1.0</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api">API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deltas">Deltas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#defaults">Defaults</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#browsers">Browsers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#improvements">Improvements</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-2-0.html">升级到2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">quilljs-docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">指南</a> &raquo;</li>
+        
+      <li>升级到1.0</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/guides/upgrading-to-1-0.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="upgrading-to-1-0">
+<h1>升级到1.0<a class="headerlink" href="#upgrading-to-1-0" title="永久链接至标题">¶</a></h1>
+<p>Quill 1.0 introduces major changes aimed at greater ability to customize
+Quill. Interfaces stayed the same where possible and this guide helps
+bridge the gap otherwise.</p>
+<p>To realize the full benefits of 1.0, it is encouraged to take a fresh
+view of Quill 1.0 and revisit even basic topics on this documentation
+site. Often, you will find that even though you could do things the old
+way, there is a better new way.</p>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">styles</span></code> <em>removed</em> - Previous versions of Quill allowed custom CSS
+to be injected through <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> additions. This option has been
+removed due to <a class="reference external" href="https://developers.google.com/web/fundamentals/security/csp/">Content Security
+Policy</a>.
+Instead you should use external CSS directly.</p></li>
+</ul>
+</div>
+<div class="section" id="api">
+<h2>API<a class="headerlink" href="#api" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">getHTML</span></code> <em>removed</em> - Previous versions of Quill required the usage
+of class names to identify lines <code class="docutils literal notranslate"><span class="pre">ql-line</span></code> and an <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute
+to identify particular lines. This is no longer a requirement and a
+custom API call no longer adds any value on top of the DOM’s existing
+innerHTML.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">setHTML</span></code> <em>removed</em> - Quill, like many editors with a data layer on
+top of the DOM, does not allow arbitrary changes to the underlying
+HTML. Previously Quill would detect an illegal state and correct it,
+but this makes the naming setHTML disingenuous and the reasoning
+behind the correction is unintuitive. Most use cases of <code class="docutils literal notranslate"><span class="pre">setHTML</span></code>
+can be suitably met or improved (since cursor preservation is much
+better) with the new <code class="docutils literal notranslate"><span class="pre">`pasteHTML</span></code> &lt;/docs/api/#pastehtml&gt;`__.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">addModule</span></code> <em>removed</em> - Modules are now initialized based off of
+the initial Quill <a class="reference external" href="/docs/configuration/">configuration</a>, instead
+of having a separate function.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">onModuleLoad</span></code> <em>removed</em> - Module loading is handled by Themes and
+similar behavior should be achieved by extending the theme.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">destroy</span></code> <em>removed</em> - No longer necessary as Quill no longer keeps
+references to editor instances, allowing Javascript garbage
+collectors to work as expected.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">prepareFormat</span></code> <em>renamed</em> - A new API
+<code class="docutils literal notranslate"><span class="pre">`format</span></code> &lt;/docs/api/#format&gt;`__ now provides formatting
+functionality for all selection states, including those previously
+covered by <code class="docutils literal notranslate"><span class="pre">prepareFormat</span></code>.</p></li>
+<li><p>For consistency, all positions are now index and length based versus
+the start and end representation sometimes used by
+<code class="docutils literal notranslate"><span class="pre">`deleteText</span></code> &lt;/docs/api/#deletetext&gt;`__,
+<code class="docutils literal notranslate"><span class="pre">`formatText</span></code> &lt;/docs/api/#formattext&gt;`__,
+<code class="docutils literal notranslate"><span class="pre">`formatLine</span></code> &lt;/docs/api/#formatline&gt;`__, and the Range object used
+by selection APIs such as on
+<code class="docutils literal notranslate"><span class="pre">`getSelection</span></code> &lt;/docs/api/#getselection&gt;`__,
+<code class="docutils literal notranslate"><span class="pre">`setSelection</span></code> &lt;/docs/api/#setselection&gt;`__, and the
+<code class="docutils literal notranslate"><span class="pre">`selection-change</span></code> &lt;/docs/api/#selection-change&gt;`__ event.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">registerModule</span></code> <em>renamed</em> - A new API
+<code class="docutils literal notranslate"><span class="pre">`register</span></code> &lt;/docs/api/#register&gt;`__ is now used to registers all
+modules, themes and formats.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">require</span></code> <em>renamed</em> - Renamed to <code class="docutils literal notranslate"><span class="pre">import</span></code> for consistency with
+ES6.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">addContainer</span></code> <em>modified</em> - The <a class="reference external" href="/docs/api/#addcontainer">second
+parameter</a> is changed to allow insertion
+before any container, not just the editor. Thus instead of an
+optional boolean, it now an optional HTMLElement.</p></li>
+</ul>
+</div>
+<div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Toolbars, when initialized with a custom HTML element, requires
+buttons to be actual HTMLButtonElements. Previously it allowed any
+element with an appropriate class name.</p></li>
+<li><p>The <a class="reference external" href="/docs/themes/#snow/">Snow</a> toolbar no longer adds or uses
+<code class="docutils literal notranslate"><span class="pre">ql-format-separator</span></code> and renamed <code class="docutils literal notranslate"><span class="pre">ql-format-group</span></code> to
+<code class="docutils literal notranslate"><span class="pre">ql-formats</span></code>.</p></li>
+<li><p>The authorship and multi-cursor modules have been temporarily
+removed. Similar functionality will be re-added at a later time,
+either separately or in a bundled collaboration module.</p></li>
+<li><p>UndoManager has been renamed to <a class="reference external" href="/docs/modules/history/">History</a>.</p></li>
+<li><p>PasteManager has been renamed to
+<a class="reference external" href="/docs/modules/clipboard/">Clipboard</a>, and will provide custom
+copy and paste behavior.</p></li>
+<li><p>LinkTooltip has been moved to be theme specific. With the addition of
+<a class="reference external" href="/docs/themes/#bubble">Bubble</a> and videos and
+<a class="reference external" href="/docs/modules/formula/">formulas</a>, it no longer made sense to
+open a separate tooltip for links as its own general UI element. The
+old tooltip behavior is still present in Snow, but is now specific to
+that theme.</p></li>
+<li><p>ImageTooltip has been removed in favor of a simpler and more native
+flow. The image button now opens the OS file picker and the selected
+image file is inserted into the editor as a base64 image.</p></li>
+</ul>
+</div>
+<div class="section" id="deltas">
+<h2>Deltas<a class="headerlink" href="#deltas" title="永久链接至标题">¶</a></h2>
+<p>The default <a class="reference external" href="/guides/working-with-deltas/">Delta</a> representation of
+some content has changed. In all cases the old format is still supported
+in methods using Deltas as in input, such as <code class="docutils literal notranslate"><span class="pre">setContents</span></code> and
+<code class="docutils literal notranslate"><span class="pre">updateContents</span></code>. But outputted Deltas, such as the ones reported by
+<code class="docutils literal notranslate"><span class="pre">text-change</span></code> and <code class="docutils literal notranslate"><span class="pre">getContents</span></code> will be in the new form. Since
+<a class="reference external" href="https://github.com/quilljs/parchment">Parchment</a> now allows custom
+content and formats, it is possible to customize these Delta
+representations entirely.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">newImage</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="p">{</span> <span class="nx">image</span><span class="o">:</span> <span class="s1">&#39;url&#39;</span> <span class="p">}</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">oldImage</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">image</span><span class="o">:</span> <span class="s1">&#39;url&#39;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">newOrderedList</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;\n&#39;</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">list</span><span class="o">:</span> <span class="s1">&#39;ordered&#39;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">oldOrderedList</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;\n&#39;</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">list</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">newBullettedList</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;\n&#39;</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">list</span><span class="o">:</span> <span class="s1">&#39;bullet&#39;</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="kd">var</span> <span class="nx">oldBullettedList</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">insert</span><span class="o">:</span> <span class="s1">&#39;\n&#39;</span><span class="p">,</span>
+  <span class="nx">attributes</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">bullet</span><span class="o">:</span> <span class="kc">true</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defaults">
+<h2>Defaults<a class="headerlink" href="#defaults" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Quill previously used inline styles to implement font family and
+size. A class implementation is now default. To revert this, see
+<a class="reference external" href="/guides/how-to-customize-quill/#content-and-formatting">Content and
+Formatting</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="browsers">
+<h2>Browsers<a class="headerlink" href="#browsers" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Quill now follows other major open source libraries in supporting the
+last two versions of major browser releases. Support for IE9 and IE10
+have been dropped, and MS Edge has been added.</p></li>
+<li><p>Android browser support now applies to Chrome on Android, instead of
+the stock Android Browser, which Google has phased out support for.</p></li>
+</ul>
+</div>
+<div class="section" id="improvements">
+<h2>Improvements<a class="headerlink" href="#improvements" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>Ability to add new formats and content, or modify existing ones with
+<a class="reference external" href="https://github.com/quilljs/parchment/">Parchment</a>.</p></li>
+<li><p>Added support for nested list, superscript, subscript, inline code,
+code block, header, blockquote, text direction, video and forumla
+support.</p></li>
+<li><p>Ability to format with classes instead of inline styles.</p></li>
+<li><p>New tooltip based theme called <a class="reference external" href="/docs/themes/#bubble/">Bubble</a>.</p></li>
+<li><p>Improved <a class="reference external" href="/docs/modules/toolbar/">Toolbar</a> initialization with
+format arrays and customization with custom values.</p></li>
+<li><p>Toolbar icons now use SVGs instead of inline PNGs allowing freedom to
+resize icons while retaining clarity. CSS can now also be used to
+easily change the active state color instead of the default #06c
+blue.</p></li>
+<li><p>Improved ability to customize interpretation of pastes in
+<a class="reference external" href="/docs/modules/clipboard/">Clipboard</a>.</p></li>
+<li><p>Improved ability to customize <a class="reference external" href="/docs/modules/keyboard/">keyboard
+handlers</a>.</p></li>
+<li><p>A placeholder configuration option.</p></li>
+<li><p>Editable <a class="reference external" href="/docs/modules/syntax/">syntax highlighted code</a> block.</p></li>
+<li><p>Several new <a class="reference external" href="/docs/api/">APIs</a>.</p></li>
+<li><p>Many, many bug fixes.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="upgrading-to-2-0.html" class="btn btn-neutral float-right" title="升级到2.0" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="adding-quill-to-your-build-pipeline.html" class="btn btn-neutral float-left" title="加入鹅毛笔您构建流水线" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, BandCap
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

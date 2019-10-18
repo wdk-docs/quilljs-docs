@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/docs/modules/keyboard.rst:2
+msgid "keyboard"
+msgstr "keyboard"
+
+#: ../../source/docs/modules/keyboard.rst:4
+msgid "The Keyboard module enables custom behavior for keyboard events in particular contexts. Quill uses this to bind formatting hotkeys and prevent undesirable browser side effects."
+msgstr "The Keyboard module enables custom behavior for keyboard events in particular contexts. Quill uses this to bind formatting hotkeys and prevent undesirable browser side effects."
+
+#: ../../source/docs/modules/keyboard.rst:9
+msgid "Key Bindings"
+msgstr "Key Bindings"
+
+#: ../../source/docs/modules/keyboard.rst:11
+msgid "Keyboard handlers are bound to a particular key and key modifiers. The ``key`` is the JavaScript event key code, but string shorthands are allowed for alphanumeric keys and some common keys."
+msgstr "Keyboard handlers are bound to a particular key and key modifiers. The ``key`` is the JavaScript event key code, but string shorthands are allowed for alphanumeric keys and some common keys."
+
+#: ../../source/docs/modules/keyboard.rst:15
+msgid "Key modifiers include: ``metaKey``, ``ctrlKey``, ``shiftKey`` and ``altKey``. In addition, ``shortKey`` is a platform specific modifier equivalent to ``metaKey`` on a Mac and ``ctrlKey`` on Linux and Windows."
+msgstr "Key modifiers include: ``metaKey``, ``ctrlKey``, ``shiftKey`` and ``altKey``. In addition, ``shortKey`` is a platform specific modifier equivalent to ``metaKey`` on a Mac and ``ctrlKey`` on Linux and Windows."
+
+#: ../../source/docs/modules/keyboard.rst:19
+msgid "Handlers will be called with ``this`` bound to the keyboard instance and be passed the current selection range."
+msgstr "Handlers will be called with ``this`` bound to the keyboard instance and be passed the current selection range."
+
+#: ../../source/docs/modules/keyboard.rst:41
+msgid "If a modifier key is ``false``, it is assumed to mean that modifier is not active. You may also pass ``null`` to mean any value for the modifier."
+msgstr "If a modifier key is ``false``, it is assumed to mean that modifier is not active. You may also pass ``null`` to mean any value for the modifier."
+
+#: ../../source/docs/modules/keyboard.rst:56
+msgid "Multiple handlers may be bound to the same key and modifier combination. Handlers will be called synchronously, in the order they were bound. By default, a handler stops propagating to the next handler, unless it explicitly returns ``true``."
+msgstr "Multiple handlers may be bound to the same key and modifier combination. Handlers will be called synchronously, in the order they were bound. By default, a handler stops propagating to the next handler, unless it explicitly returns ``true``."
+
+#: ../../source/docs/modules/keyboard.rst:69
+msgid "Note: Since Quill’s default handlers are added at initialization, the only way to prevent them is to add yours in the `configuration <#configuration>`__."
+msgstr "Note: Since Quill’s default handlers are added at initialization, the only way to prevent them is to add yours in the `configuration <#configuration>`__."
+
+#: ../../source/docs/modules/keyboard.rst:74
+msgid "Context"
+msgstr "Context"
+
+#: ../../source/docs/modules/keyboard.rst:76
+msgid "Contexts enable further specification for handlers to be called only in particular scenarios. Regardless if context is specified, a context object is provided as a second parameter for all handlers."
+msgstr "Contexts enable further specification for handlers to be called only in particular scenarios. Regardless if context is specified, a context object is provided as a second parameter for all handlers."
+
+#: ../../source/docs/modules/keyboard.rst:97
+msgid "collapsed"
+msgstr "collapsed"
+
+#: ../../source/docs/modules/keyboard.rst:99
+msgid "If ``true``, handler is called only if the user’s selection is collapsed, i.e. in cursor form. If ``false``, the users’s selection must be non-zero length, such as when the user has highlighted text."
+msgstr "If ``true``, handler is called only if the user’s selection is collapsed, i.e. in cursor form. If ``false``, the users’s selection must be non-zero length, such as when the user has highlighted text."
+
+#: ../../source/docs/modules/keyboard.rst:104
+msgid "empty"
+msgstr "empty"
+
+#: ../../source/docs/modules/keyboard.rst:106
+msgid "If ``true``, called only if user’s selection is on an empty line, ``false`` for a non-empty line. Note setting empty to be true implies collapsed is also true and offset is 0—otherwise the user’s selection would not be on an empty line."
+msgstr "If ``true``, called only if user’s selection is on an empty line, ``false`` for a non-empty line. Note setting empty to be true implies collapsed is also true and offset is 0—otherwise the user’s selection would not be on an empty line."
+
+#: ../../source/docs/modules/keyboard.rst:122
+msgid "format"
+msgstr "format"
+
+#: ../../source/docs/modules/keyboard.rst:124
+msgid "When an Array, handler will be called if *any* of the specified formats are active. When an Object, *all* specified formats conditions must be met. In either case, the format property of the context parameter will be an Object of all current active formats, the same returned by ``quill.getFormat()``."
+msgstr "When an Array, handler will be called if *any* of the specified formats are active. When an Object, *all* specified formats conditions must be met. In either case, the format property of the context parameter will be an Object of all current active formats, the same returned by ``quill.getFormat()``."
+
+#: ../../source/docs/modules/keyboard.rst:141
+msgid "offset"
+msgstr "offset"
+
+#: ../../source/docs/modules/keyboard.rst:143
+msgid "Handler will be only called when the user’s selection starts ``offset`` characters from the beginning of the line. Note this is before printable keys have been applied. This is useful in combination with other context specifications."
+msgstr "Handler will be only called when the user’s selection starts ``offset`` characters from the beginning of the line. Note this is before printable keys have been applied. This is useful in combination with other context specifications."
+
+#: ../../source/docs/modules/keyboard.rst:149
+msgid "prefix"
+msgstr "prefix"
+
+#: ../../source/docs/modules/keyboard.rst:151
+msgid "Regex that must match the text immediately preceding the user’s selection’s start position. The text will not match cross format boundaries. The supplied ``context.prefix`` value will be the entire immediately preceding text, not just the regex match."
+msgstr "Regex that must match the text immediately preceding the user’s selection’s start position. The text will not match cross format boundaries. The supplied ``context.prefix`` value will be the entire immediately preceding text, not just the regex match."
+
+#: ../../source/docs/modules/keyboard.rst:179
+msgid "suffix"
+msgstr "suffix"
+
+#: ../../source/docs/modules/keyboard.rst:181
+msgid "The same as ```prefix`` <#prefix>`__ except matching text immediately following the user’s selection’s end position."
+msgstr "The same as ```prefix`` <#prefix>`__ except matching text immediately following the user’s selection’s end position."
+
+#: ../../source/docs/modules/keyboard.rst:185
+msgid "Configuration"
+msgstr "Configuration"
+
+#: ../../source/docs/modules/keyboard.rst:187
+msgid "By default, Quill comes with several useful key bindings, for example indenting lists with tabs. You can add your own upon initization."
+msgstr "By default, Quill comes with several useful key bindings, for example indenting lists with tabs. You can add your own upon initization."
+
+#: ../../source/docs/modules/keyboard.rst:190
+msgid "Some bindings are essential to preventing dangerous browser defaults, such as the enter and backspace keys. You cannot remove these bindings to revert to native browser behaviors. However since bindings specified in the configuration will run before Quill’s defaults, you can handle special cases and propagate to Quill’s otherwise."
+msgstr "Some bindings are essential to preventing dangerous browser defaults, such as the enter and backspace keys. You cannot remove these bindings to revert to native browser behaviors. However since bindings specified in the configuration will run before Quill’s defaults, you can handle special cases and propagate to Quill’s otherwise."
+
+#: ../../source/docs/modules/keyboard.rst:196
+msgid "Adding a binding with ``quill.keyboard.addBinding`` will not run before Quill’s because the defaults bindings will have been added by that point."
+msgstr "Adding a binding with ``quill.keyboard.addBinding`` will not run before Quill’s because the defaults bindings will have been added by that point."
+
+#: ../../source/docs/modules/keyboard.rst:200
+msgid "Each binding config must contain ``key`` and ``handler`` options, and may optionally include any of the ``context`` options."
+msgstr "Each binding config must contain ``key`` and ``handler`` options, and may optionally include any of the ``context`` options."
+
+#: ../../source/docs/modules/keyboard.rst:249
+msgid "Performance"
+msgstr "Performance"
+
+#: ../../source/docs/modules/keyboard.rst:251
+msgid "Like DOM events, Quill key bindings are blocking calls on every match, so it is a bad idea to have a very expensive handler for a very common key binding. Apply the same performance best practices as you would when attaching to common blocking DOM events, like ``scroll`` or ``mousemove``."
+msgstr "Like DOM events, Quill key bindings are blocking calls on every match, so it is a bad idea to have a very expensive handler for a very common key binding. Apply the same performance best practices as you would when attaching to common blocking DOM events, like ``scroll`` or ``mousemove``."
+

@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:2
+msgid "2014-10-19 upgrading to rich text deltas"
+msgstr "2014年10月19日升级到富文本三角洲"
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:4
+msgid ""
+"The new rich text type is now live and being used in Quill v0.18.0. It is"
+" a big step towards 1.0 and will be the way documents and changes are "
+"represented going forward. In most cases this update is non-disruptive "
+"and an upgrade can be a simple increment of the version number [1]_."
+msgstr ""
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:9
+msgid ""
+"However, if you happened to be storing the old Delta format, here’s a "
+"short guide on how to migrate."
+msgstr ""
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:12
+msgid "The main relevant differences between the old and new Deltas are:"
+msgstr "The main relevant differences between the old and new Deltas are:"
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:14
+msgid ""
+"Explicit deletes - We need to go through the old Delta, find the implied "
+"deletes and insert explicit delete operations into the new Delta"
+msgstr ""
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:17
+msgid ""
+"Support for embeds - If we see the hacky representation of embeds, "
+"replace with the new representation"
+msgstr ""
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:65
+msgid ""
+"If you cannot use the rich-text module or if you are using this as a "
+"general guide for another language, the following might be helpful in "
+"crafting insert, delete and retain operations."
+msgstr ""
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:101
+msgid ""
+"There are some optimizations performed by rich-text such as excluding no-"
+"ops (delete 0 characters) and merging two adjacent operations of the same"
+" type (insert ‘A’ followed by insert ‘B’ is merged to be a single insert "
+"‘AB’ operation). But you should not have to worry about these cases since"
+" the old Delta format had similar optimizations."
+msgstr ""
+
+#: ../../source/blog/2014-10-19-upgrading-to-rich-text-deltas.rst:108
+msgid ""
+"All it took to upgrade the examples on quilljs.com was: `2580c2 "
+"<https://github.com/quilljs/quill/commit/2580c2a5d440622d226fbef407df7a5a5e9dcf61>`__"
+msgstr ""
+
