@@ -12,6 +12,7 @@ Your powerful rich text editor
    docs/index
    guides/index
    blog/index
+   ngx-quill/readme
 
 Indices and tables
 ==================

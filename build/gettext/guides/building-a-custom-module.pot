@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,65 +18,65 @@ msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:2
 msgid "building a custom module"
-msgstr "building a custom module"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:4
 msgid "Quill’s core strength as an editor is its rich API and powerful customization capabilities. As you implement functionality on top of Quill’s API, it may be convenient to organize this as a module. For the purpose of this guide, we will walk through one way to build a word counter module, a commonly found feature in many word processors."
-msgstr "Quill’s core strength as an editor is its rich API and powerful customization capabilities. As you implement functionality on top of Quill’s API, it may be convenient to organize this as a module. For the purpose of this guide, we will walk through one way to build a word counter module, a commonly found feature in many word processors."
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:10
 msgid "*Note: Internally modules are how much of Quill’s functionality is organized. You can overwrite these default*\\ `modules </docs/modules/>`__\\ *by implementing your own and registering it with the same name.*"
-msgstr "*Note: Internally modules are how much of Quill’s functionality is organized. You can overwrite these default*\\ `modules </docs/modules/>`__\\ *by implementing your own and registering it with the same name.*"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:16
 msgid "Counting Words"
-msgstr "Counting Words"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:18
 msgid "At its core a word counter simply counts the number of words in the editor and displays this value in some UI. Thus we need to:"
-msgstr "At its core a word counter simply counts the number of words in the editor and displays this value in some UI. Thus we need to:"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:21
 msgid "Listen for text changes in Quill."
-msgstr "Listen for text changes in Quill."
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:22
 msgid "Count the number of words."
-msgstr "Count the number of words."
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:23
 msgid "Display this value."
-msgstr "Display this value."
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:25
 msgid "Let’s jump straight in with a complete example!"
-msgstr "Let’s jump straight in with a complete example!"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:55
 msgid "That’s all it takes to add a custom module to Quill! A function can be `registered </docs/api/#quillregistermodule/>`__ as a module and it will be passed the corresponding Quill editor object along with any options."
-msgstr "That’s all it takes to add a custom module to Quill! A function can be `registered </docs/api/#quillregistermodule/>`__ as a module and it will be passed the corresponding Quill editor object along with any options."
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:60
 msgid "Using Options"
-msgstr "Using Options"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:62
 msgid "Modules are passed an options object that can be used to fine tune the desired behavior. We can use this to accept a selector for the counter container instead of a hard-coded string. Let’s also customize the counter to either count words or characters:"
-msgstr "Modules are passed an options object that can be used to fine tune the desired behavior. We can use this to accept a selector for the counter container instead of a hard-coded string. Let’s also customize the counter to either count words or characters:"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:95
 msgid "Constructors"
-msgstr "Constructors"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:97
 msgid "Since any function can be registered as a Quill module, we could have implemented our counter as an ES5 constructor or ES6 class. This allows us to access and utilize the module directly."
-msgstr "Since any function can be registered as a Quill module, we could have implemented our counter as an ES5 constructor or ES6 class. This allows us to access and utilize the module directly."
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:144
 msgid "Wrapping It All Up"
-msgstr "Wrapping It All Up"
+msgstr ""
 
 #: ../../source/guides/building-a-custom-module.rst:146
 msgid "Now let’s polish off the module in ES6 and fix a few pesky bugs. That’s all there is to it!"
-msgstr "Now let’s polish off the module in ES6 and fix a few pesky bugs. That’s all there is to it!"
+msgstr ""
 

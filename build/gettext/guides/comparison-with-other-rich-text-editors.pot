@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,121 +18,121 @@ msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:2
 msgid "comparison with other rich text editors"
-msgstr "comparison with other rich text editors"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:5
 msgid "CKEditor and TinyMCE"
-msgstr "CKEditor and TinyMCE"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:7
 msgid "CKEditor and TinyMCE are both very widely used, having been around for over a decade. Quill introduces several new ideas that separate it from these traditional editors:"
-msgstr "CKEditor and TinyMCE are both very widely used, having been around for over a decade. Quill introduces several new ideas that separate it from these traditional editors:"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:11
 msgid "It treats ``contenteditable`` as an input, not a complete editor or API. Browsers never fully agreed on or specified the complete scope of ``contenteditable``. Left to their own interpretations, each ended with different implementations that featured their own quirks and a proliferation of bugs, earning ``contenteditable`` deserved notoriety. It is still possible today to crash an entire browser using ``contenteditable`` APIs."
-msgstr "It treats ``contenteditable`` as an input, not a complete editor or API. Browsers never fully agreed on or specified the complete scope of ``contenteditable``. Left to their own interpretations, each ended with different implementations that featured their own quirks and a proliferation of bugs, earning ``contenteditable`` deserved notoriety. It is still possible today to crash an entire browser using ``contenteditable`` APIs."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:19
 msgid "It offers a substantive API on top of the DOM. Most of CKEditor and TinyMCE’s APIs offer little more than syntactic sugar on top of existing DOM APIs. Quill maintains an internal document model and does not rely on the DOM as the source of truth, allowing it to offer far more powerful and relevant APIs for text editing."
-msgstr "It offers a substantive API on top of the DOM. Most of CKEditor and TinyMCE’s APIs offer little more than syntactic sugar on top of existing DOM APIs. Quill maintains an internal document model and does not rely on the DOM as the source of truth, allowing it to offer far more powerful and relevant APIs for text editing."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:25
 msgid "It allows customization and new additions of formats and content. Quill considers the web as a target output, not just paper. Therefore, in addition to supporting traditional formats commonly found in word processors (like bold, italics and lists), Quill allows the definition of entirely new formats and content not previously imagined. Quill’s users have already added customizations to embed slide decks, interactive checklists and 3D models."
-msgstr "It allows customization and new additions of formats and content. Quill considers the web as a target output, not just paper. Therefore, in addition to supporting traditional formats commonly found in word processors (like bold, italics and lists), Quill allows the definition of entirely new formats and content not previously imagined. Quill’s users have already added customizations to embed slide decks, interactive checklists and 3D models."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:33
 msgid "Although there are differences between them, CKEditor and TinyMCE are compared together because they differ from Quill in similar ways. Nevertheless, CKEditor or TinyMCE might be a better choice if:"
-msgstr "Although there are differences between them, CKEditor and TinyMCE are compared together because they differ from Quill in similar ways. Nevertheless, CKEditor or TinyMCE might be a better choice if:"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:37
 msgid "You need to support very old browsers. Quill follows the policy of many other Javascript libraries of supporting the latest two versions of each major browser."
-msgstr "You need to support very old browsers. Quill follows the policy of many other Javascript libraries of supporting the latest two versions of each major browser."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:41
 msgid "You need to set or edit the underlying HTML directly with arbitrary HTML. Quill does not support arbitrary modifications to its contents with ``innerHTML`` as it leads to surprising and buggy behavior. Instead, it provides a consistent `API </docs/api/>`__ for modification and the ability to define new formats and content through `Parchment <https://github.com/quilljs/parchment/>`__."
-msgstr "You need to set or edit the underlying HTML directly with arbitrary HTML. Quill does not support arbitrary modifications to its contents with ``innerHTML`` as it leads to surprising and buggy behavior. Instead, it provides a consistent `API </docs/api/>`__ for modification and the ability to define new formats and content through `Parchment <https://github.com/quilljs/parchment/>`__."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:49
 msgid "Draft"
-msgstr "Draft"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:51
 msgid "Draft is often compared with Quill, but Draft, by its own description, is a “Rich Text Editor Framework for React.” It provides the building blocks to create an editor, but is not one ready to use by itself. It is still worthwhile to compare Quill’s internals with Draft however:"
-msgstr "Draft is often compared with Quill, but Draft, by its own description, is a “Rich Text Editor Framework for React.” It provides the building blocks to create an editor, but is not one ready to use by itself. It is still worthwhile to compare Quill’s internals with Draft however:"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:56
 msgid "Prior to Quill 1.0, Draft allowed more customization over its content and document model, but this is no longer the case. Quill now exposes its document model, called `Parchment <https://github.com/quilljs/parchment>`__, and allows customization to an even deeper level than Draft at this point. `Cloning Medium with Parchment </guides/cloning-medium-with-parchment/>`__ is a great demonstration of what is possible with Parchment."
-msgstr "Prior to Quill 1.0, Draft allowed more customization over its content and document model, but this is no longer the case. Quill now exposes its document model, called `Parchment <https://github.com/quilljs/parchment>`__, and allows customization to an even deeper level than Draft at this point. `Cloning Medium with Parchment </guides/cloning-medium-with-parchment/>`__ is a great demonstration of what is possible with Parchment."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:65
 msgid "Draft organizes nodes into two levels: block and inline. Parchment also has a block and inline layer, but inline nodes can be nested, allowing semantic output such as ``<strong><em>Stronger</em></strong>`` whereas the equivalent in Draft must use just one inline format node and utilizes inline styles:"
-msgstr "Draft organizes nodes into two levels: block and inline. Parchment also has a block and inline layer, but inline nodes can be nested, allowing semantic output such as ``<strong><em>Stronger</em></strong>`` whereas the equivalent in Draft must use just one inline format node and utilizes inline styles:"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:78
 msgid "Draft’s API inherits primitives and ideas from React that are more appropriate for general websites. Quill’s only use case is rich text content allowing for a simpler API geared specifically for that use case. API simplicity is subjective, so the best metric for you might be to think of a common task, like bolding a range of text, and try to figure out how to do it in Quill and how to do it in Draft."
-msgstr "Draft’s API inherits primitives and ideas from React that are more appropriate for general websites. Quill’s only use case is rich text content allowing for a simpler API geared specifically for that use case. API simplicity is subjective, so the best metric for you might be to think of a common task, like bolding a range of text, and try to figure out how to do it in Quill and how to do it in Draft."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:85
 msgid "React, React DOM, and immutable.js are dependencies of Draft which add a lot of weight for users not already using React."
-msgstr "React, React DOM, and immutable.js are dependencies of Draft which add a lot of weight for users not already using React."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:88
 msgid "The main difference is still that Quill is a ready to use rich text editor, with user interactions considered and interfaces thought out and implemented. Draft provides the building blocks but you will have to implement all the pieces above the data layer yourself."
-msgstr "The main difference is still that Quill is a ready to use rich text editor, with user interactions considered and interfaces thought out and implemented. Draft provides the building blocks but you will have to implement all the pieces above the data layer yourself."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:94
 msgid "ProseMirror"
-msgstr "ProseMirror"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:96
 msgid "ProseMirror is relatively new but has already captured signficant attention, being built by the same author of CodeMirror. That being said a robust comparison of the product and implementation is premature since ProseMirror is still in the development stages, as noted in their README:"
-msgstr "ProseMirror is relatively new but has already captured signficant attention, being built by the same author of CodeMirror. That being said a robust comparison of the product and implementation is premature since ProseMirror is still in the development stages, as noted in their README:"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:102
 msgid "NOTE: This project is in BETA stage. It isn’t thoroughly tested, and the API might still change across 0.x releases. You are welcome to use it, but don’t expect it to be very stable yet."
-msgstr "NOTE: This project is in BETA stage. It isn’t thoroughly tested, and the API might still change across 0.x releases. You are welcome to use it, but don’t expect it to be very stable yet."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:106
 msgid "Instead we will compare the ideas and goals:"
-msgstr "Instead we will compare the ideas and goals:"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:108
 msgid "Both Quill and ProseMirror implement and maintain a data model to operate on with APIs, instead of allowing users to modify the DOM directly."
-msgstr "Both Quill and ProseMirror implement and maintain a data model to operate on with APIs, instead of allowing users to modify the DOM directly."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:112
 msgid "Support realtime collaboration. Quill users are already doing so in production."
-msgstr "Support realtime collaboration. Quill users are already doing so in production."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:115
 msgid "Quill’s architecture is more modular, allowing for easier customization of internals. Core modules that handle basic functionality like copy/paste and undo/redo can be swapped out in Quill."
-msgstr "Quill’s architecture is more modular, allowing for easier customization of internals. Core modules that handle basic functionality like copy/paste and undo/redo can be swapped out in Quill."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:120
 msgid "ProseMirror favors broad exposure of API methods, configurations and variables. Quill treats developers as users and designs an organized API surface, judicious in what to expose, sometimes hiding confusing methods or creating new ones that unify several internal operations."
-msgstr "ProseMirror favors broad exposure of API methods, configurations and variables. Quill treats developers as users and designs an organized API surface, judicious in what to expose, sometimes hiding confusing methods or creating new ones that unify several internal operations."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:126
 msgid "Trix"
-msgstr "Trix"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:128
 msgid "Trix is another newly released editor that has adopted many modern ideas in rich text editing. This includes a data model on top of the DOM and treating ``contenteditable`` as an input, which Quill and other modern editors also embrace. In addition, Quill offers some significant advantages over Trix:"
-msgstr "Trix is another newly released editor that has adopted many modern ideas in rich text editing. This includes a data model on top of the DOM and treating ``contenteditable`` as an input, which Quill and other modern editors also embrace. In addition, Quill offers some significant advantages over Trix:"
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:134
 msgid "More `format </docs/formats/>`__ support. Quill supports all formats found in Trix, and also supports text color, font, background, size, superscript, subscript, underline, text alignment, text direction, syntax highlighted code, videos, and formulas, which are not supported in Trix."
-msgstr "More `format </docs/formats/>`__ support. Quill supports all formats found in Trix, and also supports text color, font, background, size, superscript, subscript, underline, text alignment, text direction, syntax highlighted code, videos, and formulas, which are not supported in Trix."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:140
 msgid "Allows customization of existing formats and content, or even adding new ones. Trix implements each format in one way, and allows no further customization."
-msgstr "Allows customization of existing formats and content, or even adding new ones. Trix implements each format in one way, and allows no further customization."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:144
 msgid "Modularized internals that can be configured or even swapped out. Trix is architected as a monolith."
-msgstr "Modularized internals that can be configured or even swapped out. Trix is architected as a monolith."
+msgstr ""
 
 #: ../../source/guides/comparison-with-other-rich-text-editors.rst:147
 msgid "Trix offers one UI, that users likely will need to polish with custom CSS. Quill offers two beautiful, ready to use themes, one centering around a persistent `toolbar </docs/themes/#snow>`__ and one around a Medium-like `tooltip theme </docs/themes/#bubble>`__."
-msgstr "Trix offers one UI, that users likely will need to polish with custom CSS. Quill offers two beautiful, ready to use themes, one centering around a persistent `toolbar </docs/themes/#snow>`__ and one around a Medium-like `tooltip theme </docs/themes/#bubble>`__."
+msgstr ""
 

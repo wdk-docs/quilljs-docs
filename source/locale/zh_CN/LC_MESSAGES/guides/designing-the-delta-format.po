@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/guides/designing-the-delta-format.rst:2
 msgid "designing the delta format"
-msgstr "与其他富文本编辑器相比"
+msgstr "设计增量格式"
 
 #: ../../source/guides/designing-the-delta-format.rst:4
 msgid ""

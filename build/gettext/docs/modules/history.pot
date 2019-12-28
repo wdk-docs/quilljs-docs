@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,107 +18,107 @@ msgstr ""
 
 #: ../../source/docs/modules/history.rst:2
 msgid "history"
-msgstr "history"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:4
 msgid "The History module is responsible for handling undo and redo for Quill. It can be configured with the following options:"
-msgstr "The History module is responsible for handling undo and redo for Quill. It can be configured with the following options:"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:8
 msgid "Configuration"
-msgstr "Configuration"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:11
 msgid "delay"
-msgstr "delay"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:13
 msgid "Default: ``1000``"
-msgstr "Default: ``1000``"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:15
 msgid "Changes occuring within the ``delay`` number of milliseconds is merged into a single change."
-msgstr "Changes occuring within the ``delay`` number of milliseconds is merged into a single change."
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:18
 msgid "For example, with delay set to ``0``, nearly every character is recorded as one change and so undo would undo one character at a time. With delay set to ``1000``, undo would undo all changes that occured within the last 1000 milliseconds."
-msgstr "For example, with delay set to ``0``, nearly every character is recorded as one change and so undo would undo one character at a time. With delay set to ``1000``, undo would undo all changes that occured within the last 1000 milliseconds."
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:24
 msgid "maxStack"
-msgstr "maxStack"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:26
 msgid "Default: ``100``"
-msgstr "Default: ``100``"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:28
 msgid "Maximum size of the history’s undo/redo stack. Merged changes with the ``delay`` option counts as a singular change."
-msgstr "Maximum size of the history’s undo/redo stack. Merged changes with the ``delay`` option counts as a singular change."
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:32
 msgid "userOnly"
-msgstr "userOnly"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:34
 msgid "Default: ``false``"
-msgstr "Default: ``false``"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:36
 msgid "By default all changes, whether originating from user input or programmatically through the API, are treated the same and change be undone or redone by the history module. If ``userOnly`` is set to ``true``, only user changes will be undone or redone."
-msgstr "By default all changes, whether originating from user input or programmatically through the API, are treated the same and change be undone or redone by the history module. If ``userOnly`` is set to ``true``, only user changes will be undone or redone."
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:42
 msgid "Example"
-msgstr "Example"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:58
 msgid "API"
-msgstr "API"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:61
 msgid "clear"
-msgstr "clear"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:63
 msgid "Clears the history stack."
-msgstr "Clears the history stack."
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:65
 #: ../../source/docs/modules/history.rst:85
 #: ../../source/docs/modules/history.rst:102
 #: ../../source/docs/modules/history.rst:119
 msgid "**Methods**"
-msgstr "**Methods**"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:71
 #: ../../source/docs/modules/history.rst:91
 #: ../../source/docs/modules/history.rst:108
 #: ../../source/docs/modules/history.rst:125
 msgid "**Examples**"
-msgstr "**Examples**"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:78
 msgid "cutoff experimental"
-msgstr "cutoff experimental"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:80
 msgid "Normally changes made in short succession (configured by ``delay``) are merged as a single change, so that triggering an undo will undo multiple changes. Using ``cutoff()`` will reset the merger window so that a changes before and after ``cutoff()`` is called will not be merged."
-msgstr "Normally changes made in short succession (configured by ``delay``) are merged as a single change, so that triggering an undo will undo multiple changes. Using ``cutoff()`` will reset the merger window so that a changes before and after ``cutoff()`` is called will not be merged."
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:98
 msgid "undo"
-msgstr "undo"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:100
 msgid "Undo last change."
-msgstr "Undo last change."
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:115
 msgid "redo"
-msgstr "redo"
+msgstr ""
 
 #: ../../source/docs/modules/history.rst:117
 msgid "If last change was an undo, redo this undo. Otherwise does nothing."
-msgstr "If last change was an undo, redo this undo. Otherwise does nothing."
+msgstr ""
 

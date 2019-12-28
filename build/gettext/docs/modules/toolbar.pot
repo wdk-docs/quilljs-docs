@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,69 +18,69 @@ msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:2
 msgid "toolbar"
-msgstr "toolbar"
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:8
 msgid "The Toolbar module allow users to easily format Quill’s contents."
-msgstr "The Toolbar module allow users to easily format Quill’s contents."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:15
 msgid "{% include full-toolbar.html %}"
-msgstr "{% include full-toolbar.html %}"
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:20
 msgid "It can be configured with a custom container and handlers."
-msgstr "It can be configured with a custom container and handlers."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:35
 msgid "Because the ``container`` option is so common, a top level shorthand is also allowed."
-msgstr "Because the ``container`` option is so common, a top level shorthand is also allowed."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:48
 msgid "Container"
-msgstr "Container"
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:50
 msgid "Toolbar controls can either be specified by a simple array of format names or a custom HTML container."
-msgstr "Toolbar controls can either be specified by a simple array of format names or a custom HTML container."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:53
 msgid "To begin with the simpler array option:"
-msgstr "To begin with the simpler array option:"
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:65
 msgid "Controls can also be grouped by one level of nesting an array. This will wrap controls in a ``<span>`` with class name ``ql-formats``, providing structure for themes to utilize. For example `Snow </docs/themes/#snow/>`__ adds extra spacing between control groups."
-msgstr "Controls can also be grouped by one level of nesting an array. This will wrap controls in a ``<span>`` with class name ``ql-formats``, providing structure for themes to utilize. For example `Snow </docs/themes/#snow/>`__ adds extra spacing between control groups."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:75
 msgid "Buttons with custom values can be specified with an Object with the name of the format as its only key."
-msgstr "Buttons with custom values can be specified with an Object with the name of the format as its only key."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:82
 msgid "Dropdowns are similarly specified by an Object, but with an array of possible values. CSS is used to control the visual labels for dropdown options."
-msgstr "Dropdowns are similarly specified by an Object, but with an array of possible values. CSS is used to control the visual labels for dropdown options."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:95
 msgid "Note `Themes </docs/themes/>`__ may also specify default values for dropdowns. For example, `Snow </docs/themes/#snow/>`__ provides a default list of 35 colors for the ``color`` and ``background`` formats, if set to an empty array."
-msgstr "Note `Themes </docs/themes/>`__ may also specify default values for dropdowns. For example, `Snow </docs/themes/#snow/>`__ provides a default list of 35 colors for the ``color`` and ``background`` formats, if set to an empty array."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:129
 msgid "For use cases requiring even more customization, you can manually create a toolbar in HTML, and pass the DOM element or selector into Quill. The ``ql-toolbar`` class will be added to the toolbar container and Quill attach appropriate handlers to ``<button>`` and ``<select>`` elements with a class name in the form ``ql-${format}``. Buttons element may optionally have a custom ``value`` attribute."
-msgstr "For use cases requiring even more customization, you can manually create a toolbar in HTML, and pass the DOM element or selector into Quill. The ``ql-toolbar`` class will be added to the toolbar container and Quill attach appropriate handlers to ``<button>`` and ``<select>`` elements with a class name in the form ``ql-${format}``. Buttons element may optionally have a custom ``value`` attribute."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:165
 msgid "Note by supplying your own HTML element, Quill searches for particular input elements, but your own inputs that have nothing to do with Quill can still be added and styled and coexist."
-msgstr "Note by supplying your own HTML element, Quill searches for particular input elements, but your own inputs that have nothing to do with Quill can still be added and styled and coexist."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:195
 msgid "Handlers"
-msgstr "Handlers"
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:197
 msgid "The toolbar controls by default applies and removes formatting, but you can also overwrite this with custom handlers, for example in order to show external UI."
-msgstr "The toolbar controls by default applies and removes formatting, but you can also overwrite this with custom handlers, for example in order to show external UI."
+msgstr ""
 
 #: ../../source/docs/modules/toolbar.rst:201
 msgid "Handler functions will be bound to the toolbar (so using ``this`` will refer to the toolbar instance) and passed the ``value`` attribute of the input if the corresponding format is inactive, and ``false`` otherwise. Adding a custom handler will overwrite the default toolbar and theme behavior."
-msgstr "Handler functions will be bound to the toolbar (so using ``this`` will refer to the toolbar instance) and passed the ``value`` attribute of the input if the corresponding format is inactive, and ``false`` otherwise. Adding a custom handler will overwrite the default toolbar and theme behavior."
+msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,73 +18,73 @@ msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:2
 msgid "2014-11-06 quill v0.19 no more iframes"
-msgstr "2014-11-06 quill v0.19 no more iframes"
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:4
 msgid "Customizability is core to Quill’s ethos and the new `v0.19 release <https://github.com/quilljs/quill/releases/tag/v0.19.0>`__ is a big step towards fulfilling that mission. In previous versions Quill utilized an iframe to contain the editor. This unfortunately prevented expected browser behaviors and made it difficult for developers to access and extend Quill [1]_. Its removal is the biggest change in v0.19 and some rippling effects are expected. They, and other changes for v0.19, are summarized here."
-msgstr "Customizability is core to Quill’s ethos and the new `v0.19 release <https://github.com/quilljs/quill/releases/tag/v0.19.0>`__ is a big step towards fulfilling that mission. In previous versions Quill utilized an iframe to contain the editor. This unfortunately prevented expected browser behaviors and made it difficult for developers to access and extend Quill [1]_. Its removal is the biggest change in v0.19 and some rippling effects are expected. They, and other changes for v0.19, are summarized here."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:14
 msgid "Styles"
-msgstr "Styles"
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:16
 msgid "With iframes gone it is now much easier to customize the styling of the Quill editor and unecessary for Quill to do so on your behalf in most cases. This leads to a few changes:"
-msgstr "With iframes gone it is now much easier to customize the styling of the Quill editor and unecessary for Quill to do so on your behalf in most cases. This leads to a few changes:"
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:20
 msgid "You can now pass ``false`` into the `style config </docs/configuration/#styles>`__ to prevent Quill from injecting any ``<style>`` tags. No change is necessary if the default behavior is preferred, but this added option makes it easier and more efficient for those that prefer to completely control styling with stylesheets. For this latter route, ``quill.base.css`` is now included in releases and the CDN."
-msgstr "You can now pass ``false`` into the `style config </docs/configuration/#styles>`__ to prevent Quill from injecting any ``<style>`` tags. No change is necessary if the default behavior is preferred, but this added option makes it easier and more efficient for those that prefer to completely control styling with stylesheets. For this latter route, ``quill.base.css`` is now included in releases and the CDN."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:32
 msgid "Since adding and customizing styles is no longer inaccessible, the ``addStyles`` helper is no longer particularly useful and has been removed."
-msgstr "Since adding and customizing styles is no longer inaccessible, the ``addStyles`` helper is no longer particularly useful and has been removed."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:36
 msgid "All Quill containers’ class names have changed to be prefixed with ``ql-``. If your application was using these names in any way they will need to be updated."
-msgstr "All Quill containers’ class names have changed to be prefixed with ``ql-``. If your application was using these names in any way they will need to be updated."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:40
 msgid "Quill is also no longer “protected” from external styles so it should be treated with the same caution as any other front end library. In particular, avoiding overly general css rules will help ensure a peaceful coexistence."
-msgstr "Quill is also no longer “protected” from external styles so it should be treated with the same caution as any other front end library. In particular, avoiding overly general css rules will help ensure a peaceful coexistence."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:46
 msgid "Scripts"
-msgstr "Scripts"
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:48
 msgid "It was always possible to access and manipulate Quill’s editor, but without an iframe the task is now easy. While this greatly simplifies custom enhancements it also makes it easier to inadvertently interfere with Quill’s necessary operations. But with modern developer tools and practices, the risks can be mitigated and ultimately the benefits of customization is worthwhile."
-msgstr "It was always possible to access and manipulate Quill’s editor, but without an iframe the task is now easy. While this greatly simplifies custom enhancements it also makes it easier to inadvertently interfere with Quill’s necessary operations. But with modern developer tools and practices, the risks can be mitigated and ultimately the benefits of customization is worthwhile."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:55
 msgid "This is a good time to reiterate good bug reporting practices, not just for Quill but for all open source projects. Reducing bugs into the simplest case and providing repeatable reproduction instructions will help isolate the source of issues."
-msgstr "This is a good time to reiterate good bug reporting practices, not just for Quill but for all open source projects. Reducing bugs into the simplest case and providing repeatable reproduction instructions will help isolate the source of issues."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:61
 msgid "Default Theme"
-msgstr "Default Theme"
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:63
 msgid "The default theme in Quill has been renamed from ``default`` to ``base``. No change should be necessary unless the ``default`` theme was explicitly being included in the `theme config </docs/configuration/#theme>`__ in which case it should be changed to ``base``."
-msgstr "The default theme in Quill has been renamed from ``default`` to ``base``. No change should be necessary unless the ``default`` theme was explicitly being included in the `theme config </docs/configuration/#theme>`__ in which case it should be changed to ``base``."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:70
 msgid "NPM"
-msgstr "NPM"
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:72
 msgid "Quill is now listed in npm as ``quill`` instead of ``quilljs``. Quill was already listed as ``quill`` on bower so its name will now be consistent across package managers."
-msgstr "Quill is now listed in npm as ``quill`` instead of ``quilljs``. Quill was already listed as ``quill`` on bower so its name will now be consistent across package managers."
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:77
 msgid "Contributing"
-msgstr "Contributing"
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:79
 msgid "Finally, community contribution and involvement has been tremendous and both the project and everyone using it reaps the benefits. A big thanks for all the contributions so far and keep them coming!"
-msgstr "Finally, community contribution and involvement has been tremendous and both the project and everyone using it reaps the benefits. A big thanks for all the contributions so far and keep them coming!"
+msgstr ""
 
 #: ../../source/blog/2014-11-06-quill-v0-19-no-more-iframes.rst:84
 msgid "See `Editors and Iframes <https://www.jasonchen.me/editors-and-iframes/>`__ for full details."
-msgstr "See `Editors and Iframes <https://www.jasonchen.me/editors-and-iframes/>`__ for full details."
+msgstr ""
 

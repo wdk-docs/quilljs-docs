@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>与其他富文本编辑器相比 &mdash; quilljs-docs v2019.10.17 文档</title>
+  <title>设计增量格式 &mdash; quilljs-docs v2019.10.17 文档</title>
   
 
   
@@ -37,7 +37,7 @@
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="与其他富文本编辑器比较" href="comparison-with-other-rich-text-editors.html" />
-    <link rel="prev" title="如何自定义鹅毛笔？" href="how-to-customize-quill.html" /> 
+    <link rel="prev" title="克隆与羊皮纸介质" href="cloning-medium-with-parchment.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,8 +84,12 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">指南</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html">如何自定义鹅毛笔？</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">与其他富文本编辑器相比</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">设计增量格式</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#plain-text">Plain Text</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#compact">Compact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#canonical">Canonical</a></li>
@@ -97,12 +101,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
-<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
-<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="upgrading-to-2-0.html">升级到2.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
@@ -153,7 +153,7 @@
         
           <li><a href="index.html">指南</a> &raquo;</li>
         
-      <li>与其他富文本编辑器相比</li>
+      <li>设计增量格式</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -173,7 +173,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="designing-the-delta-format">
-<h1>与其他富文本编辑器相比<a class="headerlink" href="#designing-the-delta-format" title="永久链接至标题">¶</a></h1>
+<h1>设计增量格式<a class="headerlink" href="#designing-the-delta-format" title="永久链接至标题">¶</a></h1>
 <p>Rich text editors lack a specification to express its own contents.
 Until recently, most rich text editors did not even know what was in
 their own edit areas. These editors just pass the user HTML, along with
@@ -587,7 +587,7 @@ today.</p>
         <a href="comparison-with-other-rich-text-editors.html" class="btn btn-neutral float-right" title="与其他富文本编辑器比较" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="how-to-customize-quill.html" class="btn btn-neutral float-left" title="如何自定义鹅毛笔？" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cloning-medium-with-parchment.html" class="btn btn-neutral float-left" title="克隆与羊皮纸介质" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

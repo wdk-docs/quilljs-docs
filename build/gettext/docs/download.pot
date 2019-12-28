@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,41 +18,41 @@ msgstr ""
 
 #: ../../source/docs/download.rst:2
 msgid "download"
-msgstr "download"
+msgstr ""
 
 #: ../../source/docs/download.rst:4
 msgid "Quill comes ready to use in several convenient forms."
-msgstr "Quill comes ready to use in several convenient forms."
+msgstr ""
 
 #: ../../source/docs/download.rst:7
 msgid "CDN"
-msgstr "CDN"
+msgstr ""
 
 #: ../../source/docs/download.rst:9
 msgid "A globally distributed and available CDN is provided, backed by `Render <https://render.com/>`__."
-msgstr "A globally distributed and available CDN is provided, backed by `Render <https://render.com/>`__."
+msgstr ""
 
 #: ../../source/docs/download.rst:27
 msgid "NPM"
-msgstr "NPM"
+msgstr ""
 
 #: ../../source/docs/download.rst:29
 msgid "Add Quill as an `NPM <//www.npmjs.org/>`__ dependency and add it your own build workflow, or use the included built options. Compiled stylesheets are also included in ``dist/`` folder."
-msgstr "Add Quill as an `NPM <//www.npmjs.org/>`__ dependency and add it your own build workflow, or use the included built options. Compiled stylesheets are also included in ``dist/`` folder."
+msgstr ""
 
 #: ../../source/docs/download.rst:38
 msgid "Direct Download"
-msgstr "Direct Download"
+msgstr ""
 
 #: ../../source/docs/download.rst:40
 msgid "Quill builds are also available for direct download on every `release <https://github.com/quilljs/quill/releases/tag/v%7B%7Bsite.version%7D%7D>`__."
-msgstr "Quill builds are also available for direct download on every `release <https://github.com/quilljs/quill/releases/tag/v%7B%7Bsite.version%7D%7D>`__."
+msgstr ""
 
 #: ../../source/docs/download.rst:44
 msgid "Source"
-msgstr "Source"
+msgstr ""
 
 #: ../../source/docs/download.rst:46
 msgid "And of course the complete source code is always available on `Github <https://github.com/quilljs/quill>`__."
-msgstr "And of course the complete source code is always available on `Github <https://github.com/quilljs/quill>`__."
+msgstr ""
 

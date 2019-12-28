@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 
 #: ../../source/blog/2016-05-03-quill-1-0-beta-release.rst:2
 msgid "2016-05-03 quill 1.0 beta release"
-msgstr "2016-05-03 quill 1.0 beta release"
+msgstr ""
 
 #: ../../source/blog/2016-05-03-quill-1-0-beta-release.rst:4
 msgid "Today Quill is ready for its first beta preview of 1.0. This is the biggest rewrite to Quill since its inception and enables many new possibilities not available in previous versions of Quill, nor any other editor. The code is as always available on Github and through npm:"
-msgstr "Today Quill is ready for its first beta preview of 1.0. This is the biggest rewrite to Quill since its inception and enables many new possibilities not available in previous versions of Quill, nor any other editor. The code is as always available on Github and through npm:"
+msgstr ""
 
 #: ../../source/blog/2016-05-03-quill-1-0-beta-release.rst:13
 msgid "The skeleton of a new documentation site is also being built out at `beta.quilljs.com <https://beta.quilljs.com>`__. Whereas the current site focuses on being a referential resource, the new site will also be a guide to provide insight on approaching different customization goals. There is also an `interactive playground <https://beta.quilljs.com/playground/>`__ to try out various configurations and explore the API."
-msgstr "The skeleton of a new documentation site is also being built out at `beta.quilljs.com <https://beta.quilljs.com>`__. Whereas the current site focuses on being a referential resource, the new site will also be a guide to provide insight on approaching different customization goals. There is also an `interactive playground <https://beta.quilljs.com/playground/>`__ to try out various configurations and explore the API."
+msgstr ""
 
 #: ../../source/blog/2016-05-03-quill-1-0-beta-release.rst:25
 msgid "The goal now is of course an official 1.0 release. To get there, Quill will now enter a weekly cadence of beta releases, so you can expect rapid interations on stability and bug fixes each week. Github is still the center of all development so please do report `Issues <https://github.com/quilljs/quill/issues>`__ as you encounter them in the beta preview."
-msgstr "The goal now is of course an official 1.0 release. To get there, Quill will now enter a weekly cadence of beta releases, so you can expect rapid interations on stability and bug fixes each week. Github is still the center of all development so please do report `Issues <https://github.com/quilljs/quill/issues>`__ as you encounter them in the beta preview."
+msgstr ""
 

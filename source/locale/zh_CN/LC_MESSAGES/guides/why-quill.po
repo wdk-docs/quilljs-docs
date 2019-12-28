@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../source/guides/why-quill.rst:2
 msgid "why quill"
-msgstr "为什么鹅毛笔"
+msgstr "为什么使用 quill"
 
 #: ../../source/guides/why-quill.rst:4
 msgid ""
@@ -29,7 +29,7 @@ msgid ""
 "web application. But at some point you may need to add formatting to text"
 " input. This is where rich text editors come in. There are many solutions"
 " to choose from, but Quill brings a few modern ideas to consider."
-msgstr ""
+msgstr "内容创建以来,一直在核心网从一开始. 在 ``<textarea>`` 的提供了天然的和必不可少的溶液几乎任何web应用程序. 但在某些时候,你可能需要添加格式的文本输入. 这是富文本编辑器进来. 有许多解决方案可供选择,但奎尔带来了一些现代观念来考虑. "
 
 #: ../../source/guides/why-quill.rst:12
 msgid "API Driven Design"
@@ -43,7 +43,7 @@ msgid ""
 " DOM. This presents an impedance mismatch since the DOM is made up of "
 "Nodes organized in an unbalanced tree, whereas text is made up of lines, "
 "words and characters."
-msgstr ""
+msgstr "富文本编辑器都内置帮人写的文字. 然而奇怪的是,最丰富的文本编辑器不知道用户什么组成的文本. 这些编辑识破同一透镜Web开发人员做他们的内容：DOM中. 这带来的阻抗不匹配,因为DOM是由在一个不平衡的树组织的节点中,而文字是由行,词和字符. "
 
 #: ../../source/guides/why-quill.rst:21
 msgid ""
@@ -52,7 +52,7 @@ msgid ""
 " “What text is in this range?” or “Is the cursor on bolded text?” Trying "
 "to build rich editing experiences on top of such primitives is very "
 "difficult and frustrating."
-msgstr ""
+msgstr "没有DOM API,其中的字符是测量单位. 有了这个限制,最丰富的文本编辑器不能回答简单的问题,比如“在此范围内什么短信？”或“上黑体字光标？”试图在这样的原语之上构建丰富的编辑经验是非常困难和令人沮丧. "
 
 #: ../../source/guides/why-quill.rst:27
 msgid ""
@@ -64,11 +64,11 @@ msgid ""
 "</docs/api/>`__ calls allow arbitrary indexes and lengths for access or "
 "modification. Its `event API </docs/api/#events>`__ also reports changes "
 "in an intuitive JSON format. No need to parse HTML or diff DOM trees."
-msgstr ""
+msgstr "奎尔是专为编辑和人物记,并建立在这些天然的文字为中心的单位的顶部它的API. 要了解,如果事情是大胆的,奎尔不需要遍历DOM寻找 ``<B>`` 或 ``<STRONG>`` 节点或字体重样式属性,只需要调用的 ```getFormat(5, 1)`` </docs/api/#getformat>`__. 所有的核心 `event API </docs/api/#events>`__  呼叫允许访问或修改任意索引和长度. 其`事件API </docs/api/#events>`__ 还报告以直观的JSON格式的变化. 无需解析HTML或差异DOM树. "
 
 #: ../../source/guides/why-quill.rst:38
 msgid "Custom Content and Formatting"
-msgstr "Custom Content and Formatting"
+msgstr "定制的内容和格式"
 
 #: ../../source/guides/why-quill.rst:40
 msgid ""
@@ -76,7 +76,7 @@ msgid ""
 "simple as comparing a checklist of desired formats. The mark of a good "
 "rich text editor was simply how many formats it supported. This is still "
 "an important measure, but the lower bound is approaching infinity."
-msgstr ""
+msgstr "这是不远的过去,在评价丰富的文本编辑器是作为比较的期望格式清单一样简单. 一个很好的富文本编辑器的标志是它只是多少格式支持. 这仍然是一个重要措施,但下界接近无穷大. "
 
 #: ../../source/guides/why-quill.rst:45
 msgid ""
@@ -87,7 +87,7 @@ msgid ""
 "tweet or interactive graph. Yet this is the direction the web is moving: "
 "richer and more interactive. The tools supporting content creation need "
 "to consider these use cases."
-msgstr ""
+msgstr "文本不再写来打印. 这是写比纸网,更丰富的画布上呈现. 内容可以是实时,互动,甚至协作. 只有一些富文本编辑器甚至可以支持简单的媒体,如图像和视频;几乎没有可以嵌入鸣叫或交互式图形. 然而,这是互联网的移动方向：更丰富,更具互动性. 支持内容创作工具需要考虑这些用例. "
 
 #: ../../source/guides/why-quill.rst:53
 msgid ""
@@ -96,11 +96,11 @@ msgid ""
 "formats and content Quill can support is unlimited. Users have already "
 "used it to add embedded slide decks, interactive checklists, and 3D "
 "models."
-msgstr ""
+msgstr "奎尔暴露自己的文档模型,在DOM一个强大的抽象,允许扩展和定制. 在格式和内容奎尔可以支持的上限是无限的. 用户已经用它来补充嵌入幻灯片组,互动清单,和3D模型. "
 
 #: ../../source/guides/why-quill.rst:60
 msgid "Cross Platform"
-msgstr "Cross Platform"
+msgstr "跨平台"
 
 #: ../../source/guides/why-quill.rst:62
 msgid ""
@@ -112,27 +112,27 @@ msgid ""
 "markup in Chrome on OSX, it will produce the same markup on IE. If "
 "hitting enter preserves bold format state in Firefox on Windows, it will "
 "be preserved on mobile Safari."
-msgstr ""
+msgstr "跨平台支持是很重要的许多JavaScript库,但对于这意味着什么标准往往不同. 对于奎尔,酒吧不只是它的运行或作品,它具有运行或工作*以同样的方式*. 不仅是功能性的跨平台的考虑因素,但用户和开发者体验为好. 如果某些内容产生在Chrome一个特定的标记在OSX上时,会产生上IE相同的标记. 如果按下回车键保留在Firefox大胆格式的状态在Windows上,它会在移动Safari浏览器保存. "
 
 #: ../../source/guides/why-quill.rst:72
 msgid "Easy to Use"
-msgstr "Easy to Use"
+msgstr "易于使用"
 
 #: ../../source/guides/why-quill.rst:74
 msgid ""
 "All of these benefits come in an easy to use package. Quill ships with "
 "sane defaults you can immediately use with just a few lines of "
 "Javascript:"
-msgstr ""
+msgstr "所有这些优点在一个易于来使用的软件包. 奎尔附带理智的默认值,你可以立即只需几行JavaScript代码的使用："
 
 #: ../../source/guides/why-quill.rst:85
 msgid ""
 "If your application never demands it, you never have to customize "
 "Quill—just enjoy the rich and consistent experience that comes out of the"
 " box."
-msgstr ""
+msgstr "如果你的应用程序从未要求它,你从来没有定制奎尔,只是享受自带开箱丰富,一致的体验. "
 
 #: ../../source/guides/why-quill.rst:89
 msgid "Enjoy!"
-msgstr "Enjoy!"
+msgstr "请享用!"
 

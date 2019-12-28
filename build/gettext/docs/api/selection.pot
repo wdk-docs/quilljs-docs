@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,41 +18,41 @@ msgstr ""
 
 #: ../../source/docs/api/selection.rst:2
 msgid "Selection"
-msgstr "Selection"
+msgstr ""
 
 #: ../../source/docs/api/selection.rst:5
 msgid "getBounds"
-msgstr "getBounds"
+msgstr ""
 
 #: ../../source/docs/api/selection.rst:7
 msgid "Retrieves the pixel position (relative to the editor container) and dimensions of a selection at a given location. The user’s current selection need not be at that index. Useful for calculating where to place tooltips."
-msgstr "Retrieves the pixel position (relative to the editor container) and dimensions of a selection at a given location. The user’s current selection need not be at that index. Useful for calculating where to place tooltips."
+msgstr ""
 
 #: ../../source/docs/api/selection.rst:12
 #: ../../source/docs/api/selection.rst:32
 #: ../../source/docs/api/selection.rst:62
 msgid "**Methods**"
-msgstr "**Methods**"
+msgstr ""
 
 #: ../../source/docs/api/selection.rst:19
 #: ../../source/docs/api/selection.rst:38
 #: ../../source/docs/api/selection.rst:70
 msgid "**Examples**"
-msgstr "**Examples**"
+msgstr ""
 
 #: ../../source/docs/api/selection.rst:27
 msgid "getSelection"
-msgstr "getSelection"
+msgstr ""
 
 #: ../../source/docs/api/selection.rst:29
 msgid "Retrieves the user’s selection range, optionally to focus the editor first. Otherwise ``null`` may be returned if editor does not have focus."
-msgstr "Retrieves the user’s selection range, optionally to focus the editor first. Otherwise ``null`` may be returned if editor does not have focus."
+msgstr ""
 
 #: ../../source/docs/api/selection.rst:55
 msgid "setSelection"
-msgstr "setSelection"
+msgstr ""
 
 #: ../../source/docs/api/selection.rst:57
 msgid "Sets user selection to given range, which will also focus the editor. Providing ``null`` as the selection range will blur the editor. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``."
-msgstr "Sets user selection to given range, which will also focus the editor. Providing ``null`` as the selection range will blur the editor. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``."
+msgstr ""
 

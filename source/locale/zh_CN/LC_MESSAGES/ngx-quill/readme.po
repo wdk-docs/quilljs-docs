@@ -1,0 +1,705 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../source/ngx-quill/readme.rst:2
+msgid "ngx-quill |Build Status|"
+msgstr "ngx-quill |Build Status|"
+
+#: ../../source/ngx-quill/readme.rst:4
+msgid ""
+"ngx-quill is an angular (>=2) module for the `Quill Rich Text Editor "
+"<https://quilljs.com/>`__ containing all components you need."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:8
+msgid "Donate/Support"
+msgstr "捐赠/支持"
+
+#: ../../source/ngx-quill/readme.rst:10
+msgid ""
+"If you like my work, feel free to support it. Donations to the project "
+"are always welcomed :)"
+msgstr "如果你喜欢我的工作, 随时给予支持. 捐赠项目总是欢迎:)"
+
+#: ../../source/ngx-quill/readme.rst:13
+msgid "PayPal: `PayPal.Me/bengtler <http://paypal.me/bengtler>`__"
+msgstr "PayPal: `PayPal.Me/bengtler <http://paypal.me/bengtler>`__"
+
+#: ../../source/ngx-quill/readme.rst:15
+msgid "BTC Wallet Address: ``3QVyr2tpRLBCw1kBQ59sTDraV6DTswq8Li``"
+msgstr "BTC Wallet Address: ``3QVyr2tpRLBCw1kBQ59sTDraV6DTswq8Li``"
+
+#: ../../source/ngx-quill/readme.rst:17
+msgid "ETH Wallet Address: ``0x394d44f3b6e3a4f7b4d44991e7654b0cab4af68f``"
+msgstr "ETH Wallet Address: ``0x394d44f3b6e3a4f7b4d44991e7654b0cab4af68f``"
+
+#: ../../source/ngx-quill/readme.rst:19
+msgid "LTC Wallet Address: ``MFif769WSZ1g7ReAzzDE7TJVqtkFpmoTyT``"
+msgstr "LTC Wallet Address: ``MFif769WSZ1g7ReAzzDE7TJVqtkFpmoTyT``"
+
+#: ../../source/ngx-quill/readme.rst:21
+msgid "XRP Wallet Address: ``rXieaAC3nevTKgVu2SYoShjTCS2Tfczqx?dt=159046833``"
+msgstr "XRP Wallet Address: ``rXieaAC3nevTKgVu2SYoShjTCS2Tfczqx?dt=159046833``"
+
+#: ../../source/ngx-quill/readme.rst:23
+msgid ""
+"XLM Wallet Address: "
+"``GBHSSR4KDXGVD6OGR2577TW2OUX6ZMS5V3ZIBUXT4ZETSTZHMPFMGF3E``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:27
+msgid "Examples"
+msgstr "例子"
+
+#: ../../source/ngx-quill/readme.rst:29
+msgid "`Advanced Demo <https://github.com/killerCodeMonkey/ngx-quill-example>`__"
+msgstr "`Advanced Demo <https://github.com/killerCodeMonkey/ngx-quill-example>`__"
+
+#: ../../source/ngx-quill/readme.rst:32
+msgid "integration of `quill-emoji <https://github.com/contentco/quill-emoji>`__"
+msgstr "integration of `quill-emoji <https://github.com/contentco/quill-emoji>`__"
+
+#: ../../source/ngx-quill/readme.rst:34
+msgid ""
+"integration of `quill-mention <https://github.com/afconsult/quill-"
+"mention>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:36
+msgid ""
+"integration of `quill-image-resize <https://github.com/kensnyder/quill-"
+"image-resize-module>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:38
+msgid "custom word count module"
+msgstr "自定义字计数模块"
+
+#: ../../source/ngx-quill/readme.rst:39
+msgid "custom toolbar with custom fonts and formats, toolbar position"
+msgstr "自定义字体和格式, 工具栏位置自定义工具栏"
+
+#: ../../source/ngx-quill/readme.rst:40
+msgid ""
+"show the differences between sanitizing and not sanitizing your content "
+"if your content format is html"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:42
+msgid "usage of different content formats"
+msgstr "不同的内容格式的使用"
+
+#: ../../source/ngx-quill/readme.rst:43
+msgid "template-driven and reactive forms"
+msgstr "模板驱动和反应形式"
+
+#: ../../source/ngx-quill/readme.rst:44
+msgid "code + syntax highlighting"
+msgstr "代码+语法高亮"
+
+#: ../../source/ngx-quill/readme.rst:45
+msgid "formulas"
+msgstr "公式"
+
+#: ../../source/ngx-quill/readme.rst:46
+msgid "custom key-bindings, e.g. shift + b for bold"
+msgstr "自定义键绑定, 例如SHIFT + B为粗体"
+
+#: ../../source/ngx-quill/readme.rst:47
+msgid "dynamic styles and placeholder"
+msgstr "动态样式和占位符"
+
+#: ../../source/ngx-quill/readme.rst:48
+msgid "toggle readonly"
+msgstr "切换只读"
+
+#: ../../source/ngx-quill/readme.rst:49
+msgid "bubble toolbar"
+msgstr "泡泡工具栏"
+
+#: ../../source/ngx-quill/readme.rst:50
+msgid "activate formats after editor initialisation, e.g. rtl direction"
+msgstr "编辑器初始化, 例如后激活格式RTL方向"
+
+#: ../../source/ngx-quill/readme.rst:51
+msgid ""
+"present quilljs content with the ``quill-view`` and ``quill-view-html`` "
+"component"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:54
+msgid "`Ionic v3 Demo <https://github.com/KillerCodeMonkey/ngx-quill-ionic-v3>`__"
+msgstr "`离子V3演示 <https://github.com/KillerCodeMonkey/ngx-quill-ionic-v3>`__"
+
+#: ../../source/ngx-quill/readme.rst:56
+msgid "`Ionic v4 Demo <https://github.com/KillerCodeMonkey/ngx-quill-ionic-v4>`__"
+msgstr "`Ionic v4 Demo <https://github.com/KillerCodeMonkey/ngx-quill-ionic-v4>`__"
+
+#: ../../source/ngx-quill/readme.rst:60
+msgid "Compatibility to Angular Versions"
+msgstr "兼容性Angular度版本"
+
+#: ../../source/ngx-quill/readme.rst:63
+msgid "Angular"
+msgstr "Angular"
+
+#: ../../source/ngx-quill/readme.rst:63
+msgid "ngx-quill"
+msgstr "ngx-quill"
+
+#: ../../source/ngx-quill/readme.rst:63
+msgid "supported/maintained"
+msgstr "支持/维护"
+
+#: ../../source/ngx-quill/readme.rst:65
+msgid "v8"
+msgstr "v8"
+
+#: ../../source/ngx-quill/readme.rst:65
+msgid ">= 5.2.0"
+msgstr ">= 5.2.0"
+
+#: ../../source/ngx-quill/readme.rst:65
+msgid "until Nov 22, 2020"
+msgstr "until Nov 22, 2020"
+
+#: ../../source/ngx-quill/readme.rst:67
+msgid "v7"
+msgstr "v7"
+
+#: ../../source/ngx-quill/readme.rst:67
+msgid ">= 4.0.0"
+msgstr ">= 4.0.0"
+
+#: ../../source/ngx-quill/readme.rst:67
+msgid "until Apr 18, 2020"
+msgstr "until Apr 18, 2020"
+
+#: ../../source/ngx-quill/readme.rst:69
+msgid "v6"
+msgstr "v6"
+
+#: ../../source/ngx-quill/readme.rst:69
+msgid ">= 3.0.0"
+msgstr ">= 3.0.0"
+
+#: ../../source/ngx-quill/readme.rst:69
+msgid "until Nov 3, 2019"
+msgstr "until Nov 3, 2019"
+
+#: ../../source/ngx-quill/readme.rst:71
+msgid "v5"
+msgstr "v5"
+
+#: ../../source/ngx-quill/readme.rst:71
+msgid "> 1.6.0"
+msgstr "> 1.6.0"
+
+#: ../../source/ngx-quill/readme.rst:71 ../../source/ngx-quill/readme.rst:73
+msgid "no"
+msgstr "no"
+
+#: ../../source/ngx-quill/readme.rst:73
+msgid "v4"
+msgstr "v4"
+
+#: ../../source/ngx-quill/readme.rst:73
+msgid "< 1.6.0"
+msgstr "< 1.6.0"
+
+#: ../../source/ngx-quill/readme.rst:77
+msgid "Installation"
+msgstr "安装"
+
+#: ../../source/ngx-quill/readme.rst:79
+msgid "``npm install ngx-quill``"
+msgstr "``npm install ngx-quill``"
+
+#: ../../source/ngx-quill/readme.rst:80
+msgid ""
+"for projects using Angular < v5.0.0 install ``npm install ngx-"
+"quill@1.6.0``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:82
+msgid ""
+"install ``@angular/core``, ``@angular/common``, ``@angular/forms``, "
+"``@angular/platform-browser``, ``quill`` and ``rxjs`` - peer dependencies"
+" of ngx-quill"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:85
+msgid ""
+"include theme stylings: bubble.css, snow.css of quilljs in your "
+"index.html, or add them in your css/scss files with ``@import`` "
+"statements, or add them external stylings in your build process."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:90
+msgid "For standard webpack, angular-cli and tsc builds"
+msgstr "对于标准的WebPack, angular-cli 和 tsc 构建"
+
+#: ../../source/ngx-quill/readme.rst:92
+msgid "import ``QuillModule`` from ``ngx-quill``:"
+msgstr "import ``QuillModule`` from ``ngx-quill``:"
+
+#: ../../source/ngx-quill/readme.rst:98
+msgid "add ``QuillModule`` to the imports of your NgModule:"
+msgstr "add ``QuillModule`` to the imports of your NgModule:"
+
+#: ../../source/ngx-quill/readme.rst:112
+msgid ""
+"use ``<quill-editor></quill-editor>`` in your templates to add a default "
+"quill editor"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:114
+msgid ""
+"do not forget to include quill + theme css in your buildprocess, module "
+"or index.html!"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:116
+msgid ""
+"for builds with angular-cli >=6 only add quilljs to your scripts or "
+"scripts section of angular.json, if you need it as a global :)!"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:119
+msgid ""
+"**HINT:** *If you are using lazy loading modules, you have to add "
+"``QuillModule.forRoot()`` to your imports in your root module to make "
+"sure the ``Config`` services is registered.*"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:124
+msgid "For SystemJS builds (Config)"
+msgstr "对于SystemJS构建(配置)"
+
+#: ../../source/ngx-quill/readme.rst:126
+msgid "add quill and ngx-quill to your ``paths``:"
+msgstr "添加鹅毛笔和NGX-鹅毛笔你 ``paths``:"
+
+#: ../../source/ngx-quill/readme.rst:136
+msgid "set format and dependencies in ``packages``:"
+msgstr "设置格式和依赖于 ``packages``:"
+
+#: ../../source/ngx-quill/readme.rst:152
+msgid "follow the steps of **For standard webpack and tsc builds**"
+msgstr "遵循以下步骤:  **对于标准的WebPack和TSC建立**"
+
+#: ../../source/ngx-quill/readme.rst:155
+msgid "Global Config"
+msgstr "全局配置"
+
+#: ../../source/ngx-quill/readme.rst:157
+msgid ""
+"It is possible to set custom default modules and Quill config options "
+"with the import of the ``QuillModule.forRoot()``."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:177
+msgid ""
+"If you want to use the ``syntax`` module follow the `Syntax Highlight "
+"Module Guide <https://quilljs.com/docs/modules/syntax/#syntax-"
+"highlighter-module>`__."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:181
+msgid ""
+"See `Quill Configuration <https://quilljs.com/docs/configuration/>`__ for"
+" a full list of config options."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:184
+msgid ""
+"The ``QuillModule`` exports the ``defaultModules`` if you want to extend "
+"them :)."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:188
+msgid "QuillEditorComponent"
+msgstr "QuillEditorComponent"
+
+#: ../../source/ngx-quill/readme.rst:191
+msgid "Hint"
+msgstr "暗示"
+
+#: ../../source/ngx-quill/readme.rst:193
+msgid ""
+"Ngx-quill updates the ngModel or formControl for every ``user`` change in"
+" the editor. Checkout the `QuillJS Source "
+"<https://quilljs.com/docs/api/#events>`__ parameter of the ``text-"
+"change`` event."
+msgstr "Ngx-quill 更新 ngModel 或 formControl 在编辑每一个 ``user`` 变化. 检出 `QuillJS 源 <https://quilljs.com/docs/api/#events>`__ 的 ``text-change`` 事件的参数. "
+
+#: ../../source/ngx-quill/readme.rst:198
+msgid ""
+"If you are using the editor reference to directly manipulate the editor "
+"content and want to update the model, pass ``'user'`` as the source "
+"parameter to the QuillJS api methods."
+msgstr "如果您在使用编辑器参考直接操纵编辑内容和要更新的模式, 通过 ``'user'`` 作为源参数的 QuillJS API 方法. "
+
+#: ../../source/ngx-quill/readme.rst:203 ../../source/ngx-quill/readme.rst:429
+#: ../../source/ngx-quill/readme.rst:499
+msgid "Config"
+msgstr "配置"
+
+#: ../../source/ngx-quill/readme.rst:205
+msgid ""
+"ngModel - set initial value or allow two-way databinding for template "
+"driven forms"
+msgstr "ngModel - 设定初始值, 或允许模板驱动形式的双向数据绑定"
+
+#: ../../source/ngx-quill/readme.rst:207
+msgid ""
+"formControl/formControlName - set initial value or allow two-way "
+"databinding for reactive forms"
+msgstr "formControl/formControlName - 设定的初始值或允许反应性形式的双向数据绑定"
+
+#: ../../source/ngx-quill/readme.rst:209
+msgid "readOnly (true \\| false) if user can edit content"
+msgstr "readOnly (true \\| false) 如果用户可以编辑内容"
+
+#: ../../source/ngx-quill/readme.rst:210 ../../source/ngx-quill/readme.rst:432
+msgid "formats - array of allowed formats/groupings"
+msgstr "formats - 允许的格式/分组的阵列"
+
+#: ../../source/ngx-quill/readme.rst:211 ../../source/ngx-quill/readme.rst:433
+msgid ""
+"format - model format - default: ``html``, values: ``html | object | text"
+" | json``, sets the model value type - html = html string, object = quill"
+" operation object, json = quill operation json, text = plain text"
+msgstr "format - 模型格式 - 默认: ``html``, 值: ``html | object | text | json``, 设置模型值类型 -  HTML = HTML 字符串, 对象 =quill 操作对象, JSON = quill 操作JSON, text = 纯文本"
+
+#: ../../source/ngx-quill/readme.rst:215
+msgid ""
+"modules - configure/disable quill modules, e.g toolbar or add custom "
+"toolbar via html element default is"
+msgstr "modules - 配置/禁用 quill 模块, e.g工具栏或通过HTML元素默认添加自定义工具栏"
+
+#: ../../source/ngx-quill/readme.rst:244 ../../source/ngx-quill/readme.rst:438
+#: ../../source/ngx-quill/readme.rst:505
+msgid "theme - bubble/snow, default is ``snow``"
+msgstr "theme - bubble/snow, 默认值是 ``snow``"
+
+#: ../../source/ngx-quill/readme.rst:245
+msgid ""
+"sanitize - uses angulars DomSanitizer to santize html values - default: "
+"``true``, boolean (only for format=“html”)"
+msgstr "sanitize - 使用角DomSanitizer消毒HTML值 - 默认: ``true``, 布尔 (仅适用于 format=“html”)"
+
+#: ../../source/ngx-quill/readme.rst:247
+msgid "styles - set a styles object, e.g. \\ ``[styles]=\"{height: '250px'}\"``"
+msgstr "styles - 设置样式对象, e.g. \\ ``[styles]=\"{height: '250px'}\"``"
+
+#: ../../source/ngx-quill/readme.rst:248
+msgid "placeholder - placeholder text, default is ``Insert text here ...``"
+msgstr "placeholder - 占位符文本, 默认为 ``Insert text here ...``"
+
+#: ../../source/ngx-quill/readme.rst:249
+msgid ""
+"bounds - boundary of the editor, default ``document.body``, pass ‘self’ "
+"to attach the editor element"
+msgstr "bounds - 编辑, 默认的 ``document.body`` 的边界, 通过“自我”的编辑器元件连接"
+
+#: ../../source/ngx-quill/readme.rst:251
+msgid ""
+"maxLength - add validation for maxlength - set model state to ``invalid``"
+" and add ``ng-invalid`` class"
+msgstr "maxLength - 对于 maxlength 添加验证 - 设置模式状态 ``invalid`` 并添加 ``ng-invalid`` 类"
+
+#: ../../source/ngx-quill/readme.rst:253
+msgid ""
+"minLength - add validation for minlength - set model state to ``invalid``"
+" and add ``ng-invalid`` class, only set invalid if editor text not empty "
+"–> if you want to check if text is required –> use the required attribute"
+msgstr "minLength - 添加验证的使用 minLength - 设置模式状态 ``invalid`` 并添加 ``ng-invalid`` 类, 只设置无效的, 如果编辑的文本不为空 -> 如果您要检查是否需要文本 -> 使用所需的属性"
+
+#: ../../source/ngx-quill/readme.rst:257
+msgid ""
+"required - add validation as a required field - ``[required]=\"true\"`` -"
+" default: false, boolean expected (no strings!)"
+msgstr "required - 添加验证为必填字段 - ``[required]=\"true\"`` - 默认:false, 布尔预期 (无弦!)"
+
+#: ../../source/ngx-quill/readme.rst:259 ../../source/ngx-quill/readme.rst:443
+msgid "strict - default: true, sets editor in strict mode"
+msgstr "strict - 默认值: true, 将在严格模式下编辑"
+
+#: ../../source/ngx-quill/readme.rst:260
+msgid ""
+"scrollingContainer - default ‘.ql-editor’, allows to set scrolling "
+"container"
+msgstr "crollingContainer - 默认的 ‘.ql-editor’, 可以设置滚动容器"
+
+#: ../../source/ngx-quill/readme.rst:262 ../../source/ngx-quill/readme.rst:441
+msgid ""
+"use custom-options for adding for example custom font sizes –> this "
+"overwrites this options **globally** !!!"
+msgstr "使用自定义选项, 添加例如自定义字体大小 -> 这个覆盖此选项 **globally**! "
+
+#: ../../source/ngx-quill/readme.rst:264
+msgid ""
+"possbility to create a custom toolbar via projection slot ``[quill-"
+"editor-toolbar]``:"
+msgstr "可能性来创建经由投影槽 ``[quill-editor-toolbar]`` 自定义工具栏: "
+
+#: ../../source/ngx-quill/readme.rst:291
+msgid ""
+"customToolbarPosition - if you are working with a custom toolbar you can "
+"switch the position :). - default: ``top``, possible values ``top``, "
+"``bottom``"
+msgstr "customToolbarPosition - 如果您正在使用自定义工具栏工作, 就可以切换位置:). - 默认: ``top``, 可能值 ``top``, ``bottom``"
+
+#: ../../source/ngx-quill/readme.rst:294 ../../source/ngx-quill/readme.rst:439
+msgid ""
+"debug - set log level ``warn``, ``error``, ``log`` or ``false`` to "
+"deactivate logging, default: ``warn``"
+msgstr "debug - 设置日志级别 ``warn``, ``error``, ``log`` 要么 ``false`` 停用记录, 默认: ``warn``"
+
+#: ../../source/ngx-quill/readme.rst:296
+msgid ""
+"trackChanges - check if only ``user`` (quill source user) or ``all`` "
+"change should be trigger model update, default ``user``. Using ``all`` is"
+" not recommended, it cause some unexpected sideeffects."
+msgstr "trackChanges - 检查是否只有 ``user`` (翮源用户)或 ``all`` 变化应触发模型更新, 默认情况下 ``user``. 使用 ``all`` 不推荐, 它会导致一些意想不到的副作用. "
+
+#: ../../source/ngx-quill/readme.rst:299 ../../source/ngx-quill/readme.rst:444
+msgid ""
+"preserveWhitespace - default: false - possbility to use a pre-tag instead"
+" of a div-tag for the contenteditable area to preserve duplicated "
+"whitespaces \\| caution if used with syntax plugin `Related issue "
+"<https://github.com/quilljs/quill/issues/1751>`__"
+msgstr "preserveWhitespace - 默认: false - possbility使用预标记, 而不是一个div标签的 contenteditable 区域保留重复空格 \\| 如果谨慎使用语法插件  `相关的问题 <https://github.com/quilljs/quill/issues/1751>`__ 使用"
+
+#: ../../source/ngx-quill/readme.rst:303
+msgid ""
+"classes - a space separated list of CSS classes that will be added onto "
+"the editor element"
+msgstr "classes - CSS类的空格分隔列表, 它会被添加到编辑元素"
+
+#: ../../source/ngx-quill/readme.rst:306
+msgid ""
+"`Full Quill Toolbar HTML "
+"<https://github.com/quilljs/quill/blob/f75ff2973f068c3db44f949915eb8a74faf162a8/docs/_includes"
+"/full-toolbar.html>`__"
+msgstr "`全 Quill HTML 工具栏 <https://github.com/quilljs/quill/blob/f75ff2973f068c3db44f949915eb8a74faf162a8/docs/_includes/full-toolbar.html>`__"
+
+#: ../../source/ngx-quill/readme.rst:310
+msgid "Outputs"
+msgstr "输出"
+
+#: ../../source/ngx-quill/readme.rst:312
+msgid "onEditorCreated - editor instance"
+msgstr "onEditorCreated - 编辑器实例"
+
+#: ../../source/ngx-quill/readme.rst:313
+msgid ""
+"Use this output to get the editor instance and use it directly. After "
+"this output has called the component is stable and all listeners are "
+"binded"
+msgstr "使用此输出来获取编辑器实例, 并直接使用它. 在此之后输出已调用组件是稳定的, 所有的听众都绑定"
+
+#: ../../source/ngx-quill/readme.rst:321
+msgid "onContentChanged - text is updated"
+msgstr "onContentChanged - 文字更新"
+
+#: ../../source/ngx-quill/readme.rst:335
+msgid ""
+"onSelectionChanged - selection is updated, also triggered for onBlur and "
+"onFocus, because the selection changed"
+msgstr "onSelectionChanged - 选择更新, 也引发了的onblur和聚焦状态, 因为选择改变"
+
+#: ../../source/ngx-quill/readme.rst:347
+msgid "onEditorChanged - text or selection is updated - independent of the source"
+msgstr "onEditorChanged - 文本或选择更新 - 独立于源的"
+
+#: ../../source/ngx-quill/readme.rst:363
+msgid "or"
+msgstr "要么"
+
+#: ../../source/ngx-quill/readme.rst:375
+msgid "onFocus - editor is focused"
+msgstr "onFocus - 编辑聚焦"
+
+#: ../../source/ngx-quill/readme.rst:384
+msgid "onBlur - editor is blured"
+msgstr "onBlur - 编辑模糊"
+
+#: ../../source/ngx-quill/readme.rst:394
+msgid ""
+"QuillViewComponent, QuillViewHTMLComponent & How to present the editor "
+"content"
+msgstr "QuillViewComponent, QuillViewHTMLComponent 及如何呈现编辑内容"
+
+#: ../../source/ngx-quill/readme.rst:396
+msgid ""
+"In most cases a wysiwyg editor is used in backoffice to store the content"
+" to the database. On the other side this value should be used, to show "
+"the content to the enduser."
+msgstr "在大多数情况下, 一个所见即所得的编辑器在后台办公用于存储内容数据库。在另一侧上这个值应该被使用, 以显示该内容到最终用户。"
+
+#: ../../source/ngx-quill/readme.rst:400
+msgid ""
+"In most cases the ``html`` format is used, but it is not recommended by "
+"QuillJS, because it has the intention to be a solid, easy to maintain "
+"editor. Because of that it uses blots and object representations of the "
+"content and operation."
+msgstr "在大多数情况下, ``html`` 格式被使用, 但它不是由QuillJS推荐的, 因为它有意向的是固体, 易于维护的编辑器。正因为如此, 它使用印迹和内容和操作的对象表示。"
+
+#: ../../source/ngx-quill/readme.rst:405
+msgid ""
+"This content object is easy to store and to maintain, because there is no"
+" html syntax parsing necessary. So you even switching to another editor "
+"is very easy when you can work with that."
+msgstr "此内容对象是易于储存和维护, 因为没有HTML语法分析必要的。所以, 你即使切换到另一个编辑器是很容易的, 当你可以与合作。"
+
+#: ../../source/ngx-quill/readme.rst:409
+msgid "``ngx-quill`` provides some helper components, to present quilljs content."
+msgstr "``NGX-quill`` 提供了一些辅助组件, 以呈现quilljs内容. "
+
+#: ../../source/ngx-quill/readme.rst:413
+msgid "QuillViewComponent - Using QuillJS to render content"
+msgstr "QuillViewComponent - 使用QuillJS呈现内容"
+
+#: ../../source/ngx-quill/readme.rst:415
+msgid ""
+"In general QuillJS recommends to use a QuillJS instance to present your "
+"content. Just create a quill editor without a toolbar and in readonly "
+"mode. With some simple css lines you can remove the default border around"
+" the content."
+msgstr "一般来说QuillJS建议使用QuillJS实例来展示您的内容。只需创建一个没有工具栏, 并以只读模式鹅毛笔编辑器。通过一些简单的CSS行, 你可以删除内容周围的默认边框。"
+
+#: ../../source/ngx-quill/readme.rst:420
+msgid ""
+"As a helper ``ngx-quill`` provides a component where you can pass many "
+"options of the ``quill-editor`` like modules, format, formats, "
+"customOptions, but renders only the content as readonly and without a "
+"toolbar. Import is the ``content`` input, where you can pass the editor "
+"content you want to present."
+msgstr "作为帮助 ``NGX-quill`` 提供了一个组件, 你可以通过像模块, 格式, 格式, customOptions的 ``鹅毛笔, editor`` 的许多选择, 但仅呈现内容为只读和不带工具栏。进口是 ``content`` 输入, 在那里你可以传给你想呈现的内容编辑。"
+
+#: ../../source/ngx-quill/readme.rst:431
+msgid "content - the content to be presented"
+msgstr "content - 要呈现的内容"
+
+#: ../../source/ngx-quill/readme.rst:437
+msgid "modules - configure/disable quill modules"
+msgstr "modules - 配置/禁用套筒模块"
+
+#: ../../source/ngx-quill/readme.rst:454
+msgid "QuillViewHTMLComponent - Using angular [innerHTML]"
+msgstr "QuillViewHTMLComponent - 运用 angular [innerHTML]"
+
+#: ../../source/ngx-quill/readme.rst:456
+msgid ""
+"Most of you will use the ``html`` format (even it is not recommended). To"
+" render custom html with angular you should use the ``[innerHTML]`` "
+"attribute."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:460
+msgid "But there are some pitfalls:"
+msgstr "但也有一些陷阱:"
+
+#: ../../source/ngx-quill/readme.rst:462
+msgid ""
+"You need to have the quill css files loaded, when using classes and not "
+"inline styling (https://quilljs.com/guides/how-to-customize-quill/#class-"
+"vs-inline)"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:465
+msgid ""
+"When using classes use a ``div``-tag that has the ``innerHTML`` attribute"
+" and add the ``ql-editor`` class. Wrap your div in another ``div``-tag "
+"with css classes ``ql-container`` and your theme, e.g. \\ ``ql-snow``.:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:477
+msgid ""
+"Angular has html sanitation, so it will strip unkown or not trusted parts"
+" of your HTML - just mark your html as trusted (`DomSanitizer "
+"<https://angular.io/api/platform-browser/DomSanitizer>`__)"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:481
+msgid "After that your content should look like what you expected."
+msgstr "这之后你的内容应该像你所期望的. "
+
+#: ../../source/ngx-quill/readme.rst:483
+msgid ""
+"If you store html in your database, checkout your backend code, sometimes"
+" backends are stripping unwanted tags as well ;)."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:486
+msgid ""
+"As a helper ``ngx-quill`` provides a component where you can simply pass "
+"your html string and the component does everything for you to render it:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:489
+msgid "add necessary css classes"
+msgstr "添加必要的CSS类"
+
+#: ../../source/ngx-quill/readme.rst:490
+msgid "bypass html sanitation"
+msgstr "旁路HTML卫生"
+
+#: ../../source/ngx-quill/readme.rst:501
+msgid ""
+"As inputs you can set the ``content`` and optional the ``theme`` (default"
+" is ``snow``)."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:504
+msgid "content - html string to be presented"
+msgstr "content - HTML字符串呈现"
+
+#: ../../source/ngx-quill/readme.rst:508
+msgid "Security Hint"
+msgstr "安全提示"
+
+#: ../../source/ngx-quill/readme.rst:510
+msgid ""
+"Angular templates provide some assurance against XSS in the form of "
+"client side sanitizing of all inputs "
+"https://angular.io/guide/security#xss."
+msgstr "Angular 模板提供针对XSS一些保证在所有输入客户端消毒的形式 https://angular.io/guide/security#xss."
+
+#: ../../source/ngx-quill/readme.rst:514
+msgid ""
+"Ngx-quill provides the config paramter ``sanitize`` to sanitize html-"
+"strings passed as ``ngModel`` or ``formControl`` to the component."
+msgstr "NGX- quill 提供的配置放慢参数 ``sanitize`` 消毒的HTML字符串作为 ``ngModel`` 或 ``formControl`` 到组件通过. "
+
+#: ../../source/ngx-quill/readme.rst:517
+msgid ""
+"It is **deactivated per default** to avoid stripping content or styling, "
+"which is not expected."
+msgstr "据 **每默认禁用** 避免剥离的内容或风格, 这是不预期. "
+
+#: ../../source/ngx-quill/readme.rst:520
+msgid ""
+"But it is **recommended** to activate this option, if you are working "
+"with html strings as model values."
+msgstr "但 **推荐** 激活这个选项, 如果您正在使用HTML字符串作为模型值工作. "
+

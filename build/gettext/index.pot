@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:08+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,21 +18,21 @@ msgstr ""
 
 #: ../../source/index.rst:7
 msgid "Your powerful rich text editor"
-msgstr "Your powerful rich text editor"
+msgstr ""
 
-#: ../../source/index.rst:17
+#: ../../source/index.rst:18
 msgid "Indices and tables"
-msgstr "Indices and tables"
-
-#: ../../source/index.rst:19
-msgid ":ref:`genindex`"
-msgstr ":ref:`genindex`"
+msgstr ""
 
 #: ../../source/index.rst:20
-msgid ":ref:`modindex`"
-msgstr ":ref:`modindex`"
+msgid ":ref:`genindex`"
+msgstr ""
 
 #: ../../source/index.rst:21
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../source/index.rst:22
 msgid ":ref:`search`"
-msgstr ":ref:`search`"
+msgstr ""
 

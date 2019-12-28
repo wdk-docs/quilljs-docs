@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,117 +18,117 @@ msgstr ""
 
 #: ../../source/docs/configuration.rst:2
 msgid "configure"
-msgstr "configure"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:4
 msgid "Quill allows several ways to customize it to suit your needs. This section is dedicated to tweaking existing functionality. See the `Modules </docs/modules/>`__ section for adding new functionality and the `Themes </docs/themes/>`__ section for styling."
-msgstr "Quill allows several ways to customize it to suit your needs. This section is dedicated to tweaking existing functionality. See the `Modules </docs/modules/>`__ section for adding new functionality and the `Themes </docs/themes/>`__ section for styling."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:10
 msgid "Container"
-msgstr "Container"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:12
 msgid "Quill requires a container where the editor will be appended. You can pass in either a CSS selector or a DOM object."
-msgstr "Quill requires a container where the editor will be appended. You can pass in either a CSS selector or a DOM object."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:30
 msgid "Options"
-msgstr "Options"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:32
 msgid "To configure Quill, pass in an options object:"
-msgstr "To configure Quill, pass in an options object:"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:47
 msgid "The following keys are recognized:"
-msgstr "The following keys are recognized:"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:50
 msgid "bounds"
-msgstr "bounds"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:52
 msgid "Default: ``document.body``"
-msgstr "Default: ``document.body``"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:54
 msgid "DOM Element or a CSS selector for a DOM Element, within which the editor’s ui elements (i.e. tooltips, etc.) should be confined. Currently, it only considers left and right boundaries."
-msgstr "DOM Element or a CSS selector for a DOM Element, within which the editor’s ui elements (i.e. tooltips, etc.) should be confined. Currently, it only considers left and right boundaries."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:59
 msgid "debug"
-msgstr "debug"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:61
 msgid "Default: ``warn``"
-msgstr "Default: ``warn``"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:63
 msgid "Shortcut for `debug </docs/api/#debug>`__. Note ``debug`` is a static method and will affect other instances of Quill editors on the page. Only warning and error messages are enabled by default."
-msgstr "Shortcut for `debug </docs/api/#debug>`__. Note ``debug`` is a static method and will affect other instances of Quill editors on the page. Only warning and error messages are enabled by default."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:68
 msgid "formats"
-msgstr "formats"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:70
 msgid "Default: All formats"
-msgstr "Default: All formats"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:72
 msgid "Whitelist of formats to allow in the editor. See `Formats </docs/formats/>`__ for a complete list."
-msgstr "Whitelist of formats to allow in the editor. See `Formats </docs/formats/>`__ for a complete list."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:76
 msgid "modules"
-msgstr "modules"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:78
 msgid "Collection of modules to include and respective options. See `Modules </docs/modules/>`__ for more information."
-msgstr "Collection of modules to include and respective options. See `Modules </docs/modules/>`__ for more information."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:82
 msgid "placeholder"
-msgstr "placeholder"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:84
 msgid "Default: None"
-msgstr "Default: None"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:86
 msgid "Placeholder text to show when editor is empty."
-msgstr "Placeholder text to show when editor is empty."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:89
 msgid "readOnly"
-msgstr "readOnly"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:91
 msgid "Default: ``false``"
-msgstr "Default: ``false``"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:93
 msgid "Whether to instantiate the editor to read-only mode."
-msgstr "Whether to instantiate the editor to read-only mode."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:96
 msgid "scrollingContainer"
-msgstr "scrollingContainer"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:98
 msgid "Default: ``null``"
-msgstr "Default: ``null``"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:100
 msgid "DOM Element or a CSS selector for a DOM Element, specifying which container has the scrollbars (i.e. ``overflow-y: auto``), if is has been changed from the default ``ql-editor`` with custom CSS. Necessary to fix scroll jumping bugs when Quill is set to `auto grow </playground/#autogrow>`__ its height, and another ancestor container is responsible from the scrolling."
-msgstr "DOM Element or a CSS selector for a DOM Element, specifying which container has the scrollbars (i.e. ``overflow-y: auto``), if is has been changed from the default ``ql-editor`` with custom CSS. Necessary to fix scroll jumping bugs when Quill is set to `auto grow </playground/#autogrow>`__ its height, and another ancestor container is responsible from the scrolling."
+msgstr ""
 
 #: ../../source/docs/configuration.rst:108
 msgid "theme"
-msgstr "theme"
+msgstr ""
 
 #: ../../source/docs/configuration.rst:110
 msgid "Name of theme to use. The builtin options are “bubble” or “snow”. An invalid or falsy value will load a default minimal theme. Note the theme’s specific stylesheet still needs to be included manually. See `Themes </docs/themes/>`__ for more information."
-msgstr "Name of theme to use. The builtin options are “bubble” or “snow”. An invalid or falsy value will load a default minimal theme. Note the theme’s specific stylesheet still needs to be included manually. See `Themes </docs/themes/>`__ for more information."
+msgstr ""
 

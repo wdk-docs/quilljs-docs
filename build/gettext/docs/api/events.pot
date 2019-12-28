@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,49 +18,49 @@ msgstr ""
 
 #: ../../source/docs/api/events.rst:2
 msgid "Events"
-msgstr "Events"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:5
 msgid "text-change"
-msgstr "text-change"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:7
 msgid "Emitted when the contents of Quill have changed. Details of the change, representation of the editor contents before the change, along with the source of the change are provided. The source will be ``\"user\"`` if it originates from the users. For example:"
-msgstr "Emitted when the contents of Quill have changed. Details of the change, representation of the editor contents before the change, along with the source of the change are provided. The source will be ``\"user\"`` if it originates from the users. For example:"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:12
 msgid "User types into the editor"
-msgstr "User types into the editor"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:13
 msgid "User formats text using the toolbar"
-msgstr "User formats text using the toolbar"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:14
 msgid "User uses a hotkey to undo"
-msgstr "User uses a hotkey to undo"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:15
 msgid "User uses OS spelling correction"
-msgstr "User uses OS spelling correction"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:17
 msgid "Changes may occur through an API but as long as they originate from the user, the provided source should still be ``\"user\"``. For example, when a user clicks on the toolbar, technically the toolbar module calls a Quill API to effect the change. But source is still ``\"user\"`` since the origin of the change was the user’s click."
-msgstr "Changes may occur through an API but as long as they originate from the user, the provided source should still be ``\"user\"``. For example, when a user clicks on the toolbar, technically the toolbar module calls a Quill API to effect the change. But source is still ``\"user\"`` since the origin of the change was the user’s click."
+msgstr ""
 
 #: ../../source/docs/api/events.rst:23
 msgid "APIs causing text to change may also be called with a ``\"silent\"`` source, in which case ``text-change`` will not be emitted. This is not recommended as it will likely break the undo stack and other functions that rely on a full record of text changes."
-msgstr "APIs causing text to change may also be called with a ``\"silent\"`` source, in which case ``text-change`` will not be emitted. This is not recommended as it will likely break the undo stack and other functions that rely on a full record of text changes."
+msgstr ""
 
 #: ../../source/docs/api/events.rst:28
 msgid "Changes to text may cause changes to the selection (ex. typing advances the cursor), however during the ``text-change`` handler, the selection is not yet updated, and native browser behavior may place it in an inconsistent state. Use ```selection-change`` <#selection-change>`__ or ```editor-change`` <#editor-change>`__ for reliable selection updates."
-msgstr "Changes to text may cause changes to the selection (ex. typing advances the cursor), however during the ``text-change`` handler, the selection is not yet updated, and native browser behavior may place it in an inconsistent state. Use ```selection-change`` <#selection-change>`__ or ```editor-change`` <#editor-change>`__ for reliable selection updates."
+msgstr ""
 
 #: ../../source/docs/api/events.rst:34
 #: ../../source/docs/api/events.rst:67
 #: ../../source/docs/api/events.rst:100
 msgid "**Callback Signature**"
-msgstr "**Callback Signature**"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:40
 #: ../../source/docs/api/events.rst:75
@@ -69,55 +69,55 @@ msgstr "**Callback Signature**"
 #: ../../source/docs/api/events.rst:153
 #: ../../source/docs/api/events.rst:172
 msgid "**Examples**"
-msgstr "**Examples**"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:53
 msgid "selection-change"
-msgstr "selection-change"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:55
 msgid "Emitted when a user or API causes the selection to change, with a range representing the selection boundaries. A null range indicates selection loss (usually caused by loss of focus from the editor). You can also use this event as a focus change event by just checking if the emitted range is null or not."
-msgstr "Emitted when a user or API causes the selection to change, with a range representing the selection boundaries. A null range indicates selection loss (usually caused by loss of focus from the editor). You can also use this event as a focus change event by just checking if the emitted range is null or not."
+msgstr ""
 
 #: ../../source/docs/api/events.rst:61
 msgid "APIs causing the selection to change may also be called with a ``\"silent\"`` source, in which case ``selection-change`` will not be emitted. This is useful if ``selection-change`` is a side effect. For example, typing causes the selection to change but would be very noisy to also emit a ``selection-change`` event on every character."
-msgstr "APIs causing the selection to change may also be called with a ``\"silent\"`` source, in which case ``selection-change`` will not be emitted. This is useful if ``selection-change`` is a side effect. For example, typing causes the selection to change but would be very noisy to also emit a ``selection-change`` event on every character."
+msgstr ""
 
 #: ../../source/docs/api/events.rst:93
 msgid "editor-change"
-msgstr "editor-change"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:95
 msgid "Emitted when either ``text-change`` or ``selection-change`` would be emitted, even when the source is ``\"silent\"``. The first parameter is the event name, either ``text-change`` or ``selection-change``, followed by the arguments normally passed to those respective handlers."
-msgstr "Emitted when either ``text-change`` or ``selection-change`` would be emitted, even when the source is ``\"silent\"``. The first parameter is the event name, either ``text-change`` or ``selection-change``, followed by the arguments normally passed to those respective handlers."
+msgstr ""
 
 #: ../../source/docs/api/events.rst:119
 msgid "on"
-msgstr "on"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:121
 msgid "Adds event handler. See `text-change <#text-change>`__ or `selection-change <#selection-change>`__ for more details on the events themselves."
-msgstr "Adds event handler. See `text-change <#text-change>`__ or `selection-change <#selection-change>`__ for more details on the events themselves."
+msgstr ""
 
 #: ../../source/docs/api/events.rst:125
 #: ../../source/docs/api/events.rst:147
 #: ../../source/docs/api/events.rst:166
 msgid "**Methods**"
-msgstr "**Methods**"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:140
 msgid "once"
-msgstr "once"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:142
 msgid "Adds handler for one emission of an event. See `text-change <#text-change>`__ or `selection-change <#selection-change>`__ for more details on the events themselves."
-msgstr "Adds handler for one emission of an event. See `text-change <#text-change>`__ or `selection-change <#selection-change>`__ for more details on the events themselves."
+msgstr ""
 
 #: ../../source/docs/api/events.rst:162
 msgid "off"
-msgstr "off"
+msgstr ""
 
 #: ../../source/docs/api/events.rst:164
 msgid "Removes event handler."
-msgstr "Removes event handler."
+msgstr ""
 

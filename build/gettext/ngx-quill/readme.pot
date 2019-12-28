@@ -1,0 +1,569 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, BandCap
+# This file is distributed under the same license as the quilljs-docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: quilljs-docs \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/ngx-quill/readme.rst:2
+msgid "ngx-quill |Build Status|"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:4
+msgid "ngx-quill is an angular (>=2) module for the `Quill Rich Text Editor <https://quilljs.com/>`__ containing all components you need."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:8
+msgid "Donate/Support"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:10
+msgid "If you like my work, feel free to support it. Donations to the project are always welcomed :)"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:13
+msgid "PayPal: `PayPal.Me/bengtler <http://paypal.me/bengtler>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:15
+msgid "BTC Wallet Address: ``3QVyr2tpRLBCw1kBQ59sTDraV6DTswq8Li``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:17
+msgid "ETH Wallet Address: ``0x394d44f3b6e3a4f7b4d44991e7654b0cab4af68f``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:19
+msgid "LTC Wallet Address: ``MFif769WSZ1g7ReAzzDE7TJVqtkFpmoTyT``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:21
+msgid "XRP Wallet Address: ``rXieaAC3nevTKgVu2SYoShjTCS2Tfczqx?dt=159046833``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:23
+msgid "XLM Wallet Address: ``GBHSSR4KDXGVD6OGR2577TW2OUX6ZMS5V3ZIBUXT4ZETSTZHMPFMGF3E``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:27
+msgid "Examples"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:29
+msgid "`Advanced Demo <https://github.com/killerCodeMonkey/ngx-quill-example>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:32
+msgid "integration of `quill-emoji <https://github.com/contentco/quill-emoji>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:34
+msgid "integration of `quill-mention <https://github.com/afconsult/quill-mention>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:36
+msgid "integration of `quill-image-resize <https://github.com/kensnyder/quill-image-resize-module>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:38
+msgid "custom word count module"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:39
+msgid "custom toolbar with custom fonts and formats, toolbar position"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:40
+msgid "show the differences between sanitizing and not sanitizing your content if your content format is html"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:42
+msgid "usage of different content formats"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:43
+msgid "template-driven and reactive forms"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:44
+msgid "code + syntax highlighting"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:45
+msgid "formulas"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:46
+msgid "custom key-bindings, e.g. shift + b for bold"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:47
+msgid "dynamic styles and placeholder"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:48
+msgid "toggle readonly"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:49
+msgid "bubble toolbar"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:50
+msgid "activate formats after editor initialisation, e.g. rtl direction"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:51
+msgid "present quilljs content with the ``quill-view`` and ``quill-view-html`` component"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:54
+msgid "`Ionic v3 Demo <https://github.com/KillerCodeMonkey/ngx-quill-ionic-v3>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:56
+msgid "`Ionic v4 Demo <https://github.com/KillerCodeMonkey/ngx-quill-ionic-v4>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:60
+msgid "Compatibility to Angular Versions"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:63
+msgid "Angular"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:63
+msgid "ngx-quill"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:63
+msgid "supported/maintained"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:65
+msgid "v8"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:65
+msgid ">= 5.2.0"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:65
+msgid "until Nov 22, 2020"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:67
+msgid "v7"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:67
+msgid ">= 4.0.0"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:67
+msgid "until Apr 18, 2020"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:69
+msgid "v6"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:69
+msgid ">= 3.0.0"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:69
+msgid "until Nov 3, 2019"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:71
+msgid "v5"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:71
+msgid "> 1.6.0"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:71
+#: ../../source/ngx-quill/readme.rst:73
+msgid "no"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:73
+msgid "v4"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:73
+msgid "< 1.6.0"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:77
+msgid "Installation"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:79
+msgid "``npm install ngx-quill``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:80
+msgid "for projects using Angular < v5.0.0 install ``npm install ngx-quill@1.6.0``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:82
+msgid "install ``@angular/core``, ``@angular/common``, ``@angular/forms``, ``@angular/platform-browser``, ``quill`` and ``rxjs`` - peer dependencies of ngx-quill"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:85
+msgid "include theme stylings: bubble.css, snow.css of quilljs in your index.html, or add them in your css/scss files with ``@import`` statements, or add them external stylings in your build process."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:90
+msgid "For standard webpack, angular-cli and tsc builds"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:92
+msgid "import ``QuillModule`` from ``ngx-quill``:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:98
+msgid "add ``QuillModule`` to the imports of your NgModule:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:112
+msgid "use ``<quill-editor></quill-editor>`` in your templates to add a default quill editor"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:114
+msgid "do not forget to include quill + theme css in your buildprocess, module or index.html!"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:116
+msgid "for builds with angular-cli >=6 only add quilljs to your scripts or scripts section of angular.json, if you need it as a global :)!"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:119
+msgid "**HINT:** *If you are using lazy loading modules, you have to add ``QuillModule.forRoot()`` to your imports in your root module to make sure the ``Config`` services is registered.*"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:124
+msgid "For SystemJS builds (Config)"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:126
+msgid "add quill and ngx-quill to your ``paths``:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:136
+msgid "set format and dependencies in ``packages``:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:152
+msgid "follow the steps of **For standard webpack and tsc builds**"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:155
+msgid "Global Config"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:157
+msgid "It is possible to set custom default modules and Quill config options with the import of the ``QuillModule.forRoot()``."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:177
+msgid "If you want to use the ``syntax`` module follow the `Syntax Highlight Module Guide <https://quilljs.com/docs/modules/syntax/#syntax-highlighter-module>`__."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:181
+msgid "See `Quill Configuration <https://quilljs.com/docs/configuration/>`__ for a full list of config options."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:184
+msgid "The ``QuillModule`` exports the ``defaultModules`` if you want to extend them :)."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:188
+msgid "QuillEditorComponent"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:191
+msgid "Hint"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:193
+msgid "Ngx-quill updates the ngModel or formControl for every ``user`` change in the editor. Checkout the `QuillJS Source <https://quilljs.com/docs/api/#events>`__ parameter of the ``text-change`` event."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:198
+msgid "If you are using the editor reference to directly manipulate the editor content and want to update the model, pass ``'user'`` as the source parameter to the QuillJS api methods."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:203
+#: ../../source/ngx-quill/readme.rst:429
+#: ../../source/ngx-quill/readme.rst:499
+msgid "Config"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:205
+msgid "ngModel - set initial value or allow two-way databinding for template driven forms"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:207
+msgid "formControl/formControlName - set initial value or allow two-way databinding for reactive forms"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:209
+msgid "readOnly (true \\| false) if user can edit content"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:210
+#: ../../source/ngx-quill/readme.rst:432
+msgid "formats - array of allowed formats/groupings"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:211
+#: ../../source/ngx-quill/readme.rst:433
+msgid "format - model format - default: ``html``, values: ``html | object | text | json``, sets the model value type - html = html string, object = quill operation object, json = quill operation json, text = plain text"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:215
+msgid "modules - configure/disable quill modules, e.g toolbar or add custom toolbar via html element default is"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:244
+#: ../../source/ngx-quill/readme.rst:438
+#: ../../source/ngx-quill/readme.rst:505
+msgid "theme - bubble/snow, default is ``snow``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:245
+msgid "sanitize - uses angulars DomSanitizer to santize html values - default: ``true``, boolean (only for format=“html”)"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:247
+msgid "styles - set a styles object, e.g. \\ ``[styles]=\"{height: '250px'}\"``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:248
+msgid "placeholder - placeholder text, default is ``Insert text here ...``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:249
+msgid "bounds - boundary of the editor, default ``document.body``, pass ‘self’ to attach the editor element"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:251
+msgid "maxLength - add validation for maxlength - set model state to ``invalid`` and add ``ng-invalid`` class"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:253
+msgid "minLength - add validation for minlength - set model state to ``invalid`` and add ``ng-invalid`` class, only set invalid if editor text not empty –> if you want to check if text is required –> use the required attribute"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:257
+msgid "required - add validation as a required field - ``[required]=\"true\"`` - default: false, boolean expected (no strings!)"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:259
+#: ../../source/ngx-quill/readme.rst:443
+msgid "strict - default: true, sets editor in strict mode"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:260
+msgid "scrollingContainer - default ‘.ql-editor’, allows to set scrolling container"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:262
+#: ../../source/ngx-quill/readme.rst:441
+msgid "use custom-options for adding for example custom font sizes –> this overwrites this options **globally** !!!"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:264
+msgid "possbility to create a custom toolbar via projection slot ``[quill-editor-toolbar]``:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:291
+msgid "customToolbarPosition - if you are working with a custom toolbar you can switch the position :). - default: ``top``, possible values ``top``, ``bottom``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:294
+#: ../../source/ngx-quill/readme.rst:439
+msgid "debug - set log level ``warn``, ``error``, ``log`` or ``false`` to deactivate logging, default: ``warn``"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:296
+msgid "trackChanges - check if only ``user`` (quill source user) or ``all`` change should be trigger model update, default ``user``. Using ``all`` is not recommended, it cause some unexpected sideeffects."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:299
+#: ../../source/ngx-quill/readme.rst:444
+msgid "preserveWhitespace - default: false - possbility to use a pre-tag instead of a div-tag for the contenteditable area to preserve duplicated whitespaces \\| caution if used with syntax plugin `Related issue <https://github.com/quilljs/quill/issues/1751>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:303
+msgid "classes - a space separated list of CSS classes that will be added onto the editor element"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:306
+msgid "`Full Quill Toolbar HTML <https://github.com/quilljs/quill/blob/f75ff2973f068c3db44f949915eb8a74faf162a8/docs/_includes/full-toolbar.html>`__"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:310
+msgid "Outputs"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:312
+msgid "onEditorCreated - editor instance"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:313
+msgid "Use this output to get the editor instance and use it directly. After this output has called the component is stable and all listeners are binded"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:321
+msgid "onContentChanged - text is updated"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:335
+msgid "onSelectionChanged - selection is updated, also triggered for onBlur and onFocus, because the selection changed"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:347
+msgid "onEditorChanged - text or selection is updated - independent of the source"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:363
+msgid "or"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:375
+msgid "onFocus - editor is focused"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:384
+msgid "onBlur - editor is blured"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:394
+msgid "QuillViewComponent, QuillViewHTMLComponent & How to present the editor content"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:396
+msgid "In most cases a wysiwyg editor is used in backoffice to store the content to the database. On the other side this value should be used, to show the content to the enduser."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:400
+msgid "In most cases the ``html`` format is used, but it is not recommended by QuillJS, because it has the intention to be a solid, easy to maintain editor. Because of that it uses blots and object representations of the content and operation."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:405
+msgid "This content object is easy to store and to maintain, because there is no html syntax parsing necessary. So you even switching to another editor is very easy when you can work with that."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:409
+msgid "``ngx-quill`` provides some helper components, to present quilljs content."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:413
+msgid "QuillViewComponent - Using QuillJS to render content"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:415
+msgid "In general QuillJS recommends to use a QuillJS instance to present your content. Just create a quill editor without a toolbar and in readonly mode. With some simple css lines you can remove the default border around the content."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:420
+msgid "As a helper ``ngx-quill`` provides a component where you can pass many options of the ``quill-editor`` like modules, format, formats, customOptions, but renders only the content as readonly and without a toolbar. Import is the ``content`` input, where you can pass the editor content you want to present."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:431
+msgid "content - the content to be presented"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:437
+msgid "modules - configure/disable quill modules"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:454
+msgid "QuillViewHTMLComponent - Using angular [innerHTML]"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:456
+msgid "Most of you will use the ``html`` format (even it is not recommended). To render custom html with angular you should use the ``[innerHTML]`` attribute."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:460
+msgid "But there are some pitfalls:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:462
+msgid "You need to have the quill css files loaded, when using classes and not inline styling (https://quilljs.com/guides/how-to-customize-quill/#class-vs-inline)"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:465
+msgid "When using classes use a ``div``-tag that has the ``innerHTML`` attribute and add the ``ql-editor`` class. Wrap your div in another ``div``-tag with css classes ``ql-container`` and your theme, e.g. \\ ``ql-snow``.:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:477
+msgid "Angular has html sanitation, so it will strip unkown or not trusted parts of your HTML - just mark your html as trusted (`DomSanitizer <https://angular.io/api/platform-browser/DomSanitizer>`__)"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:481
+msgid "After that your content should look like what you expected."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:483
+msgid "If you store html in your database, checkout your backend code, sometimes backends are stripping unwanted tags as well ;)."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:486
+msgid "As a helper ``ngx-quill`` provides a component where you can simply pass your html string and the component does everything for you to render it:"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:489
+msgid "add necessary css classes"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:490
+msgid "bypass html sanitation"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:501
+msgid "As inputs you can set the ``content`` and optional the ``theme`` (default is ``snow``)."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:504
+msgid "content - html string to be presented"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:508
+msgid "Security Hint"
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:510
+msgid "Angular templates provide some assurance against XSS in the form of client side sanitizing of all inputs https://angular.io/guide/security#xss."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:514
+msgid "Ngx-quill provides the config paramter ``sanitize`` to sanitize html-strings passed as ``ngModel`` or ``formControl`` to the component."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:517
+msgid "It is **deactivated per default** to avoid stripping content or styling, which is not expected."
+msgstr ""
+
+#: ../../source/ngx-quill/readme.rst:520
+msgid "But it is **recommended** to activate this option, if you are working with html strings as model values."
+msgstr ""
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 
 #: ../../source/docs/api/formatting.rst:2
 msgid "Formatting"
-msgstr "Formatting"
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:5
 msgid "format"
-msgstr "format"
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:7
 msgid "Format text at user’s current selection, returning a `Delta </guides/working-with-deltas/>`__ representing the change. If the user’s selection length is 0, i.e. it is a cursor, the format will be set active, so the next character the user types will have that formatting. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
-msgstr "Format text at user’s current selection, returning a `Delta </guides/working-with-deltas/>`__ representing the change. If the user’s selection length is 0, i.e. it is a cursor, the format will be set active, so the next character the user types will have that formatting. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:15
 #: ../../source/docs/api/formatting.rst:40
@@ -34,7 +34,7 @@ msgstr "Format text at user’s current selection, returning a `Delta </guides/w
 #: ../../source/docs/api/formatting.rst:108
 #: ../../source/docs/api/formatting.rst:150
 msgid "**Methods**"
-msgstr "**Methods**"
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:21
 #: ../../source/docs/api/formatting.rst:50
@@ -42,37 +42,37 @@ msgstr "**Methods**"
 #: ../../source/docs/api/formatting.rst:115
 #: ../../source/docs/api/formatting.rst:156
 msgid "**Examples**"
-msgstr "**Examples**"
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:29
 msgid "formatLine"
-msgstr "formatLine"
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:31
 msgid "Formats all lines in given range, returning a `Delta </guides/working-with-deltas/>`__ representing the change. See `formats </docs/formats/>`__ for a list of available formats. Has no effect when called with inline formats. To remove formatting, pass ``false`` for the value argument. The user’s selection may not be preserved. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
-msgstr "Formats all lines in given range, returning a `Delta </guides/working-with-deltas/>`__ representing the change. See `formats </docs/formats/>`__ for a list of available formats. Has no effect when called with inline formats. To remove formatting, pass ``false`` for the value argument. The user’s selection may not be preserved. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:60
 msgid "formatText"
-msgstr "formatText"
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:62
 msgid "Formats text in the editor, returning a `Delta </guides/working-with-deltas/>`__ representing the change. For line level formats, such as text alignment, target the newline character or use the ```formatLine`` <#formatline>`__ helper. See `formats </docs/formats/>`__ for a list of available formats. To remove formatting, pass ``false`` for the value argument. The user’s selection may not be preserved. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
-msgstr "Formats text in the editor, returning a `Delta </guides/working-with-deltas/>`__ representing the change. For line level formats, such as text alignment, target the newline character or use the ```formatLine`` <#formatline>`__ helper. See `formats </docs/formats/>`__ for a list of available formats. To remove formatting, pass ``false`` for the value argument. The user’s selection may not be preserved. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:98
 msgid "getFormat"
-msgstr "getFormat"
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:100
 msgid "Retrieves common formatting of the text in the given range. For a format to be reported, all text within the range must have a truthy value. If there are different truthy values, an array with all truthy values will be reported. If no range is supplied, the user’s current selection range is used. May be used to show which formats have been set on the cursor. If called with no arguments, the user’s current selection range will be used."
-msgstr "Retrieves common formatting of the text in the given range. For a format to be reported, all text within the range must have a truthy value. If there are different truthy values, an array with all truthy values will be reported. If no range is supplied, the user’s current selection range is used. May be used to show which formats have been set on the cursor. If called with no arguments, the user’s current selection range will be used."
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:140
 msgid "removeFormat"
-msgstr "removeFormat"
+msgstr ""
 
 #: ../../source/docs/api/formatting.rst:142
 msgid "Removes all formatting and embeds within given range, returning a `Delta </guides/working-with-deltas/>`__ representing the change. Line formatting will be removed if any part of the line is included in the range. The user’s selection may not be preserved. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
-msgstr "Removes all formatting and embeds within given range, returning a `Delta </guides/working-with-deltas/>`__ representing the change. Line formatting will be removed if any part of the line is included in the range. The user’s selection may not be preserved. `Source </docs/api/#events>`__ may be ``\"user\"``, ``\"api\"``, or ``\"silent\"``. Calls where the ``source`` is ``\"user\"`` when the editor is `disabled <#disable>`__ are ignored."
+msgstr ""
 

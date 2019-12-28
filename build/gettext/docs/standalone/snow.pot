@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,9 @@ msgstr ""
 
 #: ../../source/docs/standalone/snow.rst:2
 msgid "snow"
-msgstr "snow"
+msgstr ""
 
 #: ../../source/docs/standalone/snow.rst:4
 msgid "{% include standalone/snow.html %}"
-msgstr "{% include standalone/snow.html %}"
+msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: quilljs-docs \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-18 15:05+0800\n"
+"POT-Creation-Date: 2019-10-18 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,13 @@ msgstr ""
 
 #: ../../source/blog/2014-08-12-an-official-cdn-for-quill.rst:2
 msgid "2014-08-12 an official cdn for quill"
-msgstr "2014-08-12 an official cdn for quill"
+msgstr ""
 
 #: ../../source/blog/2014-08-12-an-official-cdn-for-quill.rst:4
 msgid "Quill now has an offical Content Distribution Network so you can have access to a reliable, high-speed host for the library. To include a file:"
-msgstr "Quill now has an offical Content Distribution Network so you can have access to a reliable, high-speed host for the library. To include a file:"
+msgstr ""
 
 #: ../../source/blog/2014-08-12-an-official-cdn-for-quill.rst:16
 msgid "You can also use “latest” as the version:"
-msgstr "You can also use “latest” as the version:"
+msgstr ""
 

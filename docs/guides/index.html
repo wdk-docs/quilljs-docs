@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="如何自定义鹅毛笔？" href="how-to-customize-quill.html" />
-    <link rel="prev" title="full" href="../docs/standalone/full.html" /> 
+    <link rel="next" title="为什么使用 quill" href="why-quill.html" />
+    <link rel="prev" title="充分" href="../docs/standalone/full.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,15 +84,15 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../docs/index.html">文档</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">指南</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么使用 quill</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html">如何自定义鹅毛笔？</a></li>
-<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html">与其他富文本编辑器相比</a></li>
-<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
-<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
 <li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html">设计增量格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a></li>
 <li class="toctree-l2"><a class="reference internal" href="upgrading-to-2-0.html">升级到2.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../blog/index.html">博客</a></li>
@@ -164,6 +164,13 @@
 <h1>指南<a class="headerlink" href="#guides" title="永久链接至标题">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="why-quill.html">为什么使用 quill</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html#api-driven-design">API驱动设计</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html#custom-content-and-formatting">定制的内容和格式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html#cross-platform">跨平台</a></li>
+<li class="toctree-l2"><a class="reference internal" href="why-quill.html#easy-to-use">易于使用</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="how-to-customize-quill.html">如何自定义鹅毛笔？</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html#configurations">Configurations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html#themes">Themes</a></li>
@@ -171,18 +178,18 @@
 <li class="toctree-l2"><a class="reference internal" href="how-to-customize-quill.html#content-and-formatting">Content and Formatting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="designing-the-delta-format.html">与其他富文本编辑器相比</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html#plain-text">Plain Text</a></li>
-<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html#line-formatting">Line Formatting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html#embedded-content">Embedded Content</a></li>
-<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html#describing-changes">Describing Changes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html#webpack">Webpack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html#entry">Entry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html#stylesheets">Stylesheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html#ckeditor-and-tinymce">CKEditor and TinyMCE</a></li>
-<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html#draft">Draft</a></li>
-<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html#prosemirror">ProseMirror</a></li>
-<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html#trix">Trix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html#counting-words">Counting Words</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html#using-options">Using Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html#constructors">Constructors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html#wrapping-it-all-up">Wrapping It All Up</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cloning-medium-with-parchment.html">克隆与羊皮纸介质</a><ul>
@@ -198,28 +205,18 @@
 <li class="toctree-l2"><a class="reference internal" href="cloning-medium-with-parchment.html#final-polish">Final Polish</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="building-a-custom-module.html">构建定制模块</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html#counting-words">Counting Words</a></li>
-<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html#using-options">Using Options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html#constructors">Constructors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="building-a-custom-module.html#wrapping-it-all-up">Wrapping It All Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="designing-the-delta-format.html">设计增量格式</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html#plain-text">Plain Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html#line-formatting">Line Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html#embedded-content">Embedded Content</a></li>
+<li class="toctree-l2"><a class="reference internal" href="designing-the-delta-format.html#describing-changes">Describing Changes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html">加入鹅毛笔您构建流水线</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html#webpack">Webpack</a></li>
-<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html#entry">Entry</a></li>
-<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html#stylesheets">Stylesheets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="adding-quill-to-your-build-pipeline.html#example">Example</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#configuration">Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#api">API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#modules">Modules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#deltas">Deltas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#defaults">Defaults</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#browsers">Browsers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#improvements">Improvements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comparison-with-other-rich-text-editors.html">与其他富文本编辑器比较</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html#ckeditor-and-tinymce">CKEditor and TinyMCE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html#draft">Draft</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html#prosemirror">ProseMirror</a></li>
+<li class="toctree-l2"><a class="reference internal" href="comparison-with-other-rich-text-editors.html#trix">Trix</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="upgrading-to-2-0.html">升级到2.0</a><ul>
@@ -231,11 +228,14 @@
 <li class="toctree-l2"><a class="reference internal" href="upgrading-to-2-0.html#browser">Browser</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="why-quill.html">为什么鹅毛笔</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="why-quill.html#api-driven-design">API驱动设计</a></li>
-<li class="toctree-l2"><a class="reference internal" href="why-quill.html#custom-content-and-formatting">Custom Content and Formatting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="why-quill.html#cross-platform">Cross Platform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="why-quill.html#easy-to-use">Easy to Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upgrading-to-1-0.html">升级到1.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#api">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#modules">Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#deltas">Deltas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#defaults">Defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#browsers">Browsers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrading-to-1-0.html#improvements">Improvements</a></li>
 </ul>
 </li>
 </ul>
@@ -250,10 +250,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="how-to-customize-quill.html" class="btn btn-neutral float-right" title="如何自定义鹅毛笔？" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="why-quill.html" class="btn btn-neutral float-right" title="为什么使用 quill" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../docs/standalone/full.html" class="btn btn-neutral float-left" title="full" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../docs/standalone/full.html" class="btn btn-neutral float-left" title="充分" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
